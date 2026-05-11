@@ -31,34 +31,15 @@
     </script>
     <style type="text/tailwindcss">
         @layer utilities {
-            .content-auto {
-                content-visibility: auto;
-            }
-            .scrollbar-hide {
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-            }
-            .scrollbar-hide::-webkit-scrollbar {
-                display: none;
-            }
-            .text-balance {
-                text-wrap: balance;
-            }
-            .border-glow {
-                box-shadow: 0 0 4px theme('colors.primary'), 0 0 8px rgba(134,239,172,0.3);
-            }
-            .tab-btn.active {
-                @apply bg-darkSecondary border-2 border-primary border-glow;
-            }
-            .section-content {
-                display: none;
-            }
-            .section-content.active {
-                display: block;
-            }
-            .filter-btn.active {
-                @apply border-primary border-glow;
-            }
+            .content-auto { content-visibility: auto; }
+            .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+            .scrollbar-hide::-webkit-scrollbar { display: none; }
+            .text-balance { text-wrap: balance; }
+            .border-glow { box-shadow: 0 0 4px #86efac, 0 0 8px rgba(134,239,172,0.3); }
+            .tab-btn.active { @apply bg-darkSecondary border-2 border-primary border-glow; }
+            .section-content { display: none; }
+            .section-content.active { display: block; }
+            .filter-btn.active { @apply border-primary border-glow; }
         }
     </style>
 </head>
@@ -67,9 +48,7 @@
         <div class="flex items-center justify-between">
             <h1 class="text-2xl font-bold text-primary tracking-tight">trade_lens</h1>
             <div class="flex items-center gap-2">
-                <button id="searchToggle" class="p-2 rounded-full bg-darkSecondary hover:bg-darkTertiary transition-colors">
-                    <i class="fa fa-search text-primary"></i>
-                </button>
+                <button id="searchToggle" class="p-2 rounded-full bg-darkSecondary hover:bg-darkTertiary transition-colors"><i class="fa fa-search text-primary"></i></button>
                 <button id="notificationsToggle" class="p-2 rounded-full bg-darkSecondary hover:bg-darkTertiary transition-colors relative">
                     <i class="fa fa-bell text-primary"></i>
                     <span class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full text-xs flex items-center justify-center">3</span>
@@ -95,7 +74,6 @@
     </nav>
 
     <main class="px-4 py-5 max-w-7xl mx-auto">
-        <!-- Market Heatmap Section -->
         <section id="heatmap" class="section-content active space-y-6">
             <div class="bg-darkSecondary rounded-bubble p-4 border border-darkTertiary">
                 <h2 class="text-xl font-semibold mb-4 text-primary">Market Heatmap</h2>
@@ -108,116 +86,103 @@
                 <div id="heatmapContainer" class="min-h-[200px] grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-2 mb-4">
                     <p class="col-span-full text-center text-gray-400">Loading live market data...</p>
                 </div>
-                <div class="mt-4">
-                    <h3 class="font-medium mb-2 text-gray-300">Sector Groups</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm" id="sectorContainer"></div>
-                </div>
+                <h3 class="font-medium mb-2 text-gray-300">Sector Groups</h3>
+                <div id="sectorContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm"></div>
             </div>
         </section>
 
-        <!-- News Feed Section -->
         <section id="news" class="section-content space-y-6">
             <div class="bg-darkSecondary rounded-bubble p-4 border border-darkTertiary">
                 <h2 class="text-xl font-semibold mb-4 text-primary">News Feed & Alerts</h2>
                 <div class="flex flex-wrap gap-2 mb-4">
                     <button class="news-filter filter-btn active px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-topic="all">All Topics</button>
                     <button class="news-filter filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-topic="conflicts">Global Conflicts</button>
-                    <button class="news-filter filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-topic="ai">Artificial Intelligence</button>
+                    <button class="news-filter filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-topic="ai">AI</button>
                     <button class="news-filter filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-topic="semis">Semiconductors</button>
-                    <button class="news-filter filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-topic="business">General Business</button>
+                    <button class="news-filter filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-topic="business">Business</button>
                     <button class="news-filter filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-topic="wallstreet">Wall Street</button>
-                    <button class="news-filter filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-topic="medical">Medical & Biotech</button>
+                    <button class="news-filter filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-topic="medical">Medical</button>
                     <button class="news-filter filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-topic="economy">Economy</button>
                 </div>
-                <div id="newsContainer" class="space-y-3 min-h-[200px]">
-                    <p class="text-center text-gray-400">Loading latest news...</p>
-                </div>
+                <div id="newsContainer" class="space-y-3 min-h-[200px]"><p class="text-center text-gray-400">Loading latest news...</p></div>
             </div>
-        </section>
-
-        <!-- Charts Section -->
-        <section id="charts" class="section-content space-y-6">
+        </section>         <section id="charts" class="section-content space-y-6">
             <div class="bg-darkSecondary rounded-bubble p-4 border border-darkTertiary">
                 <h2 class="text-xl font-semibold mb-4 text-primary">Charts & Key Levels</h2>
-                <div class="mb-4">
-                    <input type="text" id="stockSymbol" placeholder="Enter stock symbol e.g. AAPL, MSFT, NVDA" class="w-full px-4 py-2 rounded-bubble bg-dark border border-darkTertiary focus:outline-none focus:border-primary transition-colors mb-3">
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <button class="timeframe filter-btn active px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-tf="1D">1D</button>
-                        <button class="timeframe filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-tf="1W">1W</button>
-                        <button class="timeframe filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-tf="1M">1M</button>
-                        <button class="timeframe filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-tf="3M">3M</button>
-                        <button class="timeframe filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-tf="1Y">1Y</button>
-                        <button class="timeframe filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary hover:border-gray-400 text-sm" data-tf="5Y">5Y</button>
-                    </div>
+                <input type="text" id="stockSymbol" placeholder="e.g. AAPL, MSFT, NVDA" class="w-full px-4 py-2 rounded-bubble bg-dark border border-darkTertiary focus:outline-none focus:border-primary mb-3">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <button class="timeframe filter-btn active px-3 py-1 rounded-bubble bg-dark border border-darkTertiary" data-tf="1D">1D</button>
+                    <button class="timeframe filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary" data-tf="1W">1W</button>
+                    <button class="timeframe filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary" data-tf="1M">1M</button>
+                    <button class="timeframe filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary" data-tf="3M">3M</button>
+                    <button class="timeframe filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary" data-tf="1Y">1Y</button>
+                    <button class="timeframe filter-btn px-3 py-1 rounded-bubble bg-dark border border-darkTertiary" data-tf="5Y">5Y</button>
                 </div>
-                <div class="relative h-80 rounded-lg bg-dark p-2 border border-darkTertiary">
-                    <canvas id="stockChart"></canvas>
-                </div>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4" id="levelsContainer">
-                    <div class="p-2 rounded-lg bg-dark border border-darkTertiary">
-                        <div class="text-xs text-gray-400">Support 1</div>
-                        <div class="font-medium text-green-400">--</div>
-                    </div>
-                    <div class="p-2 rounded-lg bg-dark border border-darkTertiary">
-                        <div class="text-xs text-gray-400">Support 2</div>
-                        <div class="font-medium text-green-400">--</div>
-                    </div>
-                    <div class="p-2 rounded-lg bg-dark border border-darkTertiary">
-                        <div class="text-xs text-gray-400">Resistance 1</div>
-                        <div class="font-medium text-red-400">--</div>
-                    </div>
-                    <div class="p-2 rounded-lg bg-dark border border-darkTertiary">
-                        <div class="text-xs text-gray-400">Resistance 2</div>
-                        <div class="font-medium text-red-400">--</div>
-                    </div>
+                <div class="h-80 bg-dark p-2 rounded-lg border border-darkTertiary mb-4"><canvas id="stockChart"></canvas></div>
+                <div id="levelsContainer" class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div class="p-2 bg-dark rounded-lg border border-darkTertiary"><p class="text-xs text-gray-400">Support 1</p><p class="text-green-400 font-medium">--</p></div>
+                    <div class="p-2 bg-dark rounded-lg border border-darkTertiary"><p class="text-xs text-gray-400">Support 2</p><p class="text-green-400 font-medium">--</p></div>
+                    <div class="p-2 bg-dark rounded-lg border border-darkTertiary"><p class="text-xs text-gray-400">Resistance 1</p><p class="text-red-400 font-medium">--</p></div>
+                    <div class="p-2 bg-dark rounded-lg border border-darkTertiary"><p class="text-xs text-gray-400">Resistance 2</p><p class="text-red-400 font-medium">--</p></div>
                 </div>
             </div>
         </section>
 
-        <!-- Dark Pool Section -->
         <section id="darkpool" class="section-content space-y-6">
             <div class="bg-darkSecondary rounded-bubble p-4 border border-darkTertiary">
                 <h2 class="text-xl font-semibold mb-4 text-primary">Dark Pool Activity</h2>
-                <div class="mb-4">
-                    <input type="text" id="darkpoolSearch" placeholder="Filter by symbol, price or size..." class="w-full px-4 py-2 rounded-bubble bg-dark border border-darkTertiary focus:outline-none focus:border-primary transition-colors mb-3">
-                </div>
-                <div class="overflow-x-auto rounded-lg border border-darkTertiary min-h-[200px]">
+                <input type="text" id="darkpoolSearch" placeholder="Filter by symbol/price/size" class="w-full px-4 py-2 rounded-bubble bg-dark border border-darkTertiary focus:outline-none focus:border-primary mb-3">
+                <div class="overflow-x-auto rounded-lg border border-darkTertiary">
                     <table class="w-full text-sm">
                         <thead class="bg-dark">
                             <tr class="border-b border-darkTertiary">
-                                <th class="text-left p-3 font-medium">Symbol</th>
-                                <th class="text-left p-3 font-medium">Price</th>
-                                <th class="text-left p-3 font-medium">Size</th>
-                                <th class="text-left p-3 font-medium">Type</th>
-                                <th class="text-left p-3 font-medium">Date & Time</th>
+                                <th class="text-left p-3">Symbol</th><th class="text-left p-3">Price</th><th class="text-left p-3">Size</th><th class="text-left p-3">Type</th><th class="text-left p-3">Date & Time</th>
                             </tr>
                         </thead>
-                        <tbody id="darkpoolContainer">
-                            <tr>
-                                <td colspan="5" class="p-4 text-center text-gray-400">Loading dark pool data...</td>
-                            </tr>
-                        </tbody>
+                        <tbody id="darkpoolContainer"><tr><td colspan="5" class="p-4 text-center text-gray-400">Loading data...</td></tr></tbody>
                     </table>
                 </div>
             </div>
         </section>
 
-        <!-- Earnings Calendar Section -->
         <section id="earnings" class="section-content space-y-6">
             <div class="bg-darkSecondary rounded-bubble p-4 border border-darkTertiary">
                 <h2 class="text-xl font-semibold mb-4 text-primary">Earnings Calendar</h2>
-                <div class="mb-4 flex flex-wrap gap-3 items-center">
-                    <input type="date" id="earningsDate" class="px-3 py-2 rounded-bubble bg-dark border border-darkTertiary focus:outline-none focus:border-primary text-sm">
-                    <button id="searchEarnings" class="px-3 py-2 rounded-bubble bg-primary text-dark font-medium text-sm hover:bg-primary/80 transition-colors">Search Date</button>
+                <div class="flex gap-3 flex-wrap items-center mb-4">
+                    <input type="date" id="earningsDate" class="px-3 py-2 rounded-bubble bg-dark border border-darkTertiary focus:outline-none focus:border-primary">
+                    <button id="searchEarnings" class="px-3 py-2 rounded-bubble bg-primary text-dark font-medium hover:bg-primary/80">Search</button>
                 </div>
-                <div class="overflow-x-auto rounded-lg border border-darkTertiary min-h-[200px]">
+                <div class="overflow-x-auto rounded-lg border border-darkTertiary">
                     <table class="w-full text-sm">
                         <thead class="bg-dark">
                             <tr class="border-b border-darkTertiary">
-                                <th class="text-left p-3 font-medium">Company</th>
-                                <th class="text-left p-3 font-medium">Symbol</th>
-                                <th class="text-left p-3 font-medium">Report Time</th>
-                                <th class="text-left p-3 font-medium">Est. EPS</th>
-                                <th class="text-left p-3 font-medium">Actual EPS</th>
+                                <th class="text-left p-3">Company</th><th class="text-left p-3">Symbol</th><th class="text-left p-3">Report Time</th><th class="text-left p-3">Est. EPS</th><th class="text-left p-3">Actual EPS</th>
                             </tr>
-                        </thead
+                        </thead>
+                        <tbody id="earningsContainer"><tr><td colspan="5" class="p-4 text-center text-gray-400">Select date and search</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+       <script>
+        // Core elements
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const sections = document.querySelectorAll('.section-content');
+        const chartCtx = document.getElementById('stockChart').getContext('2d');
+        let stockChart;
+
+        // Tab switching
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                sections.forEach(s => s.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.target).classList.add('active');
+            });
+        });
+
+        // --- DATA SOURCES (CORS SAFE, FREE, NO KEYS) ---
+        const PROXY = "https://api.allorigins.win/raw?url=";
+        const API = {
+            market: PROXY + encodeURIComponent("https://financialmodeling 
