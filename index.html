@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -11,7 +10,7 @@
 <title>trade_lens</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%2306090a'/%3E%3Cpath d='M40 130 L70 90 L100 110 L140 50' stroke='%2386efac' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Ccircle cx='140' cy='50' r='10' fill='%2386efac'/%3E%3C/svg%3E" />
 <style>
   :root {
@@ -23,318 +22,383 @@
     --border: #1f2c30;
     --border-soft: #182225;
     --accent: #86efac;
+    --accent-bright: #a7f3c8;
     --accent-soft: rgba(134, 239, 172, 0.12);
     --accent-glow: rgba(134, 239, 172, 0.35);
     --up: #4ade80;
-    --up-strong: #22c55e;
     --down: #f87171;
-    --down-strong: #ef4444;
     --neutral: #64748b;
     --text: #e8f0ec;
     --text-soft: #a5b3ab;
     --text-muted: #6b7872;
     --warn: #fbbf24;
-    --safe-top: env(safe-area-inset-top);
-    --safe-bottom: env(safe-area-inset-bottom);
+    --info: #60a5fa;
   }
 
-- { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  html, body { margin: 0; padding: 0; overscroll-behavior-y: none; }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; overscroll-behavior-y: contain; }
   body {
-  background: var(–bg);
-  color: var(–text);
-  font-family: ‘Outfit’, sans-serif;
-  font-size: 15px;
-  line-height: 1.45;
-  min-height: 100vh;
-  padding-top: var(–safe-top);
-  padding-bottom: calc(72px + var(–safe-bottom));
-  -webkit-font-smoothing: antialiased;
-  background-image:
-  radial-gradient(ellipse at top, rgba(134, 239, 172, 0.04), transparent 50%),
-  radial-gradient(ellipse at bottom, rgba(74, 222, 128, 0.02), transparent 50%);
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    line-height: 1.45;
+    min-height: 100vh;
+    padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px));
+    -webkit-font-smoothing: antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% 0%, rgba(134, 239, 172, 0.05), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 100% 100%, rgba(74, 222, 128, 0.03), transparent 70%);
   }
 
-/* ─── Header ─── */
-header {
-position: sticky; top: 0; z-index: 50;
-backdrop-filter: blur(20px) saturate(180%);
--webkit-backdrop-filter: blur(20px) saturate(180%);
-background: rgba(6, 9, 10, 0.78);
-border-bottom: 1px solid var(–border-soft);
-padding: calc(var(–safe-top) + 12px) 16px 12px;
-margin-top: calc(-1 * var(–safe-top));
-display: flex; align-items: center; justify-content: space-between;
-}
-.logo {
-display: flex; align-items: center; gap: 8px;
-font-weight: 700; font-size: 18px; letter-spacing: -0.02em;
-}
-.logo-mark {
-width: 28px; height: 28px; border-radius: 9px;
-background: linear-gradient(135deg, rgba(134,239,172,0.15), rgba(74,222,128,0.05));
-border: 1px solid var(–accent);
-display: grid; place-items: center;
-box-shadow: 0 0 16px var(–accent-glow);
-}
-.logo-mark svg { width: 16px; height: 16px; }
-.logo-text { color: var(–text); }
-.logo-text .accent { color: var(–accent); }
-.header-actions { display: flex; gap: 8px; }
-.icon-btn {
-width: 38px; height: 38px; border-radius: 12px;
-background: var(–surface); border: 1px solid var(–border);
-display: grid; place-items: center; cursor: pointer;
-transition: all 0.2s; color: var(–text-soft);
-}
-.icon-btn:active { transform: scale(0.92); background: var(–surface-2); }
-.icon-btn svg { width: 18px; height: 18px; }
+  /* ─── Header ─── */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    background: rgba(6, 9, 10, 0.82);
+    border-bottom: 1px solid var(--border-soft);
+    padding-top: calc(env(safe-area-inset-top, 0px) + 12px);
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo {
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 700; font-size: 18px; letter-spacing: -0.02em;
+  }
+  .logo-mark {
+    width: 32px; height: 32px; border-radius: 11px;
+    background: linear-gradient(135deg, rgba(134,239,172,0.2), rgba(74,222,128,0.05));
+    border: 1px solid var(--accent);
+    display: grid; place-items: center;
+    box-shadow: 0 0 18px var(--accent-glow), inset 0 1px 0 rgba(255,255,255,0.08);
+  }
+  .logo-mark svg { width: 18px; height: 18px; }
+  .logo-text { color: var(--text); }
+  .logo-text .accent { color: var(--accent); }
+  .header-actions { display: flex; gap: 8px; }
+  .icon-btn {
+    width: 40px; height: 40px; border-radius: 14px;
+    background: var(--surface); border: 1px solid var(--border);
+    display: grid; place-items: center; cursor: pointer;
+    transition: all 0.2s; color: var(--text-soft);
+  }
+  .icon-btn:active { transform: scale(0.9); background: var(--surface-2); }
+  .icon-btn svg { width: 18px; height: 18px; }
+  .icon-btn.spinning svg { animation: spin 0.8s linear; }
+  @keyframes spin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
 
-/* ─── Layout ─── */
-main { padding: 16px; }
-.view { display: none; animation: fadeIn 0.3s ease; }
-.view.active { display: block; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  /* ─── Layout ─── */
+  main { padding: 18px 16px; }
+  .view { display: none; animation: fadeIn 0.3s ease; }
+  .view.active { display: block; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 
-.view-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 16px; }
-.view-title { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
-.view-sub { font-size: 13px; color: var(–text-muted); }
+  .view-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 18px; gap: 12px; }
+  .view-title { font-size: 28px; font-weight: 700; letter-spacing: -0.025em; line-height: 1.1; }
+  .view-sub { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
 
-/* ─── Pills / chips ─── */
-.pill-row {
-display: flex; gap: 8px;
-overflow-x: auto; -webkit-overflow-scrolling: touch;
-padding-bottom: 4px; margin-bottom: 16px;
-scrollbar-width: none;
-}
-.pill-row::-webkit-scrollbar { display: none; }
-.pill {
-flex: 0 0 auto;
-padding: 9px 16px; border-radius: 999px;
-background: var(–surface); border: 1px solid var(–border);
-color: var(–text-soft); font-size: 13px; font-weight: 500;
-cursor: pointer; transition: all 0.2s; white-space: nowrap;
-}
-.pill:active { transform: scale(0.94); }
-.pill.active {
-background: var(–accent-soft); border-color: var(–accent); color: var(–accent);
-box-shadow: 0 0 0 1px var(–accent-soft), 0 4px 14px var(–accent-glow);
-}
+  /* ─── Pills ─── */
+  .pill-row {
+    display: flex; gap: 8px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    padding: 2px 2px 6px; margin: 0 -2px 14px;
+    scrollbar-width: none;
+  }
+  .pill-row::-webkit-scrollbar { display: none; }
+  .pill {
+    flex: 0 0 auto;
+    padding: 10px 18px; border-radius: 999px;
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--text-soft); font-size: 13px; font-weight: 500;
+    font-family: inherit;
+    cursor: pointer; transition: all 0.2s; white-space: nowrap;
+  }
+  .pill:active { transform: scale(0.94); }
+  .pill.active {
+    background: var(--accent-soft); border-color: var(--accent); color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent-soft), 0 4px 16px var(--accent-glow);
+  }
+  .pill.sub { padding: 7px 14px; font-size: 12px; }
 
-/* ─── Heatmap ─── */
-.sector-group { margin-bottom: 20px; }
-.sector-header {
-display: flex; align-items: center; justify-content: space-between;
-margin-bottom: 8px; padding: 0 4px;
-}
-.sector-name { font-size: 13px; font-weight: 600; color: var(–text-soft); letter-spacing: 0.02em; text-transform: uppercase; }
-.sector-avg { font-size: 12px; font-family: ‘JetBrains Mono’, monospace; font-weight: 500; }
-.heatmap-grid {
-display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
-}
-.tile {
-aspect-ratio: 1.2 / 1;
-border-radius: 14px;
-padding: 10px;
-display: flex; flex-direction: column; justify-content: space-between;
-cursor: pointer; transition: transform 0.15s;
-position: relative; overflow: hidden;
-border: 1px solid rgba(255,255,255,0.05);
-}
-.tile:active { transform: scale(0.95); }
-.tile-symbol { font-weight: 700; font-size: 14px; letter-spacing: -0.01em; }
-.tile-change { font-family: ‘JetBrains Mono’, monospace; font-size: 12px; font-weight: 600; }
-.tile-price { font-family: ‘JetBrains Mono’, monospace; font-size: 11px; opacity: 0.8; }
-.tile-loading { background: var(–surface); animation: pulse 1.5s ease-in-out infinite; }
-@keyframes pulse { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; } }
+  /* ─── Heatmap ─── */
+  .sector-group { margin-bottom: 22px; }
+  .sector-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 10px; padding: 0 4px;
+  }
+  .sector-name { font-size: 11px; font-weight: 700; color: var(--text-soft); letter-spacing: 0.08em; text-transform: uppercase; }
+  .sector-avg { font-size: 12px; font-family: 'JetBrains Mono', monospace; font-weight: 600; }
+  .heatmap-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px;
+  }
+  .tile {
+    aspect-ratio: 1.1 / 1;
+    border-radius: 20px;
+    padding: 11px 12px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    cursor: pointer; transition: transform 0.15s, box-shadow 0.2s;
+    position: relative; overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.04);
+    background-image: radial-gradient(ellipse at top left, rgba(255,255,255,0.08), transparent 60%);
+  }
+  .tile::before {
+    content: ''; position: absolute; inset: 0; border-radius: 20px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+    pointer-events: none;
+  }
+  .tile:active { transform: scale(0.94); }
+  .tile-symbol { font-weight: 700; font-size: 14px; letter-spacing: -0.01em; position: relative; }
+  .tile-change { font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; position: relative; }
+  .tile-price { font-family: 'JetBrains Mono', monospace; font-size: 11px; opacity: 0.75; position: relative; }
+  .tile-range {
+    position: absolute; bottom: 6px; left: 11px; right: 11px;
+    height: 3px; border-radius: 2px;
+    background: rgba(255,255,255,0.1); overflow: hidden;
+  }
+  .tile-range-fill {
+    position: absolute; top: 0; bottom: 0;
+    background: rgba(255,255,255,0.4); border-radius: 2px;
+  }
+  .tile-range-dot {
+    position: absolute; top: -2px; width: 7px; height: 7px;
+    border-radius: 50%; background: white;
+    transform: translateX(-50%);
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+  }
+  .tile-loading { background: var(--surface); animation: pulse 1.4s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 0.85; } }
 
-/* ─── News ─── */
-.news-card {
-background: var(–surface); border: 1px solid var(–border);
-border-radius: 18px; padding: 14px; margin-bottom: 10px;
-display: flex; gap: 12px; cursor: pointer;
-transition: all 0.2s;
-}
-.news-card:active { transform: scale(0.99); background: var(–surface-2); }
-.news-image {
-flex: 0 0 70px; height: 70px; border-radius: 12px;
-background: var(–surface-2); object-fit: cover;
-}
-.news-content { flex: 1; min-width: 0; }
-.news-meta { display: flex; gap: 8px; align-items: center; font-size: 11px; color: var(–text-muted); margin-bottom: 4px; }
-.news-source { color: var(–accent); font-weight: 500; }
-.news-title { font-size: 14px; font-weight: 600; line-height: 1.35; margin-bottom: 4px;
-display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-.news-summary { font-size: 12px; color: var(–text-muted); line-height: 1.4;
-display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .tile-empty {
+    aspect-ratio: 1.1 / 1; border-radius: 20px;
+    background: var(--surface); border: 1px dashed var(--border);
+    display: grid; place-items: center;
+    color: var(--text-muted); font-size: 11px; text-align: center; padding: 8px;
+  }
 
-/* ─── Search ─── */
-.search-bar {
-display: flex; align-items: center; gap: 10px;
-background: var(–surface); border: 1px solid var(–border);
-border-radius: 16px; padding: 12px 16px; margin-bottom: 14px;
-transition: border-color 0.2s;
-}
-.search-bar:focus-within { border-color: var(–accent); box-shadow: 0 0 0 3px var(–accent-soft); }
-.search-bar svg { width: 18px; height: 18px; color: var(–text-muted); flex: 0 0 auto; }
-.search-bar input {
-flex: 1; background: transparent; border: none; outline: none;
-color: var(–text); font-family: inherit; font-size: 15px;
-}
-.search-bar input::placeholder { color: var(–text-muted); }
+  /* ─── News cards ─── */
+  .news-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 20px; padding: 14px; margin-bottom: 10px;
+    display: flex; gap: 12px; cursor: pointer; text-decoration: none; color: inherit;
+    transition: all 0.2s;
+  }
+  .news-card:active { transform: scale(0.99); background: var(--surface-2); }
+  .news-image {
+    flex: 0 0 76px; height: 76px; border-radius: 16px;
+    background: var(--surface-2); object-fit: cover;
+  }
+  .news-content { flex: 1; min-width: 0; }
+  .news-meta { display: flex; gap: 8px; align-items: center; font-size: 11px; color: var(--text-muted); margin-bottom: 4px; }
+  .news-source { color: var(--accent); font-weight: 600; }
+  .news-title { font-size: 14px; font-weight: 600; line-height: 1.35; margin-bottom: 4px;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .news-summary { font-size: 12px; color: var(--text-muted); line-height: 1.45;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
-/* ─── Charts ─── */
-.chart-frame {
-height: calc(100vh - 280px); min-height: 480px;
-border-radius: 18px; overflow: hidden;
-border: 1px solid var(–border); background: var(–surface);
-}
-.chart-frame iframe { width: 100%; height: 100%; border: 0; }
-.sr-panel {
-background: var(–surface); border: 1px solid var(–border);
-border-radius: 14px; padding: 12px; margin-bottom: 12px;
-font-size: 12px;
-}
-.sr-panel-title { font-weight: 600; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
-.sr-levels { display: flex; gap: 8px; flex-wrap: wrap; font-family: ‘JetBrains Mono’, monospace; }
-.sr-level { padding: 4px 8px; border-radius: 8px; font-size: 11px; }
-.sr-level.r { background: rgba(248, 113, 113, 0.12); color: var(–down); }
-.sr-level.s { background: rgba(74, 222, 128, 0.12); color: var(–up); }
+  /* ─── Search bar ─── */
+  .search-bar {
+    display: flex; align-items: center; gap: 10px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 18px; padding: 13px 16px; margin-bottom: 14px;
+    transition: all 0.2s;
+  }
+  .search-bar:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .search-bar svg { width: 18px; height: 18px; color: var(--text-muted); flex: 0 0 auto; }
+  .search-bar input {
+    flex: 1; background: transparent; border: none; outline: none;
+    color: var(--text); font-family: inherit; font-size: 15px;
+  }
+  .search-bar input::placeholder { color: var(--text-muted); }
 
-/* ─── Dark Pool / Earnings list ─── */
-.data-row {
-display: grid; grid-template-columns: auto 1fr auto; gap: 12px;
-align-items: center;
-background: var(–surface); border: 1px solid var(–border);
-border-radius: 14px; padding: 12px 14px; margin-bottom: 8px;
-cursor: pointer; transition: all 0.2s;
-}
-.data-row:active { transform: scale(0.99); }
-.data-symbol {
-font-weight: 700; font-size: 14px;
-width: 56px;
-}
-.data-meta { font-size: 12px; color: var(–text-muted); }
-.data-title { font-weight: 500; font-size: 14px; margin-bottom: 2px; }
-.data-value { font-family: ‘JetBrains Mono’, monospace; font-size: 13px; font-weight: 600; }
-.data-value.up { color: var(–up); }
-.data-value.down { color: var(–down); }
-.badge {
-display: inline-block; padding: 2px 8px; border-radius: 999px;
-font-size: 10px; font-weight: 600; letter-spacing: 0.05em;
-text-transform: uppercase;
-}
-.badge.bmo { background: rgba(251, 191, 36, 0.15); color: var(–warn); }
-.badge.amc { background: rgba(134, 239, 172, 0.15); color: var(–accent); }
-.badge.dmh { background: rgba(96, 165, 250, 0.15); color: #60a5fa; }
+  /* ─── Charts ─── */
+  .chart-actions { display: flex; gap: 8px; margin-bottom: 12px; }
+  .chart-action-btn {
+    flex: 1; padding: 11px 14px; border-radius: 14px;
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--text); font-family: inherit; font-size: 13px; font-weight: 600;
+    cursor: pointer; transition: all 0.2s;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+  }
+  .chart-action-btn:active { transform: scale(0.97); }
+  .chart-action-btn.starred { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  .chart-action-btn svg { width: 14px; height: 14px; }
+  .chart-frame {
+    height: calc(100vh - 380px); min-height: 420px;
+    border-radius: 20px; overflow: hidden;
+    border: 1px solid var(--border); background: var(--surface);
+  }
+  .chart-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .sr-panel {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 12px 14px; margin-bottom: 12px;
+    font-size: 12px;
+  }
+  .sr-panel-title { font-weight: 600; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+  .sr-levels { display: flex; gap: 6px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; }
+  .sr-level { padding: 5px 9px; border-radius: 9px; font-size: 11px; font-weight: 600; }
+  .sr-level.r { background: rgba(248, 113, 113, 0.14); color: var(--down); }
+  .sr-level.s { background: rgba(74, 222, 128, 0.14); color: var(--up); }
+  .sr-level.now { background: var(--surface-2); color: var(--text-soft); font-weight: 500; }
 
-/* ─── Date selector ─── */
-.date-nav {
-display: flex; align-items: center; gap: 8px;
-background: var(–surface); border: 1px solid var(–border);
-border-radius: 14px; padding: 8px; margin-bottom: 14px;
-}
-.date-nav button {
-width: 36px; height: 36px; border-radius: 10px;
-background: var(–surface-2); border: none; color: var(–text);
-cursor: pointer; transition: all 0.15s;
-display: grid; place-items: center;
-}
-.date-nav button:active { transform: scale(0.9); background: var(–surface-3); }
-.date-nav input[type=“date”] {
-flex: 1; background: transparent; border: none; outline: none;
-color: var(–text); font-family: inherit; font-size: 15px; text-align: center;
-color-scheme: dark;
-}
+  /* ─── Data rows (movers, earnings, etc) ─── */
+  .data-row {
+    display: grid; grid-template-columns: 60px 1fr auto; gap: 12px;
+    align-items: center;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 12px 14px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .data-row:active { transform: scale(0.99); background: var(--surface-2); }
+  .data-symbol { font-weight: 700; font-size: 14px; }
+  .data-meta { font-size: 11px; color: var(--text-muted); }
+  .data-title { font-weight: 500; font-size: 14px; margin-bottom: 2px; }
+  .data-value { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; text-align: right; }
+  .data-value.up { color: var(--up); }
+  .data-value.down { color: var(--down); }
+  .data-value.sub { font-size: 11px; font-weight: 500; color: var(--text-muted); }
+  .badge {
+    display: inline-block; padding: 2px 8px; border-radius: 999px;
+    font-size: 9px; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .badge.bmo { background: rgba(251, 191, 36, 0.15); color: var(--warn); }
+  .badge.amc { background: rgba(134, 239, 172, 0.15); color: var(--accent); }
+  .badge.dmh { background: rgba(96, 165, 250, 0.15); color: var(--info); }
+  .badge.buy { background: rgba(74, 222, 128, 0.15); color: var(--up); }
+  .badge.sell { background: rgba(248, 113, 113, 0.15); color: var(--down); }
+  .badge.high { background: rgba(251, 191, 36, 0.18); color: var(--warn); }
+  .badge.med { background: rgba(96, 165, 250, 0.15); color: var(--info); }
+  .badge.low { background: rgba(160, 174, 168, 0.15); color: var(--text-muted); }
 
-/* ─── Bottom tab bar ─── */
-nav.tabbar {
-position: fixed; bottom: 0; left: 0; right: 0;
-z-index: 100;
-padding: 8px 8px calc(var(–safe-bottom) + 8px);
-background: rgba(6, 9, 10, 0.85);
-backdrop-filter: blur(24px) saturate(180%);
--webkit-backdrop-filter: blur(24px) saturate(180%);
-border-top: 1px solid var(–border-soft);
-display: grid; grid-template-columns: repeat(5, 1fr);
-}
-.tab {
-display: flex; flex-direction: column; align-items: center; gap: 3px;
-padding: 8px 4px; border-radius: 14px;
-color: var(–text-muted); cursor: pointer;
-transition: all 0.2s;
-}
-.tab svg { width: 22px; height: 22px; transition: transform 0.2s; }
-.tab span { font-size: 10px; font-weight: 600; letter-spacing: 0.02em; }
-.tab.active { color: var(–accent); }
-.tab.active svg { transform: scale(1.1); }
-.tab:active svg { transform: scale(0.85); }
+  /* ─── Date nav ─── */
+  .date-nav {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 8px; margin-bottom: 14px;
+  }
+  .date-nav button {
+    width: 38px; height: 38px; border-radius: 12px;
+    background: var(--surface-2); border: none; color: var(--text);
+    cursor: pointer; transition: all 0.15s;
+    display: grid; place-items: center;
+  }
+  .date-nav button:active { transform: scale(0.88); background: var(--surface-3); }
+  .date-nav input[type="date"] {
+    flex: 1; background: transparent; border: none; outline: none;
+    color: var(--text); font-family: inherit; font-size: 15px; text-align: center;
+    color-scheme: dark;
+  }
 
-/* ─── Modal ─── */
-.modal-backdrop {
-position: fixed; inset: 0; z-index: 200;
-background: rgba(0,0,0,0.65); backdrop-filter: blur(8px);
-display: none; align-items: flex-end; justify-content: center;
-}
-.modal-backdrop.open { display: flex; animation: fadeIn 0.2s ease; }
-.modal {
-width: 100%; max-width: 520px;
-background: var(–bg-soft); border: 1px solid var(–border);
-border-radius: 24px 24px 0 0;
-padding: 20px 20px calc(20px + var(–safe-bottom));
-animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
-.modal h2 { margin: 0 0 6px; font-size: 20px; font-weight: 700; }
-.modal p { margin: 0 0 16px; color: var(–text-muted); font-size: 13px; }
-.input-group { margin-bottom: 14px; }
-.input-group label { display: block; font-size: 12px; font-weight: 600; color: var(–text-soft); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
-.input-group input {
-width: 100%; padding: 12px 14px; border-radius: 12px;
-background: var(–surface); border: 1px solid var(–border);
-color: var(–text); font-family: inherit; font-size: 15px;
-outline: none; transition: border-color 0.2s;
-}
-.input-group input:focus { border-color: var(–accent); box-shadow: 0 0 0 3px var(–accent-soft); }
-.btn {
-width: 100%; padding: 14px; border-radius: 14px;
-border: none; cursor: pointer;
-font-family: inherit; font-size: 15px; font-weight: 600;
-transition: all 0.2s;
-}
-.btn:active { transform: scale(0.98); }
-.btn-primary {
-background: var(–accent); color: var(–bg);
-box-shadow: 0 4px 18px var(–accent-glow);
-}
-.btn-ghost { background: var(–surface); color: var(–text); border: 1px solid var(–border); margin-top: 8px; }
+  /* ─── Section heads ─── */
+  .section-head {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; font-weight: 700; color: var(--text-soft);
+    letter-spacing: 0.06em; text-transform: uppercase;
+    margin: 18px 4px 10px;
+  }
+  .section-head:first-child { margin-top: 4px; }
+  .section-head .count { color: var(--text-muted); font-weight: 500; letter-spacing: 0; text-transform: none; font-size: 11px; }
 
-/* ─── States ─── */
-.empty, .error {
-text-align: center; padding: 40px 20px;
-color: var(–text-muted); font-size: 14px;
-}
-.empty svg, .error svg { width: 40px; height: 40px; margin-bottom: 12px; opacity: 0.5; }
-.error { color: var(–down); }
+  /* ─── Tab bar ─── */
+  nav.tabbar {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 8px 8px calc(env(safe-area-inset-bottom, 0px) + 8px);
+    background: rgba(6, 9, 10, 0.88);
+    backdrop-filter: blur(28px) saturate(180%);
+    -webkit-backdrop-filter: blur(28px) saturate(180%);
+    border-top: 1px solid var(--border-soft);
+    display: grid; grid-template-columns: repeat(5, 1fr);
+  }
+  .tab {
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    padding: 8px 4px; border-radius: 14px;
+    color: var(--text-muted); cursor: pointer;
+    transition: all 0.2s;
+  }
+  .tab svg { width: 22px; height: 22px; transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1); }
+  .tab span { font-size: 10px; font-weight: 600; letter-spacing: 0.02em; }
+  .tab.active { color: var(--accent); }
+  .tab.active svg { transform: scale(1.15); }
+  .tab:active svg { transform: scale(0.85); }
 
-.notice {
-background: rgba(251, 191, 36, 0.08);
-border: 1px solid rgba(251, 191, 36, 0.25);
-border-radius: 12px; padding: 10px 12px;
-font-size: 12px; color: var(–warn);
-margin-bottom: 12px; line-height: 1.45;
-}
-.notice b { color: #fde68a; }
+  /* ─── Modal ─── */
+  .modal-backdrop {
+    position: fixed; inset: 0; z-index: 200;
+    background: rgba(0,0,0,0.7); backdrop-filter: blur(10px);
+    display: none; align-items: flex-end; justify-content: center;
+  }
+  .modal-backdrop.open { display: flex; animation: fadeIn 0.2s ease; }
+  .modal {
+    width: 100%; max-width: 520px;
+    background: var(--bg-soft); border: 1px solid var(--border);
+    border-radius: 28px 28px 0 0;
+    padding: 22px 22px calc(22px + env(safe-area-inset-bottom, 0px));
+    animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+  .modal-grip {
+    width: 36px; height: 4px; border-radius: 2px;
+    background: var(--border); margin: 0 auto 16px;
+  }
+  .modal h2 { margin: 0 0 6px; font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+  .modal p { margin: 0 0 18px; color: var(--text-muted); font-size: 13px; }
+  .input-group { margin-bottom: 14px; }
+  .input-group label { display: block; font-size: 11px; font-weight: 700; color: var(--text-soft); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .input-group input {
+    width: 100%; padding: 13px 15px; border-radius: 14px;
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--text); font-family: inherit; font-size: 15px;
+    outline: none; transition: all 0.2s;
+  }
+  .input-group input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .btn {
+    width: 100%; padding: 14px; border-radius: 16px;
+    border: none; cursor: pointer;
+    font-family: inherit; font-size: 15px; font-weight: 600;
+    transition: all 0.2s;
+  }
+  .btn:active { transform: scale(0.98); }
+  .btn-primary { background: var(--accent); color: var(--bg); box-shadow: 0 4px 22px var(--accent-glow); }
+  .btn-ghost { background: var(--surface); color: var(--text); border: 1px solid var(--border); margin-top: 10px; }
 
-.skeleton {
-background: linear-gradient(90deg, var(–surface) 25%, var(–surface-2) 50%, var(–surface) 75%);
-background-size: 200% 100%;
-animation: shimmer 1.5s infinite;
-border-radius: 12px;
-}
-@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+  /* ─── States ─── */
+  .empty, .error-state {
+    text-align: center; padding: 50px 20px;
+    color: var(--text-muted); font-size: 14px;
+  }
+  .empty svg, .error-state svg { width: 44px; height: 44px; margin-bottom: 14px; opacity: 0.45; }
+  .error-state { color: var(--down); }
+  .notice {
+    background: rgba(134, 239, 172, 0.06);
+    border: 1px solid rgba(134, 239, 172, 0.18);
+    border-radius: 14px; padding: 11px 14px;
+    font-size: 12px; color: var(--text-soft);
+    margin-bottom: 12px; line-height: 1.5;
+  }
+  .notice b { color: var(--accent); }
+  .skeleton {
+    background: linear-gradient(90deg, var(--surface) 25%, var(--surface-2) 50%, var(--surface) 75%);
+    background-size: 200% 100%; animation: shimmer 1.6s infinite;
+    border-radius: 16px;
+  }
+  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+  .toast {
+    position: fixed; bottom: calc(90px + env(safe-area-inset-bottom, 0px));
+    left: 50%; transform: translateX(-50%) translateY(20px);
+    background: var(--surface); border: 1px solid var(--accent);
+    color: var(--accent); padding: 10px 18px; border-radius: 999px;
+    font-size: 13px; font-weight: 600; z-index: 300;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5), 0 0 20px var(--accent-glow);
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.2s, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 </style>
-
 </head>
 <body>
 
@@ -342,7 +406,7 @@ border-radius: 12px;
   <div class="logo">
     <div class="logo-mark">
       <svg viewBox="0 0 24 24" fill="none">
-        <path d="M3 17 L9 11 L13 14 L21 6" stroke="#86efac" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 17 L9 11 L13 14 L21 6" stroke="#86efac" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
         <circle cx="21" cy="6" r="2" fill="#86efac"/>
       </svg>
     </div>
@@ -361,7 +425,6 @@ border-radius: 12px;
 <main>
 
   <!-- ─── HEATMAP ─── -->
-
   <section class="view active" id="view-heatmap">
     <div class="view-header">
       <div>
@@ -370,6 +433,7 @@ border-radius: 12px;
       </div>
     </div>
     <div class="pill-row" id="market-pills">
+      <button class="pill" data-market="watchlist">⭐ Watchlist</button>
       <button class="pill active" data-market="sp500">S&amp;P 500</button>
       <button class="pill" data-market="nasdaq100">Nasdaq 100</button>
       <button class="pill" data-market="euro">Euro Top</button>
@@ -380,7 +444,6 @@ border-radius: 12px;
   </section>
 
   <!-- ─── NEWS ─── -->
-
   <section class="view" id="view-news">
     <div class="view-header">
       <div>
@@ -402,12 +465,11 @@ border-radius: 12px;
   </section>
 
   <!-- ─── CHARTS ─── -->
-
   <section class="view" id="view-charts">
     <div class="view-header">
       <div>
         <div class="view-title">Charts</div>
-        <div class="view-sub">Auto support &amp; resistance + free drawing tools</div>
+        <div class="view-sub">Auto S/R + free drawing tools</div>
       </div>
     </div>
     <div class="search-bar">
@@ -423,6 +485,12 @@ border-radius: 12px;
       <button class="pill quick-sym" data-sym="BINANCE:BTCUSDT">BTC</button>
       <button class="pill quick-sym" data-sym="FX:EURUSD">EURUSD</button>
     </div>
+    <div class="chart-actions">
+      <button class="chart-action-btn" id="watchlist-toggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span id="watchlist-toggle-text">Add to Watchlist</span>
+      </button>
+    </div>
     <div class="sr-panel" id="sr-panel">
       <div class="sr-panel-title">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#86efac" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -435,65 +503,53 @@ border-radius: 12px;
     </div>
   </section>
 
-  <!-- ─── DARK POOL ─── -->
-
-  <section class="view" id="view-darkpool">
+  <!-- ─── MOVERS ─── -->
+  <section class="view" id="view-movers">
     <div class="view-header">
       <div>
-        <div class="view-title">Dark Pool</div>
-        <div class="view-sub">Block trades &amp; off-exchange flow</div>
+        <div class="view-title">Movers</div>
+        <div class="view-sub">Gainers, losers &amp; insider activity</div>
       </div>
     </div>
-    <div class="notice">
-      <b>About this data:</b> Real-time dark pool prints are paywalled. This view shows recent
-      large off-exchange trades inferred from public FINRA ATS data plus high-volume late-day
-      prints. For institutional-grade flow consider Cheddar Flo, Unusual Whales, or BlackBoxStocks.
+    <div class="pill-row" id="movers-pills">
+      <button class="pill active" data-tab="gainers">🚀 Gainers</button>
+      <button class="pill" data-tab="losers">📉 Losers</button>
+      <button class="pill" data-tab="insider">👁 Insider Flow</button>
     </div>
-    <div class="search-bar">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input id="dp-search" placeholder="Filter by symbol…" autocomplete="off" autocapitalize="characters" />
-    </div>
-    <div class="date-nav">
-      <button id="dp-prev" aria-label="Previous day">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
-      </button>
-      <input type="date" id="dp-date" />
-      <button id="dp-next" aria-label="Next day">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
-      </button>
-    </div>
-    <div id="dp-container"></div>
+    <div id="movers-container"></div>
   </section>
 
-  <!-- ─── EARNINGS ─── -->
-
-  <section class="view" id="view-earnings">
+  <!-- ─── CALENDAR ─── -->
+  <section class="view" id="view-calendar">
     <div class="view-header">
       <div>
-        <div class="view-title">Earnings</div>
-        <div class="view-sub">Who's reporting &amp; when</div>
+        <div class="view-title">Calendar</div>
+        <div class="view-sub">Earnings &amp; economic events</div>
       </div>
     </div>
-    <div class="search-bar">
+    <div class="pill-row" id="cal-pills">
+      <button class="pill active" data-cal="earnings">📊 Earnings</button>
+      <button class="pill" data-cal="economic">🌐 Economic</button>
+    </div>
+    <div class="search-bar" id="cal-search-wrap">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input id="earn-search" placeholder="Filter by symbol or name…" autocomplete="off" />
+      <input id="cal-search" placeholder="Filter by symbol…" autocomplete="off" />
     </div>
     <div class="date-nav">
-      <button id="earn-prev" aria-label="Previous day">
+      <button id="cal-prev" aria-label="Previous day">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
       </button>
-      <input type="date" id="earn-date" />
-      <button id="earn-next" aria-label="Next day">
+      <input type="date" id="cal-date" />
+      <button id="cal-next" aria-label="Next day">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
       </button>
     </div>
-    <div id="earn-container"></div>
+    <div id="cal-container"></div>
   </section>
 
 </main>
 
 <!-- ─── Tab bar ─── -->
-
 <nav class="tabbar">
   <div class="tab active" data-view="heatmap">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>
@@ -507,33 +563,35 @@ border-radius: 12px;
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
     <span>Charts</span>
   </div>
-  <div class="tab" data-view="darkpool">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20"/><path d="M12 22a14.5 14.5 0 0 0 0-20"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>
-    <span>Dark Pool</span>
+  <div class="tab" data-view="movers">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+    <span>Movers</span>
   </div>
-  <div class="tab" data-view="earnings">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><circle cx="12" cy="15" r="2" fill="currentColor"/></svg>
-    <span>Earnings</span>
+  <div class="tab" data-view="calendar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    <span>Calendar</span>
   </div>
 </nav>
 
 <!-- ─── Settings modal ─── -->
-
 <div class="modal-backdrop" id="settings-modal">
   <div class="modal">
+    <div class="modal-grip"></div>
     <h2>Settings</h2>
-    <p>trade_lens uses your free <a href="https://finnhub.io/register" target="_blank" style="color: var(--accent);">Finnhub</a> API key for live quotes, news, and earnings. It's stored only on this device.</p>
+    <p>trade_lens uses your free <a href="https://finnhub.io/register" target="_blank" style="color: var(--accent);">Finnhub</a> API key for live data. Stored only on this device.</p>
     <div class="input-group">
       <label>Finnhub API Key</label>
       <input type="text" id="api-key-input" placeholder="c0xxxxxxxxxxxxxxxxxx" autocomplete="off" spellcheck="false" />
     </div>
     <button class="btn btn-primary" id="save-settings">Save</button>
     <button class="btn btn-ghost" id="close-settings">Cancel</button>
-    <p style="margin-top: 14px; font-size: 11px; text-align: center; color: var(--text-muted);">
-      Tip: Tap the share button in Safari → "Add to Home Screen" to install trade_lens.
+    <p style="margin-top: 16px; font-size: 11px; text-align: center; color: var(--text-muted);">
+      Safari → Share → "Add to Home Screen" to install.
     </p>
   </div>
 </div>
+
+<div class="toast" id="toast"></div>
 
 <script>
 'use strict';
@@ -543,6 +601,9 @@ border-radius: 12px;
 // ═══════════════════════════════════════════════════════════════
 
 const FINNHUB_BASE = 'https://finnhub.io/api/v1';
+const CACHE_TTL = 45000;            // 45s for quotes
+const NEWS_TTL  = 5 * 60 * 1000;    // 5m
+const DATE_TTL  = 10 * 60 * 1000;   // 10m for date-based data
 
 const SECTOR_MAP_SP500 = {
   'Technology': ['AAPL','MSFT','NVDA','GOOGL','META','AVGO','ORCL','CRM','ADBE','CSCO','ACN','IBM','INTU','AMD','QCOM','TXN','NOW','PANW'],
@@ -554,7 +615,6 @@ const SECTOR_MAP_SP500 = {
   'Energy': ['XOM','CVX','COP','SLB','EOG','PSX'],
   'Materials / Utilities': ['LIN','APD','NEE','DUK','SO','SHW'],
 };
-
 const SECTOR_MAP_NDX = {
   'Mega-cap Tech': ['AAPL','MSFT','NVDA','GOOGL','META','AMZN','AVGO','TSLA'],
   'Semis': ['AMD','QCOM','INTC','MU','MRVL','LRCX','AMAT','KLAC','ASML','ADI','ON'],
@@ -563,7 +623,6 @@ const SECTOR_MAP_NDX = {
   'Health / Bio': ['AMGN','GILD','REGN','VRTX','ISRG','BIIB','IDXX','MRNA'],
   'Industrials / Other': ['CSCO','TMUS','CMCSA','PEP','COST','CTAS','HON','PCAR'],
 };
-
 const SECTOR_MAP_EURO = {
   'Tech': ['ASML.AS','SAP.DE','STM.PA','IFX.DE'],
   'Luxury / Consumer': ['MC.PA','RMS.PA','OR.PA','KER.PA','DG.PA','ABI.BR'],
@@ -572,7 +631,6 @@ const SECTOR_MAP_EURO = {
   'Industrials / Energy': ['SIE.DE','AIR.PA','SU.PA','BAS.DE','TTE.PA','SHEL.L','BP.L','ENI.MI'],
   'Staples': ['NESN.SW','UL.L','DGE.L'],
 };
-
 const SECTOR_MAP_ETFS = {
   'Broad Index': ['SPY','QQQ','DIA','IWM','VTI','VOO'],
   'Sectors': ['XLK','XLF','XLE','XLV','XLY','XLI','XLP','XLU','XLB','XLRE','XLC'],
@@ -581,7 +639,6 @@ const SECTOR_MAP_ETFS = {
   'Thematic': ['SOXX','SMH','ARKK','XBI','GDX','URA','TAN','ICLN'],
   'Volatility / Inverse': ['VXX','UVXY','SQQQ','SH'],
 };
-
 const SECTOR_MAP_CRYPTO = {
   'Layer 1': ['BINANCE:BTCUSDT','BINANCE:ETHUSDT','BINANCE:SOLUSDT','BINANCE:BNBUSDT','BINANCE:ADAUSDT','BINANCE:AVAXUSDT'],
   'L2 / DeFi': ['BINANCE:LINKUSDT','BINANCE:MATICUSDT','BINANCE:UNIUSDT','BINANCE:AAVEUSDT','BINANCE:ARBUSDT','BINANCE:OPUSDT'],
@@ -596,10 +653,12 @@ const MARKETS = {
   crypto: SECTOR_MAP_CRYPTO,
 };
 
+const INSIDER_WATCHLIST = ['AAPL','MSFT','NVDA','GOOGL','META','AMZN','TSLA','AMD','AVGO','NFLX','JPM','BAC','XOM','LLY','UNH','BRK.B','V','MA','HD','PG'];
+
 const NEWS_KEYWORDS = {
   wallstreet: ['fed','federal reserve','treasury','yields','dollar','wall street','sec ','bond','rate cut','rate hike','jpmorgan','goldman','blackrock','vanguard','interest rate'],
   economy: ['gdp','cpi','inflation','jobs','employment','recession','retail sales','consumer','housing','manufacturing','ppi','jobless','payroll','pmi'],
-  ai: [' ai ',' ai,','ai-','artificial intelligence','openai','anthropic','machine learning','gpt','llm','large language','copilot','gemini','deepmind','huggingface','nvidia ai'],
+  ai: [' ai ',' ai,','ai-','artificial intelligence','openai','anthropic','machine learning','gpt','llm','large language','copilot','gemini','deepmind','huggingface'],
   semis: ['semiconductor','chip','tsmc','asml','amd','nvidia','intel','micron','arm','foundry','fab','wafer','euv','samsung electronics'],
   medical: ['fda','clinical trial','drug','pharma','therapy','biotech','vaccine','pfizer','merck','lilly','moderna','novo','glp-1','oncology','therapeutic'],
   conflict: ['ukraine','russia','israel','gaza','iran','china','taiwan','war','strike','missile','military','nato','sanctions','tariff'],
@@ -608,74 +667,112 @@ const NEWS_KEYWORDS = {
 
 const State = {
   apiKey: localStorage.getItem('tl_finnhub_key') || '',
+  watchlist: JSON.parse(localStorage.getItem('tl_watchlist') || '["AAPL","NVDA","TSLA","SPY"]'),
   activeView: 'heatmap',
   activeMarket: 'sp500',
   activeNewsCat: 'all',
+  activeMoversTab: 'gainers',
+  activeCalTab: 'earnings',
+  calDate: new Date(),
+  chartSymbol: 'NASDAQ:AAPL',
+
+  quoteCache: new Map(),
+  candleCache: new Map(),
   newsCache: null,
   newsCacheTs: 0,
-  earnDate: new Date(),
-  dpDate: new Date(),
-  chartSymbol: 'NASDAQ:AAPL',
+  earningsCache: new Map(),
+  econCache: new Map(),
+  insiderCache: null,
+  insiderCacheTs: 0,
+
+  pendingFetches: new Map(),
 };
 
 // ═══════════════════════════════════════════════════════════════
-//  API helpers
+//  API layer with caching + dedup
 // ═══════════════════════════════════════════════════════════════
 
 async function finnhub(path) {
-  if (!State.apiKey) throw new Error('NO_KEY');
+  if (!State.apiKey) throw new Error('Add your Finnhub API key in settings');
   const sep = path.includes('?') ? '&' : '?';
-  const res = await fetch(`${FINNHUB_BASE}${path}${sep}token=${State.apiKey}`);
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const url = `${FINNHUB_BASE}${path}${sep}token=${State.apiKey}`;
+  const res = await fetch(url);
+  if (!res.ok) {
+    if (res.status === 401 || res.status === 403) throw new Error('Invalid API key');
+    if (res.status === 429) throw new Error('Rate limited — wait a moment');
+    throw new Error(`HTTP ${res.status}`);
+  }
   return res.json();
 }
 
 async function fetchQuote(symbol) {
-  try {
-    const q = await finnhub(`/quote?symbol=${encodeURIComponent(symbol)}`);
-    return {
-      symbol,
-      price: q.c,
-      change: q.d,
-      pct: q.dp,
-      high: q.h,
-      low: q.l,
-      open: q.o,
-      prevClose: q.pc,
-    };
-  } catch (e) {
-    return { symbol, error: true };
-  }
+  const cached = State.quoteCache.get(symbol);
+  if (cached && Date.now() - cached.ts < CACHE_TTL) return cached.data;
+  if (State.pendingFetches.has('q:' + symbol)) return State.pendingFetches.get('q:' + symbol);
+
+  const p = (async () => {
+    try {
+      const q = await finnhub(`/quote?symbol=${encodeURIComponent(symbol)}`);
+      const data = {
+        symbol, price: q.c, change: q.d, pct: q.dp,
+        high: q.h, low: q.l, open: q.o, prevClose: q.pc,
+      };
+      State.quoteCache.set(symbol, { ts: Date.now(), data });
+      return data;
+    } catch (e) {
+      return { symbol, error: true, errorMsg: e.message };
+    } finally {
+      State.pendingFetches.delete('q:' + symbol);
+    }
+  })();
+  State.pendingFetches.set('q:' + symbol, p);
+  return p;
 }
 
 async function fetchCandles(symbol, resolution = 'D', count = 90) {
+  const key = `${symbol}|${resolution}|${count}`;
+  const cached = State.candleCache.get(key);
+  if (cached && Date.now() - cached.ts < 5 * 60 * 1000) return cached.data;
   const to = Math.floor(Date.now() / 1000);
   const from = to - count * 86400;
   try {
     const r = await finnhub(`/stock/candle?symbol=${encodeURIComponent(symbol)}&resolution=${resolution}&from=${from}&to=${to}`);
     if (r.s !== 'ok') return null;
+    State.candleCache.set(key, { ts: Date.now(), data: r });
     return r;
   } catch (e) {
     return null;
   }
 }
 
+// limit parallel API calls
+async function fetchQuotesBatched(symbols, onPartial) {
+  const results = {};
+  const chunkSize = 8;
+  for (let i = 0; i < symbols.length; i += chunkSize) {
+    const chunk = symbols.slice(i, i + chunkSize);
+    const data = await Promise.all(chunk.map(fetchQuote));
+    data.forEach(d => results[d.symbol] = d);
+    if (onPartial) onPartial(results);
+  }
+  return results;
+}
+
 // ═══════════════════════════════════════════════════════════════
-//  Color scale (red → neutral → green)
+//  Helpers
 // ═══════════════════════════════════════════════════════════════
 
 function pctToColor(pct) {
-  if (pct == null || isNaN(pct)) return { bg: '#1a1f23', text: '#6b7872' };
+  if (pct == null || isNaN(pct)) return { bg: '#141d1f', text: '#6b7872' };
   const clamped = Math.max(-5, Math.min(5, pct));
   const intensity = Math.abs(clamped) / 5;
   if (clamped >= 0) {
-    // green scale
-    const alpha = 0.08 + intensity * 0.55;
-    const text = intensity > 0.5 ? '#0a1f12' : '#86efac';
+    const alpha = 0.10 + intensity * 0.55;
+    const text = intensity > 0.45 ? '#062014' : '#a7f3c8';
     return { bg: `rgba(34, 197, 94, ${alpha})`, text };
   } else {
-    const alpha = 0.08 + intensity * 0.55;
-    const text = intensity > 0.5 ? '#1a0808' : '#fca5a5';
+    const alpha = 0.10 + intensity * 0.55;
+    const text = intensity > 0.45 ? '#1f0606' : '#fca5a5';
     return { bg: `rgba(239, 68, 68, ${alpha})`, text };
   }
 }
@@ -687,8 +784,69 @@ function fmtPct(p) {
 function fmtPrice(p) {
   if (p == null || isNaN(p) || p === 0) return '—';
   if (p >= 1000) return p.toFixed(0);
-  if (p >= 10) return p.toFixed(2);
   return p.toFixed(2);
+}
+function fmtBig(n) {
+  if (n == null || isNaN(n)) return '—';
+  const sign = n < 0 ? '-' : '';
+  const v = Math.abs(n);
+  if (v >= 1e12) return sign + '$' + (v/1e12).toFixed(1) + 'T';
+  if (v >= 1e9)  return sign + '$' + (v/1e9).toFixed(1) + 'B';
+  if (v >= 1e6)  return sign + '$' + (v/1e6).toFixed(1) + 'M';
+  if (v >= 1e3)  return sign + '$' + (v/1e3).toFixed(1) + 'K';
+  return sign + '$' + v.toFixed(0);
+}
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s).replace(/[&<>"']/g, m => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m]));
+}
+function timeAgo(date) {
+  const s = (Date.now() - date.getTime()) / 1000;
+  if (s < 60) return 'just now';
+  if (s < 3600) return Math.floor(s/60) + 'm ago';
+  if (s < 86400) return Math.floor(s/3600) + 'h ago';
+  return Math.floor(s/86400) + 'd ago';
+}
+function displaySym(s) {
+  if (s.includes(':')) return s.split(':')[1].replace('USDT', '');
+  return s.split('.')[0];
+}
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => t.classList.remove('show'), 1800);
+}
+
+function isoDate(d) { return d.toISOString().slice(0,10); }
+
+// ═══════════════════════════════════════════════════════════════
+//  Watchlist
+// ═══════════════════════════════════════════════════════════════
+
+function saveWatchlist() {
+  localStorage.setItem('tl_watchlist', JSON.stringify(State.watchlist));
+}
+function inWatchlist(sym) {
+  const plain = displaySym(sym);
+  return State.watchlist.includes(plain);
+}
+function toggleWatchlist(sym) {
+  const plain = displaySym(sym);
+  const idx = State.watchlist.indexOf(plain);
+  if (idx === -1) { State.watchlist.push(plain); toast('Added ' + plain + ' to watchlist'); }
+  else { State.watchlist.splice(idx, 1); toast('Removed ' + plain); }
+  saveWatchlist();
+  updateWatchlistButton();
+}
+function updateWatchlistButton() {
+  const btn = document.getElementById('watchlist-toggle');
+  const txt = document.getElementById('watchlist-toggle-text');
+  if (!btn) return;
+  const on = inWatchlist(State.chartSymbol);
+  btn.classList.toggle('starred', on);
+  txt.textContent = on ? 'In Watchlist' : 'Add to Watchlist';
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -698,41 +856,48 @@ function fmtPrice(p) {
 async function renderHeatmap() {
   const container = document.getElementById('heatmap-container');
   const sub = document.getElementById('heatmap-sub');
-  const map = MARKETS[State.activeMarket];
 
-  if (!State.apiKey) {
-    container.innerHTML = renderNoKeyState();
-    return;
+  if (!State.apiKey) { container.innerHTML = renderNoKeyState(); return; }
+
+  let symbolsBySector;
+  if (State.activeMarket === 'watchlist') {
+    if (!State.watchlist.length) {
+      container.innerHTML = `<div class="empty">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <div>Your watchlist is empty.</div>
+        <div style="margin-top:6px; font-size:12px;">Open a chart and tap "Add to Watchlist".</div>
+      </div>`;
+      sub.textContent = '0 saved symbols';
+      return;
+    }
+    symbolsBySector = { 'My Watchlist': State.watchlist.slice() };
+  } else {
+    symbolsBySector = MARKETS[State.activeMarket];
   }
 
-  // skeleton
-  container.innerHTML = Object.keys(map).map(sec => `
+  // initial skeleton
+  container.innerHTML = Object.keys(symbolsBySector).map(sec => `
     <div class="sector-group">
       <div class="sector-header"><div class="sector-name">${sec}</div></div>
       <div class="heatmap-grid">${
-        map[sec].slice(0, 6).map(() => '<div class="tile tile-loading"></div>').join('')
+        symbolsBySector[sec].slice(0, 6).map(() => '<div class="tile tile-loading"></div>').join('')
       }</div>
     </div>`).join('');
-
   sub.textContent = 'Fetching quotes…';
 
   const allSymbols = [];
-  Object.values(map).forEach(arr => arr.forEach(s => allSymbols.push(s)));
+  Object.values(symbolsBySector).forEach(arr => arr.forEach(s => allSymbols.push(s)));
 
-  // fetch in chunks of ~8 in parallel to respect rate limits a bit
-  const results = {};
-  const chunkSize = 10;
-  for (let i = 0; i < allSymbols.length; i += chunkSize) {
-    const chunk = allSymbols.slice(i, i + chunkSize);
-    const data = await Promise.all(chunk.map(fetchQuote));
-    data.forEach(d => results[d.symbol] = d);
-    // update UI progressively
-    paintHeatmap(map, results);
-  }
+  const results = await fetchQuotesBatched(allSymbols, partial => {
+    paintHeatmap(symbolsBySector, partial);
+  });
 
   const valid = Object.values(results).filter(r => !r.error && r.pct != null);
+  const errored = Object.values(results).filter(r => r.error);
   const avg = valid.reduce((a, b) => a + (b.pct || 0), 0) / (valid.length || 1);
-  sub.innerHTML = `${valid.length} symbols · avg <span style="color:${avg >= 0 ? 'var(--up)' : 'var(--down)'}">${fmtPct(avg)}</span> · updated ${new Date().toLocaleTimeString()}`;
+  let subText = `${valid.length} symbols · avg <span style="color:${avg >= 0 ? 'var(--up)' : 'var(--down)'}">${fmtPct(avg)}</span> · ${new Date().toLocaleTimeString()}`;
+  if (errored.length) subText += ` <span style="color:var(--warn)">· ${errored.length} unavailable</span>`;
+  sub.innerHTML = subText;
 }
 
 function paintHeatmap(map, results) {
@@ -756,48 +921,42 @@ function paintHeatmap(map, results) {
             if (q.error || q.pct == null) {
               return `<div class="tile" style="background:var(--surface);color:var(--text-muted)" data-sym="${sym}">
                 <div class="tile-symbol">${displaySym(sym)}</div>
-                <div class="tile-change">—</div>
+                <div class="tile-change" style="font-size:10px;">no data</div>
               </div>`;
             }
             const c = pctToColor(q.pct);
+            // 52w-style range bar using day's range as proxy (we don't pull 52w)
+            const rangePos = q.high && q.low && q.high !== q.low
+              ? Math.max(0, Math.min(1, (q.price - q.low) / (q.high - q.low))) : null;
             return `<div class="tile" style="background:${c.bg};color:${c.text}" data-sym="${sym}">
               <div class="tile-symbol">${displaySym(sym)}</div>
               <div>
                 <div class="tile-change">${fmtPct(q.pct)}</div>
                 <div class="tile-price">${fmtPrice(q.price)}</div>
               </div>
+              ${rangePos != null ? `<div class="tile-range">
+                <div class="tile-range-dot" style="left:${rangePos*100}%"></div>
+              </div>` : ''}
             </div>`;
           }).join('')}
         </div>
       </div>`;
   }).join('');
 
-  // tap to open chart
   container.querySelectorAll('.tile[data-sym]').forEach(el => {
-    el.addEventListener('click', () => {
-      const sym = el.dataset.sym;
-      openChartFor(sym);
-    });
+    el.addEventListener('click', () => openChartFor(el.dataset.sym));
   });
 }
 
-function displaySym(s) {
-  // strip exchange prefixes for display
-  if (s.includes(':')) return s.split(':')[1].replace('USDT', '');
-  return s.split('.')[0];
-}
-
 function openChartFor(sym) {
-  // map plain symbols to tradingview format
   let tv = sym;
-  if (sym.includes(':')) { tv = sym; }
-  else if (sym.includes('.')) { tv = sym; }
-  else { tv = `NASDAQ:${sym}`; }
+  if (!sym.includes(':') && !sym.includes('.')) tv = 'NASDAQ:' + sym;
   State.chartSymbol = tv;
-  document.getElementById('chart-symbol-input').value = sym;
+  document.getElementById('chart-symbol-input').value = displaySym(sym);
   switchView('charts');
   loadChart(tv);
-  loadAutoSR(sym);
+  loadAutoSR(tv);
+  updateWatchlistButton();
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -805,28 +964,21 @@ function openChartFor(sym) {
 // ═══════════════════════════════════════════════════════════════
 
 async function loadNews(force) {
-  if (!State.apiKey) {
-    document.getElementById('news-container').innerHTML = renderNoKeyState();
-    return;
-  }
+  if (!State.apiKey) { document.getElementById('news-container').innerHTML = renderNoKeyState(); return; }
   const now = Date.now();
-  if (!force && State.newsCache && now - State.newsCacheTs < 5 * 60 * 1000) {
-    renderNews(); return;
-  }
+  if (!force && State.newsCache && now - State.newsCacheTs < NEWS_TTL) { renderNews(); return; }
   document.getElementById('news-container').innerHTML = `
-    <div class="skeleton" style="height:90px; margin-bottom:10px;"></div>
-    <div class="skeleton" style="height:90px; margin-bottom:10px;"></div>
-    <div class="skeleton" style="height:90px;"></div>`;
-
+    <div class="skeleton" style="height:104px; margin-bottom:10px;"></div>
+    <div class="skeleton" style="height:104px; margin-bottom:10px;"></div>
+    <div class="skeleton" style="height:104px;"></div>`;
   try {
     const [general, forex, crypto, merger] = await Promise.all([
       finnhub('/news?category=general'),
-      finnhub('/news?category=forex'),
-      finnhub('/news?category=crypto'),
-      finnhub('/news?category=merger'),
+      finnhub('/news?category=forex').catch(()=>[]),
+      finnhub('/news?category=crypto').catch(()=>[]),
+      finnhub('/news?category=merger').catch(()=>[]),
     ]);
     const combined = [...general, ...forex, ...crypto, ...merger];
-    // de-dup
     const seen = new Set();
     State.newsCache = combined.filter(n => {
       if (seen.has(n.id)) return false;
@@ -834,9 +986,7 @@ async function loadNews(force) {
     }).sort((a, b) => b.datetime - a.datetime);
     State.newsCacheTs = now;
     renderNews();
-  } catch (e) {
-    document.getElementById('news-container').innerHTML = renderError(e);
-  }
+  } catch (e) { document.getElementById('news-container').innerHTML = renderError(e); }
 }
 
 function categorize(article) {
@@ -852,26 +1002,21 @@ function renderNews() {
   const c = document.getElementById('news-container');
   if (!State.newsCache) { c.innerHTML = ''; return; }
   let items = State.newsCache;
-  if (State.activeNewsCat !== 'all') {
-    items = items.filter(a => categorize(a).includes(State.activeNewsCat));
-  }
+  if (State.activeNewsCat !== 'all') items = items.filter(a => categorize(a).includes(State.activeNewsCat));
   items = items.slice(0, 60);
   document.getElementById('news-sub').textContent =
-    `${items.length} ${State.activeNewsCat === 'all' ? '' : State.activeNewsCat + ' '}stories · updated ${new Date(State.newsCacheTs).toLocaleTimeString()}`;
+    `${items.length} ${State.activeNewsCat === 'all' ? '' : State.activeNewsCat + ' '}stories · ${new Date(State.newsCacheTs).toLocaleTimeString()}`;
   if (!items.length) {
-    c.innerHTML = `<div class="empty">No stories match this category right now.</div>`;
-    return;
+    c.innerHTML = `<div class="empty">No stories match this category right now.</div>`; return;
   }
   c.innerHTML = items.map(a => {
     const time = new Date(a.datetime * 1000);
-    const ago = timeAgo(time);
     return `<a class="news-card" href="${a.url}" target="_blank" rel="noopener">
       ${a.image ? `<img class="news-image" src="${a.image}" loading="lazy" onerror="this.style.display='none'" />` : `<div class="news-image"></div>`}
       <div class="news-content">
         <div class="news-meta">
-          <span class="news-source">${a.source || 'News'}</span>
-          <span>·</span>
-          <span>${ago}</span>
+          <span class="news-source">${escapeHtml(a.source || 'News')}</span>
+          <span>·</span><span>${timeAgo(time)}</span>
         </div>
         <div class="news-title">${escapeHtml(a.headline)}</div>
         <div class="news-summary">${escapeHtml(a.summary || '')}</div>
@@ -880,16 +1025,8 @@ function renderNews() {
   }).join('');
 }
 
-function timeAgo(date) {
-  const s = (Date.now() - date.getTime()) / 1000;
-  if (s < 60) return 'just now';
-  if (s < 3600) return Math.floor(s/60) + 'm ago';
-  if (s < 86400) return Math.floor(s/3600) + 'h ago';
-  return Math.floor(s/86400) + 'd ago';
-}
-
 // ═══════════════════════════════════════════════════════════════
-//  CHARTS  (TradingView widget + auto S/R from Finnhub candles)
+//  CHARTS
 // ═══════════════════════════════════════════════════════════════
 
 function loadChart(sym) {
@@ -902,18 +1039,16 @@ async function loadAutoSR(sym) {
   const levelsEl = document.getElementById('sr-levels');
   levelsEl.innerHTML = '<span style="color: var(--text-muted);">Calculating…</span>';
 
-  // Strip TV exchange prefix for finnhub
   let finnhubSym = sym;
-  if (finnhubSym.includes(':')) finnhubSym = finnhubSym.split(':')[1].replace('USDT', '');
+  if (finnhubSym.includes(':')) finnhubSym = finnhubSym.split(':')[1].replace('USDT','');
 
   const candles = await fetchCandles(finnhubSym, 'D', 120);
   if (!candles) {
-    levelsEl.innerHTML = '<span style="color: var(--text-muted);">Auto S/R unavailable for this symbol (free tier limitation).</span>';
+    levelsEl.innerHTML = '<span style="color: var(--text-muted);">Auto S/R unavailable for this symbol on free tier.</span>';
     return;
   }
   const { h, l, c } = candles;
   const last = c[c.length - 1];
-  // simple swing detection: highs/lows where the bar is the highest/lowest within ±k bars
   const k = 5;
   const swingHighs = [], swingLows = [];
   for (let i = k; i < h.length - k; i++) {
@@ -926,58 +1061,145 @@ async function loadAutoSR(sym) {
     if (isH) swingHighs.push(h[i]);
     if (isL) swingLows.push(l[i]);
   }
-  // cluster nearby levels (within 1%)
   const cluster = (arr) => {
     const sorted = [...arr].sort((a, b) => a - b);
     const out = [];
     for (const v of sorted) {
-      if (out.length && Math.abs(v - out[out.length - 1]) / v < 0.012) {
-        out[out.length - 1] = (out[out.length - 1] + v) / 2;
-      } else out.push(v);
+      if (out.length && Math.abs(v - out[out.length - 1]) / v < 0.012) out[out.length - 1] = (out[out.length - 1] + v) / 2;
+      else out.push(v);
     }
     return out;
   };
   const resistances = cluster(swingHighs).filter(v => v > last).slice(0, 4);
   const supports = cluster(swingLows).filter(v => v < last).reverse().slice(0, 4);
-
   if (!resistances.length && !supports.length) {
     levelsEl.innerHTML = '<span style="color: var(--text-muted);">No clear swing levels in last 120 bars.</span>';
     return;
   }
   levelsEl.innerHTML =
-    resistances.map(v => `<span class="sr-level r">R · ${fmtPrice(v)}</span>`).join('') +
-    `<span style="display:flex; align-items:center; padding: 4px 6px; color:var(--text-muted); font-size:10px;">↑ price ${fmtPrice(last)} ↓</span>` +
-    supports.map(v => `<span class="sr-level s">S · ${fmtPrice(v)}</span>`).join('');
+    resistances.map(v => `<span class="sr-level r">R ${fmtPrice(v)}</span>`).join('') +
+    `<span class="sr-level now">→ ${fmtPrice(last)}</span>` +
+    supports.map(v => `<span class="sr-level s">S ${fmtPrice(v)}</span>`).join('');
 }
 
 // ═══════════════════════════════════════════════════════════════
-//  EARNINGS
+//  MOVERS
 // ═══════════════════════════════════════════════════════════════
 
-async function loadEarnings() {
-  if (!State.apiKey) {
-    document.getElementById('earn-container').innerHTML = renderNoKeyState();
-    return;
+async function loadMovers() {
+  if (!State.apiKey) { document.getElementById('movers-container').innerHTML = renderNoKeyState(); return; }
+  const c = document.getElementById('movers-container');
+  c.innerHTML = '<div class="skeleton" style="height:64px; margin-bottom:8px;"></div><div class="skeleton" style="height:64px; margin-bottom:8px;"></div><div class="skeleton" style="height:64px;"></div>';
+
+  if (State.activeMoversTab === 'insider') {
+    await loadInsider(c); return;
   }
-  const d = State.earnDate;
-  const iso = d.toISOString().slice(0, 10);
-  document.getElementById('earn-date').value = iso;
-  const c = document.getElementById('earn-container');
+
+  // gather symbols across S&P 500 + Nasdaq 100 + ETFs
+  const pool = new Set();
+  [SECTOR_MAP_SP500, SECTOR_MAP_NDX, SECTOR_MAP_ETFS].forEach(map => {
+    Object.values(map).forEach(arr => arr.forEach(s => pool.add(s)));
+  });
+  const symbols = [...pool];
+  const results = await fetchQuotesBatched(symbols);
+  const valid = Object.values(results).filter(r => !r.error && r.pct != null);
+  valid.sort((a, b) => (State.activeMoversTab === 'gainers' ? b.pct - a.pct : a.pct - b.pct));
+  const top = valid.slice(0, 25);
+  if (!top.length) { c.innerHTML = '<div class="empty">No data right now.</div>'; return; }
+  c.innerHTML = top.map((r, i) => {
+    const cls = r.pct >= 0 ? 'up' : 'down';
+    return `<div class="data-row" data-sym="${r.symbol}">
+      <div>
+        <div class="data-symbol">${r.symbol}</div>
+        <div class="data-meta">#${i+1}</div>
+      </div>
+      <div>
+        <div class="data-title">${fmtPrice(r.price)} <span style="color:var(--text-muted); font-weight:400; font-size:12px;">last</span></div>
+        <div class="data-meta">Range ${fmtPrice(r.low)} – ${fmtPrice(r.high)}</div>
+      </div>
+      <div class="data-value ${cls}">${fmtPct(r.pct)}</div>
+    </div>`;
+  }).join('');
+  c.querySelectorAll('.data-row').forEach(el => el.addEventListener('click', () => openChartFor(el.dataset.sym)));
+}
+
+async function loadInsider(c) {
+  const now = Date.now();
+  if (State.insiderCache && now - State.insiderCacheTs < 10 * 60 * 1000) {
+    renderInsider(c, State.insiderCache); return;
+  }
+  const to = isoDate(new Date());
+  const from = isoDate(new Date(Date.now() - 60 * 86400 * 1000));
+  const transactions = [];
+  // hit a subset to stay within rate limits
+  for (const sym of INSIDER_WATCHLIST) {
+    try {
+      const r = await finnhub(`/stock/insider-transactions?symbol=${sym}&from=${from}&to=${to}`);
+      if (r.data) r.data.forEach(t => transactions.push({ ...t, symbol: sym }));
+    } catch (e) { /* skip */ }
+  }
+  transactions.sort((a, b) => new Date(b.transactionDate) - new Date(a.transactionDate));
+  State.insiderCache = transactions; State.insiderCacheTs = now;
+  renderInsider(c, transactions);
+}
+
+function renderInsider(c, transactions) {
+  if (!transactions.length) {
+    c.innerHTML = '<div class="empty">No recent insider filings.</div>'; return;
+  }
+  const items = transactions.slice(0, 50);
+  c.innerHTML = `<div class="notice">Form 4 filings from major-stock insiders (last 60 days). <b>P</b> = open-market buy, <b>S</b> = sale. Cluster buying often precedes upside.</div>` +
+    items.map(t => {
+      const isBuy = t.transactionCode === 'P' || (t.change > 0 && t.transactionCode !== 'S');
+      const cls = isBuy ? 'up' : 'down';
+      const badge = isBuy ? '<span class="badge buy">Buy</span>' : '<span class="badge sell">Sell</span>';
+      const notional = (t.transactionPrice || 0) * Math.abs(t.change || 0);
+      return `<div class="data-row" data-sym="${t.symbol}">
+        <div>
+          <div class="data-symbol">${t.symbol}</div>
+          <div class="data-meta">${badge}</div>
+        </div>
+        <div>
+          <div class="data-title">${escapeHtml(t.name || 'Insider')}</div>
+          <div class="data-meta">${t.transactionDate || ''} · ${Math.abs(t.change||0).toLocaleString()} sh @ ${fmtPrice(t.transactionPrice)}</div>
+        </div>
+        <div class="data-value ${cls}">${fmtBig(notional)}</div>
+      </div>`;
+    }).join('');
+  c.querySelectorAll('.data-row').forEach(el => el.addEventListener('click', () => openChartFor(el.dataset.sym)));
+}
+
+// ═══════════════════════════════════════════════════════════════
+//  CALENDAR (earnings + economic)
+// ═══════════════════════════════════════════════════════════════
+
+async function loadCalendar() {
+  if (!State.apiKey) { document.getElementById('cal-container').innerHTML = renderNoKeyState(); return; }
+  document.getElementById('cal-date').value = isoDate(State.calDate);
+  const c = document.getElementById('cal-container');
   c.innerHTML = '<div class="skeleton" style="height:60px; margin-bottom:8px;"></div><div class="skeleton" style="height:60px; margin-bottom:8px;"></div><div class="skeleton" style="height:60px;"></div>';
+  // toggle search visibility
+  document.getElementById('cal-search-wrap').style.display = State.activeCalTab === 'earnings' ? 'flex' : 'none';
+
+  if (State.activeCalTab === 'earnings') await loadEarnings(c);
+  else await loadEcon(c);
+}
+
+async function loadEarnings(c) {
+  const iso = isoDate(State.calDate);
+  const cached = State.earningsCache.get(iso);
+  if (cached && Date.now() - cached.ts < DATE_TTL) { renderEarnings(c, cached.data); return; }
   try {
     const r = await finnhub(`/calendar/earnings?from=${iso}&to=${iso}`);
-    renderEarnings(r.earningsCalendar || []);
-  } catch (e) {
-    c.innerHTML = renderError(e);
-  }
+    const items = r.earningsCalendar || [];
+    State.earningsCache.set(iso, { ts: Date.now(), data: items });
+    renderEarnings(c, items);
+  } catch (e) { c.innerHTML = renderError(e); }
 }
 
-function renderEarnings(items) {
-  const c = document.getElementById('earn-container');
-  const filter = document.getElementById('earn-search').value.toUpperCase();
-  const filtered = filter
-    ? items.filter(e => (e.symbol || '').includes(filter))
-    : items;
+function renderEarnings(c, items) {
+  const filter = document.getElementById('cal-search').value.toUpperCase();
+  const filtered = filter ? items.filter(e => (e.symbol || '').includes(filter)) : items;
   if (!filtered.length) {
     c.innerHTML = `<div class="empty">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
@@ -988,118 +1210,99 @@ function renderEarnings(items) {
   filtered.sort((a, b) => (b.epsEstimate || 0) - (a.epsEstimate || 0));
   c.innerHTML = filtered.map(e => {
     const hourBadge = e.hour === 'bmo' ? '<span class="badge bmo">Pre-mkt</span>'
-                   : e.hour === 'amc' ? '<span class="badge amc">Post-mkt</span>'
-                   : '<span class="badge dmh">Mid-day</span>';
-    const epsLine = e.epsEstimate != null
-      ? `EPS est ${e.epsEstimate.toFixed(2)}` : 'EPS est —';
-    const revLine = e.revenueEstimate
-      ? ` · Rev ${fmtBig(e.revenueEstimate)}` : '';
+                    : e.hour === 'amc' ? '<span class="badge amc">Post-mkt</span>'
+                    : '<span class="badge dmh">Mid-day</span>';
+    const epsLine = e.epsEstimate != null ? `EPS est ${e.epsEstimate.toFixed(2)}` : 'EPS est —';
+    const revLine = e.revenueEstimate ? ` · Rev ${fmtBig(e.revenueEstimate)}` : '';
     return `<div class="data-row" data-sym="${e.symbol}">
       <div>
         <div class="data-symbol">${e.symbol}</div>
         <div class="data-meta">${hourBadge}</div>
       </div>
       <div>
-        <div class="data-title">${escapeHtml(e.symbol)} · Q${e.quarter || '?'} ${e.year || ''}</div>
+        <div class="data-title">Q${e.quarter || '?'} ${e.year || ''}</div>
         <div class="data-meta">${epsLine}${revLine}</div>
       </div>
-      <div>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="color:var(--text-muted)"><polyline points="9 18 15 12 9 6"/></svg>
-      </div>
+      <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="color:var(--text-muted)"><polyline points="9 18 15 12 9 6"/></svg></div>
     </div>`;
   }).join('');
-  c.querySelectorAll('.data-row').forEach(el => {
-    el.addEventListener('click', () => openChartFor(el.dataset.sym));
+  c.querySelectorAll('.data-row').forEach(el => el.addEventListener('click', () => openChartFor(el.dataset.sym)));
+}
+
+async function loadEcon(c) {
+  const iso = isoDate(State.calDate);
+  const cached = State.econCache.get(iso);
+  if (cached && Date.now() - cached.ts < DATE_TTL) { renderEcon(c, cached.data); return; }
+  try {
+    const r = await finnhub(`/calendar/economic?from=${iso}&to=${iso}`);
+    const items = (r.economicCalendar || r.data || []);
+    State.econCache.set(iso, { ts: Date.now(), data: items });
+    renderEcon(c, items);
+  } catch (e) {
+    c.innerHTML = `<div class="empty">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><circle cx="12" cy="16" r="1" fill="currentColor"/></svg>
+      <div>Economic calendar requires a Finnhub paid tier.</div>
+      <div style="margin-top:8px; font-size:12px;">For free alternatives, check ForexFactory or Investing.com calendars in Safari.</div>
+    </div>`;
+  }
+}
+
+function renderEcon(c, items) {
+  if (!items.length) {
+    c.innerHTML = `<div class="empty">No economic events scheduled for this date.</div>`;
+    return;
+  }
+  items.sort((a, b) => {
+    const ia = (a.impact || '').toLowerCase(), ib = (b.impact || '').toLowerCase();
+    const rank = (x) => x === 'high' ? 0 : x === 'medium' ? 1 : 2;
+    return rank(ia) - rank(ib);
   });
-}
-
-function fmtBig(n) {
-  if (n == null) return '—';
-  if (n >= 1e12) return '$' + (n/1e12).toFixed(1) + 'T';
-  if (n >= 1e9)  return '$' + (n/1e9).toFixed(1) + 'B';
-  if (n >= 1e6)  return '$' + (n/1e6).toFixed(1) + 'M';
-  if (n >= 1e3)  return '$' + (n/1e3).toFixed(1) + 'K';
-  return '$' + n.toFixed(0);
-}
-
-// ═══════════════════════════════════════════════════════════════
-//  DARK POOL  (heuristic: largest off-exchange / late-day prints)
-// ═══════════════════════════════════════════════════════════════
-
-const DP_WATCHLIST = ['SPY','QQQ','IWM','AAPL','MSFT','NVDA','TSLA','META','GOOGL','AMZN','AMD','AVGO','BAC','JPM','XOM','GME','AMC','PLTR','COIN'];
-
-async function loadDarkPool() {
-  if (!State.apiKey) {
-    document.getElementById('dp-container').innerHTML = renderNoKeyState();
-    return;
-  }
-  const d = State.dpDate;
-  document.getElementById('dp-date').value = d.toISOString().slice(0,10);
-  const c = document.getElementById('dp-container');
-  c.innerHTML = '<div class="skeleton" style="height:60px; margin-bottom:8px;"></div><div class="skeleton" style="height:60px;"></div>';
-
-  const filter = document.getElementById('dp-search').value.toUpperCase();
-  const list = filter ? DP_WATCHLIST.filter(s => s.includes(filter)) : DP_WATCHLIST;
-  if (!list.length) {
-    c.innerHTML = `<div class="empty">No symbols match "${filter}". Try clearing the filter.</div>`; return;
-  }
-  // Pull quotes + recent candles to infer big late-day prints
-  const rows = [];
-  for (const sym of list) {
-    const [q, candles] = await Promise.all([fetchQuote(sym), fetchCandles(sym, '60', 5)]);
-    if (q.error || !candles) continue;
-    // last bar volume * close as rough block-size proxy
-    const v = candles.v[candles.v.length - 1];
-    const px = candles.c[candles.c.length - 1];
-    rows.push({ sym, price: q.price, pct: q.pct, blockUsd: v * px, vol: v });
-  }
-  rows.sort((a, b) => b.blockUsd - a.blockUsd);
-
-  if (!rows.length) {
-    c.innerHTML = '<div class="empty">No flow data right now. The market may be closed.</div>';
-    return;
-  }
-  c.innerHTML = rows.map(r => {
-    const cls = r.pct >= 0 ? 'up' : 'down';
-    return `<div class="data-row" data-sym="${r.sym}">
-      <div class="data-symbol">${r.sym}</div>
+  c.innerHTML = items.slice(0, 60).map(e => {
+    const imp = (e.impact || '').toLowerCase();
+    const impBadge = imp === 'high' ? '<span class="badge high">High</span>'
+                    : imp === 'medium' ? '<span class="badge med">Med</span>'
+                    : '<span class="badge low">Low</span>';
+    const time = e.time ? e.time.slice(11, 16) : '—';
+    return `<div class="data-row">
       <div>
-        <div class="data-title">${fmtBig(r.blockUsd)} <span style="color:var(--text-muted); font-weight:400">notional · ${fmtBig(r.vol).replace('$','')} sh</span></div>
-        <div class="data-meta">Recent hourly flow · ${new Date().toLocaleDateString()}</div>
+        <div class="data-symbol" style="font-size:13px;">${escapeHtml(e.country || '—')}</div>
+        <div class="data-meta">${time}</div>
       </div>
-      <div class="data-value ${cls}">${fmtPct(r.pct)}</div>
+      <div>
+        <div class="data-title">${escapeHtml(e.event || 'Event')}</div>
+        <div class="data-meta">
+          ${e.actual != null ? `Actual ${e.actual} · ` : ''}
+          ${e.estimate != null ? `Est ${e.estimate} · ` : ''}
+          ${e.prev != null ? `Prev ${e.prev}` : ''}
+        </div>
+      </div>
+      <div>${impBadge}</div>
     </div>`;
   }).join('');
-  c.querySelectorAll('.data-row').forEach(el => {
-    el.addEventListener('click', () => openChartFor(el.dataset.sym));
-  });
 }
 
 // ═══════════════════════════════════════════════════════════════
-//  Empty / error states
+//  Empty states
 // ═══════════════════════════════════════════════════════════════
 
 function renderNoKeyState() {
   return `<div class="empty" style="padding: 60px 20px;">
     <svg viewBox="0 0 24 24" fill="none" stroke="#86efac" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
     <div style="margin-bottom:14px; color:var(--text); font-weight:600; font-size:16px;">API key needed</div>
-    <div style="margin-bottom:18px;">trade_lens needs a free Finnhub API key.<br>Tap below, register (30 seconds), paste your key.</div>
+    <div style="margin-bottom:18px;">trade_lens needs a free Finnhub key.<br>Tap below, register (30 seconds), paste your key.</div>
     <button class="btn btn-primary" style="max-width: 280px; margin: 0 auto;" onclick="document.getElementById('settings-modal').classList.add('open')">Add API Key</button>
   </div>`;
 }
 function renderError(e) {
-  return `<div class="error">
-    <div>Couldn't load: ${escapeHtml(e.message || 'unknown error')}.</div>
-    <div style="margin-top:8px; font-size:12px; color:var(--text-muted);">If you just hit rate limits, wait a minute and refresh.</div>
+  return `<div class="error-state">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><circle cx="12" cy="16" r="1" fill="currentColor"/></svg>
+    <div>${escapeHtml(e.message || 'Unknown error')}</div>
+    <div style="margin-top:8px; font-size:12px; color:var(--text-muted);">Tap refresh to retry.</div>
   </div>`;
-}
-function escapeHtml(s) {
-  if (s == null) return '';
-  return String(s).replace(/[&<>"']/g, m => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m]));
 }
 
 // ═══════════════════════════════════════════════════════════════
-//  Navigation & wiring
+//  Navigation
 // ═══════════════════════════════════════════════════════════════
 
 function switchView(view) {
@@ -1109,19 +1312,24 @@ function switchView(view) {
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.view === view));
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
-  if (view === 'heatmap' && !document.getElementById('heatmap-container').hasChildNodes()) renderHeatmap();
-  if (view === 'news' && !State.newsCache) loadNews();
-  if (view === 'charts' && !document.getElementById('tv-frame').src) {
-    loadChart(State.chartSymbol);
-    loadAutoSR(State.chartSymbol);
+  if (view === 'heatmap') renderHeatmap();
+  else if (view === 'news' && !State.newsCache) loadNews();
+  else if (view === 'charts') {
+    if (!document.getElementById('tv-frame').src) {
+      loadChart(State.chartSymbol);
+      loadAutoSR(State.chartSymbol);
+    }
+    updateWatchlistButton();
   }
-  if (view === 'earnings' && !document.getElementById('earn-container').hasChildNodes()) loadEarnings();
-  if (view === 'darkpool' && !document.getElementById('dp-container').hasChildNodes()) loadDarkPool();
+  else if (view === 'movers') loadMovers();
+  else if (view === 'calendar') loadCalendar();
 }
 
-document.querySelectorAll('.tab').forEach(t => {
-  t.addEventListener('click', () => switchView(t.dataset.view));
-});
+// ═══════════════════════════════════════════════════════════════
+//  Event wiring
+// ═══════════════════════════════════════════════════════════════
+
+document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => switchView(t.dataset.view)));
 
 document.querySelectorAll('#market-pills .pill').forEach(p => {
   p.addEventListener('click', () => {
@@ -1141,13 +1349,30 @@ document.querySelectorAll('#news-pills .pill').forEach(p => {
   });
 });
 
+document.querySelectorAll('#movers-pills .pill').forEach(p => {
+  p.addEventListener('click', () => {
+    document.querySelectorAll('#movers-pills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    State.activeMoversTab = p.dataset.tab;
+    loadMovers();
+  });
+});
+
+document.querySelectorAll('#cal-pills .pill').forEach(p => {
+  p.addEventListener('click', () => {
+    document.querySelectorAll('#cal-pills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    State.activeCalTab = p.dataset.cal;
+    loadCalendar();
+  });
+});
+
 document.querySelectorAll('.quick-sym').forEach(b => {
   b.addEventListener('click', () => {
     const sym = b.dataset.sym;
     State.chartSymbol = sym;
-    document.getElementById('chart-symbol-input').value = sym.split(':').pop();
-    loadChart(sym);
-    loadAutoSR(sym);
+    document.getElementById('chart-symbol-input').value = displaySym(sym);
+    loadChart(sym); loadAutoSR(sym); updateWatchlistButton();
   });
 });
 
@@ -1157,22 +1382,29 @@ document.getElementById('chart-symbol-input').addEventListener('keydown', e => {
     if (!v) return;
     if (!v.includes(':') && !v.includes('.')) v = 'NASDAQ:' + v;
     State.chartSymbol = v;
-    loadChart(v);
-    loadAutoSR(v);
+    loadChart(v); loadAutoSR(v); updateWatchlistButton();
     e.target.blur();
   }
 });
 
-document.getElementById('refresh-btn').addEventListener('click', () => {
+document.getElementById('watchlist-toggle').addEventListener('click', () => {
+  toggleWatchlist(State.chartSymbol);
+});
+
+document.getElementById('refresh-btn').addEventListener('click', (e) => {
+  e.currentTarget.classList.remove('spinning');
+  void e.currentTarget.offsetWidth;
+  e.currentTarget.classList.add('spinning');
+  // bust caches for current view
+  State.quoteCache.clear();
   const v = State.activeView;
   if (v === 'heatmap') renderHeatmap();
   else if (v === 'news') loadNews(true);
-  else if (v === 'earnings') loadEarnings();
-  else if (v === 'darkpool') loadDarkPool();
+  else if (v === 'movers') loadMovers();
+  else if (v === 'calendar') loadCalendar();
   else if (v === 'charts') { loadChart(State.chartSymbol); loadAutoSR(State.chartSymbol); }
 });
 
-// Settings
 document.getElementById('settings-btn').addEventListener('click', () => {
   document.getElementById('api-key-input').value = State.apiKey;
   document.getElementById('settings-modal').classList.add('open');
@@ -1181,20 +1413,18 @@ document.getElementById('close-settings').addEventListener('click', () => {
   document.getElementById('settings-modal').classList.remove('open');
 });
 document.getElementById('settings-modal').addEventListener('click', e => {
-  if (e.target.id === 'settings-modal') {
-    document.getElementById('settings-modal').classList.remove('open');
-  }
+  if (e.target.id === 'settings-modal') document.getElementById('settings-modal').classList.remove('open');
 });
 document.getElementById('save-settings').addEventListener('click', () => {
   const k = document.getElementById('api-key-input').value.trim();
   State.apiKey = k;
   localStorage.setItem('tl_finnhub_key', k);
   document.getElementById('settings-modal').classList.remove('open');
-  // re-render current view
+  State.quoteCache.clear();
+  State.newsCache = null;
   switchView(State.activeView);
 });
 
-// Date nav
 function bindDateNav(prefix, getDate, setDate, onChange) {
   document.getElementById(prefix + '-prev').addEventListener('click', () => {
     const d = getDate(); d.setDate(d.getDate() - 1); setDate(d); onChange();
@@ -1206,28 +1436,29 @@ function bindDateNav(prefix, getDate, setDate, onChange) {
     setDate(new Date(e.target.value + 'T12:00:00')); onChange();
   });
 }
-bindDateNav('earn', () => new Date(State.earnDate), d => State.earnDate = d, loadEarnings);
-bindDateNav('dp', () => new Date(State.dpDate), d => State.dpDate = d, loadDarkPool);
+bindDateNav('cal', () => new Date(State.calDate), d => State.calDate = d, loadCalendar);
 
-document.getElementById('earn-search').addEventListener('input', () => loadEarnings());
-document.getElementById('dp-search').addEventListener('input', () => loadDarkPool());
+document.getElementById('cal-search').addEventListener('input', () => {
+  if (State.activeCalTab === 'earnings') loadEarnings(document.getElementById('cal-container'));
+});
 
 // ═══════════════════════════════════════════════════════════════
 //  Boot
 // ═══════════════════════════════════════════════════════════════
 
 if (!State.apiKey) {
-  // Show settings on first load
   setTimeout(() => document.getElementById('settings-modal').classList.add('open'), 400);
 }
 renderHeatmap();
 
-// Auto-refresh heatmap every 60s if visible
+// auto-refresh ONLY if heatmap is visible and tab isn't backgrounded
 setInterval(() => {
-  if (State.activeView === 'heatmap' && !document.hidden) renderHeatmap();
-}, 60000);
+  if (State.activeView === 'heatmap' && !document.hidden && State.apiKey) {
+    State.quoteCache.clear();
+    renderHeatmap();
+  }
+}, 90000);
 
 </script>
-
 </body>
 </html>
