@@ -517,6 +517,7 @@ transition: opacity 0.2s, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     <div class="pill-row" id="cal-pills">
       <button class="pill active" data-cal="earnings">📊 Earnings</button>
       <button class="pill" data-cal="economic">🌐 Economic</button>
+      <button class="pill bolt" id="cal-ls-only">⚡ LS only</button>
     </div>
     <div class="search-bar" id="cal-search-wrap">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -790,6 +791,7 @@ const State = {
   activeNewsCat: 'all',
   activeMoversTab: 'gainers',
   activeCalTab: 'earnings',
+  calLsOnly: false,
   calDate: new Date(),
   chartSymbol: 'NASDAQ:AAPL',
   quoteCache: new Map(),
@@ -1266,11 +1268,15 @@ async function loadEarnings(c) {
 
 function renderEarnings(c, items) {
   const filter = document.getElementById('cal-search').value.toUpperCase();
-  const filtered = filter ? items.filter(e => (e.symbol || '').includes(filter)) : items;
+  let filtered = filter ? items.filter(e => (e.symbol || '').includes(filter)) : items;
+  if (State.calLsOnly) filtered = filtered.filter(e => lsLookup(e.symbol));
   if (!filtered.length) {
+    const reason = State.calLsOnly
+      ? ' with Leverage Shares coverage'
+      : (filter ? ' for "' + filter + '"' : '');
     c.innerHTML = `<div class="empty">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-      <div>No earnings scheduled${filter ? ' for "' + filter + '"' : ''} on this date.</div>
+      <div>No earnings${reason} on this date.</div>
     </div>`;
     return;
   }
@@ -1404,13 +1410,21 @@ document.querySelectorAll('#movers-pills .pill').forEach(p => {
   });
 });
 
-document.querySelectorAll('#cal-pills .pill').forEach(p => {
+document.querySelectorAll('#cal-pills .pill[data-cal]').forEach(p => {
   p.addEventListener('click', () => {
-    document.querySelectorAll('#cal-pills .pill').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('#cal-pills .pill[data-cal]').forEach(x => x.classList.remove('active'));
     p.classList.add('active');
     State.activeCalTab = p.dataset.cal;
+    // Hide LS-only pill when in Economic mode (doesn't apply there)
+    document.getElementById('cal-ls-only').style.display = State.activeCalTab === 'earnings' ? '' : 'none';
     loadCalendar();
   });
+});
+
+document.getElementById('cal-ls-only').addEventListener('click', (e) => {
+  State.calLsOnly = !State.calLsOnly;
+  e.currentTarget.classList.toggle('active', State.calLsOnly);
+  if (State.activeCalTab === 'earnings') loadEarnings(document.getElementById('cal-container'));
 });
 
 document.querySelectorAll('.quick-sym').forEach(b => {
