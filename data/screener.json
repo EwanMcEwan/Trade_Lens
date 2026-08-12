@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-12T14:37:16.925Z",
+ "generated": "2026-08-12T16:00:58.338Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-12T14:37:13.510Z",
+  "fetched": "2026-08-12T16:00:55.145Z",
   "rows": [
    {
     "ticker": "AGMH",
@@ -11,10 +11,10 @@
     "sector": "Technology",
     "industry": "Computer Hardware",
     "country": "Hong Kong",
-    "marketCap": "3.17M",
-    "price": 1,
-    "changePct": -8.27,
-    "volume": 213629
+    "marketCap": "3.03M",
+    "price": 0.95,
+    "changePct": -12.5,
+    "volume": 225157
    },
    {
     "ticker": "BAOS",
@@ -22,10 +22,10 @@
     "sector": "Communication Services",
     "industry": "Advertising Agencies",
     "country": "China",
-    "marketCap": "1.16M",
-    "price": 0.75,
-    "changePct": 3.14,
-    "volume": 55301571
+    "marketCap": "1.01M",
+    "price": 0.66,
+    "changePct": -9.57,
+    "volume": 60136561
    },
    {
     "ticker": "BBLG",
@@ -33,21 +33,10 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "1.20M",
-    "price": 0.66,
-    "changePct": -27.38,
-    "volume": 13138260
-   },
-   {
-    "ticker": "BQ",
-    "company": "Boqii Holding Limited",
-    "sector": "Consumer Cyclical",
-    "industry": "Specialty Retail",
-    "country": "China",
-    "marketCap": "2.88M",
-    "price": 1,
-    "changePct": 23.89,
-    "volume": 29729181
+    "marketCap": "1.31M",
+    "price": 0.72,
+    "changePct": -20.49,
+    "volume": 13587656
    },
    {
     "ticker": "FGL",
@@ -55,10 +44,10 @@
     "sector": "Industrials",
     "industry": "Engineering & Construction",
     "country": "Malaysia",
-    "marketCap": "0.92M",
+    "marketCap": "0.93M",
     "price": 0.81,
-    "changePct": 6.06,
-    "volume": 5539089
+    "changePct": 6.59,
+    "volume": 5969059
    },
    {
     "ticker": "IMTE",
@@ -66,10 +55,10 @@
     "sector": "Technology",
     "industry": "Electronic Components",
     "country": "Australia",
-    "marketCap": "1.60M",
-    "price": 0.46,
-    "changePct": -1.11,
-    "volume": 5807466
+    "marketCap": "1.89M",
+    "price": 0.55,
+    "changePct": 16.98,
+    "volume": 7993465
    },
    {
     "ticker": "JAGX",
@@ -77,10 +66,10 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "3.80M",
+    "marketCap": "3.77M",
     "price": 0.77,
-    "changePct": -1.39,
-    "volume": 44249
+    "changePct": -2.02,
+    "volume": 90118
    },
    {
     "ticker": "MYSZ",
@@ -88,10 +77,10 @@
     "sector": "Consumer Cyclical",
     "industry": "Apparel Retail",
     "country": "Israel",
-    "marketCap": "1.85M",
-    "price": 0.38,
-    "changePct": 0.52,
-    "volume": 4916765
+    "marketCap": "1.93M",
+    "price": 0.4,
+    "changePct": 5.04,
+    "volume": 5037199
    },
    {
     "ticker": "SLXN",
@@ -101,8 +90,8 @@
     "country": "Israel",
     "marketCap": "0.49M",
     "price": 0.46,
-    "changePct": -55.31,
-    "volume": 2482449
+    "changePct": -55.12,
+    "volume": 3006718
    },
    {
     "ticker": "VBIO",
@@ -110,10 +99,10 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "3.97M",
-    "price": 0.95,
-    "changePct": 208.06,
-    "volume": 33832894
+    "marketCap": "1.12M",
+    "price": 0.27,
+    "changePct": -12.87,
+    "volume": 101572968
    },
    {
     "ticker": "WHLR",
@@ -121,10 +110,10 @@
     "sector": "Real Estate",
     "industry": "REIT - Retail",
     "country": "USA",
-    "marketCap": "0.88M",
-    "price": 0.46,
-    "changePct": 0.17,
-    "volume": 490257
+    "marketCap": "0.85M",
+    "price": 0.44,
+    "changePct": -3.36,
+    "volume": 579108
    },
    {
     "ticker": "YYAI",
@@ -134,8 +123,8 @@
     "country": "USA",
     "marketCap": "0.08M",
     "price": 0.07,
-    "changePct": -13.37,
-    "volume": 13568741
+    "changePct": -9.2,
+    "volume": 23635552
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -150,247 +139,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-12T14:37:16.925Z",
+  "fetched": "2026-08-12T16:00:58.338Z",
   "rows": [
    {
     "ticker": "CHOW",
     "company": "ChowChow Cloud International Holdings Ltd",
-    "price": 0.48,
-    "volume": 190594792
+    "price": 0.46,
+    "volume": 203921492
+   },
+   {
+    "ticker": "VBIO",
+    "company": "Valion Bio Inc",
+    "price": 0.27,
+    "volume": 101572968
    },
    {
     "ticker": "RCON",
     "company": "Recon Technology Ltd",
     "price": 0.03,
-    "volume": 56796451
+    "volume": 80129724
+   },
+   {
+    "ticker": "BYND",
+    "company": "Beyond Meat Inc",
+    "price": 0.4,
+    "volume": 63243970
    },
    {
     "ticker": "BAOS",
     "company": "Baosheng Media Group Holdings Ltd",
-    "price": 0.75,
-    "volume": 55301571
-   },
-   {
-    "ticker": "ZBAO",
-    "company": "Zhibao Technology Inc",
-    "price": 0.2,
-    "volume": 45376698
+    "price": 0.66,
+    "volume": 60136561
    },
    {
     "ticker": "ALP",
     "company": "Alpha Compute Corp",
     "price": 0.17,
-    "volume": 45270381
+    "volume": 49012625
+   },
+   {
+    "ticker": "ZBAO",
+    "company": "Zhibao Technology Inc",
+    "price": 0.21,
+    "volume": 48364078
    },
    {
     "ticker": "SBEV",
     "company": "Splash Beverage Group Inc",
-    "price": 0.43,
-    "volume": 37688129
+    "price": 0.38,
+    "volume": 44759491
    },
    {
     "ticker": "CYCU",
     "company": "Cycurion Inc",
-    "price": 0.64,
-    "volume": 35339533
-   },
-   {
-    "ticker": "BYND",
-    "company": "Beyond Meat Inc",
-    "price": 0.41,
-    "volume": 35134364
-   },
-   {
-    "ticker": "VBIO",
-    "company": "Valion Bio Inc",
-    "price": 0.95,
-    "volume": 33832894
-   },
-   {
-    "ticker": "BQ",
-    "company": "Boqii Holding Limited",
-    "price": 1,
-    "volume": 29729181
+    "price": 0.62,
+    "volume": 37383587
    },
    {
     "ticker": "SCNX",
     "company": "Scienture Holdings Inc",
-    "price": 0.4,
-    "volume": 29298857
+    "price": 0.42,
+    "volume": 30187498
    },
    {
     "ticker": "HXHX",
     "company": "Haoxin Holdings Ltd",
-    "price": 0.62,
-    "volume": 15706364
-   },
-   {
-    "ticker": "CPOP",
-    "company": "Pop Culture Group Co Ltd",
-    "price": 0.38,
-    "volume": 14354287
+    "price": 0.55,
+    "volume": 26597011
    },
    {
     "ticker": "YYAI",
     "company": "AiRWA Inc",
     "price": 0.07,
-    "volume": 13568741
+    "volume": 23635552
    },
    {
-    "ticker": "BBLG",
-    "company": "Bone Biologics Corp",
-    "price": 0.66,
-    "volume": 13138260
+    "ticker": "IZM",
+    "company": "Iczoom Group Inc",
+    "price": 0.31,
+    "volume": 18091833
    },
    {
     "ticker": "ZONE",
     "company": "CleanCore Solutions Inc",
     "price": 0.14,
-    "volume": 11421478
+    "volume": 15877835
    },
    {
-    "ticker": "OMH",
-    "company": "Ohmyhome Ltd",
-    "price": 0.1,
-    "volume": 9495322
+    "ticker": "CPOP",
+    "company": "Pop Culture Group Co Ltd",
+    "price": 0.38,
+    "volume": 15043376
    },
    {
-    "ticker": "CAPS",
-    "company": "Capstone Holding Corp",
-    "price": 0.21,
-    "volume": 8132743
+    "ticker": "BBLG",
+    "company": "Bone Biologics Corp",
+    "price": 0.72,
+    "volume": 13587656
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
     "price": 0.12,
-    "volume": 7677268
+    "volume": 12314160
+   },
+   {
+    "ticker": "OMH",
+    "company": "Ohmyhome Ltd",
+    "price": 0.1,
+    "volume": 10738742
+   },
+   {
+    "ticker": "CAPS",
+    "company": "Capstone Holding Corp",
+    "price": 0.21,
+    "volume": 8726303
+   },
+   {
+    "ticker": "IMTE",
+    "company": "Integrated Media Technology Limited",
+    "price": 0.55,
+    "volume": 7993465
    },
    {
     "ticker": "UZX",
     "company": "Linkage Global Inc",
     "price": 0.12,
-    "volume": 6780923
+    "volume": 7481853
    },
    {
-    "ticker": "IMTE",
-    "company": "Integrated Media Technology Limited",
-    "price": 0.46,
-    "volume": 5807466
-   },
-   {
-    "ticker": "FGL",
-    "company": "Founder Group Ltd",
-    "price": 0.81,
-    "volume": 5539089
-   },
-   {
-    "ticker": "MYSZ",
-    "company": "My Size Inc",
-    "price": 0.38,
-    "volume": 4916765
-   },
-   {
-    "ticker": "MREO",
-    "company": "Mereo Biopharma Group Plc ADR",
-    "price": 0.29,
-    "volume": 3955110
-   },
-   {
-    "ticker": "CISS",
-    "company": "C3is Inc",
-    "price": 0.08,
-    "volume": 3641867
+    "ticker": "EVTL",
+    "company": "Vertical Aerospace Ltd",
+    "price": 0.83,
+    "volume": 7386577
    },
    {
     "ticker": "HUMA",
     "company": "Humacyte Inc",
     "price": 0.63,
-    "volume": 3556541
-   },
-   {
-    "ticker": "SES",
-    "company": "SES AI Corp",
-    "price": 0.56,
-    "volume": 3374087
-   },
-   {
-    "ticker": "DVLT",
-    "company": "Datavault AI Inc",
-    "price": 0.31,
-    "volume": 3276344
-   },
-   {
-    "ticker": "FAMI",
-    "company": "Farmmi Inc",
-    "price": 0.14,
-    "volume": 3138146
-   },
-   {
-    "ticker": "SOAR",
-    "company": "Volato Group Inc",
-    "price": 0.17,
-    "volume": 3095050
+    "volume": 6612824
    },
    {
     "ticker": "GPRO",
     "company": "GoPro Inc",
-    "price": 0.6,
-    "volume": 2797290
+    "price": 0.58,
+    "volume": 6323924
    },
    {
-    "ticker": "EVTL",
-    "company": "Vertical Aerospace Ltd",
-    "price": 0.88,
-    "volume": 2694400
+    "ticker": "FGL",
+    "company": "Founder Group Ltd",
+    "price": 0.81,
+    "volume": 5969059
    },
    {
-    "ticker": "FEED",
-    "company": "ENvue Medical Inc",
+    "ticker": "MREO",
+    "company": "Mereo Biopharma Group Plc ADR",
+    "price": 0.3,
+    "volume": 5537447
+   },
+   {
+    "ticker": "SES",
+    "company": "SES AI Corp",
+    "price": 0.57,
+    "volume": 5479745
+   },
+   {
+    "ticker": "DVLT",
+    "company": "Datavault AI Inc",
+    "price": 0.3,
+    "volume": 5236566
+   },
+   {
+    "ticker": "MYSZ",
+    "company": "My Size Inc",
     "price": 0.4,
-    "volume": 2676929
+    "volume": 5037199
    },
    {
-    "ticker": "GLE",
-    "company": "Global Engine Group Holding Ltd",
-    "price": 0.39,
-    "volume": 2670816
+    "ticker": "SOAR",
+    "company": "Volato Group Inc",
+    "price": 0.16,
+    "volume": 5016546
    },
    {
-    "ticker": "IVDA",
-    "company": "Iveda Solutions Inc",
-    "price": 0.31,
-    "volume": 2653386
+    "ticker": "FAMI",
+    "company": "Farmmi Inc",
+    "price": 0.13,
+    "volume": 4550989
+   },
+   {
+    "ticker": "CISS",
+    "company": "C3is Inc",
+    "price": 0.08,
+    "volume": 4268274
    },
    {
     "ticker": "PDSB",
     "company": "PDS Biotechnology Corp",
-    "price": 0.26,
-    "volume": 2582536
+    "price": 0.25,
+    "volume": 3488872
    },
    {
-    "ticker": "SLXN",
-    "company": "Silexion Therapeutics Corp",
-    "price": 0.46,
-    "volume": 2482449
+    "ticker": "SPWR",
+    "company": "SunPower Inc",
+    "price": 0.23,
+    "volume": 3312815
    },
    {
-    "ticker": "HAO",
-    "company": "Haoxi Health Technology Ltd",
-    "price": 0.15,
-    "volume": 2405993
-   },
-   {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.21,
-    "volume": 2370734
+    "ticker": "RITR",
+    "company": "Reitar Logtech Holdings Ltd",
+    "price": 0.14,
+    "volume": 3089400
    },
    {
     "ticker": "GETY",
     "company": "Getty Images Holdings Inc",
     "price": 0.3,
-    "volume": 2220214
+    "volume": 3064377
+   },
+   {
+    "ticker": "MVST",
+    "company": "Microvast Holdings Inc",
+    "price": 0.87,
+    "volume": 3049867
+   },
+   {
+    "ticker": "SLXN",
+    "company": "Silexion Therapeutics Corp",
+    "price": 0.46,
+    "volume": 3006718
+   },
+   {
+    "ticker": "GLE",
+    "company": "Global Engine Group Holding Ltd",
+    "price": 0.39,
+    "volume": 2871583
+   },
+   {
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.21,
+    "volume": 2815340
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
