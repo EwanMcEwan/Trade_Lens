@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-12T20:09:30.627Z",
+ "generated": "2026-08-12T21:21:22.633Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-12T20:09:27.228Z",
+  "fetched": "2026-08-12T21:21:19.372Z",
   "rows": [
    {
     "ticker": "BAOS",
@@ -14,7 +14,7 @@
     "marketCap": "1.17M",
     "price": 0.76,
     "changePct": 4.18,
-    "volume": 66680313
+    "volume": 67509380
    },
    {
     "ticker": "BBLG",
@@ -25,7 +25,7 @@
     "marketCap": "1.19M",
     "price": 0.66,
     "changePct": -27.6,
-    "volume": 14548620
+    "volume": 15126459
    },
    {
     "ticker": "FGL",
@@ -36,7 +36,7 @@
     "marketCap": "0.90M",
     "price": 0.78,
     "changePct": 3.23,
-    "volume": 8057634
+    "volume": 9307160
    },
    {
     "ticker": "IMTE",
@@ -47,7 +47,7 @@
     "marketCap": "1.69M",
     "price": 0.49,
     "changePct": 4.02,
-    "volume": 11875810
+    "volume": 11994845
    },
    {
     "ticker": "MYSZ",
@@ -58,7 +58,7 @@
     "marketCap": "2.26M",
     "price": 0.42,
     "changePct": 9.5,
-    "volume": 5405781
+    "volume": 5409740
    },
    {
     "ticker": "SLXN",
@@ -69,7 +69,7 @@
     "marketCap": "0.48M",
     "price": 0.45,
     "changePct": -56.13,
-    "volume": 4160544
+    "volume": 4203211
    },
    {
     "ticker": "VBIO",
@@ -77,10 +77,10 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "0.92M",
-    "price": 0.22,
-    "changePct": -28.65,
-    "volume": 129600469
+    "marketCap": "0.94M",
+    "price": 0.23,
+    "changePct": -27.1,
+    "volume": 133425122
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -95,247 +95,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-12T20:09:30.627Z",
+  "fetched": "2026-08-12T21:21:22.633Z",
   "rows": [
    {
     "ticker": "CHOW",
     "company": "ChowChow Cloud International Holdings Ltd",
-    "price": 0.51,
-    "volume": 237148684
+    "price": 0.5,
+    "volume": 238501212
    },
    {
     "ticker": "VBIO",
     "company": "Valion Bio Inc",
-    "price": 0.22,
-    "volume": 129600469
-   },
-   {
-    "ticker": "BYND",
-    "company": "Beyond Meat Inc",
-    "price": 0.41,
-    "volume": 108716706
+    "price": 0.23,
+    "volume": 133425122
    },
    {
     "ticker": "RCON",
     "company": "Recon Technology Ltd",
     "price": 0.03,
-    "volume": 102615345
+    "volume": 122728682
+   },
+   {
+    "ticker": "BYND",
+    "company": "Beyond Meat Inc",
+    "price": 0.41,
+    "volume": 110023566
    },
    {
     "ticker": "BAOS",
     "company": "Baosheng Media Group Holdings Ltd",
     "price": 0.76,
-    "volume": 66680313
-   },
-   {
-    "ticker": "ALP",
-    "company": "Alpha Compute Corp",
-    "price": 0.18,
-    "volume": 54323863
+    "volume": 67509380
    },
    {
     "ticker": "IVDA",
     "company": "Iveda Solutions Inc",
     "price": 0.37,
-    "volume": 53872462
+    "volume": 56801359
+   },
+   {
+    "ticker": "ALP",
+    "company": "Alpha Compute Corp",
+    "price": 0.18,
+    "volume": 55097091
    },
    {
     "ticker": "ZBAO",
     "company": "Zhibao Technology Inc",
     "price": 0.21,
-    "volume": 52634130
+    "volume": 52829932
    },
    {
     "ticker": "SBEV",
     "company": "Splash Beverage Group Inc",
-    "price": 0.4,
-    "volume": 47391272
+    "price": 0.41,
+    "volume": 48682460
    },
    {
     "ticker": "CYCU",
     "company": "Cycurion Inc",
     "price": 0.62,
-    "volume": 39267447
+    "volume": 39524010
    },
    {
     "ticker": "ZONE",
     "company": "CleanCore Solutions Inc",
     "price": 0.14,
-    "volume": 37509349
-   },
-   {
-    "ticker": "SCNX",
-    "company": "Scienture Holdings Inc",
-    "price": 0.45,
-    "volume": 31533754
+    "volume": 38751294
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
     "price": 0.11,
-    "volume": 29888609
+    "volume": 38346432
+   },
+   {
+    "ticker": "SCNX",
+    "company": "Scienture Holdings Inc",
+    "price": 0.45,
+    "volume": 31615463
    },
    {
     "ticker": "YYAI",
     "company": "AiRWA Inc",
     "price": 0.07,
-    "volume": 28506480
+    "volume": 29417220
    },
    {
     "ticker": "HXHX",
     "company": "Haoxin Holdings Ltd",
     "price": 0.54,
-    "volume": 27666422
+    "volume": 27749981
    },
    {
     "ticker": "IZM",
     "company": "Iczoom Group Inc",
     "price": 0.3,
-    "volume": 25869268
+    "volume": 25946284
+   },
+   {
+    "ticker": "GXAI",
+    "company": "Gaxos.AI Inc",
+    "price": 0.87,
+    "volume": 24984479
    },
    {
     "ticker": "CPOP",
     "company": "Pop Culture Group Co Ltd",
     "price": 0.39,
-    "volume": 16167499
+    "volume": 16328615
    },
    {
     "ticker": "EVTL",
     "company": "Vertical Aerospace Ltd",
-    "price": 0.82,
-    "volume": 15766098
+    "price": 0.83,
+    "volume": 15822198
    },
    {
     "ticker": "GPRO",
     "company": "GoPro Inc",
     "price": 0.58,
-    "volume": 15152911
+    "volume": 15302936
    },
    {
     "ticker": "BBLG",
     "company": "Bone Biologics Corp",
     "price": 0.66,
-    "volume": 14548620
+    "volume": 15126459
    },
    {
     "ticker": "OMH",
     "company": "Ohmyhome Ltd",
     "price": 0.1,
-    "volume": 13159062
+    "volume": 13333330
    },
    {
     "ticker": "IMTE",
     "company": "Integrated Media Technology Limited",
     "price": 0.49,
-    "volume": 11880686
+    "volume": 11994845
+   },
+   {
+    "ticker": "FEED",
+    "company": "ENvue Medical Inc",
+    "price": 0.41,
+    "volume": 11964827
    },
    {
     "ticker": "HUMA",
     "company": "Humacyte Inc",
     "price": 0.67,
-    "volume": 10771337
+    "volume": 11015497
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.31,
-    "volume": 10349315
+    "volume": 10647876
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
-    "price": 0.59,
-    "volume": 10213715
+    "price": 0.57,
+    "volume": 10229657
    },
    {
     "ticker": "CAPS",
     "company": "Capstone Holding Corp",
     "price": 0.23,
-    "volume": 9580864
-   },
-   {
-    "ticker": "CISS",
-    "company": "C3is Inc",
-    "price": 0.08,
-    "volume": 8765505
-   },
-   {
-    "ticker": "UZX",
-    "company": "Linkage Global Inc",
-    "price": 0.12,
-    "volume": 8640015
-   },
-   {
-    "ticker": "ORBS",
-    "company": "Eightco Holdings Inc",
-    "price": 0.74,
-    "volume": 8424441
-   },
-   {
-    "ticker": "MREO",
-    "company": "Mereo Biopharma Group Plc ADR",
-    "price": 0.3,
-    "volume": 8399527
+    "volume": 9659763
    },
    {
     "ticker": "FGL",
     "company": "Founder Group Ltd",
     "price": 0.78,
-    "volume": 8076999
+    "volume": 9307160
    },
    {
-    "ticker": "PDSB",
-    "company": "PDS Biotechnology Corp",
-    "price": 0.24,
-    "volume": 6929613
+    "ticker": "CISS",
+    "company": "C3is Inc",
+    "price": 0.08,
+    "volume": 8910494
    },
    {
-    "ticker": "SOAR",
-    "company": "Volato Group Inc",
-    "price": 0.17,
-    "volume": 6501791
+    "ticker": "UZX",
+    "company": "Linkage Global Inc",
+    "price": 0.12,
+    "volume": 8712703
    },
    {
-    "ticker": "MVST",
-    "company": "Microvast Holdings Inc",
-    "price": 0.92,
-    "volume": 6314227
+    "ticker": "MREO",
+    "company": "Mereo Biopharma Group Plc ADR",
+    "price": 0.3,
+    "volume": 8451472
+   },
+   {
+    "ticker": "ORBS",
+    "company": "Eightco Holdings Inc",
+    "price": 0.74,
+    "volume": 8427222
    },
    {
     "ticker": "FAMI",
     "company": "Farmmi Inc",
     "price": 0.13,
-    "volume": 5905968
+    "volume": 7630373
+   },
+   {
+    "ticker": "PDSB",
+    "company": "PDS Biotechnology Corp",
+    "price": 0.24,
+    "volume": 6990881
+   },
+   {
+    "ticker": "YOUL",
+    "company": "Youlife Group Inc ADR",
+    "price": 0.47,
+    "volume": 6654501
+   },
+   {
+    "ticker": "SOAR",
+    "company": "Volato Group Inc",
+    "price": 0.16,
+    "volume": 6617761
+   },
+   {
+    "ticker": "MVST",
+    "company": "Microvast Holdings Inc",
+    "price": 0.92,
+    "volume": 6325884
    },
    {
     "ticker": "GETY",
     "company": "Getty Images Holdings Inc",
     "price": 0.3,
-    "volume": 5831106
+    "volume": 5941253
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
     "price": 0.21,
-    "volume": 5695988
-   },
-   {
-    "ticker": "SPWR",
-    "company": "SunPower Inc",
-    "price": 0.23,
-    "volume": 5443736
-   },
-   {
-    "ticker": "MYSZ",
-    "company": "My Size Inc",
-    "price": 0.42,
-    "volume": 5405781
-   },
-   {
-    "ticker": "GOSS",
-    "company": "Gossamer Bio Inc",
-    "price": 0.18,
-    "volume": 5255360
+    "volume": 5732379
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
