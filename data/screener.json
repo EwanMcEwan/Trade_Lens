@@ -1,42 +1,42 @@
 {
- "generated": "2026-08-12T10:37:11.651Z",
+ "generated": "2026-08-12T10:45:11.096Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-12T10:37:11.177Z",
+  "fetched": "2026-08-12T10:45:10.768Z",
   "rows": [
    {
-    "ticker": "BBQ",
+    "ticker": "B",
     "company": "Boqii Holding Limited",
     "sector": "Consumer Cyclical",
     "industry": "Specialty Retail",
     "country": "China",
-    "marketCap": "2.56M",
-    "price": 0.89,
-    "changePct": 10.14,
-    "volume": 20931608
+    "marketCap": "2.65M",
+    "price": 0.92,
+    "changePct": 14,
+    "volume": 21308125
    },
    {
-    "ticker": "SSLXN",
+    "ticker": "S",
     "company": "Silexion Therapeutics Corp",
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "Israel",
-    "marketCap": "0.50M",
-    "price": 0.47,
-    "changePct": -54.6,
-    "volume": 703057
+    "marketCap": "0.49M",
+    "price": 0.46,
+    "changePct": -55.45,
+    "volume": 715448
    },
    {
-    "ticker": "YYYAI",
+    "ticker": "Y",
     "company": "AiRWA Inc",
     "sector": "Technology",
     "industry": "Software - Infrastructure",
     "country": "USA",
     "marketCap": "0.08M",
-    "price": 0.08,
-    "changePct": -7.98,
-    "volume": 4830457
+    "price": 0.07,
+    "changePct": -8.96,
+    "volume": 4899133
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -50,7 +50,7 @@
  },
  "openinsider": {
   "ok": false,
-  "error": "table found but no ticker rows parsed",
+  "error": "could not locate the screener table (markup may have changed)",
   "fetched": null,
   "rows": []
  }
