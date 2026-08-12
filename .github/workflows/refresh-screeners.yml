@@ -1,0 +1,49 @@
+name: Refresh screener data
+
+# Rebuilds data/screener.json for the Screening tab. finviz and openinsider
+# are HTML-only with no CORS headers, and openinsider is plain HTTP, so the
+# browser cannot fetch either directly — this does it server-side.
+
+on:
+  schedule:
+    # Every 30 minutes. One request per source per run.
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/fetch-screeners.mjs"
+      - "scripts/parse-table.mjs"
+      - ".github/workflows/refresh-screeners.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-screeners
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build screener snapshot
+        run: node scripts/fetch-screeners.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No change in screener data."
+          else
+            git commit -m "chore: refresh screener data"
+            git push
+          fi
