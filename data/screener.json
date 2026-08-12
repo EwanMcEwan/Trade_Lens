@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-12T11:20:22.430Z",
+ "generated": "2026-08-12T11:50:32.066Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-12T11:20:19.016Z",
+  "fetched": "2026-08-12T11:50:28.901Z",
   "rows": [
    {
     "ticker": "BQ",
@@ -11,10 +11,32 @@
     "sector": "Consumer Cyclical",
     "industry": "Specialty Retail",
     "country": "China",
-    "marketCap": "2.33M",
-    "price": 0.81,
-    "changePct": 0.46,
-    "volume": 24134569
+    "marketCap": "2.28M",
+    "price": 0.79,
+    "changePct": -1.9,
+    "volume": 25280541
+   },
+   {
+    "ticker": "FGL",
+    "company": "Founder Group Ltd",
+    "sector": "Industrials",
+    "industry": "Engineering & Construction",
+    "country": "Malaysia",
+    "marketCap": "0.91M",
+    "price": 0.79,
+    "changePct": 4.62,
+    "volume": 2198229
+   },
+   {
+    "ticker": "IMTE",
+    "company": "Integrated Media Technology Limited",
+    "sector": "Technology",
+    "industry": "Electronic Components",
+    "country": "Australia",
+    "marketCap": "1.52M",
+    "price": 0.44,
+    "changePct": -6,
+    "volume": 4386941
    },
    {
     "ticker": "SLXN",
@@ -22,10 +44,10 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "Israel",
-    "marketCap": "0.52M",
-    "price": 0.49,
-    "changePct": -52.46,
-    "volume": 798184
+    "marketCap": "0.46M",
+    "price": 0.43,
+    "changePct": -58.55,
+    "volume": 980999
    },
    {
     "ticker": "YYAI",
@@ -35,8 +57,8 @@
     "country": "USA",
     "marketCap": "0.08M",
     "price": 0.08,
-    "changePct": -6.75,
-    "volume": 5704522
+    "changePct": -7.12,
+    "volume": 6053923
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -51,247 +73,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-12T11:20:22.430Z",
+  "fetched": "2026-08-12T11:50:32.066Z",
   "rows": [
-   {
-    "ticker": "ZBAO",
-    "company": "Zhibao Technology Inc",
-    "price": 0.19,
-    "volume": 38543457
-   },
    {
     "ticker": "RCON",
     "company": "Recon Technology Ltd",
     "price": 0.03,
-    "volume": 38156376
+    "volume": 41529150
+   },
+   {
+    "ticker": "ZBAO",
+    "company": "Zhibao Technology Inc",
+    "price": 0.19,
+    "volume": 40028165
    },
    {
     "ticker": "ALP",
     "company": "Alpha Compute Corp",
     "price": 0.19,
-    "volume": 34160574
+    "volume": 35165726
+   },
+   {
+    "ticker": "CYCU",
+    "company": "Cycurion Inc",
+    "price": 0.65,
+    "volume": 26078979
+   },
+   {
+    "ticker": "CHOW",
+    "company": "ChowChow Cloud International Holdings Ltd",
+    "price": 0.5,
+    "volume": 25970239
    },
    {
     "ticker": "BQ",
     "company": "Boqii Holding Limited",
-    "price": 0.81,
-    "volume": 24134569
+    "price": 0.79,
+    "volume": 25280541
    },
    {
     "ticker": "CPOP",
     "company": "Pop Culture Group Co Ltd",
-    "price": 0.37,
-    "volume": 11675945
+    "price": 0.34,
+    "volume": 12580389
    },
    {
     "ticker": "HXHX",
     "company": "Haoxin Holdings Ltd",
-    "price": 0.52,
-    "volume": 8127575
+    "price": 0.48,
+    "volume": 10225779
    },
    {
     "ticker": "YYAI",
     "company": "AiRWA Inc",
     "price": 0.08,
-    "volume": 5704522
+    "volume": 6053923
    },
    {
-    "ticker": "CYCU",
-    "company": "Cycurion Inc",
-    "price": 0.7,
-    "volume": 4297309
+    "ticker": "IMTE",
+    "company": "Integrated Media Technology Limited",
+    "price": 0.44,
+    "volume": 4386941
    },
    {
     "ticker": "OMH",
     "company": "Ohmyhome Ltd",
     "price": 0.09,
-    "volume": 3533498
+    "volume": 3883234
    },
    {
     "ticker": "UZX",
     "company": "Linkage Global Inc",
     "price": 0.12,
-    "volume": 3085389
+    "volume": 3428405
+   },
+   {
+    "ticker": "PMA",
+    "company": "Ming Shing Group Holdings Ltd",
+    "price": 0.87,
+    "volume": 3347823
+   },
+   {
+    "ticker": "FGL",
+    "company": "Founder Group Ltd",
+    "price": 0.79,
+    "volume": 2198229
    },
    {
     "ticker": "CISS",
     "company": "C3is Inc",
     "price": 0.08,
-    "volume": 1597986
+    "volume": 1755693
    },
    {
     "ticker": "MREO",
     "company": "Mereo Biopharma Group Plc ADR",
-    "price": 0.29,
-    "volume": 1029141
+    "price": 0.28,
+    "volume": 1425334
+   },
+   {
+    "ticker": "GCTK",
+    "company": "GlucoTrack Inc",
+    "price": 0.39,
+    "volume": 1320317
    },
    {
     "ticker": "GLE",
     "company": "Global Engine Group Holding Ltd",
-    "price": 0.42,
-    "volume": 951713
+    "price": 0.41,
+    "volume": 1290167
    },
    {
     "ticker": "SLXN",
     "company": "Silexion Therapeutics Corp",
-    "price": 0.49,
-    "volume": 798184
+    "price": 0.43,
+    "volume": 980999
    },
    {
     "ticker": "BYND",
     "company": "Beyond Meat Inc",
     "price": 0.42,
-    "volume": 780996
-   },
-   {
-    "ticker": "GCTK",
-    "company": "GlucoTrack Inc",
-    "price": 0.44,
-    "volume": 757378
-   },
-   {
-    "ticker": "PDSB",
-    "company": "PDS Biotechnology Corp",
-    "price": 0.27,
-    "volume": 702567
+    "volume": 942128
    },
    {
     "ticker": "FAMI",
     "company": "Farmmi Inc",
     "price": 0.15,
-    "volume": 665116
+    "volume": 854715
    },
    {
-    "ticker": "YMT",
-    "company": "Yimutian Inc ADR",
-    "price": 0.21,
-    "volume": 651830
+    "ticker": "PDSB",
+    "company": "PDS Biotechnology Corp",
+    "price": 0.26,
+    "volume": 770411
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
     "price": 0.12,
-    "volume": 546610
+    "volume": 718716
+   },
+   {
+    "ticker": "YMT",
+    "company": "Yimutian Inc ADR",
+    "price": 0.22,
+    "volume": 670134
    },
    {
     "ticker": "SOAR",
     "company": "Volato Group Inc",
     "price": 0.15,
-    "volume": 506480
+    "volume": 595882
    },
    {
     "ticker": "CIGL",
     "company": "Concorde International Group Ltd",
-    "price": 0.45,
-    "volume": 476184
+    "price": 0.44,
+    "volume": 543608
    },
    {
     "ticker": "VEEA",
     "company": "Veea Inc",
     "price": 0.12,
-    "volume": 465657
+    "volume": 484759
    },
    {
     "ticker": "RITR",
     "company": "Reitar Logtech Holdings Ltd",
     "price": 0.13,
-    "volume": 412479
+    "volume": 461276
    },
    {
     "ticker": "ITP",
     "company": "IT Tech Packaging Inc",
     "price": 0.17,
-    "volume": 380119
+    "volume": 409964
+   },
+   {
+    "ticker": "HUMA",
+    "company": "Humacyte Inc",
+    "price": 0.64,
+    "volume": 390562
    },
    {
     "ticker": "KIDZ",
     "company": "KIDZ AI Inc",
     "price": 0.26,
-    "volume": 313953
+    "volume": 381187
+   },
+   {
+    "ticker": "CAPS",
+    "company": "Capstone Holding Corp",
+    "price": 0.33,
+    "volume": 373909
    },
    {
     "ticker": "ZONE",
     "company": "CleanCore Solutions Inc",
-    "price": 0.15,
-    "volume": 248979
-   },
-   {
-    "ticker": "VTAK",
-    "company": "Catheter Precision Inc",
-    "price": 0.28,
-    "volume": 245765
-   },
-   {
-    "ticker": "TAOP",
-    "company": "Taoping Inc",
-    "price": 0.77,
-    "volume": 231233
-   },
-   {
-    "ticker": "HUMA",
-    "company": "Humacyte Inc",
-    "price": 0.65,
-    "volume": 196279
+    "price": 0.16,
+    "volume": 329013
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.31,
-    "volume": 193579
+    "volume": 267401
    },
    {
-    "ticker": "DXF",
-    "company": "Eason Technology Ltd ADR",
-    "price": 0.5,
-    "volume": 192056
-   },
-   {
-    "ticker": "MDXH",
-    "company": "MDxHealth SA",
-    "price": 0.47,
-    "volume": 174118
-   },
-   {
-    "ticker": "EPOW",
-    "company": "E-Power Inc",
-    "price": 0.56,
-    "volume": 170019
+    "ticker": "VTAK",
+    "company": "Catheter Precision Inc",
+    "price": 0.28,
+    "volume": 265550
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
-    "price": 0.54,
-    "volume": 163924
+    "price": 0.55,
+    "volume": 247987
    },
    {
-    "ticker": "CHGA",
-    "company": "Change Agents Corp",
-    "price": 0.22,
-    "volume": 157986
+    "ticker": "DXF",
+    "company": "Eason Technology Ltd ADR",
+    "price": 0.49,
+    "volume": 233815
    },
    {
-    "ticker": "BNRG",
-    "company": "Brenmiller Energy Ltd",
-    "price": 0.45,
-    "volume": 144093
+    "ticker": "TAOP",
+    "company": "Taoping Inc",
+    "price": 0.77,
+    "volume": 233774
    },
    {
-    "ticker": "GTEC",
-    "company": "Greenland Technologies Holding Corp",
-    "price": 0.52,
-    "volume": 128270
+    "ticker": "MDXH",
+    "company": "MDxHealth SA",
+    "price": 0.48,
+    "volume": 174150
    },
    {
-    "ticker": "FMFC",
-    "company": "Kandal M Venture Ltd",
-    "price": 0.24,
-    "volume": 124270
-   },
-   {
-    "ticker": "SMTK",
-    "company": "SmartKem Inc",
-    "price": 0.15,
-    "volume": 116112
+    "ticker": "EPOW",
+    "company": "E-Power Inc",
+    "price": 0.58,
+    "volume": 172695
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
