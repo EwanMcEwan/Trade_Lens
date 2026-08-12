@@ -1562,7 +1562,7 @@ async function loadInsiderBuys(c) {
   const priceOf = new Map((universe.rows || []).map(r => [r.ticker, r.price]));
 
   const buys = [];
-  let scanned = 0, rateLimited = false;
+  let scanned = 0, rateLimited = false, failed = 0, lastError = null;
   for (const sym of scan) {
     try {
       const r = await finnhub(`/stock/insider-transactions?symbol=${encodeURIComponent(sym)}&from=${from}&to=${to}`);
@@ -1582,12 +1582,16 @@ async function loadInsiderBuys(c) {
       }
     } catch (e) {
       if (/rate limit/i.test(e.message)) { rateLimited = true; break; }
-      // A single bad symbol should not abort the sweep.
+      // A single bad symbol should not abort the sweep, but if every one
+      // fails we need to say so rather than report "no purchases found".
+      failed++; lastError = e;
     }
   }
 
   buys.sort((a, b) => new Date(b.date) - new Date(a.date));
-  const result = { buys, scanned, total: scan.length, rateLimited, at: new Date().toISOString() };
+  const result = { buys, scanned, total: scan.length, rateLimited,
+                   failed, error: scanned === 0 && failed ? lastError.message : null,
+                   at: new Date().toISOString() };
   State.insiderBuysCache = result;
   State.insiderBuysCacheTs = Date.now();
   renderInsiderBuys(c, result, universe);
@@ -1603,6 +1607,12 @@ function renderInsiderBuys(c, result, universe) {
     (rateLimited
       ? `<div class="notice warn"><b>Stopped early.</b> Finnhub rate-limited the sweep after ${scanned} of ${total} tickers. Reopen the tab in a minute for the rest.</div>`
       : '');
+
+  if (result.error) {
+    c.innerHTML = head + `<div class="empty">Could not reach Finnhub for the insider sweep.<br>
+      <span class="screen-sub">${escapeHtml(result.error)} — all ${result.failed} requests failed.</span></div>`;
+    return;
+  }
 
   if (!buys.length) {
     c.innerHTML = head + `<div class="empty">No insider purchases in the last ${INSIDER_LOOKBACK_DAYS} days
