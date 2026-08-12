@@ -18,7 +18,7 @@
 import { writeFile, readFile, mkdir } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { parseTable, firstHref, firstLinkText, toNumber } from "./parse-table.mjs";
+import { parseTable, firstHref, allLinks, snippetAround, toNumber } from "./parse-table.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = join(ROOT, "data", "screener.json");
@@ -28,11 +28,28 @@ const UA = "Mozilla/5.0 (compatible; Trade_Lens/1.0; +https://github.com/EwanMcE
 /* Tickers can carry class suffixes and, on openinsider, occasional lowercase. */
 const TICKER_RE = /^[A-Za-z][A-Za-z0-9.\-]{0,9}$/;
 
-/** Read a cell as the text of its link when it has one, else the whole cell. */
+/**
+ * Pull the ticker out of a cell.
+ *
+ * Finviz puts a logo placeholder link holding the company's initial ahead of
+ * the real ticker link, so neither the cell's full text ("BBQ") nor its first
+ * link ("B") is right. Its quote href carries ?t=BQ, which is authoritative;
+ * openinsider has no such param, so fall back to the longest ticker-shaped
+ * link text, then to the cell text.
+ */
 function tickerAt(row, headers, key = "ticker") {
   const idx = headers.indexOf(key);
-  const viaLink = idx === -1 ? null : firstLinkText(row._html?.[idx]);
-  return String(viaLink || row[key] || "").trim();
+  const cell = idx === -1 ? null : row._html?.[idx];
+  if (cell) {
+    const links = allLinks(cell);
+    for (const l of links) {
+      const m = l.href && /[?&]t=([A-Za-z0-9.\-]+)/i.exec(l.href);
+      if (m) return m[1];
+    }
+    const texts = links.map(l => l.text).filter(t => TICKER_RE.test(t));
+    if (texts.length) return texts.sort((a, b) => b.length - a.length)[0];
+  }
+  return String(row[key] || "").trim();
 }
 
 /* A screener page's search form is also a table whose labels overlap the
@@ -102,7 +119,7 @@ async function getHtml(url) {
 /* When a parse comes back empty the log needs to say what the page actually
    contained, otherwise there is nothing to debug from — the sites are not
    reachable from a dev machine behind a restrictive egress policy. */
-function reportDiag(name, html, diag) {
+function reportDiag(name, html, diag, markers = []) {
   console.error(`  [diag] ${name}: ${html.length} bytes, ${diag.tablesFound ?? 0} tables`);
   if (diag.matchedHeaders) {
     console.error(`  [diag] matched headers: ${diag.matchedHeaders.join(", ")}`);
@@ -111,11 +128,15 @@ function reportDiag(name, html, diag) {
   for (const r of (diag.rejected || [])) {
     console.error(`  [diag] rejected (no tickers): ${r.rows} rows | headers: ${JSON.stringify(r.headers)}`);
   }
-  for (const c of (diag.candidates || [])) {
-    console.error(`  [diag] candidate table: ${c.rows} rows | first row: ${JSON.stringify(c.firstRow)}`);
+  // The results table is the big one; show the largest candidates first so a
+  // 200-row table is not buried under a dozen one-row layout tables.
+  const byRows = [...(diag.candidates || [])].sort((a, b) => b.rows - a.rows).slice(0, 6);
+  for (const c of byRows) {
+    console.error(`  [diag] biggest candidate: ${c.rows} rows x ${c.cells} cells | first row: ${JSON.stringify(c.firstRow)}`);
   }
-  const snippet = html.replace(/\s+/g, " ").slice(0, 400);
-  console.error(`  [diag] head: ${snippet}`);
+  for (const mk of markers) {
+    console.error(`  [diag] around "${mk}": ${snippetAround(html, mk, 600)}`);
+  }
 }
 
 async function fetchFinviz() {
@@ -123,7 +144,7 @@ async function fetchFinviz() {
   const diag = {};
   const table = parseTable(html, ["ticker", "price"], diag, yieldsTickers("ticker"));
   if (!table) {
-    reportDiag("finviz", html, diag);
+    reportDiag("finviz", html, diag, ["screener", "Ticker"]);
     throw new Error("could not locate the screener table (markup may have changed)");
   }
 
@@ -152,7 +173,7 @@ async function fetchOpenInsider() {
   const diag = {};
   const table = parseTable(html, ["ticker", "trade date"], diag, yieldsTickers("ticker"));
   if (!table) {
-    reportDiag("openinsider", html, diag);
+    reportDiag("openinsider", html, diag, ["tinytable", "Trade Type", "Filing Date"]);
     throw new Error("could not locate the screener table (markup may have changed)");
   }
 
