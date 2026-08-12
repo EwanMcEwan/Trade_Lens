@@ -146,18 +146,17 @@ export function parseTable(html, requiredHeaders = [], diag = null, validate = n
     const raw = extractRows(table);
     if (diag && raw.length) {
       diag.candidates = diag.candidates || [];
-      if (diag.candidates.length < 6) {
-        diag.candidates.push({
-          rows: raw.length,
-          firstRow: raw[0].map(cellText).slice(0, 14),
-        });
-      }
+      diag.candidates.push({
+        rows: raw.length,
+        cells: raw[0].length,
+        firstRow: raw[0].map(cellText).slice(0, 14),
+      });
     }
     if (raw.length < 2) continue;
 
     // The header is the first row whose cells satisfy every requirement.
     let headerIdx = -1, exactHits = 0;
-    for (let i = 0; i < Math.min(raw.length, 4); i++) {
+    for (let i = 0; i < Math.min(raw.length, 8); i++) {
       const texts = raw[i].map(c => cellText(c).toLowerCase());
       const ok = required.every(req => texts.some(t => t.includes(req)));
       if (ok) {
@@ -224,6 +223,31 @@ export function parseTable(html, requiredHeaders = [], diag = null, validate = n
 export function firstLinkText(cellHtml) {
   const m = /<a\b[^>]*>([\s\S]*?)<\/a>/i.exec(String(cellHtml || ""));
   return m ? cellText(m[1]) : null;
+}
+
+/**
+ * Every <a> in a cell as {href, text}.
+ *
+ * Finviz's ticker cell contains *two* links: a logo placeholder holding the
+ * company's initial, then the ticker itself. Taking the first one yields "B"
+ * for "BQ", so callers need to see them all and choose.
+ */
+export function allLinks(cellHtml) {
+  const out = [];
+  const re = /<a\b([^>]*)>([\s\S]*?)<\/a>/gi;
+  let m;
+  while ((m = re.exec(String(cellHtml || "")))) {
+    const href = /href\s*=\s*["']([^"']+)["']/i.exec(m[1]);
+    out.push({ href: href ? decodeEntities(href[1]) : null, text: cellText(m[2]) });
+  }
+  return out;
+}
+
+/** A window of source around a marker, for diagnosing unfamiliar markup. */
+export function snippetAround(html, needle, len = 700) {
+  const i = String(html).indexOf(needle);
+  if (i === -1) return `<"${needle}" not present>`;
+  return String(html).slice(Math.max(0, i - 120), i + len).replace(/\s+/g, " ");
 }
 
 /** Pull the first href out of a cell's raw HTML, if there is one. */
