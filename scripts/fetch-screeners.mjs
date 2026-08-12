@@ -25,6 +25,9 @@ const OUT = join(ROOT, "data", "screener.json");
 
 const UA = "Mozilla/5.0 (compatible; Trade_Lens/1.0; +https://github.com/EwanMcEwan/Trade_Lens)";
 
+/* Tickers can carry class suffixes and, on openinsider, occasional lowercase. */
+const TICKER_RE = /^[A-Za-z][A-Za-z0-9.\-]{0,9}$/;
+
 /* ── Finviz ──────────────────────────────────────────────────────────────
    Descriptive filters, exactly as configured in the screener screenshot:
      Market Cap        Small ($2bln) and under   cap_smallunder
@@ -84,10 +87,30 @@ async function getHtml(url) {
   return body;
 }
 
+/* When a parse comes back empty the log needs to say what the page actually
+   contained, otherwise there is nothing to debug from — the sites are not
+   reachable from a dev machine behind a restrictive egress policy. */
+function reportDiag(name, html, diag) {
+  console.error(`  [diag] ${name}: ${html.length} bytes, ${diag.tablesFound ?? 0} tables`);
+  if (diag.matchedHeaders) {
+    console.error(`  [diag] matched headers: ${diag.matchedHeaders.join(", ")}`);
+    console.error(`  [diag] rows after header: ${diag.matchedRows}, skipped as too-short: ${diag.skippedRows}`);
+  }
+  for (const c of (diag.candidates || [])) {
+    console.error(`  [diag] candidate table: ${c.rows} rows | first row: ${JSON.stringify(c.firstRow)}`);
+  }
+  const snippet = html.replace(/\s+/g, " ").slice(0, 400);
+  console.error(`  [diag] head: ${snippet}`);
+}
+
 async function fetchFinviz() {
   const html = await getHtml(FINVIZ_URL);
-  const table = parseTable(html, ["ticker", "price"]);
-  if (!table) throw new Error("could not locate the screener table (markup may have changed)");
+  const diag = {};
+  const table = parseTable(html, ["ticker", "price"], diag);
+  if (!table) {
+    reportDiag("finviz", html, diag);
+    throw new Error("could not locate the screener table (markup may have changed)");
+  }
 
   const rows = table.rows.map(r => ({
     ticker: r.ticker || "",
@@ -99,16 +122,24 @@ async function fetchFinviz() {
     price: toNumber(r.price),
     changePct: toNumber(r.change),
     volume: toNumber(r.volume),
-  })).filter(r => /^[A-Z][A-Z0-9.\-]{0,7}$/.test(r.ticker));
+  })).filter(r => TICKER_RE.test(r.ticker));
 
-  if (!rows.length) throw new Error("table found but no ticker rows parsed");
+  if (!rows.length) {
+    reportDiag("finviz", html, diag);
+    console.error(`  [diag] tickers seen: ${JSON.stringify(table.rows.slice(0, 8).map(r => r.ticker))}`);
+    throw new Error("table found but no ticker rows parsed");
+  }
   return { rows, url: FINVIZ_URL, filters: FINVIZ_LABELS };
 }
 
 async function fetchOpenInsider() {
   const html = await getHtml(OPENINSIDER_URL);
-  const table = parseTable(html, ["ticker", "trade date"]);
-  if (!table) throw new Error("could not locate the screener table (markup may have changed)");
+  const diag = {};
+  const table = parseTable(html, ["ticker", "trade date"], diag);
+  if (!table) {
+    reportDiag("openinsider", html, diag);
+    throw new Error("could not locate the screener table (markup may have changed)");
+  }
 
   const rows = table.rows.map(r => {
     // Header names vary slightly between openinsider views; accept either.
@@ -131,9 +162,13 @@ async function fetchOpenInsider() {
       value: toNumber(r.value),
       link: firstHref(r._html?.[3]) || null,
     };
-  }).filter(r => /^[A-Z][A-Z0-9.\-]{0,7}$/.test(r.ticker));
+  }).filter(r => TICKER_RE.test(r.ticker));
 
-  if (!rows.length) throw new Error("table found but no ticker rows parsed");
+  if (!rows.length) {
+    reportDiag("openinsider", html, diag);
+    console.error(`  [diag] tickers seen: ${JSON.stringify(table.rows.slice(0, 8).map(r => r.ticker))}`);
+    throw new Error("table found but no ticker rows parsed");
+  }
   return { rows, url: OPENINSIDER_URL };
 }
 
