@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-12T10:55:11.700Z",
+ "generated": "2026-08-12T10:57:47.254Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-12T10:53:43.421Z",
+  "fetched": "2026-08-12T10:57:37.539Z",
   "rows": [
    {
     "ticker": "BQ",
@@ -11,10 +11,10 @@
     "sector": "Consumer Cyclical",
     "industry": "Specialty Retail",
     "country": "China",
-    "marketCap": "2.69M",
-    "price": 0.93,
-    "changePct": 15.72,
-    "volume": 21651575
+    "marketCap": "2.65M",
+    "price": 0.92,
+    "changePct": 13.9,
+    "volume": 21818546
    },
    {
     "ticker": "SLXN",
@@ -22,10 +22,10 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "Israel",
-    "marketCap": "0.51M",
-    "price": 0.48,
-    "changePct": -53.74,
-    "volume": 723887
+    "marketCap": "0.49M",
+    "price": 0.46,
+    "changePct": -55.84,
+    "volume": 733119
    },
    {
     "ticker": "YYAI",
@@ -35,8 +35,8 @@
     "country": "USA",
     "marketCap": "0.08M",
     "price": 0.07,
-    "changePct": -8.83,
-    "volume": 4998542
+    "changePct": -9.2,
+    "volume": 5013338
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -50,7 +50,7 @@
  },
  "openinsider": {
   "ok": false,
-  "error": "no query shape returned a results table (all variants gave the bare search form)",
+  "error": "openinsider served the bare search form for every URL tried, including its static listing pages — the site is most likely refusing automated requests",
   "fetched": null,
   "rows": []
  }
