@@ -90,13 +90,34 @@ const FINVIZ_URL =
      xp=1     include P (purchase); every other x* flag is 0
      sic1=-1  all sectors except funds
      sortcol=0 / cnt=100 / page=1                                          */
-const OPENINSIDER_URL =
-  "http://openinsider.com/screener?s=&o=&pl=&ph=1&ll=&lh=" +
-  "&fd=0&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysago=" +
-  "&xp=1&xs=0&xa=0&xd=0&xg=0&xf=0&xm=0&xx=0&xc=0&xw=0" +
+const OI_BASE = "http://openinsider.com/screener";
+const OI_COMMON =
+  "s=&o=&pl=&ph=1&ll=&lh=" +
+  "&fdr=&tdr=&fdlyl=&fdlyh=&daysago=" +
   "&vl=&vh=&ocl=&och=&sic1=-1&sicl=100&sich=9999&grp=0" +
   "&nfl=&nfh=&nil=&nih=&nol=&noh=&v2l=&v2h=&oc2l=&oc2h=" +
   "&sortcol=0&cnt=100&page=1";
+
+/*
+ * Candidate query shapes, tried in order until one returns a results table.
+ *
+ * The first attempt sent every transaction checkbox explicitly (xp=1&xs=0&
+ * xa=0&…). openinsider answered with the bare search form and no results at
+ * all — a browser omits unchecked boxes rather than sending them as 0, and
+ * sending the zeros appears to filter everything out. So the primary shape
+ * now sends only xp=1, with the older shapes kept as fallbacks in case the
+ * real cause was the date preset instead.
+ */
+const OPENINSIDER_URLS = [
+  // Purchases only, unchecked boxes omitted, all dates.
+  `${OI_BASE}?${OI_COMMON}&fd=0&td=0&xp=1`,
+  // Same, but the site's default two-year filing window.
+  `${OI_BASE}?${OI_COMMON}&fd=730&td=0&xp=1`,
+  // Minimal query — only what the filter actually needs.
+  `${OI_BASE}?s=&o=&pl=&ph=1&fd=0&xp=1&sic1=-1&sicl=100&sich=9999&sortcol=0&cnt=100&page=1`,
+  // Original shape, in case the explicit zeros were not the problem.
+  `${OI_BASE}?${OI_COMMON}&fd=0&td=0&xp=1&xs=0&xa=0&xd=0&xg=0&xf=0&xm=0&xx=0&xc=0&xw=0`,
+];
 
 async function getHtml(url) {
   const res = await fetch(url, {
@@ -169,13 +190,24 @@ async function fetchFinviz() {
 }
 
 async function fetchOpenInsider() {
-  const html = await getHtml(OPENINSIDER_URL);
-  const diag = {};
-  const table = parseTable(html, ["ticker", "trade date"], diag, yieldsTickers("ticker"));
+  let html = null, table = null, diag = null, used = null;
+
+  for (const url of OPENINSIDER_URLS) {
+    const d = {};
+    const body = await getHtml(url);
+    const t = parseTable(body, ["ticker", "trade date"], d, yieldsTickers("ticker"));
+    if (t) { html = body; table = t; diag = d; used = url; break; }
+    console.error(`  [try] no results table from ${url.slice(OI_BASE.length, OI_BASE.length + 90)}…`);
+    html = body; diag = d; used = url;
+    // Be gentle: this is a small site and we are already asking twice.
+    await new Promise(res => setTimeout(res, 1500));
+  }
+
   if (!table) {
     reportDiag("openinsider", html, diag, ["tinytable", "Trade Type", "Filing Date"]);
-    throw new Error("could not locate the screener table (markup may have changed)");
+    throw new Error("no query shape returned a results table (all variants gave the bare search form)");
   }
+  console.error(`  [ok] openinsider query shape: ${used}`);
 
   const rows = table.rows.map(r => {
     // Header names vary slightly between openinsider views; accept either.
@@ -205,7 +237,7 @@ async function fetchOpenInsider() {
     console.error(`  [diag] tickers seen: ${JSON.stringify(table.rows.slice(0, 8).map(r => r.ticker))}`);
     throw new Error("table found but no ticker rows parsed");
   }
-  return { rows, url: OPENINSIDER_URL };
+  return { rows, url: used };
 }
 
 /* Keep the previous rows when a source fails, so one bad run does not empty
