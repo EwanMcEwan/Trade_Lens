@@ -2,17 +2,21 @@
 /**
  * Builds data/screener.json for the app's Screening tab.
  *
- * Neither source can be called from the browser:
- *   - finviz.com and openinsider.com send no Access-Control-Allow-Origin
- *     header, so a page on github.io is blocked by CORS.
- *   - openinsider.com is plain HTTP, which an HTTPS page cannot fetch at all
- *     (mixed content).
- * Both are fine server-side, so this runs in GitHub Actions and commits the
- * parsed result, which the page then loads same-origin.
+ * finviz.com sends no Access-Control-Allow-Origin header, so a page served
+ * from github.io cannot fetch it — this runs in GitHub Actions instead and
+ * commits the parsed result, which the page then loads same-origin.
  *
- * Filters mirror the screenshots supplied with the request; see FINVIZ_FILTERS
- * and the OpenInsider query below. Run locally with:
- *     node scripts/fetch-screeners.mjs
+ * Two screens are produced:
+ *   finviz    the strict sub-$1 screen, shown as-is in the Screening tab
+ *   universe  a broad "everything under $1, most active first" list, used by
+ *             the Insider Buys section as the set of tickers to check
+ *
+ * openinsider.com used to be scraped here for the second section. It serves
+ * the bare search form to automated clients — even for its static listing
+ * pages, which take no query parameters — so that section now sources Form 4
+ * data from Finnhub in the browser instead.
+ *
+ * Run locally with:  node scripts/fetch-screeners.mjs
  */
 
 import { writeFile, readFile, mkdir } from "node:fs/promises";
@@ -25,7 +29,7 @@ const OUT = join(ROOT, "data", "screener.json");
 
 const UA = "Mozilla/5.0 (compatible; Trade_Lens/1.0; +https://github.com/EwanMcEwan/Trade_Lens)";
 
-/* Tickers can carry class suffixes and, on openinsider, occasional lowercase. */
+/* Tickers can carry class suffixes and occasionally arrive lowercased. */
 const TICKER_RE = /^[A-Za-z][A-Za-z0-9.\-]{0,9}$/;
 
 /**
@@ -34,8 +38,7 @@ const TICKER_RE = /^[A-Za-z][A-Za-z0-9.\-]{0,9}$/;
  * Finviz puts a logo placeholder link holding the company's initial ahead of
  * the real ticker link, so neither the cell's full text ("BBQ") nor its first
  * link ("B") is right. Its quote href carries ?t=BQ, which is authoritative;
- * openinsider has no such param, so fall back to the longest ticker-shaped
- * link text, then to the cell text.
+ * fall back to the longest ticker-shaped link text, then to the cell text.
  */
 function tickerAt(row, headers, key = "ticker") {
   const idx = headers.indexOf(key);
@@ -83,50 +86,18 @@ const FINVIZ_LABELS = [
 const FINVIZ_URL =
   `https://finviz.com/screener.ashx?v=111&f=${FINVIZ_FILTERS.join(",")}&o=ticker`;
 
-/* ── OpenInsider ─────────────────────────────────────────────────────────
-   All Sectors (except Funds), P–Purchase only, share price max $1,
-   all dates, grouped by filing, sorted by filing date, 100 results.
-     ph=1     share price high = 1
-     xp=1     include P (purchase); every other x* flag is 0
-     sic1=-1  all sectors except funds
-     sortcol=0 / cnt=100 / page=1                                          */
-const OI_BASE = "http://openinsider.com/screener";
-const OI_COMMON =
-  "s=&o=&pl=&ph=1&ll=&lh=" +
-  "&fdr=&tdr=&fdlyl=&fdlyh=&daysago=" +
-  "&vl=&vh=&ocl=&och=&sic1=-1&sicl=100&sich=9999&grp=0" +
-  "&nfl=&nfh=&nil=&nih=&nol=&noh=&v2l=&v2h=&oc2l=&oc2h=" +
-  "&sortcol=0&cnt=100&page=1";
-
 /*
- * Candidate query shapes, tried in order until one returns a results table.
- *
- * The first attempt sent every transaction checkbox explicitly (xp=1&xs=0&
- * xa=0&…). openinsider answered with the bare search form and no results at
- * all — a browser omits unchecked boxes rather than sending them as 0, and
- * sending the zeros appears to filter everything out. So the primary shape
- * now sends only xp=1, with the older shapes kept as fallbacks in case the
- * real cause was the date preset instead.
+ * A second, deliberately broad screen: every stock under $1, most active
+ * first. This is the universe the app checks for insider buying — the strict
+ * screen above usually returns only a handful of names, far too few for
+ * insider filings to show up in. v=111 pages 20 rows at a time, so two pages
+ * gives 40 tickers, which is plenty for a client-side sweep.
  */
-const OPENINSIDER_URLS = [
-  // Purchases only, unchecked boxes omitted, all dates.
-  { url: `${OI_BASE}?${OI_COMMON}&fd=0&td=0&xp=1` },
-  // Same, but the site's default two-year filing window.
-  { url: `${OI_BASE}?${OI_COMMON}&fd=730&td=0&xp=1` },
-  // Minimal query — only what the filter actually needs.
-  { url: `${OI_BASE}?s=&o=&pl=&ph=1&fd=0&xp=1&sic1=-1&sicl=100&sich=9999&sortcol=0&cnt=100&page=1` },
-  // Original shape, in case the explicit zeros were not the problem.
-  { url: `${OI_BASE}?${OI_COMMON}&fd=0&td=0&xp=1&xs=0&xa=0&xd=0&xg=0&xf=0&xm=0&xx=0&xc=0&xw=0` },
-  // Every screener query above came back as the bare search form. These are
-  // openinsider's plain static listings, which take no query parameters at
-  // all — if they carry a results table then the screener endpoint is the
-  // problem, and if they don't then we are being served the form on purpose.
-  // They are unfiltered, so the price ceiling is applied here instead.
-  { url: "http://openinsider.com/latest-insider-purchases", localFilter: true },
-  { url: "http://openinsider.com/latest-insider-trading", localFilter: true },
+const FINVIZ_UNIVERSE_URLS = [
+  "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
+  "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume&r=21",
 ];
 
-const MAX_SHARE_PRICE = 1;
 
 async function getHtml(url) {
   const res = await fetch(url, {
@@ -198,75 +169,33 @@ async function fetchFinviz() {
   return { rows, url: FINVIZ_URL, filters: FINVIZ_LABELS };
 }
 
-async function fetchOpenInsider() {
-  let html = null, table = null, diag = null, used = null, localFilter = false;
-
-  for (const candidate of OPENINSIDER_URLS) {
-    const d = {};
-    const body = await getHtml(candidate.url);
-    const t = parseTable(body, ["ticker", "trade date"], d, yieldsTickers("ticker"));
-    if (t) {
-      html = body; table = t; diag = d;
-      used = candidate.url; localFilter = !!candidate.localFilter;
+/* The sub-$1 universe the Insider Buys section sweeps for Form 4 purchases. */
+async function fetchUniverse() {
+  const seen = new Set();
+  const rows = [];
+  for (const url of FINVIZ_UNIVERSE_URLS) {
+    const html = await getHtml(url);
+    const diag = {};
+    const table = parseTable(html, ["ticker", "price"], diag, yieldsTickers("ticker"));
+    if (!table) {
+      reportDiag("finviz-universe", html, diag, ["Ticker"]);
       break;
     }
-    console.error(`  [try] no results table from ${candidate.url}`);
-    html = body; diag = d; used = candidate.url;
-    // Be gentle: this is a small site and we may ask several times.
+    for (const r of table.rows) {
+      const ticker = tickerAt(r, table.headers);
+      if (!TICKER_RE.test(ticker) || seen.has(ticker)) continue;
+      seen.add(ticker);
+      rows.push({
+        ticker,
+        company: r.company || "",
+        price: toNumber(r.price),
+        volume: toNumber(r.volume),
+      });
+    }
     await new Promise(res => setTimeout(res, 1500));
   }
-
-  if (!table) {
-    reportDiag("openinsider", html, diag, ["tinytable", "Trade Type", "Filing Date"]);
-    throw new Error(
-      "openinsider served the bare search form for every URL tried, including its " +
-      "static listing pages — the site is most likely refusing automated requests");
-  }
-  console.error(`  [ok] openinsider source: ${used}${localFilter ? " (filtering locally)" : ""}`);
-
-  const rows = table.rows.map(r => {
-    // Header names vary slightly between openinsider views; accept either.
-    const qty = r.qty ?? r.quantity;
-    const own = r.owned ?? r.own;
-    return {
-      filingDate: (r.filing_date || "").slice(0, 16),
-      tradeDate: r.trade_date || "",
-      ticker: tickerAt(r, table.headers).toUpperCase(),
-      company: r.company_name || r.company || "",
-      insider: r.insider_name || r.insider || "",
-      title: r.title || "",
-      tradeType: r.trade_type || "",
-      price: toNumber(r.price),
-      qty: toNumber(qty),
-      owned: toNumber(own),
-      // "ΔOwn" normalises differently depending on whether the site emits the
-      // character or the &Delta; entity, so accept every spelling we've seen.
-      deltaOwnPct: toNumber(r.delta_own ?? r.own_2 ?? r.d_own ?? r.own_chg ?? r.own_chg_2),
-      value: toNumber(r.value),
-      link: firstHref(r._html?.[3]) || null,
-    };
-  }).filter(r => TICKER_RE.test(r.ticker));
-
-  if (!rows.length) {
-    reportDiag("openinsider", html, diag);
-    console.error(`  [diag] tickers seen: ${JSON.stringify(table.rows.slice(0, 8).map(r => r.ticker))}`);
-    throw new Error("table found but no ticker rows parsed");
-  }
-
-  // The static listing pages carry every trade at every price, so the
-  // screener's own filters have to be reapplied here.
-  const filters = ["Purchases only (P)", `Share price: under $${MAX_SHARE_PRICE}`];
-  let out = rows;
-  if (localFilter) {
-    out = rows.filter(r =>
-      /^P\b|purchase/i.test(r.tradeType || "") &&
-      r.price != null && r.price <= MAX_SHARE_PRICE);
-    console.error(`  [ok] local filter kept ${out.length} of ${rows.length} rows`);
-    filters.push("filtered locally from the latest-trades listing");
-  }
-  if (!out.length) throw new Error(`no purchases under $${MAX_SHARE_PRICE} in the ${rows.length} rows available`);
-
-  return { rows: out, url: used, filters };
+  if (!rows.length) throw new Error("no sub-$1 tickers parsed");
+  return { rows, url: FINVIZ_UNIVERSE_URLS[0], filters: ["Price: under $1", "Most active first"] };
 }
 
 /* Keep the previous rows when a source fails, so one bad run does not empty
@@ -297,16 +226,16 @@ const previous = await readPrevious();
 await mkdir(dirname(OUT), { recursive: true });
 
 const finviz = await build("finviz", fetchFinviz, previous);
-const openinsider = await build("openinsider", fetchOpenInsider, previous);
+const universe = await build("universe", fetchUniverse, previous);
 
 await writeFile(OUT, JSON.stringify({
   generated: new Date().toISOString(),
   finviz,
-  openinsider,
+  universe,
 }, null, 1));
 
 console.log(`\nWrote ${OUT}`);
-if (!finviz.ok && !openinsider.ok && !finviz.rows.length && !openinsider.rows.length) {
+if (!finviz.ok && !universe.ok && !finviz.rows.length && !universe.rows.length) {
   console.error("Both sources failed with no previous data to fall back on.");
   process.exit(1);
 }
