@@ -1,42 +1,42 @@
 {
- "generated": "2026-08-12T10:45:11.096Z",
+ "generated": "2026-08-12T10:50:07.396Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-12T10:45:10.768Z",
+  "fetched": "2026-08-12T10:50:07.144Z",
   "rows": [
    {
-    "ticker": "B",
+    "ticker": "BQ",
     "company": "Boqii Holding Limited",
     "sector": "Consumer Cyclical",
     "industry": "Specialty Retail",
     "country": "China",
-    "marketCap": "2.65M",
-    "price": 0.92,
-    "changePct": 14,
-    "volume": 21308125
+    "marketCap": "2.68M",
+    "price": 0.93,
+    "changePct": 15.35,
+    "volume": 21470498
    },
    {
-    "ticker": "S",
+    "ticker": "SLXN",
     "company": "Silexion Therapeutics Corp",
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "Israel",
     "marketCap": "0.49M",
     "price": 0.46,
-    "changePct": -55.45,
-    "volume": 715448
+    "changePct": -55.1,
+    "volume": 720702
    },
    {
-    "ticker": "Y",
+    "ticker": "YYAI",
     "company": "AiRWA Inc",
     "sector": "Technology",
     "industry": "Software - Infrastructure",
     "country": "USA",
     "marketCap": "0.08M",
     "price": 0.07,
-    "changePct": -8.96,
-    "volume": 4899133
+    "changePct": -9.57,
+    "volume": 4972790
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
