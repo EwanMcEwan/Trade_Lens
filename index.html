@@ -587,7 +587,7 @@ transition: opacity 0.2s, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     </div>
     <div class="pill-row" id="screen-pills">
       <button class="pill active" data-screen="finviz">📊 Finviz</button>
-      <button class="pill" data-screen="openinsider">👁 Open Insider</button>
+      <button class="pill" data-screen="insider">👁 Insider Buys</button>
     </div>
     <div id="screen-container"></div>
   </section>
@@ -866,6 +866,8 @@ const State = {
   activeScreenTab: 'finviz',
   screenerCache: null,
   screenerCacheTs: 0,
+  insiderBuysCache: null,
+  insiderBuysCacheTs: 0,
   pendingFetches: new Map(),
 };
 
@@ -1474,9 +1476,15 @@ function renderScreening() {
   const data = State.screenerCache;
   if (!data) return;
 
-  if (State.activeScreenTab === 'finviz') renderFinviz(c, data.finviz || {});
-  else renderOpenInsider(c, data.openinsider || {});
+  if (State.activeScreenTab === 'finviz') {
+    renderFinviz(c, data.finviz || {});
+    wireScreenRows(c);
+  } else {
+    loadInsiderBuys(c);
+  }
+}
 
+function wireScreenRows(c) {
   c.querySelectorAll('.data-row[data-sym]').forEach(el =>
     el.addEventListener('click', () => openChartFor(el.dataset.sym)));
 }
@@ -1513,38 +1521,117 @@ function renderFinviz(c, src) {
     }).join('');
 }
 
-function renderOpenInsider(c, src) {
-  const rows = src.rows || [];
-  const head = screenHeader(src, 'OpenInsider', src.url || 'http://openinsider.com/screener');
+/*
+ * Insider Buys.
+ *
+ * This section used to scrape openinsider.com, which serves the bare search
+ * form to automated clients. It now sweeps Finnhub's Form 4 endpoint instead,
+ * across the sub-$1 universe that the GitHub Action collects from Finviz, and
+ * keeps only open-market purchases (transaction code P).
+ *
+ * The sweep is one request per ticker, so it is capped, cached, and abandons
+ * the rest of the list the moment Finnhub rate-limits us — a partial list with
+ * an honest note beats hammering the free tier.
+ */
+const INSIDER_SCAN_LIMIT = 25;
+const INSIDER_LOOKBACK_DAYS = 90;
+const INSIDER_BUYS_TTL = 30 * 60 * 1000;
 
-  if (!rows.length) {
-    c.innerHTML = head + `<div class="empty">No insider purchases match these filters.<br>
-      <span class="screen-sub">${escapeHtml(src.error || 'The screen returned zero rows.')}</span></div>`;
+async function loadInsiderBuys(c) {
+  const data = State.screenerCache;
+  const universe = data?.universe || {};
+  const tickers = (universe.rows || []).map(r => r.ticker).filter(Boolean);
+
+  if (!State.apiKey) { c.innerHTML = renderNoKeyState(); return; }
+
+  if (!tickers.length) {
+    c.innerHTML = `<div class="empty">No sub-$1 universe to scan.<br>
+      <span class="screen-sub">${escapeHtml(universe.error || 'data/screener.json has no universe list yet — run the Refresh screener data workflow.')}</span></div>`;
     return;
   }
 
-  const chips = (src.filters || []).map(f => `<span class="filter-chip">${escapeHtml(f)}</span>`).join('');
+  const fresh = State.insiderBuysCache && Date.now() - State.insiderBuysCacheTs < INSIDER_BUYS_TTL;
+  if (fresh) { renderInsiderBuys(c, State.insiderBuysCache, universe); return; }
+
+  const scan = tickers.slice(0, INSIDER_SCAN_LIMIT);
+  c.innerHTML = `<div class="notice">Checking ${scan.length} sub-$1 tickers for Form 4 purchases…</div>` +
+    '<div class="skeleton" style="height:60px; margin-bottom:8px;"></div>'.repeat(3);
+
+  const to = isoDate(new Date());
+  const from = isoDate(new Date(Date.now() - INSIDER_LOOKBACK_DAYS * 86400 * 1000));
+  const priceOf = new Map((universe.rows || []).map(r => [r.ticker, r.price]));
+
+  const buys = [];
+  let scanned = 0, rateLimited = false;
+  for (const sym of scan) {
+    try {
+      const r = await finnhub(`/stock/insider-transactions?symbol=${encodeURIComponent(sym)}&from=${from}&to=${to}`);
+      scanned++;
+      for (const t of (r.data || [])) {
+        // Finnhub reports share deltas; P is the open-market purchase code.
+        if (t.transactionCode !== 'P' || !(t.change > 0)) continue;
+        buys.push({
+          symbol: sym,
+          name: t.name || 'Insider',
+          date: t.transactionDate || t.filingDate || '',
+          filingDate: t.filingDate || '',
+          shares: t.change,
+          price: t.transactionPrice ?? priceOf.get(sym) ?? null,
+          value: (t.transactionPrice || priceOf.get(sym) || 0) * Math.abs(t.change || 0),
+        });
+      }
+    } catch (e) {
+      if (/rate limit/i.test(e.message)) { rateLimited = true; break; }
+      // A single bad symbol should not abort the sweep.
+    }
+  }
+
+  buys.sort((a, b) => new Date(b.date) - new Date(a.date));
+  const result = { buys, scanned, total: scan.length, rateLimited, at: new Date().toISOString() };
+  State.insiderBuysCache = result;
+  State.insiderBuysCacheTs = Date.now();
+  renderInsiderBuys(c, result, universe);
+}
+
+function renderInsiderBuys(c, result, universe) {
+  const { buys, scanned, total, rateLimited } = result;
+
+  const head = `<div class="screen-source">
+      <span>${escapeHtml(ageLabel(result.at))} · scanned ${scanned}/${total}</span>
+      <a href="${escapeHtml(universe.url || 'https://finviz.com/screener.ashx')}" target="_blank" rel="noopener">Universe on Finviz ↗</a>
+    </div>` +
+    (rateLimited
+      ? `<div class="notice warn"><b>Stopped early.</b> Finnhub rate-limited the sweep after ${scanned} of ${total} tickers. Reopen the tab in a minute for the rest.</div>`
+      : '');
+
+  if (!buys.length) {
+    c.innerHTML = head + `<div class="empty">No insider purchases in the last ${INSIDER_LOOKBACK_DAYS} days
+      across the ${scanned} sub-$1 tickers checked.<br>
+      <span class="screen-sub">Insider buying in sub-$1 names is genuinely rare — an empty list is a normal result, not an error.</span></div>`;
+    return;
+  }
+
+  const chips = ['Purchases only (Form 4 code P)', 'Universe: price under $1', `Last ${INSIDER_LOOKBACK_DAYS} days`]
+    .map(f => `<span class="filter-chip">${escapeHtml(f)}</span>`).join('');
+
   c.innerHTML = head +
-    `<div class="notice">Open-market <b>purchases</b> only (SEC Form 4), shares under $1, all sectors except funds.
+    `<div class="notice">Open-market <b>purchases</b> only, from SEC Form 4 filings via Finnhub.
      Insiders buy for one reason; clusters of buys in the same name are the signal worth a second look.</div>` +
-    (chips ? `<div class="filter-chips">${chips}</div>` : '') +
-    rows.map(r => {
-      const delta = r.deltaOwnPct == null ? '' : ` · ${r.deltaOwnPct >= 0 ? '+' : ''}${r.deltaOwnPct}% own`;
-      const qty = r.qty == null ? '' : `${Math.abs(r.qty).toLocaleString()} sh`;
-      const at = r.price == null ? '' : ` @ ${fmtPrice(r.price)}`;
-      return `<div class="data-row screen-row" data-sym="${escapeHtml(r.ticker)}">
+    `<div class="filter-chips">${chips}</div>` +
+    buys.map(b => `<div class="data-row screen-row" data-sym="${escapeHtml(b.symbol)}">
         <div>
-          <div class="data-symbol">${escapeHtml(r.ticker)}</div>
+          <div class="data-symbol">${escapeHtml(b.symbol)}</div>
           <div class="data-meta"><span class="badge buy">Buy</span></div>
         </div>
         <div>
-          <div class="data-title">${escapeHtml(r.insider || 'Insider')}${r.title ? ` · ${escapeHtml(r.title)}` : ''}</div>
-          <div class="data-meta">${escapeHtml(r.company || '')}</div>
-          <div class="screen-sub">Traded ${escapeHtml(r.tradeDate || '?')} · ${escapeHtml(qty)}${escapeHtml(at)}${escapeHtml(delta)}</div>
+          <div class="data-title">${escapeHtml(b.name)}</div>
+          <div class="data-meta">${escapeHtml(b.date)}${b.filingDate && b.filingDate !== b.date ? ` · filed ${escapeHtml(b.filingDate)}` : ''}</div>
+          <div class="screen-sub">${Math.abs(b.shares).toLocaleString()} sh @ ${fmtPrice(b.price)}</div>
         </div>
-        <div class="data-value up">${r.value == null ? '—' : fmtBig(r.value)}</div>
-      </div>`;
-    }).join('');
+        <div class="data-value up">${b.value ? fmtBig(b.value) : '—'}</div>
+      </div>`).join('');
+
+  wireScreenRows(c);
 }
 
 function renderNoKeyState() {
@@ -1624,6 +1711,8 @@ document.getElementById('screen-refresh').addEventListener('click', (e) => {
   const btn = e.currentTarget;
   btn.classList.add('spinning');
   setTimeout(() => btn.classList.remove('spinning'), 800);
+  // An explicit refresh should re-sweep Finnhub too, not just re-read the file.
+  State.insiderBuysCache = null;
   loadScreening(true);
 });
 
