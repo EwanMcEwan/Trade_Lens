@@ -1519,9 +1519,11 @@ function renderOpenInsider(c, src) {
     return;
   }
 
+  const chips = (src.filters || []).map(f => `<span class="filter-chip">${escapeHtml(f)}</span>`).join('');
   c.innerHTML = head +
     `<div class="notice">Open-market <b>purchases</b> only (SEC Form 4), shares under $1, all sectors except funds.
      Insiders buy for one reason; clusters of buys in the same name are the signal worth a second look.</div>` +
+    (chips ? `<div class="filter-chips">${chips}</div>` : '') +
     rows.map(r => {
       const delta = r.deltaOwnPct == null ? '' : ` · ${r.deltaOwnPct >= 0 ? '+' : ''}${r.deltaOwnPct}% own`;
       const qty = r.qty == null ? '' : `${Math.abs(r.qty).toLocaleString()} sh`;

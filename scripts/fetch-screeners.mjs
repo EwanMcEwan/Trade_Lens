@@ -110,14 +110,23 @@ const OI_COMMON =
  */
 const OPENINSIDER_URLS = [
   // Purchases only, unchecked boxes omitted, all dates.
-  `${OI_BASE}?${OI_COMMON}&fd=0&td=0&xp=1`,
+  { url: `${OI_BASE}?${OI_COMMON}&fd=0&td=0&xp=1` },
   // Same, but the site's default two-year filing window.
-  `${OI_BASE}?${OI_COMMON}&fd=730&td=0&xp=1`,
+  { url: `${OI_BASE}?${OI_COMMON}&fd=730&td=0&xp=1` },
   // Minimal query — only what the filter actually needs.
-  `${OI_BASE}?s=&o=&pl=&ph=1&fd=0&xp=1&sic1=-1&sicl=100&sich=9999&sortcol=0&cnt=100&page=1`,
+  { url: `${OI_BASE}?s=&o=&pl=&ph=1&fd=0&xp=1&sic1=-1&sicl=100&sich=9999&sortcol=0&cnt=100&page=1` },
   // Original shape, in case the explicit zeros were not the problem.
-  `${OI_BASE}?${OI_COMMON}&fd=0&td=0&xp=1&xs=0&xa=0&xd=0&xg=0&xf=0&xm=0&xx=0&xc=0&xw=0`,
+  { url: `${OI_BASE}?${OI_COMMON}&fd=0&td=0&xp=1&xs=0&xa=0&xd=0&xg=0&xf=0&xm=0&xx=0&xc=0&xw=0` },
+  // Every screener query above came back as the bare search form. These are
+  // openinsider's plain static listings, which take no query parameters at
+  // all — if they carry a results table then the screener endpoint is the
+  // problem, and if they don't then we are being served the form on purpose.
+  // They are unfiltered, so the price ceiling is applied here instead.
+  { url: "http://openinsider.com/latest-insider-purchases", localFilter: true },
+  { url: "http://openinsider.com/latest-insider-trading", localFilter: true },
 ];
+
+const MAX_SHARE_PRICE = 1;
 
 async function getHtml(url) {
   const res = await fetch(url, {
@@ -190,24 +199,30 @@ async function fetchFinviz() {
 }
 
 async function fetchOpenInsider() {
-  let html = null, table = null, diag = null, used = null;
+  let html = null, table = null, diag = null, used = null, localFilter = false;
 
-  for (const url of OPENINSIDER_URLS) {
+  for (const candidate of OPENINSIDER_URLS) {
     const d = {};
-    const body = await getHtml(url);
+    const body = await getHtml(candidate.url);
     const t = parseTable(body, ["ticker", "trade date"], d, yieldsTickers("ticker"));
-    if (t) { html = body; table = t; diag = d; used = url; break; }
-    console.error(`  [try] no results table from ${url.slice(OI_BASE.length, OI_BASE.length + 90)}…`);
-    html = body; diag = d; used = url;
-    // Be gentle: this is a small site and we are already asking twice.
+    if (t) {
+      html = body; table = t; diag = d;
+      used = candidate.url; localFilter = !!candidate.localFilter;
+      break;
+    }
+    console.error(`  [try] no results table from ${candidate.url}`);
+    html = body; diag = d; used = candidate.url;
+    // Be gentle: this is a small site and we may ask several times.
     await new Promise(res => setTimeout(res, 1500));
   }
 
   if (!table) {
     reportDiag("openinsider", html, diag, ["tinytable", "Trade Type", "Filing Date"]);
-    throw new Error("no query shape returned a results table (all variants gave the bare search form)");
+    throw new Error(
+      "openinsider served the bare search form for every URL tried, including its " +
+      "static listing pages — the site is most likely refusing automated requests");
   }
-  console.error(`  [ok] openinsider query shape: ${used}`);
+  console.error(`  [ok] openinsider source: ${used}${localFilter ? " (filtering locally)" : ""}`);
 
   const rows = table.rows.map(r => {
     // Header names vary slightly between openinsider views; accept either.
@@ -237,7 +252,21 @@ async function fetchOpenInsider() {
     console.error(`  [diag] tickers seen: ${JSON.stringify(table.rows.slice(0, 8).map(r => r.ticker))}`);
     throw new Error("table found but no ticker rows parsed");
   }
-  return { rows, url: used };
+
+  // The static listing pages carry every trade at every price, so the
+  // screener's own filters have to be reapplied here.
+  const filters = ["Purchases only (P)", `Share price: under $${MAX_SHARE_PRICE}`];
+  let out = rows;
+  if (localFilter) {
+    out = rows.filter(r =>
+      /^P\b|purchase/i.test(r.tradeType || "") &&
+      r.price != null && r.price <= MAX_SHARE_PRICE);
+    console.error(`  [ok] local filter kept ${out.length} of ${rows.length} rows`);
+    filters.push("filtered locally from the latest-trades listing");
+  }
+  if (!out.length) throw new Error(`no purchases under $${MAX_SHARE_PRICE} in the ${rows.length} rows available`);
+
+  return { rows: out, url: used, filters };
 }
 
 /* Keep the previous rows when a source fails, so one bad run does not empty
