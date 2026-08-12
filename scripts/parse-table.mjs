@@ -49,28 +49,78 @@ export function normaliseHeader(s) {
     .replace(/^_+|_+$/g, "") || "col";
 }
 
-/** Split a chunk of HTML into its <tr> rows, each as an array of cell HTML. */
+/**
+ * Split a chunk of HTML into its <tr> rows, each as an array of cell HTML.
+ * Falls back to splitting on <td boundaries for pages that omit closing tags.
+ */
 function extractRows(tableHtml) {
   const rows = [];
-  const trRe = /<tr\b[^>]*>([\s\S]*?)<\/tr>/gi;
+  const trRe = /<tr\b[^>]*>([\s\S]*?)(?=<tr\b|<\/tr>|<\/table>|$)/gi;
   let m;
   while ((m = trRe.exec(tableHtml))) {
+    const inner = m[1];
     const cells = [];
     const tdRe = /<(t[dh])\b[^>]*>([\s\S]*?)<\/\1>/gi;
     let c;
-    while ((c = tdRe.exec(m[1]))) cells.push(c[2]);
+    while ((c = tdRe.exec(inner))) cells.push(c[2]);
+    if (!cells.length && /<t[dh]\b/i.test(inner)) {
+      // Unclosed cells: slice between opening tags instead.
+      const parts = inner.split(/<t[dh]\b[^>]*>/i).slice(1);
+      for (const p of parts) cells.push(p);
+    }
     if (cells.length) rows.push(cells);
   }
   return rows;
 }
 
-/** Every <table> in the document, outermost-first, as raw HTML strings. */
+/**
+ * Every <table> in the document as a balanced HTML string, innermost-first.
+ *
+ * A non-greedy /<table>.*?<\/table>/ regex silently mis-pairs tags whenever
+ * tables are nested — which both finviz and openinsider do for layout — so it
+ * would hand back a fragment that starts at the outer table and stops at the
+ * inner table's closing tag. This walks the tags and keeps depth instead.
+ */
 function extractTables(html) {
   const out = [];
-  const re = /<table\b[^>]*>[\s\S]*?<\/table>/gi;
+  const stack = [];
+  const re = /<(\/?)table\b[^>]*>/gi;
   let m;
-  while ((m = re.exec(html))) out.push(m[0]);
-  return out;
+  while ((m = re.exec(html))) {
+    if (m[1]) {
+      const start = stack.pop();
+      if (start !== undefined) out.push(html.slice(start, m.index + m[0].length));
+    } else {
+      stack.push(m.index);
+    }
+  }
+  return out; // innermost tables close first, so they come first
+}
+
+/** Blank out tables nested inside this one so their rows don't leak into ours. */
+function stripNestedTables(tableHtml) {
+  const open = tableHtml.indexOf(">");
+  if (open === -1) return tableHtml;
+  const head = tableHtml.slice(0, open + 1);
+  let body = tableHtml.slice(open + 1);
+  const closeIdx = body.lastIndexOf("</table");
+  const tail = closeIdx === -1 ? "" : body.slice(closeIdx);
+  if (closeIdx !== -1) body = body.slice(0, closeIdx);
+
+  let depth = 0, out = "", last = 0;
+  const re = /<(\/?)table\b[^>]*>/gi;
+  let m;
+  while ((m = re.exec(body))) {
+    if (!m[1]) {
+      if (depth === 0) out += body.slice(last, m.index);
+      depth++;
+    } else if (depth > 0) {
+      depth--;
+      if (depth === 0) last = m.index + m[0].length;
+    }
+  }
+  if (depth === 0) out += body.slice(last);
+  return head + out + tail;
 }
 
 /**
@@ -79,11 +129,23 @@ function extractTables(html) {
  *
  * Returns { headers, rows } or null when no table matches.
  */
-export function parseTable(html, requiredHeaders = []) {
+export function parseTable(html, requiredHeaders = [], diag = null) {
   const required = requiredHeaders.map(h => h.toLowerCase());
+  const tables = extractTables(html);
+  if (diag) diag.tablesFound = tables.length;
 
-  for (const table of extractTables(html)) {
+  for (const rawTable of tables) {
+    const table = stripNestedTables(rawTable);
     const raw = extractRows(table);
+    if (diag && raw.length) {
+      diag.candidates = diag.candidates || [];
+      if (diag.candidates.length < 6) {
+        diag.candidates.push({
+          rows: raw.length,
+          firstRow: raw[0].map(cellText).slice(0, 14),
+        });
+      }
+    }
     if (raw.length < 2) continue;
 
     // The header is the first row whose cells satisfy every requirement.
@@ -106,15 +168,17 @@ export function parseTable(html, requiredHeaders = []) {
     });
 
     const rows = [];
+    let skipped = 0;
     for (let i = headerIdx + 1; i < raw.length; i++) {
       const cells = raw[i];
       // Skip repeated header bands and spacer rows.
-      if (cells.length < Math.max(2, Math.floor(headers.length / 2))) continue;
+      if (cells.length < Math.max(2, Math.floor(headers.length / 2))) { skipped++; continue; }
       const obj = {};
       headers.forEach((h, j) => { obj[h] = cells[j] === undefined ? "" : cellText(cells[j]); });
       obj._html = cells;
       rows.push(obj);
     }
+    if (diag) { diag.matchedHeaders = headers; diag.matchedRows = rows.length; diag.skippedRows = skipped; }
     if (rows.length) return { headers, rows };
   }
   return null;
