@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-12T10:57:47.254Z",
+ "generated": "2026-08-12T11:20:22.430Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-12T10:57:37.539Z",
+  "fetched": "2026-08-12T11:20:19.016Z",
   "rows": [
    {
     "ticker": "BQ",
@@ -11,10 +11,10 @@
     "sector": "Consumer Cyclical",
     "industry": "Specialty Retail",
     "country": "China",
-    "marketCap": "2.65M",
-    "price": 0.92,
-    "changePct": 13.9,
-    "volume": 21818546
+    "marketCap": "2.33M",
+    "price": 0.81,
+    "changePct": 0.46,
+    "volume": 24134569
    },
    {
     "ticker": "SLXN",
@@ -22,10 +22,10 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "Israel",
-    "marketCap": "0.49M",
-    "price": 0.46,
-    "changePct": -55.84,
-    "volume": 733119
+    "marketCap": "0.52M",
+    "price": 0.49,
+    "changePct": -52.46,
+    "volume": 798184
    },
    {
     "ticker": "YYAI",
@@ -34,9 +34,9 @@
     "industry": "Software - Infrastructure",
     "country": "USA",
     "marketCap": "0.08M",
-    "price": 0.07,
-    "changePct": -9.2,
-    "volume": 5013338
+    "price": 0.08,
+    "changePct": -6.75,
+    "volume": 5704522
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -48,10 +48,256 @@
    "Relative volume: over 2"
   ]
  },
- "openinsider": {
-  "ok": false,
-  "error": "openinsider served the bare search form for every URL tried, including its static listing pages — the site is most likely refusing automated requests",
-  "fetched": null,
-  "rows": []
+ "universe": {
+  "ok": true,
+  "error": null,
+  "fetched": "2026-08-12T11:20:22.430Z",
+  "rows": [
+   {
+    "ticker": "ZBAO",
+    "company": "Zhibao Technology Inc",
+    "price": 0.19,
+    "volume": 38543457
+   },
+   {
+    "ticker": "RCON",
+    "company": "Recon Technology Ltd",
+    "price": 0.03,
+    "volume": 38156376
+   },
+   {
+    "ticker": "ALP",
+    "company": "Alpha Compute Corp",
+    "price": 0.19,
+    "volume": 34160574
+   },
+   {
+    "ticker": "BQ",
+    "company": "Boqii Holding Limited",
+    "price": 0.81,
+    "volume": 24134569
+   },
+   {
+    "ticker": "CPOP",
+    "company": "Pop Culture Group Co Ltd",
+    "price": 0.37,
+    "volume": 11675945
+   },
+   {
+    "ticker": "HXHX",
+    "company": "Haoxin Holdings Ltd",
+    "price": 0.52,
+    "volume": 8127575
+   },
+   {
+    "ticker": "YYAI",
+    "company": "AiRWA Inc",
+    "price": 0.08,
+    "volume": 5704522
+   },
+   {
+    "ticker": "CYCU",
+    "company": "Cycurion Inc",
+    "price": 0.7,
+    "volume": 4297309
+   },
+   {
+    "ticker": "OMH",
+    "company": "Ohmyhome Ltd",
+    "price": 0.09,
+    "volume": 3533498
+   },
+   {
+    "ticker": "UZX",
+    "company": "Linkage Global Inc",
+    "price": 0.12,
+    "volume": 3085389
+   },
+   {
+    "ticker": "CISS",
+    "company": "C3is Inc",
+    "price": 0.08,
+    "volume": 1597986
+   },
+   {
+    "ticker": "MREO",
+    "company": "Mereo Biopharma Group Plc ADR",
+    "price": 0.29,
+    "volume": 1029141
+   },
+   {
+    "ticker": "GLE",
+    "company": "Global Engine Group Holding Ltd",
+    "price": 0.42,
+    "volume": 951713
+   },
+   {
+    "ticker": "SLXN",
+    "company": "Silexion Therapeutics Corp",
+    "price": 0.49,
+    "volume": 798184
+   },
+   {
+    "ticker": "BYND",
+    "company": "Beyond Meat Inc",
+    "price": 0.42,
+    "volume": 780996
+   },
+   {
+    "ticker": "GCTK",
+    "company": "GlucoTrack Inc",
+    "price": 0.44,
+    "volume": 757378
+   },
+   {
+    "ticker": "PDSB",
+    "company": "PDS Biotechnology Corp",
+    "price": 0.27,
+    "volume": 702567
+   },
+   {
+    "ticker": "FAMI",
+    "company": "Farmmi Inc",
+    "price": 0.15,
+    "volume": 665116
+   },
+   {
+    "ticker": "YMT",
+    "company": "Yimutian Inc ADR",
+    "price": 0.21,
+    "volume": 651830
+   },
+   {
+    "ticker": "GPUS",
+    "company": "Hyperscale Data Inc",
+    "price": 0.12,
+    "volume": 546610
+   },
+   {
+    "ticker": "SOAR",
+    "company": "Volato Group Inc",
+    "price": 0.15,
+    "volume": 506480
+   },
+   {
+    "ticker": "CIGL",
+    "company": "Concorde International Group Ltd",
+    "price": 0.45,
+    "volume": 476184
+   },
+   {
+    "ticker": "VEEA",
+    "company": "Veea Inc",
+    "price": 0.12,
+    "volume": 465657
+   },
+   {
+    "ticker": "RITR",
+    "company": "Reitar Logtech Holdings Ltd",
+    "price": 0.13,
+    "volume": 412479
+   },
+   {
+    "ticker": "ITP",
+    "company": "IT Tech Packaging Inc",
+    "price": 0.17,
+    "volume": 380119
+   },
+   {
+    "ticker": "KIDZ",
+    "company": "KIDZ AI Inc",
+    "price": 0.26,
+    "volume": 313953
+   },
+   {
+    "ticker": "ZONE",
+    "company": "CleanCore Solutions Inc",
+    "price": 0.15,
+    "volume": 248979
+   },
+   {
+    "ticker": "VTAK",
+    "company": "Catheter Precision Inc",
+    "price": 0.28,
+    "volume": 245765
+   },
+   {
+    "ticker": "TAOP",
+    "company": "Taoping Inc",
+    "price": 0.77,
+    "volume": 231233
+   },
+   {
+    "ticker": "HUMA",
+    "company": "Humacyte Inc",
+    "price": 0.65,
+    "volume": 196279
+   },
+   {
+    "ticker": "DVLT",
+    "company": "Datavault AI Inc",
+    "price": 0.31,
+    "volume": 193579
+   },
+   {
+    "ticker": "DXF",
+    "company": "Eason Technology Ltd ADR",
+    "price": 0.5,
+    "volume": 192056
+   },
+   {
+    "ticker": "MDXH",
+    "company": "MDxHealth SA",
+    "price": 0.47,
+    "volume": 174118
+   },
+   {
+    "ticker": "EPOW",
+    "company": "E-Power Inc",
+    "price": 0.56,
+    "volume": 170019
+   },
+   {
+    "ticker": "SES",
+    "company": "SES AI Corp",
+    "price": 0.54,
+    "volume": 163924
+   },
+   {
+    "ticker": "CHGA",
+    "company": "Change Agents Corp",
+    "price": 0.22,
+    "volume": 157986
+   },
+   {
+    "ticker": "BNRG",
+    "company": "Brenmiller Energy Ltd",
+    "price": 0.45,
+    "volume": 144093
+   },
+   {
+    "ticker": "GTEC",
+    "company": "Greenland Technologies Holding Corp",
+    "price": 0.52,
+    "volume": 128270
+   },
+   {
+    "ticker": "FMFC",
+    "company": "Kandal M Venture Ltd",
+    "price": 0.24,
+    "volume": 124270
+   },
+   {
+    "ticker": "SMTK",
+    "company": "SmartKem Inc",
+    "price": 0.15,
+    "volume": 116112
+   }
+  ],
+  "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
+  "filters": [
+   "Price: under $1",
+   "Most active first"
+  ]
  }
 }
