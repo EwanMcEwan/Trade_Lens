@@ -1456,13 +1456,17 @@ function ageLabel(iso) {
 }
 
 function screenHeader(src, label, siteUrl) {
-  const stale = !src.ok
+  // Only claim to be showing older data when there actually is some. A source
+  // that has never succeeded gets its reason from the empty state instead, so
+  // the message is not printed twice.
+  const hasRows = !!(src.rows && src.rows.length);
+  const warn = (!src.ok && hasRows)
     ? `<div class="notice warn"><b>Showing last good data.</b> The most recent refresh of ${escapeHtml(label)} failed: ${escapeHtml(src.error || 'unknown error')}.</div>`
     : '';
   return `<div class="screen-source">
-      <span>Updated ${escapeHtml(ageLabel(src.fetched))}</span>
+      <span>${src.fetched ? 'Updated ' + escapeHtml(ageLabel(src.fetched)) : 'Never loaded'}</span>
       <a href="${escapeHtml(siteUrl)}" target="_blank" rel="noopener">Open on ${escapeHtml(label)} ↗</a>
-    </div>${stale}`;
+    </div>${warn}`;
 }
 
 function renderScreening() {
