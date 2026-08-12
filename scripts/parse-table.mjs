@@ -129,10 +129,17 @@ function stripNestedTables(tableHtml) {
  *
  * Returns { headers, rows } or null when no table matches.
  */
-export function parseTable(html, requiredHeaders = [], diag = null) {
+export function parseTable(html, requiredHeaders = [], diag = null, validate = null) {
   const required = requiredHeaders.map(h => h.toLowerCase());
   const tables = extractTables(html);
   if (diag) diag.tablesFound = tables.length;
+
+  // Score every candidate rather than taking the first structural match.
+  // A screener page's *search form* is also a table, and its labels overlap
+  // the results table's headers ("Trade Date", "Tickers"), so first-match
+  // reliably picked the form. Exact header hits outrank substring hits, and
+  // row count breaks ties.
+  const candidates = [];
 
   for (const rawTable of tables) {
     const table = stripNestedTables(rawTable);
@@ -149,11 +156,15 @@ export function parseTable(html, requiredHeaders = [], diag = null) {
     if (raw.length < 2) continue;
 
     // The header is the first row whose cells satisfy every requirement.
-    let headerIdx = -1;
+    let headerIdx = -1, exactHits = 0;
     for (let i = 0; i < Math.min(raw.length, 4); i++) {
       const texts = raw[i].map(c => cellText(c).toLowerCase());
       const ok = required.every(req => texts.some(t => t.includes(req)));
-      if (ok) { headerIdx = i; break; }
+      if (ok) {
+        headerIdx = i;
+        exactHits = required.filter(req => texts.some(t => t === req)).length;
+        break;
+      }
     }
     if (headerIdx === -1) continue;
 
@@ -178,10 +189,41 @@ export function parseTable(html, requiredHeaders = [], diag = null) {
       obj._html = cells;
       rows.push(obj);
     }
-    if (diag) { diag.matchedHeaders = headers; diag.matchedRows = rows.length; diag.skippedRows = skipped; }
-    if (rows.length) return { headers, rows };
+    if (!rows.length) continue;
+    const result = { headers, rows };
+    if (validate && !validate(result)) {
+      if (diag) {
+        diag.rejected = diag.rejected || [];
+        if (diag.rejected.length < 6) diag.rejected.push({ headers: headers.slice(0, 14), rows: rows.length });
+      }
+      continue;
+    }
+    candidates.push({ result, exactHits, rowCount: rows.length, skipped });
   }
-  return null;
+
+  if (!candidates.length) return null;
+  candidates.sort((a, b) => b.exactHits - a.exactHits || b.rowCount - a.rowCount);
+  const best = candidates[0];
+  if (diag) {
+    diag.matchedHeaders = best.result.headers;
+    diag.matchedRows = best.rowCount;
+    diag.skippedRows = best.skipped;
+    diag.exactHeaderHits = best.exactHits;
+    diag.candidatesConsidered = candidates.length;
+  }
+  return best.result;
+}
+
+/**
+ * Text of the first <a> in a cell.
+ *
+ * Finviz's ticker cell carries a logo placeholder holding the company's first
+ * letter before the link, so the cell's full text reads "BBQ" for ticker "BQ".
+ * The anchor holds the ticker on its own.
+ */
+export function firstLinkText(cellHtml) {
+  const m = /<a\b[^>]*>([\s\S]*?)<\/a>/i.exec(String(cellHtml || ""));
+  return m ? cellText(m[1]) : null;
 }
 
 /** Pull the first href out of a cell's raw HTML, if there is one. */
