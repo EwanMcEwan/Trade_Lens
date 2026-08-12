@@ -1,0 +1,57 @@
+{
+ "generated": "2026-08-12T10:37:11.651Z",
+ "finviz": {
+  "ok": true,
+  "error": null,
+  "fetched": "2026-08-12T10:37:11.177Z",
+  "rows": [
+   {
+    "ticker": "BBQ",
+    "company": "Boqii Holding Limited",
+    "sector": "Consumer Cyclical",
+    "industry": "Specialty Retail",
+    "country": "China",
+    "marketCap": "2.56M",
+    "price": 0.89,
+    "changePct": 10.14,
+    "volume": 20931608
+   },
+   {
+    "ticker": "SSLXN",
+    "company": "Silexion Therapeutics Corp",
+    "sector": "Healthcare",
+    "industry": "Biotechnology",
+    "country": "Israel",
+    "marketCap": "0.50M",
+    "price": 0.47,
+    "changePct": -54.6,
+    "volume": 703057
+   },
+   {
+    "ticker": "YYYAI",
+    "company": "AiRWA Inc",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "country": "USA",
+    "marketCap": "0.08M",
+    "price": 0.08,
+    "changePct": -7.98,
+    "volume": 4830457
+   }
+  ],
+  "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
+  "filters": [
+   "Market cap: small & under",
+   "Float: under 20M",
+   "Shares outstanding: under 5M",
+   "Price: under $1",
+   "Relative volume: over 2"
+  ]
+ },
+ "openinsider": {
+  "ok": false,
+  "error": "table found but no ticker rows parsed",
+  "fetched": null,
+  "rows": []
+ }
+}
