@@ -1,10 +1,21 @@
 {
- "generated": "2026-08-13T20:04:55.213Z",
+ "generated": "2026-08-13T21:22:49.717Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-13T20:04:51.827Z",
+  "fetched": "2026-08-13T21:22:46.541Z",
   "rows": [
+   {
+    "ticker": "BAOS",
+    "company": "Baosheng Media Group Holdings Ltd",
+    "sector": "Communication Services",
+    "industry": "Advertising Agencies",
+    "country": "China",
+    "marketCap": "0.92M",
+    "price": 0.6,
+    "changePct": -21.71,
+    "volume": 4416997
+   },
    {
     "ticker": "BBLG",
     "company": "Bone Biologics Corp",
@@ -14,7 +25,7 @@
     "marketCap": "1.22M",
     "price": 0.67,
     "changePct": 2.48,
-    "volume": 632780
+    "volume": 646652
    },
    {
     "ticker": "FGL",
@@ -25,7 +36,7 @@
     "marketCap": "0.57M",
     "price": 0.5,
     "changePct": -36.66,
-    "volume": 7901941
+    "volume": 8192797
    },
    {
     "ticker": "VBIO",
@@ -36,7 +47,7 @@
     "marketCap": "0.71M",
     "price": 0.17,
     "changePct": -24.42,
-    "volume": 22637185
+    "volume": 23069339
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -51,247 +62,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-13T20:04:55.213Z",
+  "fetched": "2026-08-13T21:22:49.717Z",
   "rows": [
    {
     "ticker": "LIMN",
     "company": "Liminatus Pharma Inc",
     "price": 0.15,
-    "volume": 550332002
+    "volume": 554407170
    },
    {
     "ticker": "IVDA",
     "company": "Iveda Solutions Inc",
     "price": 0.53,
-    "volume": 173611111
+    "volume": 179147767
    },
    {
     "ticker": "RCON",
     "company": "Recon Technology Ltd",
     "price": 0.03,
-    "volume": 107346735
+    "volume": 115948956
    },
    {
     "ticker": "OTLK",
     "company": "Outlook Therapeutics Inc",
     "price": 0.89,
-    "volume": 81749165
+    "volume": 81910811
    },
    {
     "ticker": "BYND",
     "company": "Beyond Meat Inc",
-    "price": 0.42,
-    "volume": 77194575
+    "price": 0.41,
+    "volume": 77637295
    },
    {
     "ticker": "HCWC",
     "company": "Healthy Choice Wellness Corp",
-    "price": 0.28,
-    "volume": 59543305
-   },
-   {
-    "ticker": "BYSI",
-    "company": "BeyondSpring Inc",
-    "price": 1,
-    "volume": 38281399
-   },
-   {
-    "ticker": "YYAI",
-    "company": "AiRWA Inc",
-    "price": 0.06,
-    "volume": 35073484
-   },
-   {
-    "ticker": "HUMA",
-    "company": "Humacyte Inc",
-    "price": 0.55,
-    "volume": 32564117
+    "price": 0.27,
+    "volume": 60404402
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
     "price": 0.11,
-    "volume": 29503027
+    "volume": 52161828
+   },
+   {
+    "ticker": "BYSI",
+    "company": "BeyondSpring Inc",
+    "price": 1,
+    "volume": 38741277
+   },
+   {
+    "ticker": "YYAI",
+    "company": "AiRWA Inc",
+    "price": 0.06,
+    "volume": 36032195
+   },
+   {
+    "ticker": "HUMA",
+    "company": "Humacyte Inc",
+    "price": 0.55,
+    "volume": 32711159
    },
    {
     "ticker": "BTTC",
     "company": "Black Titan Corp",
     "price": 0.64,
-    "volume": 24010084
-   },
-   {
-    "ticker": "VBIO",
-    "company": "Valion Bio Inc",
-    "price": 0.17,
-    "volume": 22637185
+    "volume": 24454325
    },
    {
     "ticker": "ZONE",
     "company": "CleanCore Solutions Inc",
     "price": 0.16,
-    "volume": 21355858
+    "volume": 24066281
+   },
+   {
+    "ticker": "VBIO",
+    "company": "Valion Bio Inc",
+    "price": 0.17,
+    "volume": 23069339
+   },
+   {
+    "ticker": "MGRX",
+    "company": "Mangoceuticals Inc",
+    "price": 0.53,
+    "volume": 22023888
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
     "price": 0.61,
-    "volume": 18849704
+    "volume": 19033578
    },
    {
     "ticker": "NCPL",
     "company": "Netcapital Inc",
     "price": 0.33,
-    "volume": 17875560
+    "volume": 17944544
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.32,
-    "volume": 16428545
-   },
-   {
-    "ticker": "SMTK",
-    "company": "SmartKem Inc",
-    "price": 0.11,
-    "volume": 12961944
-   },
-   {
-    "ticker": "INO",
-    "company": "Inovio Pharmaceuticals Inc",
-    "price": 0.9,
-    "volume": 12592358
-   },
-   {
-    "ticker": "GSUN",
-    "company": "Golden Sun Technology Group Ltd",
-    "price": 0.33,
-    "volume": 11849200
-   },
-   {
-    "ticker": "GOSS",
-    "company": "Gossamer Bio Inc",
-    "price": 0.17,
-    "volume": 11101658
-   },
-   {
-    "ticker": "CISS",
-    "company": "C3is Inc",
-    "price": 0.08,
-    "volume": 11074639
-   },
-   {
-    "ticker": "ORBS",
-    "company": "Eightco Holdings Inc",
-    "price": 0.75,
-    "volume": 11032522
-   },
-   {
-    "ticker": "GPRO",
-    "company": "GoPro Inc",
-    "price": 0.63,
-    "volume": 10380124
-   },
-   {
-    "ticker": "MVST",
-    "company": "Microvast Holdings Inc",
-    "price": 0.89,
-    "volume": 9977957
-   },
-   {
-    "ticker": "IPDN",
-    "company": "Professional Diversity Network Inc",
-    "price": 0.24,
-    "volume": 9087109
-   },
-   {
-    "ticker": "SLGB",
-    "company": "Smart Logistics Global Ltd",
-    "price": 0.6,
-    "volume": 9004429
+    "volume": 16863215
    },
    {
     "ticker": "CXAI",
     "company": "CXApp Inc",
     "price": 0.18,
-    "volume": 8863624
+    "volume": 14378288
    },
    {
-    "ticker": "EVTL",
-    "company": "Vertical Aerospace Ltd",
-    "price": 0.84,
-    "volume": 8366346
-   },
-   {
-    "ticker": "FGL",
-    "company": "Founder Group Ltd",
-    "price": 0.5,
-    "volume": 7901941
-   },
-   {
-    "ticker": "LESL",
-    "company": "Leslies Inc",
-    "price": 0.77,
-    "volume": 7070072
-   },
-   {
-    "ticker": "LGHL",
-    "company": "Lion Group Holding Ltd ADR",
-    "price": 0.81,
-    "volume": 6863870
-   },
-   {
-    "ticker": "GCDT",
-    "company": "Green Circle Decarbonize Technology Ltd",
-    "price": 0.54,
-    "volume": 6724546
-   },
-   {
-    "ticker": "SPWR",
-    "company": "SunPower Inc",
-    "price": 0.24,
-    "volume": 6536077
-   },
-   {
-    "ticker": "CYCU",
-    "company": "Cycurion Inc",
-    "price": 0.7,
-    "volume": 6327934
-   },
-   {
-    "ticker": "SNYR",
-    "company": "Synergy CHC Corp",
+    "ticker": "SMTK",
+    "company": "SmartKem Inc",
     "price": 0.11,
-    "volume": 6149393
+    "volume": 13504532
    },
    {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.21,
-    "volume": 5527479
+    "ticker": "INO",
+    "company": "Inovio Pharmaceuticals Inc",
+    "price": 0.9,
+    "volume": 12699140
    },
    {
     "ticker": "NXXT",
     "company": "NextNRG Inc",
     "price": 0.32,
-    "volume": 5518580
+    "volume": 12681938
    },
    {
-    "ticker": "SAFX",
-    "company": "XCF Global Inc",
-    "price": 0.45,
-    "volume": 5232246
+    "ticker": "GSUN",
+    "company": "Golden Sun Technology Group Ltd",
+    "price": 0.33,
+    "volume": 11888826
    },
    {
-    "ticker": "WWR",
-    "company": "Westwater Resources Inc",
-    "price": 0.59,
-    "volume": 4824359
-   },
-   {
-    "ticker": "ALP",
-    "company": "Alpha Compute Corp",
+    "ticker": "GOSS",
+    "company": "Gossamer Bio Inc",
     "price": 0.17,
-    "volume": 4694361
+    "volume": 11834735
+   },
+   {
+    "ticker": "CISS",
+    "company": "C3is Inc",
+    "price": 0.08,
+    "volume": 11388945
+   },
+   {
+    "ticker": "ORBS",
+    "company": "Eightco Holdings Inc",
+    "price": 0.75,
+    "volume": 11059473
+   },
+   {
+    "ticker": "GPRO",
+    "company": "GoPro Inc",
+    "price": 0.63,
+    "volume": 10492494
+   },
+   {
+    "ticker": "MVST",
+    "company": "Microvast Holdings Inc",
+    "price": 0.89,
+    "volume": 9982609
+   },
+   {
+    "ticker": "SLGB",
+    "company": "Smart Logistics Global Ltd",
+    "price": 0.6,
+    "volume": 9146945
+   },
+   {
+    "ticker": "IPDN",
+    "company": "Professional Diversity Network Inc",
+    "price": 0.24,
+    "volume": 9123910
+   },
+   {
+    "ticker": "EVTL",
+    "company": "Vertical Aerospace Ltd",
+    "price": 0.84,
+    "volume": 8387011
+   },
+   {
+    "ticker": "FGL",
+    "company": "Founder Group Ltd",
+    "price": 0.5,
+    "volume": 8192797
+   },
+   {
+    "ticker": "FAMI",
+    "company": "Farmmi Inc",
+    "price": 0.13,
+    "volume": 7833827
+   },
+   {
+    "ticker": "MDXH",
+    "company": "MDxHealth SA",
+    "price": 0.46,
+    "volume": 7211873
+   },
+   {
+    "ticker": "LESL",
+    "company": "Leslies Inc",
+    "price": 0.77,
+    "volume": 7182957
+   },
+   {
+    "ticker": "LGHL",
+    "company": "Lion Group Holding Ltd ADR",
+    "price": 0.81,
+    "volume": 7026037
+   },
+   {
+    "ticker": "GCDT",
+    "company": "Green Circle Decarbonize Technology Ltd",
+    "price": 0.51,
+    "volume": 6910073
+   },
+   {
+    "ticker": "CYCU",
+    "company": "Cycurion Inc",
+    "price": 0.7,
+    "volume": 6561369
+   },
+   {
+    "ticker": "SPWR",
+    "company": "SunPower Inc",
+    "price": 0.24,
+    "volume": 6542522
+   },
+   {
+    "ticker": "SNYR",
+    "company": "Synergy CHC Corp",
+    "price": 0.11,
+    "volume": 6264873
+   },
+   {
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.21,
+    "volume": 5543304
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
