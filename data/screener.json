@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-14T05:15:19.535Z",
+ "generated": "2026-08-14T06:55:08.020Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-14T05:15:16.116Z",
+  "fetched": "2026-08-14T06:55:04.813Z",
   "rows": [
    {
     "ticker": "BAOS",
@@ -11,7 +11,7 @@
     "sector": "Communication Services",
     "industry": "Advertising Agencies",
     "country": "China",
-    "marketCap": "0.92M",
+    "marketCap": "0.91M",
     "price": 0.6,
     "changePct": -21.71,
     "volume": 4551073
@@ -62,7 +62,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-14T05:15:19.535Z",
+  "fetched": "2026-08-14T06:55:08.020Z",
   "rows": [
    {
     "ticker": "LIMN",
