@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-15T05:53:48.972Z",
+ "generated": "2026-08-15T06:42:37.038Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-15T05:53:45.823Z",
+  "fetched": "2026-08-15T06:42:33.671Z",
   "rows": [
    {
     "ticker": "GIPR",
@@ -11,7 +11,7 @@
     "sector": "Real Estate",
     "industry": "REIT - Diversified",
     "country": "USA",
-    "marketCap": "0.52M",
+    "marketCap": "0.51M",
     "price": 0.5,
     "changePct": -29.31,
     "volume": 34923714
@@ -62,7 +62,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-15T05:53:48.972Z",
+  "fetched": "2026-08-15T06:42:37.038Z",
   "rows": [
    {
     "ticker": "MDXH",
