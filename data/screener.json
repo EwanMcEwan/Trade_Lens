@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-18T05:32:38.151Z",
+ "generated": "2026-08-18T06:49:30.992Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-18T05:32:35.002Z",
+  "fetched": "2026-08-18T06:49:27.823Z",
   "rows": [
    {
     "ticker": "ARTL",
@@ -33,7 +33,7 @@
     "sector": "Technology",
     "industry": "Information Technology Services",
     "country": "USA",
-    "marketCap": "1.09M",
+    "marketCap": "1.10M",
     "price": 0.56,
     "changePct": 13.83,
     "volume": 3020720
@@ -55,7 +55,7 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "0.76M",
+    "marketCap": "4.05M",
     "price": 0.18,
     "changePct": -4.25,
     "volume": 27449059
@@ -84,7 +84,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-18T05:32:38.151Z",
+  "fetched": "2026-08-18T06:49:30.992Z",
   "rows": [
    {
     "ticker": "OSRH",
