@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-18T19:52:40.960Z",
+ "generated": "2026-08-18T20:27:46.629Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-18T19:52:37.569Z",
+  "fetched": "2026-08-18T20:27:43.279Z",
   "rows": [
    {
     "ticker": "BAOS",
@@ -11,10 +11,10 @@
     "sector": "Communication Services",
     "industry": "Advertising Agencies",
     "country": "China",
-    "marketCap": "0.75M",
-    "price": 0.48,
-    "changePct": 0.9,
-    "volume": 9211001
+    "marketCap": "0.76M",
+    "price": 0.49,
+    "changePct": 2.3,
+    "volume": 9455139
    },
    {
     "ticker": "LGCL",
@@ -22,10 +22,10 @@
     "sector": "Technology",
     "industry": "Software - Application",
     "country": "China",
-    "marketCap": "10.28M",
+    "marketCap": "10.34M",
     "price": 0.24,
-    "changePct": -82.96,
-    "volume": 108003482
+    "changePct": -82.86,
+    "volume": 109789379
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -40,247 +40,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-18T19:52:40.960Z",
+  "fetched": "2026-08-18T20:27:46.629Z",
   "rows": [
    {
     "ticker": "BIAF",
     "company": "BioAffinity Technologies Inc",
-    "price": 0.46,
-    "volume": 166916772
+    "price": 0.47,
+    "volume": 168213211
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.39,
-    "volume": 141501912
+    "volume": 144716606
    },
    {
     "ticker": "OSRH",
     "company": "OSR Health Inc",
-    "price": 0.47,
-    "volume": 138080137
+    "price": 0.41,
+    "volume": 142777775
    },
    {
     "ticker": "LGCL",
     "company": "Lucas GC Ltd",
     "price": 0.24,
-    "volume": 108003482
+    "volume": 109789379
    },
    {
     "ticker": "OTLK",
     "company": "Outlook Therapeutics Inc",
-    "price": 0.68,
-    "volume": 39074037
+    "price": 0.7,
+    "volume": 40689140
+   },
+   {
+    "ticker": "CISS",
+    "company": "C3is Inc",
+    "price": 0.07,
+    "volume": 19149149
    },
    {
     "ticker": "SAGT",
     "company": "Sagtec Global Ltd",
     "price": 0.77,
-    "volume": 18156882
-   },
-   {
-    "ticker": "CISS",
-    "company": "C3is Inc",
-    "price": 0.06,
-    "volume": 16704765
+    "volume": 18281273
    },
    {
     "ticker": "VERI",
     "company": "Veritone Inc",
     "price": 1,
-    "volume": 14471613
+    "volume": 14973963
+   },
+   {
+    "ticker": "SES",
+    "company": "SES AI Corp",
+    "price": 0.53,
+    "volume": 13568146
    },
    {
     "ticker": "FAMI",
     "company": "Farmmi Inc",
     "price": 0.1,
-    "volume": 12893458
+    "volume": 13302239
    },
    {
     "ticker": "ORBS",
     "company": "Eightco Holdings Inc",
-    "price": 0.67,
-    "volume": 12127143
-   },
-   {
-    "ticker": "SES",
-    "company": "SES AI Corp",
-    "price": 0.54,
-    "volume": 11962500
+    "price": 0.66,
+    "volume": 13068643
    },
    {
     "ticker": "VBIO",
     "company": "Valion Bio Inc",
     "price": 0.16,
-    "volume": 9858212
+    "volume": 10255953
    },
    {
     "ticker": "AGRZ",
     "company": "Agroz Inc",
     "price": 0.29,
-    "volume": 9655035
+    "volume": 9838929
    },
    {
     "ticker": "BAOS",
     "company": "Baosheng Media Group Holdings Ltd",
-    "price": 0.48,
-    "volume": 9211001
+    "price": 0.49,
+    "volume": 9455139
    },
    {
     "ticker": "HUMA",
     "company": "Humacyte Inc",
     "price": 0.58,
-    "volume": 8898478
+    "volume": 9246968
    },
    {
     "ticker": "RITR",
     "company": "Reitar Logtech Holdings Ltd",
     "price": 0.08,
-    "volume": 8870039
+    "volume": 9180637
    },
    {
     "ticker": "PROP",
     "company": "Prairie Operating Co",
     "price": 0.62,
-    "volume": 8739839
+    "volume": 8960762
+   },
+   {
+    "ticker": "BZAI",
+    "company": "Blaize Holdings Inc",
+    "price": 0.56,
+    "volume": 8758205
    },
    {
     "ticker": "SNYR",
     "company": "Synergy CHC Corp",
     "price": 0.11,
-    "volume": 8350996
-   },
-   {
-    "ticker": "BZAI",
-    "company": "Blaize Holdings Inc",
-    "price": 0.53,
-    "volume": 8295773
+    "volume": 8626313
    },
    {
     "ticker": "ZONE",
     "company": "CleanCore Solutions Inc",
     "price": 0.16,
-    "volume": 7373798
+    "volume": 8201456
    },
    {
     "ticker": "IVVD",
     "company": "Invivyd Inc",
-    "price": 0.87,
-    "volume": 7060100
-   },
-   {
-    "ticker": "UCL",
-    "company": "Ucloudlink Group Inc ADR",
-    "price": 0.48,
-    "volume": 6440269
-   },
-   {
-    "ticker": "GSUN",
-    "company": "Golden Sun Technology Group Ltd",
-    "price": 0.32,
-    "volume": 6353352
+    "price": 0.86,
+    "volume": 7699423
    },
    {
     "ticker": "GOSS",
     "company": "Gossamer Bio Inc",
     "price": 0.14,
-    "volume": 5999092
+    "volume": 6625854
    },
    {
-    "ticker": "GPRO",
-    "company": "GoPro Inc",
-    "price": 0.59,
-    "volume": 5480959
+    "ticker": "UCL",
+    "company": "Ucloudlink Group Inc ADR",
+    "price": 0.49,
+    "volume": 6500450
+   },
+   {
+    "ticker": "GSUN",
+    "company": "Golden Sun Technology Group Ltd",
+    "price": 0.32,
+    "volume": 6419764
    },
    {
     "ticker": "SURG",
     "company": "Surgepays Inc",
     "price": 0.27,
-    "volume": 5467608
+    "volume": 5894856
+   },
+   {
+    "ticker": "GPRO",
+    "company": "GoPro Inc",
+    "price": 0.59,
+    "volume": 5857426
    },
    {
     "ticker": "MVST",
     "company": "Microvast Holdings Inc",
     "price": 0.77,
-    "volume": 4841100
-   },
-   {
-    "ticker": "SAFX",
-    "company": "XCF Global Inc",
-    "price": 0.43,
-    "volume": 4014046
-   },
-   {
-    "ticker": "HRTX",
-    "company": "Heron Therapeutics Inc",
-    "price": 0.3,
-    "volume": 3952270
+    "volume": 5438711
    },
    {
     "ticker": "SPWR",
     "company": "SunPower Inc",
     "price": 0.22,
-    "volume": 3738717
+    "volume": 4114280
+   },
+   {
+    "ticker": "HRTX",
+    "company": "Heron Therapeutics Inc",
+    "price": 0.3,
+    "volume": 4104344
+   },
+   {
+    "ticker": "SAFX",
+    "company": "XCF Global Inc",
+    "price": 0.43,
+    "volume": 4100083
    },
    {
     "ticker": "CYPH",
     "company": "Cypherpunk Technologies Inc",
-    "price": 0.83,
-    "volume": 3725900
-   },
-   {
-    "ticker": "AMZE",
-    "company": "Amaze Holdings Inc",
-    "price": 0.2,
-    "volume": 3644743
+    "price": 0.81,
+    "volume": 3952771
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
     "price": 0.22,
-    "volume": 3424375
-   },
-   {
-    "ticker": "SRFM",
-    "company": "Surf Air Mobility Inc",
-    "price": 0.66,
-    "volume": 3407748
+    "volume": 3862822
    },
    {
     "ticker": "EVTL",
     "company": "Vertical Aerospace Ltd",
     "price": 0.78,
-    "volume": 3374123
+    "volume": 3773706
    },
    {
-    "ticker": "CGC",
-    "company": "Canopy Growth Corp",
-    "price": 0.99,
-    "volume": 3360021
+    "ticker": "AMZE",
+    "company": "Amaze Holdings Inc",
+    "price": 0.2,
+    "volume": 3736478
+   },
+   {
+    "ticker": "SRFM",
+    "company": "Surf Air Mobility Inc",
+    "price": 0.67,
+    "volume": 3588009
    },
    {
     "ticker": "CYCU",
     "company": "Cycurion Inc",
     "price": 0.73,
-    "volume": 3350137
+    "volume": 3519081
    },
    {
-    "ticker": "CNTX",
-    "company": "Context Therapeutics Inc",
-    "price": 0.5,
-    "volume": 3193384
-   },
-   {
-    "ticker": "NFE",
-    "company": "New Fortress Energy Inc",
-    "price": 0.29,
-    "volume": 2955434
+    "ticker": "CGC",
+    "company": "Canopy Growth Corp",
+    "price": 0.99,
+    "volume": 3513322
    },
    {
     "ticker": "DCGO",
     "company": "DocGo Inc",
-    "price": 0.5,
-    "volume": 2891337
+    "price": 0.48,
+    "volume": 3488587
+   },
+   {
+    "ticker": "CNTX",
+    "company": "Context Therapeutics Inc",
+    "price": 0.49,
+    "volume": 3329703
+   },
+   {
+    "ticker": "BIVI",
+    "company": "BioVie Inc",
+    "price": 0.96,
+    "volume": 3099892
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
