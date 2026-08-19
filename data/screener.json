@@ -1,20 +1,31 @@
 {
- "generated": "2026-08-19T17:29:48.839Z",
+ "generated": "2026-08-19T17:54:12.865Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-19T17:29:45.269Z",
+  "fetched": "2026-08-19T17:54:09.474Z",
   "rows": [
+   {
+    "ticker": "BAOS",
+    "company": "Baosheng Media Group Holdings Ltd",
+    "sector": "Communication Services",
+    "industry": "Advertising Agencies",
+    "country": "China",
+    "marketCap": "0.81M",
+    "price": 0.53,
+    "changePct": 9.01,
+    "volume": 3309816
+   },
    {
     "ticker": "JAGX",
     "company": "Jaguar Health Inc",
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "4.72M",
-    "price": 0.96,
-    "changePct": -1.7,
-    "volume": 164053
+    "marketCap": "4.56M",
+    "price": 0.93,
+    "changePct": -5.06,
+    "volume": 177498
    },
    {
     "ticker": "LGCL",
@@ -22,10 +33,10 @@
     "sector": "Technology",
     "industry": "Software - Application",
     "country": "China",
-    "marketCap": "6.11M",
-    "price": 0.14,
-    "changePct": -40.92,
-    "volume": 31269597
+    "marketCap": "5.56M",
+    "price": 0.13,
+    "changePct": -46.21,
+    "volume": 34366455
    },
    {
     "ticker": "SCNI",
@@ -33,10 +44,10 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "Israel",
-    "marketCap": "1.05M",
-    "price": 0.26,
-    "changePct": 12.53,
-    "volume": 709897
+    "marketCap": "1.09M",
+    "price": 0.28,
+    "changePct": 16.77,
+    "volume": 756113
    },
    {
     "ticker": "VBIO",
@@ -44,10 +55,10 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "2.83M",
+    "marketCap": "2.84M",
     "price": 0.13,
-    "changePct": -20.61,
-    "volume": 9641280
+    "changePct": -20.24,
+    "volume": 9840131
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -62,247 +73,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-19T17:29:48.839Z",
+  "fetched": "2026-08-19T17:54:12.865Z",
   "rows": [
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.3,
-    "volume": 140912240
+    "volume": 144751061
    },
    {
     "ticker": "LGCL",
     "company": "Lucas GC Ltd",
-    "price": 0.14,
-    "volume": 31269597
+    "price": 0.13,
+    "volume": 34366455
    },
    {
     "ticker": "AEON",
     "company": "AEON Biopharma Inc",
-    "price": 0.24,
-    "volume": 19583280
-   },
-   {
-    "ticker": "OSRH",
-    "company": "OSR Health Inc",
-    "price": 0.4,
-    "volume": 18587913
+    "price": 0.23,
+    "volume": 20159881
    },
    {
     "ticker": "ORBS",
     "company": "Eightco Holdings Inc",
     "price": 0.74,
-    "volume": 18423603
+    "volume": 19388795
+   },
+   {
+    "ticker": "OSRH",
+    "company": "OSR Health Inc",
+    "price": 0.41,
+    "volume": 18885108
    },
    {
     "ticker": "SMTK",
     "company": "SmartKem Inc",
     "price": 0.09,
-    "volume": 14790941
+    "volume": 15711879
    },
    {
     "ticker": "BTCT",
     "company": "BTC Digital Ltd",
-    "price": 0.58,
-    "volume": 12218775
-   },
-   {
-    "ticker": "RIME",
-    "company": "Algorhythm Holdings Inc",
-    "price": 0.3,
-    "volume": 12163743
-   },
-   {
-    "ticker": "GOVX",
-    "company": "Geovax Labs Inc",
-    "price": 0.64,
-    "volume": 11987819
+    "price": 0.56,
+    "volume": 14728042
    },
    {
     "ticker": "HUMA",
     "company": "Humacyte Inc",
     "price": 0.71,
-    "volume": 11880142
+    "volume": 12757891
+   },
+   {
+    "ticker": "RIME",
+    "company": "Algorhythm Holdings Inc",
+    "price": 0.3,
+    "volume": 12176877
+   },
+   {
+    "ticker": "GOVX",
+    "company": "Geovax Labs Inc",
+    "price": 0.64,
+    "volume": 12014835
    },
    {
     "ticker": "OTLK",
     "company": "Outlook Therapeutics Inc",
     "price": 0.7,
-    "volume": 10297725
+    "volume": 11744143
    },
    {
     "ticker": "VBIO",
     "company": "Valion Bio Inc",
     "price": 0.13,
-    "volume": 9641280
+    "volume": 9840131
    },
    {
     "ticker": "VERI",
     "company": "Veritone Inc",
     "price": 0.97,
-    "volume": 7409647
+    "volume": 8099229
    },
    {
     "ticker": "SAFX",
     "company": "XCF Global Inc",
-    "price": 0.35,
-    "volume": 6642825
-   },
-   {
-    "ticker": "RITR",
-    "company": "Reitar Logtech Holdings Ltd",
-    "price": 0.07,
-    "volume": 6188605
+    "price": 0.34,
+    "volume": 7488110
    },
    {
     "ticker": "AKBA",
     "company": "Akebia Therapeutics Inc",
     "price": 0.87,
-    "volume": 5995784
+    "volume": 6487415
    },
    {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.24,
-    "volume": 5084946
+    "ticker": "RITR",
+    "company": "Reitar Logtech Holdings Ltd",
+    "price": 0.07,
+    "volume": 6403253
    },
    {
     "ticker": "SPWR",
     "company": "SunPower Inc",
     "price": 0.25,
-    "volume": 5083048
+    "volume": 5683166
+   },
+   {
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.24,
+    "volume": 5363788
    },
    {
     "ticker": "SURG",
     "company": "Surgepays Inc",
     "price": 0.24,
-    "volume": 4952311
+    "volume": 5047163
    },
    {
     "ticker": "ZONE",
     "company": "CleanCore Solutions Inc",
     "price": 0.15,
-    "volume": 4884376
+    "volume": 4990637
    },
    {
     "ticker": "TWG",
     "company": "Top Wealth Group Holding Ltd",
-    "price": 0.92,
-    "volume": 4818656
+    "price": 0.9,
+    "volume": 4861388
    },
    {
     "ticker": "EVTL",
     "company": "Vertical Aerospace Ltd",
     "price": 0.78,
-    "volume": 4666316
+    "volume": 4839268
    },
    {
     "ticker": "GPRO",
     "company": "GoPro Inc",
-    "price": 0.62,
-    "volume": 4155141
-   },
-   {
-    "ticker": "DEFT",
-    "company": "DeFi Technologies Inc",
-    "price": 0.49,
-    "volume": 4112082
-   },
-   {
-    "ticker": "FAMI",
-    "company": "Farmmi Inc",
-    "price": 0.1,
-    "volume": 4027955
+    "price": 0.63,
+    "volume": 4414708
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
     "price": 0.55,
-    "volume": 3927849
+    "volume": 4336474
+   },
+   {
+    "ticker": "DEFT",
+    "company": "DeFi Technologies Inc",
+    "price": 0.48,
+    "volume": 4214672
+   },
+   {
+    "ticker": "FAMI",
+    "company": "Farmmi Inc",
+    "price": 0.1,
+    "volume": 4092608
    },
    {
     "ticker": "COSM",
     "company": "Cosmos Health Inc",
     "price": 0.19,
-    "volume": 3920560
+    "volume": 4016361
    },
    {
     "ticker": "ALP",
     "company": "Alpha Compute Corp",
     "price": 0.14,
-    "volume": 3861835
+    "volume": 3996379
    },
    {
     "ticker": "GOSS",
     "company": "Gossamer Bio Inc",
     "price": 0.15,
-    "volume": 3540108
+    "volume": 3844936
+   },
+   {
+    "ticker": "IVVD",
+    "company": "Invivyd Inc",
+    "price": 0.93,
+    "volume": 3490496
    },
    {
     "ticker": "BIAF",
     "company": "BioAffinity Technologies Inc",
     "price": 0.43,
-    "volume": 3382514
-   },
-   {
-    "ticker": "LIMN",
-    "company": "Liminatus Pharma Inc",
-    "price": 0.11,
-    "volume": 3279095
-   },
-   {
-    "ticker": "BZAI",
-    "company": "Blaize Holdings Inc",
-    "price": 0.52,
-    "volume": 3271558
+    "volume": 3410353
    },
    {
     "ticker": "PDSB",
     "company": "PDS Biotechnology Corp",
     "price": 0.2,
-    "volume": 3161049
+    "volume": 3410255
    },
    {
-    "ticker": "IVVD",
-    "company": "Invivyd Inc",
-    "price": 0.94,
-    "volume": 3092034
+    "ticker": "BZAI",
+    "company": "Blaize Holdings Inc",
+    "price": 0.52,
+    "volume": 3406942
+   },
+   {
+    "ticker": "LIMN",
+    "company": "Liminatus Pharma Inc",
+    "price": 0.11,
+    "volume": 3343180
+   },
+   {
+    "ticker": "BAOS",
+    "company": "Baosheng Media Group Holdings Ltd",
+    "price": 0.53,
+    "volume": 3309816
    },
    {
     "ticker": "INVZ",
     "company": "Innoviz Technologies Ltd",
     "price": 0.33,
-    "volume": 3052709
+    "volume": 3227674
    },
    {
     "ticker": "MVST",
     "company": "Microvast Holdings Inc",
     "price": 0.79,
-    "volume": 3000742
+    "volume": 3124684
    },
    {
     "ticker": "CYCU",
     "company": "Cycurion Inc",
-    "price": 0.71,
-    "volume": 2990272
+    "price": 0.7,
+    "volume": 3073354
+   },
+   {
+    "ticker": "NWGL",
+    "company": "CL Workshop Group Ltd ADR",
+    "price": 0.45,
+    "volume": 2945375
    },
    {
     "ticker": "AMZE",
     "company": "Amaze Holdings Inc",
-    "price": 0.2,
-    "volume": 2860113
-   },
-   {
-    "ticker": "ZBAO",
-    "company": "Zhibao Technology Inc",
-    "price": 0.19,
-    "volume": 2849090
-   },
-   {
-    "ticker": "OPTU",
-    "company": "Optimum Communications Inc",
-    "price": 0.86,
-    "volume": 2674739
+    "price": 0.21,
+    "volume": 2903332
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
