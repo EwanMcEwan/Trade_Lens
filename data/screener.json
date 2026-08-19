@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-19T05:33:31.602Z",
+ "generated": "2026-08-19T06:50:08.379Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-19T05:33:28.262Z",
+  "fetched": "2026-08-19T06:50:04.969Z",
   "rows": [
    {
     "ticker": "BAOS",
@@ -11,7 +11,7 @@
     "sector": "Communication Services",
     "industry": "Advertising Agencies",
     "country": "China",
-    "marketCap": "0.75M",
+    "marketCap": "0.74M",
     "price": 0.48,
     "changePct": 0.69,
     "volume": 9864216
@@ -22,7 +22,7 @@
     "sector": "Technology",
     "industry": "Information Technology Services",
     "country": "USA",
-    "marketCap": "1.26M",
+    "marketCap": "1.25M",
     "price": 0.64,
     "changePct": 14.52,
     "volume": 2313971
@@ -62,7 +62,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-19T05:33:31.602Z",
+  "fetched": "2026-08-19T06:50:08.379Z",
   "rows": [
    {
     "ticker": "BIAF",
