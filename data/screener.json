@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-20T05:34:08.004Z",
+ "generated": "2026-08-20T06:51:43.326Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-20T05:34:04.855Z",
+  "fetched": "2026-08-20T06:51:40.134Z",
   "rows": [
    {
     "ticker": "BAOS",
@@ -33,7 +33,7 @@
     "sector": "Technology",
     "industry": "Software - Application",
     "country": "China",
-    "marketCap": "5.48M",
+    "marketCap": "5.49M",
     "price": 0.13,
     "changePct": -46.96,
     "volume": 51665850
@@ -62,7 +62,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-20T05:34:08.004Z",
+  "fetched": "2026-08-20T06:51:43.326Z",
   "rows": [
    {
     "ticker": "DVLT",
