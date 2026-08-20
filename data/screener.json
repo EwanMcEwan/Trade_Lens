@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-20T15:06:18.108Z",
+ "generated": "2026-08-20T16:00:07.889Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-20T15:06:14.706Z",
+  "fetched": "2026-08-20T16:00:04.671Z",
   "rows": [
    {
     "ticker": "BAOS",
@@ -11,10 +11,10 @@
     "sector": "Communication Services",
     "industry": "Advertising Agencies",
     "country": "China",
-    "marketCap": "0.70M",
-    "price": 0.46,
-    "changePct": -12.67,
-    "volume": 17703934
+    "marketCap": "0.73M",
+    "price": 0.48,
+    "changePct": -8.23,
+    "volume": 18182824
    },
    {
     "ticker": "BTOG",
@@ -22,10 +22,10 @@
     "sector": "Financial",
     "industry": "Financial Data & Stock Exchanges",
     "country": "Singapore",
-    "marketCap": "2.93M",
-    "price": 0.7,
-    "changePct": -18.42,
-    "volume": 2753478
+    "marketCap": "3.06M",
+    "price": 0.74,
+    "changePct": -14.7,
+    "volume": 3179035
    },
    {
     "ticker": "FGL",
@@ -33,10 +33,10 @@
     "sector": "Industrials",
     "industry": "Engineering & Construction",
     "country": "Malaysia",
-    "marketCap": "0.34M",
-    "price": 0.3,
-    "changePct": -18.66,
-    "volume": 32255218
+    "marketCap": "0.33M",
+    "price": 0.29,
+    "changePct": -21.01,
+    "volume": 32748993
    },
    {
     "ticker": "LGCL",
@@ -44,10 +44,10 @@
     "sector": "Technology",
     "industry": "Software - Application",
     "country": "China",
-    "marketCap": "4.15M",
-    "price": 0.1,
-    "changePct": -24.34,
-    "volume": 94494037
+    "marketCap": "4.03M",
+    "price": 0.09,
+    "changePct": -26.6,
+    "volume": 98843674
    },
    {
     "ticker": "SCNI",
@@ -55,10 +55,10 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "Israel",
-    "marketCap": "1.14M",
-    "price": 0.29,
-    "changePct": 5,
-    "volume": 492879
+    "marketCap": "1.10M",
+    "price": 0.28,
+    "changePct": 1.82,
+    "volume": 550281
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -73,247 +73,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-20T15:06:18.108Z",
+  "fetched": "2026-08-20T16:00:07.889Z",
   "rows": [
    {
     "ticker": "RITR",
     "company": "Reitar Logtech Holdings Ltd",
     "price": 0.09,
-    "volume": 425367151
+    "volume": 433907296
    },
    {
     "ticker": "OMH",
     "company": "Ohmyhome Ltd",
     "price": 0.1,
-    "volume": 294310349
+    "volume": 298351863
    },
    {
     "ticker": "MMA",
     "company": "Mixed Martial Arts Group Ltd",
-    "price": 0.69,
-    "volume": 230191140
-   },
-   {
-    "ticker": "LGCL",
-    "company": "Lucas GC Ltd",
-    "price": 0.1,
-    "volume": 94494037
-   },
-   {
-    "ticker": "LOOP",
-    "company": "Loop Industries Inc",
-    "price": 0.79,
-    "volume": 49267314
-   },
-   {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.27,
-    "volume": 39346867
+    "price": 0.66,
+    "volume": 284314933
    },
    {
     "ticker": "MGN",
     "company": "Megan Holdings Ltd",
+    "price": 0.12,
+    "volume": 124640113
+   },
+   {
+    "ticker": "LGCL",
+    "company": "Lucas GC Ltd",
     "price": 0.09,
-    "volume": 37542894
+    "volume": 98843674
+   },
+   {
+    "ticker": "LOOP",
+    "company": "Loop Industries Inc",
+    "price": 0.76,
+    "volume": 51475761
+   },
+   {
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.29,
+    "volume": 47132703
    },
    {
     "ticker": "FGL",
     "company": "Founder Group Ltd",
-    "price": 0.3,
-    "volume": 32255218
+    "price": 0.29,
+    "volume": 32748993
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.29,
-    "volume": 25826593
+    "volume": 32530172
    },
    {
     "ticker": "BTTC",
     "company": "Black Titan Corp",
-    "price": 0.6,
-    "volume": 22054840
+    "price": 0.59,
+    "volume": 22571212
    },
    {
     "ticker": "BAOS",
     "company": "Baosheng Media Group Holdings Ltd",
-    "price": 0.46,
-    "volume": 17703934
+    "price": 0.48,
+    "volume": 18182824
    },
    {
     "ticker": "SURG",
     "company": "Surgepays Inc",
     "price": 0.17,
-    "volume": 16386294
+    "volume": 17981023
    },
    {
     "ticker": "ZBAO",
     "company": "Zhibao Technology Inc",
-    "price": 0.18,
-    "volume": 10732464
-   },
-   {
-    "ticker": "CIRC",
-    "company": "Circle8 Group Inc",
-    "price": 0.62,
-    "volume": 9362509
+    "price": 0.19,
+    "volume": 11776942
    },
    {
     "ticker": "ORBS",
     "company": "Eightco Holdings Inc",
-    "price": 0.81,
-    "volume": 7927680
+    "price": 0.83,
+    "volume": 10654863
    },
    {
-    "ticker": "SMTK",
-    "company": "SmartKem Inc",
-    "price": 0.09,
-    "volume": 7715148
+    "ticker": "CIRC",
+    "company": "Circle8 Group Inc",
+    "price": 0.63,
+    "volume": 9604445
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
     "price": 0.5,
-    "volume": 6128133
+    "volume": 9500778
    },
    {
-    "ticker": "AMZE",
-    "company": "Amaze Holdings Inc",
-    "price": 0.19,
-    "volume": 5466419
+    "ticker": "SMTK",
+    "company": "SmartKem Inc",
+    "price": 0.1,
+    "volume": 8462737
+   },
+   {
+    "ticker": "AKBA",
+    "company": "Akebia Therapeutics Inc",
+    "price": 0.9,
+    "volume": 6738797
    },
    {
     "ticker": "GRML",
     "company": "Greenland Mines Ltd",
     "price": 0.16,
-    "volume": 5454089
-   },
-   {
-    "ticker": "TGHL",
-    "company": "Growhub Ltd",
-    "price": 0.78,
-    "volume": 5179779
-   },
-   {
-    "ticker": "ZTG",
-    "company": "Zenta Group Co Ltd",
-    "price": 0.96,
-    "volume": 4703869
-   },
-   {
-    "ticker": "FAMI",
-    "company": "Farmmi Inc",
-    "price": 0.1,
-    "volume": 4325273
-   },
-   {
-    "ticker": "GSUN",
-    "company": "Golden Sun Technology Group Ltd",
-    "price": 0.3,
-    "volume": 4200831
-   },
-   {
-    "ticker": "QTEX",
-    "company": "QTREX Quantum Ltd",
-    "price": 0.92,
-    "volume": 3965201
-   },
-   {
-    "ticker": "LGHL",
-    "company": "Lion Group Holding Ltd ADR",
-    "price": 0.63,
-    "volume": 3947453
+    "volume": 6373715
    },
    {
     "ticker": "GNS",
     "company": "Genius Group Ltd",
     "price": 0.18,
-    "volume": 3914697
+    "volume": 6161304
    },
    {
-    "ticker": "OSRH",
-    "company": "OSR Health Inc",
-    "price": 0.29,
-    "volume": 3595908
+    "ticker": "AMZE",
+    "company": "Amaze Holdings Inc",
+    "price": 0.19,
+    "volume": 5974602
+   },
+   {
+    "ticker": "QTEX",
+    "company": "QTREX Quantum Ltd",
+    "price": 0.91,
+    "volume": 5727016
+   },
+   {
+    "ticker": "TGHL",
+    "company": "Growhub Ltd",
+    "price": 0.71,
+    "volume": 5613644
+   },
+   {
+    "ticker": "FAMI",
+    "company": "Farmmi Inc",
+    "price": 0.1,
+    "volume": 4950940
+   },
+   {
+    "ticker": "LGHL",
+    "company": "Lion Group Holding Ltd ADR",
+    "price": 0.6,
+    "volume": 4450800
    },
    {
     "ticker": "OTLK",
     "company": "Outlook Therapeutics Inc",
-    "price": 0.68,
-    "volume": 3501468
+    "price": 0.67,
+    "volume": 4414098
+   },
+   {
+    "ticker": "GSUN",
+    "company": "Golden Sun Technology Group Ltd",
+    "price": 0.35,
+    "volume": 4318394
+   },
+   {
+    "ticker": "SPWR",
+    "company": "SunPower Inc",
+    "price": 0.27,
+    "volume": 4309422
+   },
+   {
+    "ticker": "OSRH",
+    "company": "OSR Health Inc",
+    "price": 0.3,
+    "volume": 4196262
    },
    {
     "ticker": "VERI",
     "company": "Veritone Inc",
-    "price": 0.88,
-    "volume": 3371340
-   },
-   {
-    "ticker": "AKBA",
-    "company": "Akebia Therapeutics Inc",
-    "price": 0.92,
-    "volume": 3362444
-   },
-   {
-    "ticker": "SNYR",
-    "company": "Synergy CHC Corp",
-    "price": 0.11,
-    "volume": 3056593
-   },
-   {
-    "ticker": "BTOG",
-    "company": "Bit Origin Ltd",
-    "price": 0.7,
-    "volume": 2753478
+    "price": 0.87,
+    "volume": 4160385
    },
    {
     "ticker": "IVVD",
     "company": "Invivyd Inc",
     "price": 0.99,
-    "volume": 2691746
+    "volume": 3859875
    },
    {
-    "ticker": "GOSS",
-    "company": "Gossamer Bio Inc",
-    "price": 0.15,
-    "volume": 2650009
+    "ticker": "SNYR",
+    "company": "Synergy CHC Corp",
+    "price": 0.11,
+    "volume": 3511408
    },
    {
     "ticker": "HUMA",
     "company": "Humacyte Inc",
     "price": 0.67,
-    "volume": 2607494
+    "volume": 3295334
+   },
+   {
+    "ticker": "VBIO",
+    "company": "Valion Bio Inc",
+    "price": 0.12,
+    "volume": 3179708
+   },
+   {
+    "ticker": "BTOG",
+    "company": "Bit Origin Ltd",
+    "price": 0.74,
+    "volume": 3179035
    },
    {
     "ticker": "ZONE",
     "company": "CleanCore Solutions Inc",
     "price": 0.15,
-    "volume": 2362796
+    "volume": 3052148
    },
    {
-    "ticker": "UPXI",
-    "company": "Upexi Inc",
-    "price": 0.95,
-    "volume": 2046540
+    "ticker": "GOSS",
+    "company": "Gossamer Bio Inc",
+    "price": 0.16,
+    "volume": 3039170
+   },
+   {
+    "ticker": "MVST",
+    "company": "Microvast Holdings Inc",
+    "price": 0.77,
+    "volume": 2644461
    },
    {
     "ticker": "COSM",
     "company": "Cosmos Health Inc",
-    "price": 0.21,
-    "volume": 1980358
+    "price": 0.22,
+    "volume": 2424407
    },
    {
-    "ticker": "BIAF",
-    "company": "BioAffinity Technologies Inc",
-    "price": 0.43,
-    "volume": 1931425
-   },
-   {
-    "ticker": "VBIO",
-    "company": "Valion Bio Inc",
-    "price": 0.13,
-    "volume": 1926616
+    "ticker": "GPRO",
+    "company": "GoPro Inc",
+    "price": 0.6,
+    "volume": 2359599
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
