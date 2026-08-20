@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-20T08:41:57.046Z",
+ "generated": "2026-08-20T09:37:53.425Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-20T08:41:53.418Z",
+  "fetched": "2026-08-20T09:37:50.268Z",
   "rows": [
    {
     "ticker": "BTOG",
@@ -11,10 +11,10 @@
     "sector": "Financial",
     "industry": "Financial Data & Stock Exchanges",
     "country": "Singapore",
-    "marketCap": "3.21M",
-    "price": 0.77,
-    "changePct": -10.71,
-    "volume": 785404
+    "marketCap": "3.02M",
+    "price": 0.73,
+    "changePct": -15.83,
+    "volume": 971198
    },
    {
     "ticker": "LGCL",
@@ -22,10 +22,10 @@
     "sector": "Technology",
     "industry": "Software - Application",
     "country": "China",
-    "marketCap": "5.39M",
-    "price": 0.13,
-    "changePct": -1.79,
-    "volume": 52259858
+    "marketCap": "4.88M",
+    "price": 0.11,
+    "changePct": -11.08,
+    "volume": 63931671
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -40,247 +40,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-20T08:41:57.046Z",
+  "fetched": "2026-08-20T09:37:53.425Z",
   "rows": [
    {
     "ticker": "RITR",
     "company": "Reitar Logtech Holdings Ltd",
-    "price": 0.2,
-    "volume": 121385518
+    "price": 0.19,
+    "volume": 182148406
    },
    {
     "ticker": "OMH",
     "company": "Ohmyhome Ltd",
-    "price": 0.13,
-    "volume": 55388476
+    "price": 0.14,
+    "volume": 163393937
    },
    {
     "ticker": "LGCL",
     "company": "Lucas GC Ltd",
-    "price": 0.13,
-    "volume": 52259858
+    "price": 0.11,
+    "volume": 63931671
    },
    {
     "ticker": "MGN",
     "company": "Megan Holdings Ltd",
     "price": 0.09,
-    "volume": 29574734
-   },
-   {
-    "ticker": "BTTC",
-    "company": "Black Titan Corp",
-    "price": 0.55,
-    "volume": 12921628
-   },
-   {
-    "ticker": "ZBAO",
-    "company": "Zhibao Technology Inc",
-    "price": 0.19,
-    "volume": 6430297
+    "volume": 32476586
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
-    "price": 0.27,
-    "volume": 2317924
+    "price": 0.29,
+    "volume": 19087434
+   },
+   {
+    "ticker": "BTTC",
+    "company": "Black Titan Corp",
+    "price": 0.62,
+    "volume": 14982497
+   },
+   {
+    "ticker": "LOOP",
+    "company": "Loop Industries Inc",
+    "price": 0.97,
+    "volume": 7633839
+   },
+   {
+    "ticker": "ZBAO",
+    "company": "Zhibao Technology Inc",
+    "price": 0.18,
+    "volume": 7615199
+   },
+   {
+    "ticker": "SNYR",
+    "company": "Synergy CHC Corp",
+    "price": 0.11,
+    "volume": 2404096
    },
    {
     "ticker": "FAMI",
     "company": "Farmmi Inc",
-    "price": 0.1,
-    "volume": 1363055
+    "price": 0.09,
+    "volume": 2344620
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.3,
-    "volume": 1048882
+    "volume": 1265914
    },
    {
-    "ticker": "SNYR",
-    "company": "Synergy CHC Corp",
-    "price": 0.13,
-    "volume": 990040
+    "ticker": "SURG",
+    "company": "Surgepays Inc",
+    "price": 0.18,
+    "volume": 1096128
    },
    {
     "ticker": "LGHL",
     "company": "Lion Group Holding Ltd ADR",
     "price": 0.67,
-    "volume": 948151
-   },
-   {
-    "ticker": "SURG",
-    "company": "Surgepays Inc",
-    "price": 0.19,
-    "volume": 798398
-   },
-   {
-    "ticker": "BTOG",
-    "company": "Bit Origin Ltd",
-    "price": 0.77,
-    "volume": 785404
+    "volume": 1065506
    },
    {
     "ticker": "SMTK",
     "company": "SmartKem Inc",
     "price": 0.09,
-    "volume": 694779
+    "volume": 990618
+   },
+   {
+    "ticker": "BTOG",
+    "company": "Bit Origin Ltd",
+    "price": 0.73,
+    "volume": 971198
    },
    {
     "ticker": "UZX",
     "company": "Linkage Global Inc",
     "price": 0.12,
-    "volume": 668272
+    "volume": 841833
+   },
+   {
+    "ticker": "ALP",
+    "company": "Alpha Compute Corp",
+    "price": 0.16,
+    "volume": 531701
    },
    {
     "ticker": "OSRH",
     "company": "OSR Health Inc",
     "price": 0.27,
-    "volume": 384447
+    "volume": 465725
    },
    {
-    "ticker": "ALP",
-    "company": "Alpha Compute Corp",
-    "price": 0.15,
-    "volume": 316746
+    "ticker": "MTNB",
+    "company": "Matinas Biopharma Holdings Inc",
+    "price": 0.2,
+    "volume": 253592
    },
    {
     "ticker": "PHGE",
     "company": "BiomX Inc",
     "price": 0.14,
-    "volume": 215677
-   },
-   {
-    "ticker": "MTNB",
-    "company": "Matinas Biopharma Holdings Inc",
-    "price": 0.19,
-    "volume": 197969
+    "volume": 227718
    },
    {
     "ticker": "VBIO",
     "company": "Valion Bio Inc",
     "price": 0.13,
-    "volume": 193002
-   },
-   {
-    "ticker": "ATCH",
-    "company": "AtlasClear Holdings Inc",
-    "price": 0.2,
-    "volume": 173918
+    "volume": 220041
    },
    {
     "ticker": "ORBS",
     "company": "Eightco Holdings Inc",
     "price": 0.77,
-    "volume": 117947
+    "volume": 208095
+   },
+   {
+    "ticker": "ATCH",
+    "company": "AtlasClear Holdings Inc",
+    "price": 0.2,
+    "volume": 196246
+   },
+   {
+    "ticker": "MSN",
+    "company": "Emerson Radio Corp",
+    "price": 0.37,
+    "volume": 181926
+   },
+   {
+    "ticker": "CALC",
+    "company": "CalciMedica Inc",
+    "price": 0.62,
+    "volume": 143246
    },
    {
     "ticker": "UPXI",
     "company": "Upexi Inc",
-    "price": 0.96,
-    "volume": 105110
+    "price": 1,
+    "volume": 130621
+   },
+   {
+    "ticker": "HUMA",
+    "company": "Humacyte Inc",
+    "price": 0.72,
+    "volume": 114740
+   },
+   {
+    "ticker": "ZONE",
+    "company": "CleanCore Solutions Inc",
+    "price": 0.16,
+    "volume": 113605
    },
    {
     "ticker": "COSM",
     "company": "Cosmos Health Inc",
-    "price": 0.17,
-    "volume": 101596
+    "price": 0.22,
+    "volume": 107231
    },
    {
     "ticker": "AEON",
     "company": "AEON Biopharma Inc",
-    "price": 0.21,
-    "volume": 78952
+    "price": 0.2,
+    "volume": 102426
+   },
+   {
+    "ticker": "UCL",
+    "company": "Ucloudlink Group Inc ADR",
+    "price": 0.38,
+    "volume": 96580
+   },
+   {
+    "ticker": "BAOS",
+    "company": "Baosheng Media Group Holdings Ltd",
+    "price": 0.5,
+    "volume": 95712
    },
    {
     "ticker": "BIAF",
     "company": "BioAffinity Technologies Inc",
     "price": 0.37,
-    "volume": 77489
-   },
-   {
-    "ticker": "GNS",
-    "company": "Genius Group Ltd",
-    "price": 0.16,
-    "volume": 74882
-   },
-   {
-    "ticker": "MSN",
-    "company": "Emerson Radio Corp",
-    "price": 0.38,
-    "volume": 71816
+    "volume": 92846
    },
    {
     "ticker": "TWG",
     "company": "Top Wealth Group Holding Ltd",
-    "price": 0.77,
-    "volume": 65361
-   },
-   {
-    "ticker": "OPTT",
-    "company": "Ocean Power Technologies",
-    "price": 0.19,
-    "volume": 62193
-   },
-   {
-    "ticker": "SOAR",
-    "company": "Volato Group Inc",
-    "price": 0.14,
-    "volume": 54660
-   },
-   {
-    "ticker": "OTLK",
-    "company": "Outlook Therapeutics Inc",
-    "price": 0.7,
-    "volume": 54070
-   },
-   {
-    "ticker": "CYCU",
-    "company": "Cycurion Inc",
-    "price": 0.68,
-    "volume": 51837
-   },
-   {
-    "ticker": "UCL",
-    "company": "Ucloudlink Group Inc ADR",
-    "price": 0.39,
-    "volume": 48166
+    "price": 0.79,
+    "volume": 79689
    },
    {
     "ticker": "GOSS",
     "company": "Gossamer Bio Inc",
     "price": 0.16,
-    "volume": 45348
+    "volume": 75646
    },
    {
-    "ticker": "PLAG",
-    "company": "Planet Green Holdings Corp",
-    "price": 0.77,
-    "volume": 44679
+    "ticker": "GNS",
+    "company": "Genius Group Ltd",
+    "price": 0.16,
+    "volume": 75543
    },
    {
-    "ticker": "LIMN",
-    "company": "Liminatus Pharma Inc",
-    "price": 0.11,
-    "volume": 40394
+    "ticker": "AMZE",
+    "company": "Amaze Holdings Inc",
+    "price": 0.21,
+    "volume": 71879
    },
    {
-    "ticker": "ELAB",
-    "company": "PMGC Holdings Inc",
-    "price": 0.55,
-    "volume": 39632
+    "ticker": "NXXT",
+    "company": "NextNRG Inc",
+    "price": 0.23,
+    "volume": 70987
    },
    {
-    "ticker": "VCIG",
-    "company": "VCI Global Ltd",
-    "price": 0.24,
-    "volume": 39612
+    "ticker": "AVAT",
+    "company": "Avalanche Treasury Corp",
+    "price": 0.32,
+    "volume": 70622
    },
    {
-    "ticker": "ZCMD",
-    "company": "Zhongchao Inc",
-    "price": 1,
-    "volume": 36706
+    "ticker": "SOAR",
+    "company": "Volato Group Inc",
+    "price": 0.14,
+    "volume": 67357
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
