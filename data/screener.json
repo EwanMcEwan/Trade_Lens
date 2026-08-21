@@ -1,31 +1,31 @@
 {
- "generated": "2026-08-21T08:44:25.773Z",
+ "generated": "2026-08-21T09:39:58.686Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-21T08:44:22.506Z",
+  "fetched": "2026-08-21T09:39:55.507Z",
   "rows": [
+   {
+    "ticker": "IBG",
+    "company": "Innovation Beverage Group Ltd",
+    "sector": "Consumer Defensive",
+    "industry": "Beverages - Wineries & Distilleries",
+    "country": "Australia",
+    "marketCap": "1.39M",
+    "price": 0.77,
+    "changePct": -11.18,
+    "volume": 4267737
+   },
    {
     "ticker": "LGCL",
     "company": "Lucas GC Ltd",
     "sector": "Technology",
     "industry": "Software - Application",
     "country": "China",
-    "marketCap": "3.20M",
+    "marketCap": "2.96M",
     "price": 0.07,
-    "changePct": -10,
-    "volume": 23450130
-   },
-   {
-    "ticker": "MGN",
-    "company": "Megan Holdings Ltd",
-    "sector": "Industrials",
-    "industry": "Engineering & Construction",
-    "country": "Malaysia",
-    "marketCap": "0.09M",
-    "price": 0.11,
-    "changePct": -97.52,
-    "volume": 219942
+    "changePct": -16.63,
+    "volume": 29846875
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -40,247 +40,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-21T08:44:25.773Z",
+  "fetched": "2026-08-21T09:39:58.686Z",
   "rows": [
    {
     "ticker": "LGCL",
     "company": "Lucas GC Ltd",
     "price": 0.07,
-    "volume": 23450130
+    "volume": 29846875
+   },
+   {
+    "ticker": "GAUZ",
+    "company": "Gauzy Ltd",
+    "price": 0.3,
+    "volume": 29084730
    },
    {
     "ticker": "HOWL",
     "company": "Werewolf Therapeutics Inc",
-    "price": 0.72,
-    "volume": 12982367
+    "price": 0.76,
+    "volume": 18579588
    },
    {
     "ticker": "RITR",
     "company": "Reitar Logtech Holdings Ltd",
     "price": 0.08,
-    "volume": 3559884
+    "volume": 4757364
    },
    {
-    "ticker": "GAUZ",
-    "company": "Gauzy Ltd",
-    "price": 0.49,
-    "volume": 2445655
+    "ticker": "IBG",
+    "company": "Innovation Beverage Group Ltd",
+    "price": 0.77,
+    "volume": 4267737
+   },
+   {
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.3,
+    "volume": 2131999
    },
    {
     "ticker": "OMH",
     "company": "Ohmyhome Ltd",
     "price": 0.09,
-    "volume": 1138162
+    "volume": 1829620
    },
    {
     "ticker": "MMA",
     "company": "Mixed Martial Arts Group Ltd",
-    "price": 0.43,
-    "volume": 621229
-   },
-   {
-    "ticker": "ALP",
-    "company": "Alpha Compute Corp",
-    "price": 0.16,
-    "volume": 475597
-   },
-   {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.28,
-    "volume": 448486
-   },
-   {
-    "ticker": "BTAI",
-    "company": "BioXcel Therapeutics Inc",
-    "price": 0.88,
-    "volume": 337497
+    "price": 0.45,
+    "volume": 880691
    },
    {
     "ticker": "FLD",
     "company": "Fold Holdings Inc",
     "price": 0.48,
-    "volume": 272860
+    "volume": 513369
+   },
+   {
+    "ticker": "ALP",
+    "company": "Alpha Compute Corp",
+    "price": 0.16,
+    "volume": 483310
+   },
+   {
+    "ticker": "BTAI",
+    "company": "BioXcel Therapeutics Inc",
+    "price": 0.87,
+    "volume": 396083
+   },
+   {
+    "ticker": "BTTC",
+    "company": "Black Titan Corp",
+    "price": 0.57,
+    "volume": 395851
    },
    {
     "ticker": "VBIO",
     "company": "Valion Bio Inc",
     "price": 0.12,
-    "volume": 272426
+    "volume": 324463
    },
    {
-    "ticker": "BTTC",
-    "company": "Black Titan Corp",
-    "price": 0.56,
-    "volume": 263116
+    "ticker": "UPXI",
+    "company": "Upexi Inc",
+    "price": 0.99,
+    "volume": 319562
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.31,
-    "volume": 235801
+    "volume": 318308
+   },
+   {
+    "ticker": "LOOP",
+    "company": "Loop Industries Inc",
+    "price": 0.6,
+    "volume": 293385
    },
    {
     "ticker": "MGN",
     "company": "Megan Holdings Ltd",
     "price": 0.11,
-    "volume": 219942
-   },
-   {
-    "ticker": "LOOP",
-    "company": "Loop Industries Inc",
-    "price": 0.59,
-    "volume": 208946
-   },
-   {
-    "ticker": "ICG",
-    "company": "Intchains Group Ltd ADR",
-    "price": 0.79,
-    "volume": 194795
-   },
-   {
-    "ticker": "FGL",
-    "company": "Founder Group Ltd",
-    "price": 0.28,
-    "volume": 182363
-   },
-   {
-    "ticker": "ORBS",
-    "company": "Eightco Holdings Inc",
-    "price": 0.85,
-    "volume": 130599
-   },
-   {
-    "ticker": "QTEX",
-    "company": "QTREX Quantum Ltd",
-    "price": 0.92,
-    "volume": 125908
+    "volume": 272009
    },
    {
     "ticker": "SURG",
     "company": "Surgepays Inc",
     "price": 0.17,
-    "volume": 122158
+    "volume": 241394
+   },
+   {
+    "ticker": "ICG",
+    "company": "Intchains Group Ltd ADR",
+    "price": 0.82,
+    "volume": 227726
+   },
+   {
+    "ticker": "FGL",
+    "company": "Founder Group Ltd",
+    "price": 0.27,
+    "volume": 215108
+   },
+   {
+    "ticker": "ORBS",
+    "company": "Eightco Holdings Inc",
+    "price": 0.84,
+    "volume": 188156
+   },
+   {
+    "ticker": "QTEX",
+    "company": "QTREX Quantum Ltd",
+    "price": 0.91,
+    "volume": 154794
    },
    {
     "ticker": "ZBAO",
     "company": "Zhibao Technology Inc",
     "price": 0.19,
-    "volume": 116689
+    "volume": 153102
    },
    {
     "ticker": "OSRH",
     "company": "OSR Health Inc",
-    "price": 0.28,
-    "volume": 94834
-   },
-   {
-    "ticker": "UPXI",
-    "company": "Upexi Inc",
-    "price": 0.98,
-    "volume": 89681
-   },
-   {
-    "ticker": "FAMI",
-    "company": "Farmmi Inc",
-    "price": 0.1,
-    "volume": 88173
-   },
-   {
-    "ticker": "BAOS",
-    "company": "Baosheng Media Group Holdings Ltd",
-    "price": 0.44,
-    "volume": 74840
+    "price": 0.3,
+    "volume": 143946
    },
    {
     "ticker": "AMZE",
     "company": "Amaze Holdings Inc",
     "price": 0.19,
-    "volume": 73739
+    "volume": 99651
+   },
+   {
+    "ticker": "BAOS",
+    "company": "Baosheng Media Group Holdings Ltd",
+    "price": 0.44,
+    "volume": 99406
+   },
+   {
+    "ticker": "FAMI",
+    "company": "Farmmi Inc",
+    "price": 0.1,
+    "volume": 96893
    },
    {
     "ticker": "GOSS",
     "company": "Gossamer Bio Inc",
     "price": 0.16,
-    "volume": 59542
+    "volume": 78906
+   },
+   {
+    "ticker": "AIM",
+    "company": "AIM ImmunoTech Inc",
+    "price": 0.25,
+    "volume": 76214
    },
    {
     "ticker": "AZTR",
     "company": "Azitra Inc",
     "price": 0.13,
-    "volume": 57688
-   },
-   {
-    "ticker": "UZX",
-    "company": "Linkage Global Inc",
-    "price": 0.12,
-    "volume": 52712
-   },
-   {
-    "ticker": "VCIG",
-    "company": "VCI Global Ltd",
-    "price": 0.22,
-    "volume": 49452
-   },
-   {
-    "ticker": "ATER",
-    "company": "Aterian Inc",
-    "price": 0.43,
-    "volume": 48107
-   },
-   {
-    "ticker": "BIAF",
-    "company": "BioAffinity Technologies Inc",
-    "price": 0.36,
-    "volume": 45774
+    "volume": 65627
    },
    {
     "ticker": "DEFT",
     "company": "DeFi Technologies Inc",
     "price": 0.56,
-    "volume": 45507
+    "volume": 64054
    },
    {
-    "ticker": "SNTI",
-    "company": "Senti Biosciences Holdings Inc",
-    "price": 0.48,
-    "volume": 45395
+    "ticker": "VCIG",
+    "company": "VCI Global Ltd",
+    "price": 0.22,
+    "volume": 63432
    },
    {
-    "ticker": "GCDT",
-    "company": "Green Circle Decarbonize Technology Ltd",
-    "price": 0.38,
-    "volume": 44901
-   },
-   {
-    "ticker": "GWH",
-    "company": "ESS Tech Inc",
-    "price": 0.42,
-    "volume": 43447
+    "ticker": "SES",
+    "company": "SES AI Corp",
+    "price": 0.53,
+    "volume": 60318
    },
    {
     "ticker": "GRML",
     "company": "Greenland Mines Ltd",
     "price": 0.17,
-    "volume": 42939
+    "volume": 59870
+   },
+   {
+    "ticker": "UZX",
+    "company": "Linkage Global Inc",
+    "price": 0.12,
+    "volume": 56902
+   },
+   {
+    "ticker": "LGHL",
+    "company": "Lion Group Holding Ltd ADR",
+    "price": 0.62,
+    "volume": 56654
+   },
+   {
+    "ticker": "BIAF",
+    "company": "BioAffinity Technologies Inc",
+    "price": 0.36,
+    "volume": 55028
+   },
+   {
+    "ticker": "FLUX",
+    "company": "Flux Power Holdings inc",
+    "price": 0.62,
+    "volume": 52854
    },
    {
     "ticker": "LGO",
     "company": "Largo Inc",
     "price": 0.68,
-    "volume": 41613
+    "volume": 50773
    },
    {
-    "ticker": "UCL",
-    "company": "Ucloudlink Group Inc ADR",
-    "price": 0.36,
-    "volume": 40296
-   },
-   {
-    "ticker": "FLUX",
-    "company": "Flux Power Holdings inc",
-    "price": 0.63,
-    "volume": 36805
+    "ticker": "GCDT",
+    "company": "Green Circle Decarbonize Technology Ltd",
+    "price": 0.37,
+    "volume": 50228
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
