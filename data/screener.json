@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-21T21:52:51.140Z",
+ "generated": "2026-08-21T22:28:07.988Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-21T21:52:47.752Z",
+  "fetched": "2026-08-21T22:28:04.662Z",
   "rows": [
    {
     "ticker": "LGCL",
@@ -14,7 +14,7 @@
     "marketCap": "2.44M",
     "price": 0.06,
     "changePct": -31.33,
-    "volume": 100350129
+    "volume": 102202202
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -29,247 +29,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-21T21:52:51.140Z",
+  "fetched": "2026-08-21T22:28:07.988Z",
   "rows": [
    {
     "ticker": "HOWL",
     "company": "Werewolf Therapeutics Inc",
     "price": 0.87,
-    "volume": 295035815
+    "volume": 295520845
    },
    {
     "ticker": "KNRX",
     "company": "Knorex Ltd",
     "price": 0.52,
-    "volume": 143210359
+    "volume": 143512969
    },
    {
     "ticker": "GOSS",
     "company": "Gossamer Bio Inc",
     "price": 0.15,
-    "volume": 130245642
+    "volume": 130672759
    },
    {
     "ticker": "LGCL",
     "company": "Lucas GC Ltd",
     "price": 0.06,
-    "volume": 100350129
+    "volume": 102202202
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
     "price": 0.35,
-    "volume": 95142685
+    "volume": 95337438
    },
    {
     "ticker": "GRML",
     "company": "Greenland Mines Ltd",
     "price": 0.2,
-    "volume": 77940160
+    "volume": 78046853
    },
    {
     "ticker": "GAUZ",
     "company": "Gauzy Ltd",
     "price": 0.4,
-    "volume": 44724188
+    "volume": 44836463
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.32,
-    "volume": 28862419
+    "volume": 28943413
    },
    {
     "ticker": "RITR",
     "company": "Reitar Logtech Holdings Ltd",
     "price": 0.08,
-    "volume": 25798819
+    "volume": 26006336
    },
    {
     "ticker": "ORBS",
     "company": "Eightco Holdings Inc",
     "price": 0.88,
-    "volume": 19268359
+    "volume": 19414350
    },
    {
     "ticker": "PLAG",
     "company": "Planet Green Holdings Corp",
     "price": 0.68,
-    "volume": 12668683
+    "volume": 13265112
    },
    {
     "ticker": "OTLK",
     "company": "Outlook Therapeutics Inc",
     "price": 0.65,
-    "volume": 11401078
+    "volume": 11463259
    },
    {
     "ticker": "IPDN",
     "company": "Professional Diversity Network Inc",
     "price": 0.15,
-    "volume": 10592911
+    "volume": 10690455
    },
    {
     "ticker": "HUMA",
     "company": "Humacyte Inc",
     "price": 0.64,
-    "volume": 9359653
+    "volume": 9360566
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
     "price": 0.54,
-    "volume": 8390957
+    "volume": 8395501
    },
    {
     "ticker": "SPWR",
     "company": "SunPower Inc",
     "price": 0.3,
-    "volume": 8164326
+    "volume": 8167625
    },
    {
     "ticker": "OMH",
     "company": "Ohmyhome Ltd",
     "price": 0.09,
-    "volume": 7820110
+    "volume": 7850954
    },
    {
     "ticker": "QSI",
     "company": "Quantum-Si Incorporated",
     "price": 0.83,
-    "volume": 7806361
+    "volume": 7812269
    },
    {
     "ticker": "UCAR",
     "company": "U Power Ltd",
     "price": 0.61,
-    "volume": 7509723
+    "volume": 7576954
    },
    {
     "ticker": "SAFX",
     "company": "XCF Global Inc",
     "price": 0.33,
-    "volume": 6798644
+    "volume": 6806626
    },
    {
     "ticker": "VERI",
     "company": "Veritone Inc",
     "price": 0.86,
-    "volume": 6645170
+    "volume": 6648545
    },
    {
     "ticker": "GPRO",
     "company": "GoPro Inc",
     "price": 0.63,
-    "volume": 6454374
+    "volume": 6460777
    },
    {
     "ticker": "AKBA",
     "company": "Akebia Therapeutics Inc",
     "price": 0.91,
-    "volume": 6450062
+    "volume": 6450101
    },
    {
     "ticker": "MMA",
     "company": "Mixed Martial Arts Group Ltd",
     "price": 0.46,
-    "volume": 6177041
+    "volume": 6227374
    },
    {
     "ticker": "DEFT",
     "company": "DeFi Technologies Inc",
     "price": 0.57,
-    "volume": 5906054
+    "volume": 5920310
    },
    {
     "ticker": "IVVD",
     "company": "Invivyd Inc",
     "price": 1,
-    "volume": 5426034
+    "volume": 5426168
    },
    {
     "ticker": "OSRH",
     "company": "OSR Health Inc",
     "price": 0.28,
-    "volume": 4909524
+    "volume": 4917189
    },
    {
     "ticker": "MVST",
     "company": "Microvast Holdings Inc",
     "price": 0.8,
-    "volume": 4670543
-   },
-   {
-    "ticker": "SURG",
-    "company": "Surgepays Inc",
-    "price": 0.17,
-    "volume": 4542249
+    "volume": 4670555
    },
    {
     "ticker": "EVTL",
     "company": "Vertical Aerospace Ltd",
     "price": 0.77,
-    "volume": 4533971
+    "volume": 4588562
+   },
+   {
+    "ticker": "SURG",
+    "company": "Surgepays Inc",
+    "price": 0.17,
+    "volume": 4554840
    },
    {
     "ticker": "BZAI",
     "company": "Blaize Holdings Inc",
     "price": 0.48,
-    "volume": 4351741
+    "volume": 4358622
    },
    {
     "ticker": "GNS",
     "company": "Genius Group Ltd",
     "price": 0.18,
-    "volume": 3923643
+    "volume": 4002171
    },
    {
     "ticker": "VBIO",
     "company": "Valion Bio Inc",
     "price": 0.12,
-    "volume": 3831194
+    "volume": 3869153
    },
    {
     "ticker": "LAB",
     "company": "Standard BioTools Inc",
     "price": 0.67,
-    "volume": 3569643
+    "volume": 3563959
    },
    {
     "ticker": "PROP",
     "company": "Prairie Operating Co",
     "price": 0.53,
-    "volume": 3401225
+    "volume": 3405623
    },
    {
     "ticker": "GUTS",
     "company": "Fractyl Health Inc",
     "price": 0.78,
-    "volume": 3385554
+    "volume": 3385890
    },
    {
     "ticker": "HRTX",
     "company": "Heron Therapeutics Inc",
     "price": 0.32,
-    "volume": 3014141
+    "volume": 3014511
    },
    {
     "ticker": "GWH",
     "company": "ESS Tech Inc",
     "price": 0.4,
-    "volume": 2938356
+    "volume": 2964735
    },
    {
     "ticker": "PDSB",
     "company": "PDS Biotechnology Corp",
     "price": 0.22,
-    "volume": 2917324
+    "volume": 2919075
    },
    {
     "ticker": "OPTT",
     "company": "Ocean Power Technologies",
     "price": 0.18,
-    "volume": 2907967
+    "volume": 2910336
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
