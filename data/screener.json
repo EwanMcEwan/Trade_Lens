@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-21T06:52:37.313Z",
+ "generated": "2026-08-21T07:46:19.187Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-21T06:52:34.146Z",
+  "fetched": "2026-08-21T07:46:16.025Z",
   "rows": [
    {
     "ticker": "BAOS",
@@ -73,7 +73,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-21T06:52:37.313Z",
+  "fetched": "2026-08-21T07:46:19.187Z",
   "rows": [
    {
     "ticker": "RITR",
@@ -116,6 +116,12 @@
     "company": "Werewolf Therapeutics Inc",
     "price": 0.43,
     "volume": 66021370
+   },
+   {
+    "ticker": "GPUS",
+    "company": "Hyperscale Data Inc",
+    "price": 0.09,
+    "volume": 62970940
    },
    {
     "ticker": "LOOP",
@@ -274,6 +280,12 @@
     "volume": 6558822
    },
    {
+    "ticker": "FTRK",
+    "company": "Fast Track Group",
+    "price": 0.16,
+    "volume": 6519413
+   },
+   {
     "ticker": "OSRH",
     "company": "OSR Health Inc",
     "price": 0.29,
@@ -302,18 +314,6 @@
     "company": "GoPro Inc",
     "price": 0.62,
     "volume": 5184570
-   },
-   {
-    "ticker": "VBIO",
-    "company": "Valion Bio Inc",
-    "price": 0.12,
-    "volume": 4999393
-   },
-   {
-    "ticker": "GWH",
-    "company": "ESS Tech Inc",
-    "price": 0.39,
-    "volume": 4970507
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
