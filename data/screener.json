@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-24T08:51:58.006Z",
+ "generated": "2026-08-24T09:51:29.875Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-24T08:51:54.624Z",
+  "fetched": "2026-08-24T09:51:26.675Z",
   "rows": [
    {
     "ticker": "LGCL",
@@ -11,10 +11,10 @@
     "sector": "Technology",
     "industry": "Software - Application",
     "country": "China",
-    "marketCap": "2.23M",
+    "marketCap": "2.28M",
     "price": 0.05,
-    "changePct": -8.42,
-    "volume": 15022658
+    "changePct": -6.67,
+    "volume": 17393162
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -29,247 +29,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-24T08:51:58.006Z",
+  "fetched": "2026-08-24T09:51:29.875Z",
   "rows": [
    {
     "ticker": "RITR",
     "company": "Reitar Logtech Holdings Ltd",
-    "price": 0.12,
-    "volume": 91065852
+    "price": 0.11,
+    "volume": 113901473
+   },
+   {
+    "ticker": "NXGL",
+    "company": "Nexgel Inc",
+    "price": 0.31,
+    "volume": 19008519
    },
    {
     "ticker": "LGCL",
     "company": "Lucas GC Ltd",
     "price": 0.05,
-    "volume": 15022658
-   },
-   {
-    "ticker": "NXGL",
-    "company": "Nexgel Inc",
-    "price": 0.4,
-    "volume": 5383452
+    "volume": 17393162
    },
    {
     "ticker": "PLAG",
     "company": "Planet Green Holdings Corp",
-    "price": 0.78,
-    "volume": 1885348
+    "price": 0.89,
+    "volume": 6488480
    },
    {
     "ticker": "FLZH",
     "company": "Flash Sports & Media Holdings Inc",
-    "price": 0.28,
-    "volume": 966338
+    "price": 0.24,
+    "volume": 1722821
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
-    "price": 0.38,
-    "volume": 864071
+    "price": 0.37,
+    "volume": 982209
    },
    {
     "ticker": "KNRX",
     "company": "Knorex Ltd",
     "price": 0.41,
-    "volume": 604709
+    "volume": 730379
    },
    {
     "ticker": "HOWL",
     "company": "Werewolf Therapeutics Inc",
-    "price": 0.86,
-    "volume": 578074
+    "price": 0.83,
+    "volume": 684566
    },
    {
     "ticker": "GOSS",
     "company": "Gossamer Bio Inc",
     "price": 0.15,
-    "volume": 426586
+    "volume": 551706
    },
    {
     "ticker": "GNS",
     "company": "Genius Group Ltd",
     "price": 0.19,
-    "volume": 275788
-   },
-   {
-    "ticker": "ALP",
-    "company": "Alpha Compute Corp",
-    "price": 0.15,
-    "volume": 232800
+    "volume": 305901
    },
    {
     "ticker": "OMH",
     "company": "Ohmyhome Ltd",
     "price": 0.09,
-    "volume": 206699
+    "volume": 269693
+   },
+   {
+    "ticker": "ALP",
+    "company": "Alpha Compute Corp",
+    "price": 0.15,
+    "volume": 253973
    },
    {
     "ticker": "DEFT",
     "company": "DeFi Technologies Inc",
-    "price": 0.63,
-    "volume": 189869
+    "price": 0.62,
+    "volume": 215299
    },
    {
     "ticker": "TWG",
     "company": "Top Wealth Group Holding Ltd",
-    "price": 0.64,
-    "volume": 172254
+    "price": 0.6,
+    "volume": 213204
    },
    {
     "ticker": "MMA",
     "company": "Mixed Martial Arts Group Ltd",
     "price": 0.46,
-    "volume": 162588
+    "volume": 187752
    },
    {
     "ticker": "AEON",
     "company": "AEON Biopharma Inc",
     "price": 0.2,
-    "volume": 159770
-   },
-   {
-    "ticker": "ZBAO",
-    "company": "Zhibao Technology Inc",
-    "price": 0.18,
-    "volume": 128900
-   },
-   {
-    "ticker": "UAVS",
-    "company": "AgEagle Aerial Systems Inc",
-    "price": 0.99,
-    "volume": 125966
-   },
-   {
-    "ticker": "MGRX",
-    "company": "Mangoceuticals Inc",
-    "price": 0.36,
-    "volume": 123411
+    "volume": 176899
    },
    {
     "ticker": "FAMI",
     "company": "Farmmi Inc",
-    "price": 0.1,
-    "volume": 119029
+    "price": 0.09,
+    "volume": 162356
    },
    {
-    "ticker": "GAUZ",
-    "company": "Gauzy Ltd",
+    "ticker": "MGRX",
+    "company": "Mangoceuticals Inc",
     "price": 0.37,
-    "volume": 109832
-   },
-   {
-    "ticker": "DVLT",
-    "company": "Datavault AI Inc",
-    "price": 0.31,
-    "volume": 109601
+    "volume": 146657
    },
    {
     "ticker": "BTTC",
     "company": "Black Titan Corp",
     "price": 0.56,
-    "volume": 106025
+    "volume": 146567
+   },
+   {
+    "ticker": "ZBAO",
+    "company": "Zhibao Technology Inc",
+    "price": 0.18,
+    "volume": 135122
+   },
+   {
+    "ticker": "DVLT",
+    "company": "Datavault AI Inc",
+    "price": 0.32,
+    "volume": 130693
+   },
+   {
+    "ticker": "GAUZ",
+    "company": "Gauzy Ltd",
+    "price": 0.38,
+    "volume": 129945
+   },
+   {
+    "ticker": "SNTI",
+    "company": "Senti Biosciences Holdings Inc",
+    "price": 0.37,
+    "volume": 127571
    },
    {
     "ticker": "MGN",
     "company": "Megan Holdings Ltd",
     "price": 0.1,
-    "volume": 97017
+    "volume": 116416
    },
    {
     "ticker": "FGL",
     "company": "Founder Group Ltd",
-    "price": 0.25,
-    "volume": 93649
+    "price": 0.26,
+    "volume": 107208
    },
    {
     "ticker": "FLD",
     "company": "Fold Holdings Inc",
-    "price": 0.49,
-    "volume": 78939
-   },
-   {
-    "ticker": "LGHL",
-    "company": "Lion Group Holding Ltd ADR",
-    "price": 0.64,
-    "volume": 50434
-   },
-   {
-    "ticker": "QTEX",
-    "company": "QTREX Quantum Ltd",
-    "price": 0.91,
-    "volume": 46992
-   },
-   {
-    "ticker": "CYCU",
-    "company": "Cycurion Inc",
-    "price": 0.66,
-    "volume": 46745
-   },
-   {
-    "ticker": "ORBS",
-    "company": "Eightco Holdings Inc",
-    "price": 0.88,
-    "volume": 45190
-   },
-   {
-    "ticker": "UCAR",
-    "company": "U Power Ltd",
-    "price": 0.56,
-    "volume": 42684
-   },
-   {
-    "ticker": "MSN",
-    "company": "Emerson Radio Corp",
-    "price": 0.46,
-    "volume": 40303
+    "price": 0.5,
+    "volume": 94751
    },
    {
     "ticker": "OTLK",
     "company": "Outlook Therapeutics Inc",
     "price": 0.65,
-    "volume": 40196
+    "volume": 70459
+   },
+   {
+    "ticker": "LGHL",
+    "company": "Lion Group Holding Ltd ADR",
+    "price": 0.62,
+    "volume": 70189
+   },
+   {
+    "ticker": "GUTS",
+    "company": "Fractyl Health Inc",
+    "price": 0.82,
+    "volume": 64146
+   },
+   {
+    "ticker": "SCKT",
+    "company": "Socket Mobile Inc",
+    "price": 0.7,
+    "volume": 60903
+   },
+   {
+    "ticker": "QTEX",
+    "company": "QTREX Quantum Ltd",
+    "price": 0.92,
+    "volume": 60175
+   },
+   {
+    "ticker": "NXXT",
+    "company": "NextNRG Inc",
+    "price": 0.23,
+    "volume": 54517
+   },
+   {
+    "ticker": "OSRH",
+    "company": "OSR Health Inc",
+    "price": 0.28,
+    "volume": 53727
+   },
+   {
+    "ticker": "CYCU",
+    "company": "Cycurion Inc",
+    "price": 0.65,
+    "volume": 52159
+   },
+   {
+    "ticker": "LOOP",
+    "company": "Loop Industries Inc",
+    "price": 0.58,
+    "volume": 50017
+   },
+   {
+    "ticker": "ORBS",
+    "company": "Eightco Holdings Inc",
+    "price": 0.88,
+    "volume": 49620
+   },
+   {
+    "ticker": "MSN",
+    "company": "Emerson Radio Corp",
+    "price": 0.46,
+    "volume": 49460
    },
    {
     "ticker": "UZX",
     "company": "Linkage Global Inc",
     "price": 0.12,
-    "volume": 38740
+    "volume": 48557
    },
    {
-    "ticker": "AMZE",
-    "company": "Amaze Holdings Inc",
-    "price": 0.19,
-    "volume": 36828
+    "ticker": "UCAR",
+    "company": "U Power Ltd",
+    "price": 0.55,
+    "volume": 46231
    },
    {
-    "ticker": "LOOP",
-    "company": "Loop Industries Inc",
-    "price": 0.59,
-    "volume": 36746
-   },
-   {
-    "ticker": "VBIO",
-    "company": "Valion Bio Inc",
-    "price": 0.12,
-    "volume": 35467
-   },
-   {
-    "ticker": "HCWC",
-    "company": "Healthy Choice Wellness Corp",
-    "price": 0.26,
-    "volume": 32360
-   },
-   {
-    "ticker": "ZCMD",
-    "company": "Zhongchao Inc",
-    "price": 0.93,
-    "volume": 32130
-   },
-   {
-    "ticker": "OPTT",
-    "company": "Ocean Power Technologies",
-    "price": 0.19,
-    "volume": 32032
+    "ticker": "SNYR",
+    "company": "Synergy CHC Corp",
+    "price": 0.1,
+    "volume": 45340
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
