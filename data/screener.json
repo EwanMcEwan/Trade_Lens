@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-25T03:51:27.681Z",
+ "generated": "2026-08-25T04:42:04.935Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-25T03:51:24.522Z",
+  "fetched": "2026-08-25T04:42:01.725Z",
   "rows": [
    {
     "ticker": "FGL",
@@ -44,7 +44,7 @@
     "sector": "Real Estate",
     "industry": "Real Estate Services",
     "country": "USA",
-    "marketCap": "1.29M",
+    "marketCap": "1.96M",
     "price": 0.61,
     "changePct": 2.82,
     "volume": 2725760
@@ -73,7 +73,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-25T03:51:27.681Z",
+  "fetched": "2026-08-25T04:42:04.935Z",
   "rows": [
    {
     "ticker": "RITR",
