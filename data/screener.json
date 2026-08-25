@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-25T06:54:03.766Z",
+ "generated": "2026-08-25T07:47:26.038Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-25T06:54:00.605Z",
+  "fetched": "2026-08-25T07:47:22.816Z",
   "rows": [
    {
     "ticker": "FGL",
@@ -25,7 +25,7 @@
     "marketCap": "1.40M",
     "price": 0.75,
     "changePct": 150.67,
-    "volume": 285771143
+    "volume": 285771104
    },
    {
     "ticker": "LGCL",
@@ -73,7 +73,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-25T06:54:03.766Z",
+  "fetched": "2026-08-25T07:47:26.038Z",
   "rows": [
    {
     "ticker": "RITR",
@@ -85,7 +85,7 @@
     "ticker": "GIPR",
     "company": "Generation Income Properties Inc",
     "price": 0.75,
-    "volume": 285771143
+    "volume": 285771104
    },
    {
     "ticker": "VBIO",
@@ -109,7 +109,7 @@
     "ticker": "GOSS",
     "company": "Gossamer Bio Inc",
     "price": 0.17,
-    "volume": 47109827
+    "volume": 47109512
    },
    {
     "ticker": "CAN",
@@ -121,13 +121,13 @@
     "ticker": "AZTR",
     "company": "Azitra Inc",
     "price": 0.15,
-    "volume": 27725392
+    "volume": 27725384
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.31,
-    "volume": 26536171
+    "volume": 26535944
    },
    {
     "ticker": "NXGL",
@@ -166,6 +166,12 @@
     "volume": 13957774
    },
    {
+    "ticker": "GPUS",
+    "company": "Hyperscale Data Inc",
+    "price": 0.47,
+    "volume": 12594188
+   },
+   {
     "ticker": "SNYR",
     "company": "Synergy CHC Corp",
     "price": 0.1,
@@ -175,7 +181,7 @@
     "ticker": "HOWL",
     "company": "Werewolf Therapeutics Inc",
     "price": 0.88,
-    "volume": 12041910
+    "volume": 12041659
    },
    {
     "ticker": "OMH",
@@ -211,7 +217,13 @@
     "ticker": "DEFT",
     "company": "DeFi Technologies Inc",
     "price": 0.62,
-    "volume": 6727629
+    "volume": 6727630
+   },
+   {
+    "ticker": "FTRK",
+    "company": "Fast Track Solutions Inc",
+    "price": 0.16,
+    "volume": 6519413
    },
    {
     "ticker": "NFE",
@@ -241,7 +253,7 @@
     "ticker": "BGI",
     "company": "Birks Group Inc",
     "price": 0.35,
-    "volume": 4576639
+    "volume": 4576636
    },
    {
     "ticker": "SPWR",
@@ -265,7 +277,7 @@
     "ticker": "GNS",
     "company": "Genius Group Ltd",
     "price": 0.17,
-    "volume": 4075016
+    "volume": 4075011
    },
    {
     "ticker": "IVVD",
@@ -302,18 +314,6 @@
     "company": "Quantum-Si Incorporated",
     "price": 0.77,
     "volume": 3853818
-   },
-   {
-    "ticker": "HUMA",
-    "company": "Humacyte Inc",
-    "price": 0.66,
-    "volume": 3758871
-   },
-   {
-    "ticker": "ZONE",
-    "company": "CleanCore Solutions Inc",
-    "price": 0.15,
-    "volume": 3484565
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
