@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-26T11:02:33.150Z",
+ "generated": "2026-08-26T11:57:18.237Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-26T11:02:29.594Z",
+  "fetched": "2026-08-26T11:57:14.853Z",
   "rows": [
    {
     "ticker": "FGL",
@@ -11,10 +11,10 @@
     "sector": "Industrials",
     "industry": "Engineering & Construction",
     "country": "Malaysia",
-    "marketCap": "0.28M",
-    "price": 0.25,
-    "changePct": 17.64,
-    "volume": 44141591
+    "marketCap": "0.24M",
+    "price": 0.21,
+    "changePct": 0.14,
+    "volume": 48456621
    },
    {
     "ticker": "LGCL",
@@ -22,10 +22,21 @@
     "sector": "Technology",
     "industry": "Software - Application",
     "country": "China",
-    "marketCap": "2.48M",
-    "price": 0.06,
-    "changePct": 32.12,
-    "volume": 488238292
+    "marketCap": "2.27M",
+    "price": 0.05,
+    "changePct": 20.5,
+    "volume": 544040896
+   },
+   {
+    "ticker": "REVB",
+    "company": "Revelation Biosciences Inc",
+    "sector": "Healthcare",
+    "industry": "Biotechnology",
+    "country": "USA",
+    "marketCap": "3.82M",
+    "price": 0.96,
+    "changePct": -3.98,
+    "volume": 5245
    },
    {
     "ticker": "TRUG",
@@ -33,10 +44,10 @@
     "sector": "Consumer Cyclical",
     "industry": "Leisure",
     "country": "USA",
-    "marketCap": "1.30M",
-    "price": 0.67,
-    "changePct": 15.21,
-    "volume": 8310520
+    "marketCap": "1.32M",
+    "price": 0.68,
+    "changePct": 16.43,
+    "volume": 9927570
    },
    {
     "ticker": "YYAI",
@@ -44,10 +55,10 @@
     "sector": "Technology",
     "industry": "Software - Infrastructure",
     "country": "USA",
-    "marketCap": "4.58M",
-    "price": 1,
-    "changePct": -2.92,
-    "volume": 158538
+    "marketCap": "4.50M",
+    "price": 0.98,
+    "changePct": -4.76,
+    "volume": 189431
    },
    {
     "ticker": "ZCMD",
@@ -55,10 +66,10 @@
     "sector": "Healthcare",
     "industry": "Health Information Services",
     "country": "China",
-    "marketCap": "0.95M",
-    "price": 0.82,
-    "changePct": 13.15,
-    "volume": 18334693
+    "marketCap": "0.91M",
+    "price": 0.79,
+    "changePct": 8.33,
+    "volume": 23983803
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -73,247 +84,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-26T11:02:33.150Z",
+  "fetched": "2026-08-26T11:57:18.237Z",
   "rows": [
    {
     "ticker": "LGCL",
     "company": "Lucas GC Ltd",
-    "price": 0.06,
-    "volume": 488238292
+    "price": 0.05,
+    "volume": 544040896
    },
    {
     "ticker": "FGL",
     "company": "Founder Group Ltd",
-    "price": 0.25,
-    "volume": 44141591
+    "price": 0.21,
+    "volume": 48456621
    },
    {
     "ticker": "ZCMD",
     "company": "Zhongchao Inc",
-    "price": 0.82,
-    "volume": 18334693
+    "price": 0.79,
+    "volume": 23983803
+   },
+   {
+    "ticker": "VEEA",
+    "company": "Veea Inc",
+    "price": 0.11,
+    "volume": 23511617
    },
    {
     "ticker": "VVOS",
     "company": "Vivos Therapeutics Inc",
-    "price": 0.27,
-    "volume": 11517276
+    "price": 0.25,
+    "volume": 12297319
    },
    {
     "ticker": "TRUG",
     "company": "TruGolf Holdings Inc",
-    "price": 0.67,
-    "volume": 8310520
+    "price": 0.68,
+    "volume": 9927570
    },
    {
     "ticker": "LGHL",
     "company": "Lion Group Holding Ltd ADR",
-    "price": 0.57,
-    "volume": 7980596
+    "price": 0.55,
+    "volume": 8405986
    },
    {
     "ticker": "RITR",
     "company": "Reitar Logtech Holdings Ltd",
-    "price": 0.09,
-    "volume": 5863415
+    "price": 0.08,
+    "volume": 6871848
+   },
+   {
+    "ticker": "DDC",
+    "company": "DDC Enterprise Ltd",
+    "price": 0.7,
+    "volume": 2955478
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
-    "price": 0.33,
-    "volume": 1892835
+    "price": 0.32,
+    "volume": 2809541
+   },
+   {
+    "ticker": "NCPL",
+    "company": "Netcapital Inc",
+    "price": 0.43,
+    "volume": 2215328
    },
    {
     "ticker": "FNGR",
     "company": "FingerMotion Inc",
     "price": 0.16,
-    "volume": 1707556
+    "volume": 1935074
    },
    {
-    "ticker": "NCPL",
-    "company": "Netcapital Inc",
-    "price": 0.47,
-    "volume": 1470853
+    "ticker": "GPUS",
+    "company": "Hyperscale Data Inc",
+    "price": 0.4,
+    "volume": 1602829
    },
    {
     "ticker": "YMT",
     "company": "Yimutian Inc ADR",
     "price": 0.19,
-    "volume": 1284719
-   },
-   {
-    "ticker": "OBAI",
-    "company": "Our Bond Inc",
-    "price": 0.35,
-    "volume": 1162151
-   },
-   {
-    "ticker": "GPUS",
-    "company": "Hyperscale Data Inc",
-    "price": 0.41,
-    "volume": 817014
-   },
-   {
-    "ticker": "TNMG",
-    "company": "TNL Mediagene",
-    "price": 0.53,
-    "volume": 521734
+    "volume": 1487874
    },
    {
     "ticker": "GOSS",
     "company": "Gossamer Bio Inc",
     "price": 0.2,
-    "volume": 456165
+    "volume": 1224443
+   },
+   {
+    "ticker": "OBAI",
+    "company": "Our Bond Inc",
+    "price": 0.35,
+    "volume": 1203748
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
-    "price": 0.41,
-    "volume": 430442
+    "price": 0.4,
+    "volume": 723745
+   },
+   {
+    "ticker": "TNMG",
+    "company": "TNL Mediagene",
+    "price": 0.52,
+    "volume": 680571
+   },
+   {
+    "ticker": "GIPR",
+    "company": "Generation Income Properties Inc",
+    "price": 0.54,
+    "volume": 492351
    },
    {
     "ticker": "PRZO",
     "company": "ParaZero Technologies Ltd",
-    "price": 0.79,
-    "volume": 395607
+    "price": 0.77,
+    "volume": 464900
    },
    {
-    "ticker": "VEEA",
-    "company": "Veea Inc",
-    "price": 0.14,
-    "volume": 364903
+    "ticker": "HCWC",
+    "company": "Healthy Choice Wellness Corp",
+    "price": 0.31,
+    "volume": 348990
    },
    {
     "ticker": "OFAL",
     "company": "OFA Group",
     "price": 0.95,
-    "volume": 263533
+    "volume": 341728
    },
    {
-    "ticker": "GIPR",
-    "company": "Generation Income Properties Inc",
-    "price": 0.51,
-    "volume": 235582
+    "ticker": "SRFM",
+    "company": "Surf Air Mobility Inc",
+    "price": 0.72,
+    "volume": 324637
    },
    {
     "ticker": "OMH",
     "company": "Ohmyhome Ltd",
     "price": 0.1,
-    "volume": 226952
-   },
-   {
-    "ticker": "DDC",
-    "company": "DDC Enterprise Ltd",
-    "price": 0.78,
-    "volume": 202605
+    "volume": 299826
    },
    {
     "ticker": "VBIO",
     "company": "Valion Bio Inc",
-    "price": 0.15,
-    "volume": 180699
+    "price": 0.16,
+    "volume": 263943
+   },
+   {
+    "ticker": "AZTR",
+    "company": "Azitra Inc",
+    "price": 0.16,
+    "volume": 212938
    },
    {
     "ticker": "BAOS",
     "company": "Baosheng Media Group Holdings Ltd",
     "price": 0.42,
-    "volume": 160943
-   },
-   {
-    "ticker": "YYAI",
-    "company": "AiRWA Inc",
-    "price": 1,
-    "volume": 158538
-   },
-   {
-    "ticker": "HCWC",
-    "company": "Healthy Choice Wellness Corp",
-    "price": 0.3,
-    "volume": 147292
-   },
-   {
-    "ticker": "WKSP",
-    "company": "Worksport Ltd",
-    "price": 0.48,
-    "volume": 139503
-   },
-   {
-    "ticker": "SURG",
-    "company": "Surgepays Inc",
-    "price": 0.18,
-    "volume": 132079
-   },
-   {
-    "ticker": "FAMI",
-    "company": "Farmmi Inc",
-    "price": 0.1,
-    "volume": 124853
+    "volume": 192763
    },
    {
     "ticker": "AEON",
     "company": "AEON Biopharma Inc",
     "price": 0.21,
-    "volume": 122241
+    "volume": 192578
+   },
+   {
+    "ticker": "YYAI",
+    "company": "AiRWA Inc",
+    "price": 0.98,
+    "volume": 189431
+   },
+   {
+    "ticker": "SURG",
+    "company": "Surgepays Inc",
+    "price": 0.18,
+    "volume": 185025
+   },
+   {
+    "ticker": "SDEV",
+    "company": "Stablecoin Development Corp",
+    "price": 1,
+    "volume": 157915
    },
    {
     "ticker": "ALP",
     "company": "Alpha Compute Corp",
     "price": 0.17,
-    "volume": 111491
+    "volume": 155804
    },
    {
-    "ticker": "MMA",
-    "company": "Mixed Martial Arts Group Ltd",
-    "price": 0.45,
-    "volume": 108704
+    "ticker": "WKSP",
+    "company": "Worksport Ltd",
+    "price": 0.48,
+    "volume": 151811
+   },
+   {
+    "ticker": "VNRX",
+    "company": "VolitionRX Ltd",
+    "price": 0.44,
+    "volume": 136540
+   },
+   {
+    "ticker": "FAMI",
+    "company": "Farmmi Inc",
+    "price": 0.1,
+    "volume": 135439
    },
    {
     "ticker": "PLAG",
     "company": "Planet Green Holdings Corp",
     "price": 0.69,
-    "volume": 108699
-   },
-   {
-    "ticker": "EONR",
-    "company": "EON Resources Inc",
-    "price": 0.5,
-    "volume": 106245
-   },
-   {
-    "ticker": "CYCU",
-    "company": "Cycurion Inc",
-    "price": 0.65,
-    "volume": 105334
-   },
-   {
-    "ticker": "UCL",
-    "company": "Ucloudlink Group Inc ADR",
-    "price": 0.37,
-    "volume": 102863
-   },
-   {
-    "ticker": "AZTR",
-    "company": "Azitra Inc",
-    "price": 0.15,
-    "volume": 94097
+    "volume": 127005
    },
    {
     "ticker": "SNYR",
     "company": "Synergy CHC Corp",
     "price": 0.1,
-    "volume": 76734
+    "volume": 126540
    },
    {
-    "ticker": "SRFM",
-    "company": "Surf Air Mobility Inc",
-    "price": 0.71,
-    "volume": 73127
+    "ticker": "MMA",
+    "company": "Mixed Martial Arts Group Ltd",
+    "price": 0.45,
+    "volume": 126113
    },
    {
-    "ticker": "VNRX",
-    "company": "VolitionRX Ltd",
-    "price": 0.43,
-    "volume": 69683
+    "ticker": "CYCU",
+    "company": "Cycurion Inc",
+    "price": 0.65,
+    "volume": 124275
+   },
+   {
+    "ticker": "GNS",
+    "company": "Genius Group Ltd",
+    "price": 0.18,
+    "volume": 121433
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
