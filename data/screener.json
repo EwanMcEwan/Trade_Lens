@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-26T05:06:21.242Z",
+ "generated": "2026-08-26T06:00:49.327Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-26T05:06:17.848Z",
+  "fetched": "2026-08-26T06:00:45.867Z",
   "rows": [
    {
     "ticker": "FGL",
@@ -44,7 +44,7 @@
     "sector": "Communication Services",
     "industry": "Publishing",
     "country": "Taiwan",
-    "marketCap": "1.68M",
+    "marketCap": "1.67M",
     "price": 0.57,
     "changePct": 43.29,
     "volume": 196420077
@@ -73,7 +73,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-26T05:06:21.242Z",
+  "fetched": "2026-08-26T06:00:49.327Z",
   "rows": [
    {
     "ticker": "NCPL",
