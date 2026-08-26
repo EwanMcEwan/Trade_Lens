@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-26T06:00:49.327Z",
+ "generated": "2026-08-26T07:26:25.313Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-26T06:00:45.867Z",
+  "fetched": "2026-08-26T07:26:21.966Z",
   "rows": [
    {
     "ticker": "FGL",
@@ -73,7 +73,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-26T06:00:49.327Z",
+  "fetched": "2026-08-26T07:26:25.313Z",
   "rows": [
    {
     "ticker": "NCPL",
