@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-27T00:33:21.288Z",
+ "generated": "2026-08-27T11:00:54.712Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-27T00:33:18.140Z",
+  "fetched": "2026-08-27T11:00:51.469Z",
   "rows": [
    {
     "ticker": "FGL",
@@ -11,10 +11,10 @@
     "sector": "Industrials",
     "industry": "Engineering & Construction",
     "country": "Malaysia",
-    "marketCap": "0.22M",
-    "price": 0.19,
-    "changePct": -8.39,
-    "volume": 58092056
+    "marketCap": "0.20M",
+    "price": 0.17,
+    "changePct": -10.09,
+    "volume": 1427150
    },
    {
     "ticker": "LGCL",
@@ -22,32 +22,10 @@
     "sector": "Technology",
     "industry": "Software - Application",
     "country": "China",
-    "marketCap": "2.45M",
+    "marketCap": "2.47M",
     "price": 0.06,
-    "changePct": 30.52,
-    "volume": 757912842
-   },
-   {
-    "ticker": "TRUG",
-    "company": "TruGolf Holdings Inc",
-    "sector": "Consumer Cyclical",
-    "industry": "Leisure",
-    "country": "USA",
-    "marketCap": "1.27M",
-    "price": 0.66,
-    "changePct": 12.82,
-    "volume": 16205317
-   },
-   {
-    "ticker": "ZCMD",
-    "company": "Zhongchao Inc",
-    "sector": "Healthcare",
-    "industry": "Health Information Services",
-    "country": "China",
-    "marketCap": "0.93M",
-    "price": 0.81,
-    "changePct": 10.69,
-    "volume": 33055919
+    "changePct": 0.87,
+    "volume": 35458263
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -62,247 +40,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-27T00:33:21.288Z",
+  "fetched": "2026-08-27T11:00:54.712Z",
   "rows": [
    {
-    "ticker": "SOAR",
-    "company": "Volato Group Inc",
-    "price": 0.24,
-    "volume": 779546015
+    "ticker": "RITR",
+    "company": "Reitar Logtech Holdings Ltd",
+    "price": 0.11,
+    "volume": 193328345
+   },
+   {
+    "ticker": "VNRX",
+    "company": "VolitionRX Ltd",
+    "price": 0.71,
+    "volume": 133084690
+   },
+   {
+    "ticker": "WKSP",
+    "company": "Worksport Ltd",
+    "price": 0.64,
+    "volume": 48311195
    },
    {
     "ticker": "LGCL",
     "company": "Lucas GC Ltd",
     "price": 0.06,
-    "volume": 757912842
-   },
-   {
-    "ticker": "OMH",
-    "company": "Ohmyhome Ltd",
-    "price": 0.1,
-    "volume": 470862823
-   },
-   {
-    "ticker": "VNRX",
-    "company": "VolitionRX Ltd",
-    "price": 0.34,
-    "volume": 62421559
-   },
-   {
-    "ticker": "FGL",
-    "company": "Founder Group Ltd",
-    "price": 0.19,
-    "volume": 58092056
+    "volume": 35458263
    },
    {
     "ticker": "MERC",
     "company": "Mercer International Inc",
-    "price": 0.41,
-    "volume": 56036557
+    "price": 0.63,
+    "volume": 31539990
    },
    {
-    "ticker": "DVLT",
-    "company": "Datavault AI Inc",
-    "price": 0.29,
-    "volume": 42658230
+    "ticker": "OMH",
+    "company": "Ohmyhome Ltd",
+    "price": 0.08,
+    "volume": 9338009
    },
    {
-    "ticker": "VEEA",
-    "company": "Veea Inc",
-    "price": 0.12,
-    "volume": 33525893
+    "ticker": "SOAR",
+    "company": "Volato Group Inc",
+    "price": 0.2,
+    "volume": 7499394
    },
    {
-    "ticker": "ZCMD",
-    "company": "Zhongchao Inc",
-    "price": 0.81,
-    "volume": 33055919
+    "ticker": "OBAI",
+    "company": "Our Bond Inc",
+    "price": 0.33,
+    "volume": 5310405
    },
    {
-    "ticker": "GOSS",
-    "company": "Gossamer Bio Inc",
+    "ticker": "FGL",
+    "company": "Founder Group Ltd",
     "price": 0.17,
-    "volume": 29151995
-   },
-   {
-    "ticker": "RITR",
-    "company": "Reitar Logtech Holdings Ltd",
-    "price": 0.09,
-    "volume": 24510532
-   },
-   {
-    "ticker": "GPUS",
-    "company": "Hyperscale Data Inc",
-    "price": 0.37,
-    "volume": 19088611
-   },
-   {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.4,
-    "volume": 18627401
-   },
-   {
-    "ticker": "ORBS",
-    "company": "Eightco Holdings Inc",
-    "price": 0.8,
-    "volume": 18264422
+    "volume": 1427150
    },
    {
     "ticker": "AIXI",
     "company": "Xiao-I Corp ADR",
-    "price": 0.8,
-    "volume": 17481388
+    "price": 0.59,
+    "volume": 1368371
+   },
+   {
+    "ticker": "CYCU",
+    "company": "Cycurion Inc",
+    "price": 0.48,
+    "volume": 1304239
+   },
+   {
+    "ticker": "SNYR",
+    "company": "Synergy CHC Corp",
+    "price": 0.1,
+    "volume": 818177
+   },
+   {
+    "ticker": "ATCH",
+    "company": "AtlasClear Holdings Inc",
+    "price": 0.2,
+    "volume": 460251
+   },
+   {
+    "ticker": "VEEA",
+    "company": "Veea Inc",
+    "price": 0.1,
+    "volume": 367862
+   },
+   {
+    "ticker": "DVLT",
+    "company": "Datavault AI Inc",
+    "price": 0.3,
+    "volume": 325245
+   },
+   {
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.41,
+    "volume": 297985
+   },
+   {
+    "ticker": "ZCMD",
+    "company": "Zhongchao Inc",
+    "price": 0.79,
+    "volume": 277795
+   },
+   {
+    "ticker": "SDEV",
+    "company": "Stablecoin Development Corp",
+    "price": 0.99,
+    "volume": 275707
+   },
+   {
+    "ticker": "SES",
+    "company": "SES AI Corp",
+    "price": 0.53,
+    "volume": 270031
+   },
+   {
+    "ticker": "HODO",
+    "company": "House of Doge Inc",
+    "price": 0.23,
+    "volume": 263044
    },
    {
     "ticker": "TRUG",
     "company": "TruGolf Holdings Inc",
-    "price": 0.66,
-    "volume": 16205317
+    "price": 0.6,
+    "volume": 249977
    },
    {
     "ticker": "VVOS",
     "company": "Vivos Therapeutics Inc",
     "price": 0.25,
-    "volume": 15185135
+    "volume": 239164
    },
    {
-    "ticker": "YMT",
-    "company": "Yimutian Inc ADR",
-    "price": 0.2,
-    "volume": 14373357
+    "ticker": "GPUS",
+    "company": "Hyperscale Data Inc",
+    "price": 0.38,
+    "volume": 222388
    },
    {
-    "ticker": "HODO",
-    "company": "House of Doge Inc",
-    "price": 0.26,
-    "volume": 14293476
-   },
-   {
-    "ticker": "AKBA",
-    "company": "Akebia Therapeutics Inc",
-    "price": 0.91,
-    "volume": 14030629
-   },
-   {
-    "ticker": "NCPL",
-    "company": "Netcapital Inc",
-    "price": 0.5,
-    "volume": 13370667
-   },
-   {
-    "ticker": "HOWL",
-    "company": "Werewolf Therapeutics Inc",
-    "price": 0.99,
-    "volume": 11618664
-   },
-   {
-    "ticker": "CYCU",
-    "company": "Cycurion Inc",
-    "price": 0.46,
-    "volume": 11326873
-   },
-   {
-    "ticker": "IPDN",
-    "company": "Professional Diversity Network Inc",
-    "price": 0.13,
-    "volume": 10710852
-   },
-   {
-    "ticker": "LGHL",
-    "company": "Lion Group Holding Ltd ADR",
-    "price": 0.56,
-    "volume": 10379975
-   },
-   {
-    "ticker": "IQ",
-    "company": "iQIYI Inc ADR",
-    "price": 0.98,
-    "volume": 9599376
-   },
-   {
-    "ticker": "MGN",
-    "company": "Megan Holdings Ltd",
-    "price": 0.11,
-    "volume": 8345028
-   },
-   {
-    "ticker": "GPRO",
-    "company": "GoPro Inc",
-    "price": 0.6,
-    "volume": 8095489
-   },
-   {
-    "ticker": "MVST",
-    "company": "Microvast Holdings Inc",
-    "price": 0.77,
-    "volume": 8089922
+    "ticker": "VBIO",
+    "company": "Valion Bio Inc",
+    "price": 0.16,
+    "volume": 208175
    },
    {
     "ticker": "FNGR",
     "company": "FingerMotion Inc",
     "price": 0.16,
-    "volume": 6632625
+    "volume": 176895
    },
    {
-    "ticker": "ZONE",
-    "company": "CleanCore Solutions Inc",
-    "price": 0.15,
-    "volume": 6344182
+    "ticker": "IGC",
+    "company": "IGC Pharma Inc",
+    "price": 0.32,
+    "volume": 159833
    },
    {
-    "ticker": "DDC",
-    "company": "DDC Enterprise Ltd",
-    "price": 0.58,
-    "volume": 6235664
+    "ticker": "LGHL",
+    "company": "Lion Group Holding Ltd ADR",
+    "price": 0.53,
+    "volume": 151098
    },
    {
-    "ticker": "OTLK",
-    "company": "Outlook Therapeutics Inc",
-    "price": 0.62,
-    "volume": 6063220
+    "ticker": "NCPL",
+    "company": "Netcapital Inc",
+    "price": 0.52,
+    "volume": 150115
    },
    {
-    "ticker": "PRZO",
-    "company": "ParaZero Technologies Ltd",
-    "price": 0.8,
-    "volume": 5732150
-   },
-   {
-    "ticker": "HUMA",
-    "company": "Humacyte Inc",
-    "price": 0.68,
-    "volume": 5678050
-   },
-   {
-    "ticker": "OPTT",
-    "company": "Ocean Power Technologies",
+    "ticker": "GOSS",
+    "company": "Gossamer Bio Inc",
     "price": 0.18,
-    "volume": 5315240
+    "volume": 146137
+   },
+   {
+    "ticker": "ZBAO",
+    "company": "Zhibao Technology Inc",
+    "price": 0.17,
+    "volume": 111470
+   },
+   {
+    "ticker": "NUWE",
+    "company": "Nuwellis Inc",
+    "price": 1,
+    "volume": 109954
+   },
+   {
+    "ticker": "QTEX",
+    "company": "QTREX Quantum Ltd",
+    "price": 0.82,
+    "volume": 106351
+   },
+   {
+    "ticker": "INTZ",
+    "company": "Intrusion Inc",
+    "price": 0.75,
+    "volume": 105305
+   },
+   {
+    "ticker": "NXXT",
+    "company": "NextNRG Inc",
+    "price": 0.25,
+    "volume": 103575
+   },
+   {
+    "ticker": "BAOS",
+    "company": "Baosheng Media Group Holdings Ltd",
+    "price": 0.43,
+    "volume": 89670
+   },
+   {
+    "ticker": "HCWC",
+    "company": "Healthy Choice Wellness Corp",
+    "price": 0.29,
+    "volume": 89308
+   },
+   {
+    "ticker": "SLGB",
+    "company": "Smart Logistics Global Ltd",
+    "price": 0.5,
+    "volume": 88265
+   },
+   {
+    "ticker": "TNMG",
+    "company": "TNL Mediagene",
+    "price": 0.55,
+    "volume": 74868
+   },
+   {
+    "ticker": "MGN",
+    "company": "Megan Holdings Ltd",
+    "price": 0.11,
+    "volume": 73542
    },
    {
     "ticker": "AZTR",
     "company": "Azitra Inc",
-    "price": 0.17,
-    "volume": 5108352
-   },
-   {
-    "ticker": "VERI",
-    "company": "Veritone Inc",
-    "price": 0.8,
-    "volume": 5060641
-   },
-   {
-    "ticker": "GETY",
-    "company": "Getty Images Holdings Inc",
-    "price": 0.28,
-    "volume": 4706223
-   },
-   {
-    "ticker": "NWGL",
-    "company": "CL Workshop Group Ltd ADR",
-    "price": 0.85,
-    "volume": 4458287
+    "price": 0.18,
+    "volume": 72875
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
