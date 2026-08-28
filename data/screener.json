@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-27T21:05:25.010Z",
+ "generated": "2026-08-28T05:32:51.163Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-27T21:05:21.843Z",
+  "fetched": "2026-08-28T05:32:47.767Z",
   "rows": [
    {
     "ticker": "ARTL",
@@ -14,7 +14,18 @@
     "marketCap": "3.04M",
     "price": 0.66,
     "changePct": -6.98,
-    "volume": 824319
+    "volume": 838496
+   },
+   {
+    "ticker": "FGL",
+    "company": "Founder Group Ltd",
+    "sector": "Industrials",
+    "industry": "Engineering & Construction",
+    "country": "Malaysia",
+    "marketCap": "0.20M",
+    "price": 0.18,
+    "changePct": -7.39,
+    "volume": 7195110
    },
    {
     "ticker": "LGCL",
@@ -25,7 +36,7 @@
     "marketCap": "2.28M",
     "price": 0.05,
     "changePct": -6.98,
-    "volume": 86833425
+    "volume": 91733378
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -40,247 +51,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-27T21:05:25.010Z",
+  "fetched": "2026-08-28T05:32:51.163Z",
   "rows": [
    {
     "ticker": "VNRX",
     "company": "VolitionRX Ltd",
     "price": 0.5,
-    "volume": 351503562
+    "volume": 354111199
    },
    {
     "ticker": "RITR",
     "company": "Reitar Logtech Holdings Ltd",
     "price": 0.1,
-    "volume": 245313317
+    "volume": 247747721
    },
    {
     "ticker": "WKSP",
     "company": "Worksport Ltd",
     "price": 0.63,
-    "volume": 191862476
+    "volume": 192675326
    },
    {
     "ticker": "CHOW",
     "company": "ChowChow Cloud International Holdings Ltd",
     "price": 0.64,
-    "volume": 138935063
-   },
-   {
-    "ticker": "MERC",
-    "company": "Mercer International Inc",
-    "price": 0.39,
-    "volume": 100350044
+    "volume": 144688460
    },
    {
     "ticker": "NCPL",
     "company": "Netcapital Inc",
     "price": 0.54,
-    "volume": 96586196
+    "volume": 107604531
+   },
+   {
+    "ticker": "MERC",
+    "company": "Mercer International Inc",
+    "price": 0.39,
+    "volume": 102147197
    },
    {
     "ticker": "LGCL",
     "company": "Lucas GC Ltd",
     "price": 0.05,
-    "volume": 86833425
+    "volume": 91733378
    },
    {
     "ticker": "OBAI",
     "company": "Our Bond Inc",
     "price": 0.37,
-    "volume": 63174519
-   },
-   {
-    "ticker": "SOAR",
-    "company": "Volato Group Inc",
-    "price": 0.2,
-    "volume": 47195051
-   },
-   {
-    "ticker": "GSUN",
-    "company": "Golden Sun Technology Group Ltd",
-    "price": 0.34,
-    "volume": 37147058
-   },
-   {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.44,
-    "volume": 30789956
-   },
-   {
-    "ticker": "OMH",
-    "company": "Ohmyhome Ltd",
-    "price": 0.08,
-    "volume": 27426773
-   },
-   {
-    "ticker": "FAMI",
-    "company": "Farmmi Inc",
-    "price": 0.1,
-    "volume": 23951164
-   },
-   {
-    "ticker": "VTAK",
-    "company": "Catheter Precision Inc",
-    "price": 0.2,
-    "volume": 21882187
-   },
-   {
-    "ticker": "IQ",
-    "company": "iQIYI Inc ADR",
-    "price": 0.92,
-    "volume": 20478008
-   },
-   {
-    "ticker": "GPUS",
-    "company": "Hyperscale Data Inc",
-    "price": 0.33,
-    "volume": 20256697
+    "volume": 64548166
    },
    {
     "ticker": "EPOW",
     "company": "E-Power Inc",
     "price": 0.45,
-    "volume": 16938076
+    "volume": 50832218
+   },
+   {
+    "ticker": "SOAR",
+    "company": "Volato Group Inc",
+    "price": 0.2,
+    "volume": 48121677
+   },
+   {
+    "ticker": "FAMI",
+    "company": "Farmmi Inc",
+    "price": 0.1,
+    "volume": 38877403
+   },
+   {
+    "ticker": "GSUN",
+    "company": "Golden Sun Technology Group Ltd",
+    "price": 0.34,
+    "volume": 37730806
+   },
+   {
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.44,
+    "volume": 31312313
+   },
+   {
+    "ticker": "OMH",
+    "company": "Ohmyhome Ltd",
+    "price": 0.08,
+    "volume": 28434711
+   },
+   {
+    "ticker": "VTAK",
+    "company": "Catheter Precision Inc",
+    "price": 0.2,
+    "volume": 22374668
+   },
+   {
+    "ticker": "GPUS",
+    "company": "Hyperscale Data Inc",
+    "price": 0.33,
+    "volume": 20578659
+   },
+   {
+    "ticker": "IQ",
+    "company": "iQIYI Inc ADR",
+    "price": 0.92,
+    "volume": 20519253
    },
    {
     "ticker": "GOSS",
     "company": "Gossamer Bio Inc",
     "price": 0.17,
-    "volume": 15355374
+    "volume": 15445034
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.3,
-    "volume": 15025215
+    "volume": 15306565
    },
    {
     "ticker": "AKBA",
     "company": "Akebia Therapeutics Inc",
     "price": 0.94,
-    "volume": 13286250
+    "volume": 13288268
    },
    {
     "ticker": "GNS",
     "company": "Genius Group Ltd",
     "price": 0.2,
-    "volume": 11319972
+    "volume": 11598794
    },
    {
     "ticker": "ZCMD",
     "company": "Zhongchao Inc",
     "price": 0.97,
-    "volume": 11235359
-   },
-   {
-    "ticker": "FNGR",
-    "company": "FingerMotion Inc",
-    "price": 0.17,
-    "volume": 9169853
-   },
-   {
-    "ticker": "LDI",
-    "company": "LoanDepot Inc",
-    "price": 0.97,
-    "volume": 9020957
-   },
-   {
-    "ticker": "ORBS",
-    "company": "Eightco Holdings Inc",
-    "price": 0.82,
-    "volume": 8159998
-   },
-   {
-    "ticker": "VBIO",
-    "company": "Valion Bio Inc",
-    "price": 0.12,
-    "volume": 7917716
-   },
-   {
-    "ticker": "GPRO",
-    "company": "GoPro Inc",
-    "price": 0.61,
-    "volume": 6940707
-   },
-   {
-    "ticker": "OTLK",
-    "company": "Outlook Therapeutics Inc",
-    "price": 0.64,
-    "volume": 6786562
-   },
-   {
-    "ticker": "MVST",
-    "company": "Microvast Holdings Inc",
-    "price": 0.77,
-    "volume": 5966386
-   },
-   {
-    "ticker": "ZONE",
-    "company": "CleanCore Solutions Inc",
-    "price": 0.15,
-    "volume": 5742298
-   },
-   {
-    "ticker": "VEEA",
-    "company": "Veea Inc",
-    "price": 0.1,
-    "volume": 5741131
-   },
-   {
-    "ticker": "LUCY",
-    "company": "Innovative Eyewear Inc",
-    "price": 0.94,
-    "volume": 5716043
-   },
-   {
-    "ticker": "AIXI",
-    "company": "Xiao-I Corp ADR",
-    "price": 0.59,
-    "volume": 5653841
-   },
-   {
-    "ticker": "SES",
-    "company": "SES AI Corp",
-    "price": 0.55,
-    "volume": 5589573
-   },
-   {
-    "ticker": "FGL",
-    "company": "Founder Group Ltd",
-    "price": 0.18,
-    "volume": 5363919
-   },
-   {
-    "ticker": "CYCU",
-    "company": "Cycurion Inc",
-    "price": 0.48,
-    "volume": 4791538
-   },
-   {
-    "ticker": "AEON",
-    "company": "AEON Biopharma Inc",
-    "price": 0.29,
-    "volume": 4624762
-   },
-   {
-    "ticker": "SUGP",
-    "company": "SU Group Holdings Ltd",
-    "price": 0.89,
-    "volume": 4258163
+    "volume": 11349368
    },
    {
     "ticker": "RYET",
     "company": "Ruanyun Edai Technology Inc",
     "price": 0.97,
-    "volume": 4084961
+    "volume": 10242829
+   },
+   {
+    "ticker": "FNGR",
+    "company": "FingerMotion Inc",
+    "price": 0.17,
+    "volume": 9374618
+   },
+   {
+    "ticker": "LDI",
+    "company": "LoanDepot Inc",
+    "price": 0.97,
+    "volume": 9122250
+   },
+   {
+    "ticker": "ORBS",
+    "company": "Eightco Holdings Inc",
+    "price": 0.82,
+    "volume": 8218769
+   },
+   {
+    "ticker": "VBIO",
+    "company": "Valion Bio Inc",
+    "price": 0.12,
+    "volume": 8130934
+   },
+   {
+    "ticker": "FGL",
+    "company": "Founder Group Ltd",
+    "price": 0.18,
+    "volume": 7195110
+   },
+   {
+    "ticker": "GPRO",
+    "company": "GoPro Inc",
+    "price": 0.61,
+    "volume": 7074159
+   },
+   {
+    "ticker": "OTLK",
+    "company": "Outlook Therapeutics Inc",
+    "price": 0.64,
+    "volume": 6853300
+   },
+   {
+    "ticker": "MVST",
+    "company": "Microvast Holdings Inc",
+    "price": 0.77,
+    "volume": 5970491
+   },
+   {
+    "ticker": "AIXI",
+    "company": "Xiao-I Corp ADR",
+    "price": 0.59,
+    "volume": 5877802
+   },
+   {
+    "ticker": "VEEA",
+    "company": "Veea Inc",
+    "price": 0.1,
+    "volume": 5832554
+   },
+   {
+    "ticker": "ZONE",
+    "company": "CleanCore Solutions Inc",
+    "price": 0.15,
+    "volume": 5822421
+   },
+   {
+    "ticker": "HCWC",
+    "company": "Healthy Choice Wellness Corp",
+    "price": 0.26,
+    "volume": 5810019
+   },
+   {
+    "ticker": "LUCY",
+    "company": "Innovative Eyewear Inc",
+    "price": 0.94,
+    "volume": 5804993
+   },
+   {
+    "ticker": "SES",
+    "company": "SES AI Corp",
+    "price": 0.55,
+    "volume": 5626300
    },
    {
     "ticker": "XTNT",
     "company": "Xtant Medical Holdings Inc",
     "price": 0.33,
-    "volume": 4076458
+    "volume": 5128381
+   },
+   {
+    "ticker": "CYCU",
+    "company": "Cycurion Inc",
+    "price": 0.48,
+    "volume": 4968959
+   },
+   {
+    "ticker": "AEON",
+    "company": "AEON Biopharma Inc",
+    "price": 0.29,
+    "volume": 4701225
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
