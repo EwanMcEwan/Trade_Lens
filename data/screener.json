@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-29T01:50:20.579Z",
+ "generated": "2026-08-29T08:46:07.860Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-29T01:50:17.390Z",
+  "fetched": "2026-08-29T08:46:04.706Z",
   "rows": [
    {
     "ticker": "ARTL",
@@ -22,7 +22,7 @@
     "sector": "Industrials",
     "industry": "Engineering & Construction",
     "country": "Malaysia",
-    "marketCap": "0.17M",
+    "marketCap": "0.18M",
     "price": 0.15,
     "changePct": -13.82,
     "volume": 26980390
@@ -44,7 +44,7 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "2.36M",
+    "marketCap": "2.37M",
     "price": 0.52,
     "changePct": -1.47,
     "volume": 74775
@@ -73,7 +73,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-29T01:50:20.579Z",
+  "fetched": "2026-08-29T08:46:07.860Z",
   "rows": [
    {
     "ticker": "FNGR",
