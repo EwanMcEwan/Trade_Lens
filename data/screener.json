@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-29T14:15:04.866Z",
+ "generated": "2026-08-29T17:48:20.855Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-29T14:15:01.698Z",
+  "fetched": "2026-08-29T17:48:17.448Z",
   "rows": [
    {
     "ticker": "ARTL",
@@ -44,7 +44,7 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "2.37M",
+    "marketCap": "2.36M",
     "price": 0.52,
     "changePct": -1.47,
     "volume": 74775
@@ -55,7 +55,7 @@
     "sector": "Consumer Cyclical",
     "industry": "Leisure",
     "country": "USA",
-    "marketCap": "2.13M",
+    "marketCap": "0.89M",
     "price": 0.46,
     "changePct": -22.9,
     "volume": 6288808
@@ -73,7 +73,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-29T14:15:04.866Z",
+  "fetched": "2026-08-29T17:48:20.855Z",
   "rows": [
    {
     "ticker": "FNGR",
