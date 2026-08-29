@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-29T20:40:25.605Z",
+ "generated": "2026-08-29T23:06:10.780Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-29T20:40:22.407Z",
+  "fetched": "2026-08-29T23:06:07.577Z",
   "rows": [
    {
     "ticker": "ARTL",
@@ -48,17 +48,6 @@
     "price": 0.52,
     "changePct": -1.47,
     "volume": 74775
-   },
-   {
-    "ticker": "TRUG",
-    "company": "TruGolf Holdings Inc",
-    "sector": "Consumer Cyclical",
-    "industry": "Leisure",
-    "country": "USA",
-    "marketCap": "2.13M",
-    "price": 0.46,
-    "changePct": -22.9,
-    "volume": 6288808
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -73,7 +62,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-29T20:40:25.605Z",
+  "fetched": "2026-08-29T23:06:10.780Z",
   "rows": [
    {
     "ticker": "FNGR",
