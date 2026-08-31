@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-30T23:23:29.146Z",
+ "generated": "2026-08-31T01:30:57.220Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-30T23:23:25.735Z",
+  "fetched": "2026-08-31T01:30:53.955Z",
   "rows": [
    {
     "ticker": "ARTL",
@@ -62,7 +62,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-08-30T23:23:29.146Z",
+  "fetched": "2026-08-31T01:30:57.220Z",
   "rows": [
    {
     "ticker": "FNGR",
