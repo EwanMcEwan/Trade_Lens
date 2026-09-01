@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-01T01:05:47.803Z",
+ "generated": "2026-09-01T06:38:40.870Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-01T01:05:44.588Z",
+  "fetched": "2026-09-01T06:38:37.459Z",
   "rows": [
    {
     "ticker": "FGL",
@@ -44,7 +44,7 @@
     "sector": "Real Estate",
     "industry": "REIT - Retail",
     "country": "USA",
-    "marketCap": "0.53M",
+    "marketCap": "0.52M",
     "price": 0.68,
     "changePct": -36.45,
     "volume": 5036424
@@ -62,7 +62,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-01T01:05:47.803Z",
+  "fetched": "2026-09-01T06:38:40.870Z",
   "rows": [
    {
     "ticker": "VVOS",
