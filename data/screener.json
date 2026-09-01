@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-01T12:26:31.391Z",
+ "generated": "2026-09-01T16:51:19.133Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-01T12:26:27.915Z",
+  "fetched": "2026-09-01T16:51:15.603Z",
   "rows": [
    {
     "ticker": "WHLR",
@@ -11,10 +11,10 @@
     "sector": "Real Estate",
     "industry": "REIT - Retail",
     "country": "USA",
-    "marketCap": "0.53M",
-    "price": 0.7,
-    "changePct": 2.79,
-    "volume": 856647
+    "marketCap": "0.51M",
+    "price": 0.66,
+    "changePct": -2.57,
+    "volume": 1601461
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -29,247 +29,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-01T12:26:31.391Z",
+  "fetched": "2026-09-01T16:51:19.133Z",
   "rows": [
    {
     "ticker": "HKPD",
     "company": "Cellyan Biotechnology Co Ltd",
-    "price": 0.31,
-    "volume": 29834161
-   },
-   {
-    "ticker": "AIM",
-    "company": "AIM ImmunoTech Inc",
-    "price": 0.24,
-    "volume": 26652914
-   },
-   {
-    "ticker": "AUUD",
-    "company": "Auddia Inc",
-    "price": 0.93,
-    "volume": 14503481
-   },
-   {
-    "ticker": "NCPL",
-    "company": "Netcapital Inc",
-    "price": 0.79,
-    "volume": 12814754
-   },
-   {
-    "ticker": "CPOP",
-    "company": "Pop Culture Group Co Ltd",
-    "price": 0.29,
-    "volume": 6738158
-   },
-   {
-    "ticker": "VVOS",
-    "company": "Vivos Therapeutics Inc",
-    "price": 0.16,
-    "volume": 6421556
-   },
-   {
-    "ticker": "KALA",
-    "company": "Kala Bio Inc",
-    "price": 0.57,
-    "volume": 6170280
-   },
-   {
-    "ticker": "FNGR",
-    "company": "FingerMotion Inc",
-    "price": 0.2,
-    "volume": 4218321
+    "price": 0.22,
+    "volume": 82899747
    },
    {
     "ticker": "RITR",
     "company": "Reitar Logtech Holdings Ltd",
     "price": 0.09,
-    "volume": 3159500
+    "volume": 76894224
    },
    {
-    "ticker": "PASW",
-    "company": "Ping An Biomedical Co Ltd",
-    "price": 0.12,
-    "volume": 2440692
+    "ticker": "AIM",
+    "company": "AIM ImmunoTech Inc",
+    "price": 0.24,
+    "volume": 35104184
    },
    {
-    "ticker": "SOAR",
-    "company": "Volato Group Inc",
-    "price": 0.22,
-    "volume": 2317007
+    "ticker": "NCPL",
+    "company": "Netcapital Inc",
+    "price": 0.79,
+    "volume": 27362446
    },
    {
-    "ticker": "BTAI",
-    "company": "BioXcel Therapeutics Inc",
-    "price": 0.14,
-    "volume": 2191983
-   },
-   {
-    "ticker": "RDHL",
-    "company": "Redhill Biopharma Ltd ADR",
-    "price": 0.82,
-    "volume": 1486499
-   },
-   {
-    "ticker": "CLGN",
-    "company": "CollPlant Biotechnologies Ltd",
-    "price": 0.32,
-    "volume": 1126763
-   },
-   {
-    "ticker": "DVLT",
-    "company": "Datavault AI Inc",
-    "price": 0.29,
-    "volume": 974947
-   },
-   {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.35,
-    "volume": 911104
-   },
-   {
-    "ticker": "WHLR",
-    "company": "Wheeler Real Estate Investment Trust Inc",
-    "price": 0.7,
-    "volume": 856647
-   },
-   {
-    "ticker": "FAMI",
-    "company": "Farmmi Inc",
-    "price": 0.12,
-    "volume": 793901
-   },
-   {
-    "ticker": "REED",
-    "company": "Reeds Inc",
-    "price": 0.87,
-    "volume": 594237
+    "ticker": "MIRA",
+    "company": "Mira Pharmaceuticals Inc",
+    "price": 0.88,
+    "volume": 26607251
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
+    "price": 0.25,
+    "volume": 16561730
+   },
+   {
+    "ticker": "ZEO",
+    "company": "Zeo Energy Corp",
+    "price": 0.21,
+    "volume": 16477644
+   },
+   {
+    "ticker": "AMBR",
+    "company": "Amber International Holding Ltd ADR",
+    "price": 0.96,
+    "volume": 15315045
+   },
+   {
+    "ticker": "FNGR",
+    "company": "FingerMotion Inc",
+    "price": 0.2,
+    "volume": 14227944
+   },
+   {
+    "ticker": "VVOS",
+    "company": "Vivos Therapeutics Inc",
+    "price": 0.17,
+    "volume": 13652156
+   },
+   {
+    "ticker": "DVLT",
+    "company": "Datavault AI Inc",
     "price": 0.28,
-    "volume": 551159
+    "volume": 11220563
    },
    {
-    "ticker": "COOT",
-    "company": "Australian Oilseeds Holdings Limited",
-    "price": 0.55,
-    "volume": 453648
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.33,
+    "volume": 10740164
    },
    {
-    "ticker": "VNRX",
-    "company": "VolitionRX Ltd",
-    "price": 0.41,
-    "volume": 371914
+    "ticker": "SOAR",
+    "company": "Volato Group Inc",
+    "price": 0.25,
+    "volume": 9618463
    },
    {
-    "ticker": "TOPP",
-    "company": "Toppoint Holdings Inc",
-    "price": 0.18,
-    "volume": 328520
+    "ticker": "LX",
+    "company": "LexinFintech Holdings Ltd ADR",
+    "price": 0.94,
+    "volume": 8830201
    },
    {
-    "ticker": "WBUY",
-    "company": "Webuy Global Ltd",
-    "price": 0.84,
-    "volume": 322658
+    "ticker": "BTAI",
+    "company": "BioXcel Therapeutics Inc",
+    "price": 0.12,
+    "volume": 8763725
+   },
+   {
+    "ticker": "KALA",
+    "company": "Kala Bio Inc",
+    "price": 0.54,
+    "volume": 8496911
+   },
+   {
+    "ticker": "KUST",
+    "company": "Kustom Entertainment Inc",
+    "price": 0.9,
+    "volume": 8343257
+   },
+   {
+    "ticker": "HUMA",
+    "company": "Humacyte Inc",
+    "price": 0.57,
+    "volume": 7999616
+   },
+   {
+    "ticker": "CPOP",
+    "company": "Pop Culture Group Co Ltd",
+    "price": 0.32,
+    "volume": 7822561
    },
    {
     "ticker": "IVVD",
     "company": "Invivyd Inc",
-    "price": 0.75,
-    "volume": 301371
+    "price": 0.82,
+    "volume": 7662809
+   },
+   {
+    "ticker": "IQ",
+    "company": "iQIYI Inc ADR",
+    "price": 0.91,
+    "volume": 6406189
+   },
+   {
+    "ticker": "CLGN",
+    "company": "CollPlant Biotechnologies Ltd",
+    "price": 0.37,
+    "volume": 5505728
+   },
+   {
+    "ticker": "AKBA",
+    "company": "Akebia Therapeutics Inc",
+    "price": 0.91,
+    "volume": 5425660
+   },
+   {
+    "ticker": "GOSS",
+    "company": "Gossamer Bio Inc",
+    "price": 0.16,
+    "volume": 5036557
+   },
+   {
+    "ticker": "MVST",
+    "company": "Microvast Holdings Inc",
+    "price": 0.7,
+    "volume": 4840803
+   },
+   {
+    "ticker": "DEFT",
+    "company": "DeFi Technologies Inc",
+    "price": 0.63,
+    "volume": 4523391
+   },
+   {
+    "ticker": "PASW",
+    "company": "Ping An Biomedical Co Ltd",
+    "price": 0.13,
+    "volume": 4341535
+   },
+   {
+    "ticker": "SES",
+    "company": "SES AI Corp",
+    "price": 0.51,
+    "volume": 4232760
+   },
+   {
+    "ticker": "FAMI",
+    "company": "Farmmi Inc",
+    "price": 0.13,
+    "volume": 3732131
    },
    {
     "ticker": "ORBS",
     "company": "Eightco Holdings Inc",
     "price": 0.77,
-    "volume": 267797
+    "volume": 3298761
    },
    {
-    "ticker": "CYAB",
-    "company": "Cyabra Inc",
-    "price": 0.44,
-    "volume": 256832
+    "ticker": "RDHL",
+    "company": "Redhill Biopharma Ltd ADR",
+    "price": 0.84,
+    "volume": 3006840
    },
    {
-    "ticker": "GOSS",
-    "company": "Gossamer Bio Inc",
-    "price": 0.17,
-    "volume": 254118
+    "ticker": "SAFX",
+    "company": "XCF Global Inc",
+    "price": 0.37,
+    "volume": 2956411
    },
    {
-    "ticker": "AIXI",
-    "company": "Xiao-I Corp ADR",
-    "price": 0.45,
-    "volume": 233731
+    "ticker": "PHGE",
+    "company": "BiomX Inc",
+    "price": 0.14,
+    "volume": 2651973
    },
    {
-    "ticker": "CHAI",
-    "company": "Core AI Holdings Inc",
-    "price": 0.35,
-    "volume": 219881
+    "ticker": "ZONE",
+    "company": "Zone Frontier Inc",
+    "price": 0.15,
+    "volume": 2474176
    },
    {
-    "ticker": "NVNI",
-    "company": "Nvni Group Ltd",
-    "price": 0.9,
-    "volume": 185994
+    "ticker": "GETY",
+    "company": "Getty Images Holdings Inc",
+    "price": 0.23,
+    "volume": 2411568
    },
    {
-    "ticker": "ALP",
-    "company": "Alpha Compute Corp",
-    "price": 0.17,
-    "volume": 152966
+    "ticker": "EVTL",
+    "company": "Vertical Aerospace Ltd",
+    "price": 0.62,
+    "volume": 2357128
    },
    {
-    "ticker": "SDA",
-    "company": "SunCar Technology Group Inc",
-    "price": 0.71,
-    "volume": 147024
-   },
-   {
-    "ticker": "TRUG",
-    "company": "TruGolf Holdings Inc",
-    "price": 0.46,
-    "volume": 135706
+    "ticker": "OTLK",
+    "company": "Outlook Therapeutics Inc",
+    "price": 0.63,
+    "volume": 2049626
    },
    {
     "ticker": "AMZE",
     "company": "Amaze Holdings Inc",
-    "price": 0.16,
-    "volume": 120954
+    "price": 0.15,
+    "volume": 1956629
    },
    {
-    "ticker": "MGN",
-    "company": "Megan Holdings Ltd",
-    "price": 0.12,
-    "volume": 114287
+    "ticker": "LDI",
+    "company": "LoanDepot Inc",
+    "price": 0.91,
+    "volume": 1924187
    },
    {
-    "ticker": "XTNT",
-    "company": "Xtant Medical Holdings Inc",
-    "price": 0.38,
-    "volume": 110973
-   },
-   {
-    "ticker": "VIVK",
-    "company": "Vivakor Inc",
-    "price": 0.79,
-    "volume": 109699
-   },
-   {
-    "ticker": "GSUN",
-    "company": "Golden Sun Technology Group Ltd",
-    "price": 0.29,
-    "volume": 104611
-   },
-   {
-    "ticker": "MERC",
-    "company": "Mercer International Inc",
-    "price": 0.38,
-    "volume": 103065
+    "ticker": "BAOS",
+    "company": "Baosheng Media Group Holdings Ltd",
+    "price": 0.31,
+    "volume": 1753343
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
