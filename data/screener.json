@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-04T08:39:20.443Z",
+ "generated": "2026-09-04T13:17:37.070Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-04T08:39:17.156Z",
+  "fetched": "2026-09-04T13:17:33.648Z",
   "rows": [
    {
     "ticker": "BAOS",
@@ -11,10 +11,21 @@
     "sector": "Communication Services",
     "industry": "Advertising Agencies",
     "country": "China",
-    "marketCap": "0.56M",
-    "price": 0.37,
-    "changePct": 30.46,
-    "volume": 23633829
+    "marketCap": "0.51M",
+    "price": 0.34,
+    "changePct": 19.56,
+    "volume": 68359698
+   },
+   {
+    "ticker": "CDT",
+    "company": "CDT Equity Inc",
+    "sector": "Healthcare",
+    "industry": "Biotechnology",
+    "country": "USA",
+    "marketCap": "0.59M",
+    "price": 0.75,
+    "changePct": 0.11,
+    "volume": 315887
    },
    {
     "ticker": "GIPR",
@@ -22,10 +33,21 @@
     "sector": "Real Estate",
     "industry": "REIT - Diversified",
     "country": "USA",
-    "marketCap": "1.49M",
-    "price": 0.49,
-    "changePct": -6.42,
-    "volume": 853643
+    "marketCap": "1.64M",
+    "price": 0.54,
+    "changePct": 3.23,
+    "volume": 2462860
+   },
+   {
+    "ticker": "SXTP",
+    "company": "60 Degrees Pharmaceuticals Inc",
+    "sector": "Healthcare",
+    "industry": "Biotechnology",
+    "country": "USA",
+    "marketCap": "3.27M",
+    "price": 0.93,
+    "changePct": -0.01,
+    "volume": 10752
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -40,247 +62,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-04T08:39:20.443Z",
+  "fetched": "2026-09-04T13:17:37.070Z",
   "rows": [
    {
     "ticker": "BAOS",
     "company": "Baosheng Media Group Holdings Ltd",
-    "price": 0.37,
-    "volume": 23633829
+    "price": 0.34,
+    "volume": 68359698
    },
    {
-    "ticker": "ADBT",
-    "company": "Advasa Holdings Inc",
-    "price": 0.35,
-    "volume": 10923488
+    "ticker": "OFAL",
+    "company": "OFA Group",
+    "price": 0.93,
+    "volume": 41206190
    },
    {
     "ticker": "PLAG",
     "company": "Planet Green Holdings Corp",
-    "price": 0.87,
-    "volume": 4583780
+    "price": 0.73,
+    "volume": 22697885
+   },
+   {
+    "ticker": "ADBT",
+    "company": "Advasa Holdings Inc",
+    "price": 0.3,
+    "volume": 21775403
    },
    {
     "ticker": "SOAR",
     "company": "Volato Group Inc",
     "price": 0.24,
-    "volume": 2451296
+    "volume": 14537463
    },
    {
-    "ticker": "BTAI",
-    "company": "BioXcel Therapeutics Inc",
-    "price": 0.1,
-    "volume": 2271957
-   },
-   {
-    "ticker": "AIM",
-    "company": "AIM ImmunoTech Inc",
-    "price": 0.23,
-    "volume": 1795169
-   },
-   {
-    "ticker": "MDCX",
-    "company": "Medicus Pharma Ltd",
-    "price": 0.17,
-    "volume": 1630197
+    "ticker": "NCPL",
+    "company": "Netcapital Inc",
+    "price": 0.76,
+    "volume": 7549213
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
-    "price": 0.19,
-    "volume": 1413431
+    "price": 0.18,
+    "volume": 7505284
    },
    {
-    "ticker": "TWG",
-    "company": "Top Wealth Group Holding Ltd",
-    "price": 0.52,
-    "volume": 976302
-   },
-   {
-    "ticker": "FAMI",
-    "company": "Farmmi Inc",
-    "price": 0.11,
-    "volume": 884871
-   },
-   {
-    "ticker": "GIPR",
-    "company": "Generation Income Properties Inc",
-    "price": 0.49,
-    "volume": 853643
-   },
-   {
-    "ticker": "SPWR",
-    "company": "SunPower Inc",
-    "price": 0.32,
-    "volume": 780298
-   },
-   {
-    "ticker": "RITR",
-    "company": "Reitar Logtech Holdings Ltd",
-    "price": 0.1,
-    "volume": 658297
+    "ticker": "BTAI",
+    "company": "BioXcel Therapeutics Inc",
+    "price": 0.09,
+    "volume": 7317319
    },
    {
     "ticker": "DSS",
     "company": "DSS Inc",
-    "price": 0.59,
-    "volume": 558168
-   },
-   {
-    "ticker": "NCT",
-    "company": "Intercont (Cayman) Ltd",
-    "price": 0.42,
-    "volume": 456827
+    "price": 0.77,
+    "volume": 6242046
    },
    {
     "ticker": "ALP",
     "company": "Alpha Compute Corp",
     "price": 0.1,
-    "volume": 319799
+    "volume": 4068386
+   },
+   {
+    "ticker": "ZTG",
+    "company": "Zenta Group Co Ltd",
+    "price": 0.73,
+    "volume": 4017330
+   },
+   {
+    "ticker": "MDCX",
+    "company": "Medicus Pharma Ltd",
+    "price": 0.16,
+    "volume": 3809721
+   },
+   {
+    "ticker": "RITR",
+    "company": "Reitar Logtech Holdings Ltd",
+    "price": 0.09,
+    "volume": 3585763
+   },
+   {
+    "ticker": "AIM",
+    "company": "AIM ImmunoTech Inc",
+    "price": 0.23,
+    "volume": 3484948
+   },
+   {
+    "ticker": "FAMI",
+    "company": "Farmmi Inc",
+    "price": 0.11,
+    "volume": 2951366
+   },
+   {
+    "ticker": "SPWR",
+    "company": "SunPower Inc",
+    "price": 0.34,
+    "volume": 2558256
+   },
+   {
+    "ticker": "GIPR",
+    "company": "Generation Income Properties Inc",
+    "price": 0.54,
+    "volume": 2462860
    },
    {
     "ticker": "MIMI",
     "company": "Mint Inc Ltd",
-    "price": 0.9,
-    "volume": 280841
+    "price": 0.97,
+    "volume": 1839569
    },
    {
-    "ticker": "AMZE",
-    "company": "Amaze Holdings Inc",
-    "price": 0.17,
-    "volume": 207710
-   },
-   {
-    "ticker": "INVZ",
-    "company": "Innoviz Technologies Ltd",
-    "price": 0.31,
-    "volume": 195241
-   },
-   {
-    "ticker": "DVLT",
-    "company": "Datavault AI Inc",
-    "price": 0.27,
-    "volume": 175104
+    "ticker": "NCT",
+    "company": "Intercont (Cayman) Ltd",
+    "price": 0.38,
+    "volume": 1791572
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
     "price": 0.37,
-    "volume": 172057
+    "volume": 1751651
    },
    {
-    "ticker": "GELS",
-    "company": "Gelteq Ltd",
-    "price": 0.8,
-    "volume": 148560
+    "ticker": "TWG",
+    "company": "Top Wealth Group Holding Ltd",
+    "price": 0.52,
+    "volume": 1372336
    },
    {
-    "ticker": "HKPD",
-    "company": "Cellyan Biotechnology Co Ltd",
-    "price": 0.14,
-    "volume": 139195
+    "ticker": "DVLT",
+    "company": "Datavault AI Inc",
+    "price": 0.27,
+    "volume": 1087103
    },
    {
-    "ticker": "FNGR",
-    "company": "FingerMotion Inc",
-    "price": 0.2,
-    "volume": 126092
+    "ticker": "AMZE",
+    "company": "Amaze Holdings Inc",
+    "price": 0.17,
+    "volume": 627247
    },
    {
     "ticker": "OPTT",
     "company": "Ocean Power Technologies",
-    "price": 0.2,
-    "volume": 111374
+    "price": 0.18,
+    "volume": 578376
+   },
+   {
+    "ticker": "ORBS",
+    "company": "Eightco Holdings Inc",
+    "price": 0.94,
+    "volume": 567970
+   },
+   {
+    "ticker": "ATER",
+    "company": "Aterian Inc",
+    "price": 0.67,
+    "volume": 544725
+   },
+   {
+    "ticker": "SHFS",
+    "company": "SHF Holdings Inc",
+    "price": 0.15,
+    "volume": 539879
    },
    {
     "ticker": "ZBAO",
     "company": "Zhibao Technology Inc",
     "price": 0.17,
-    "volume": 108771
+    "volume": 536098
    },
    {
-    "ticker": "NCPL",
-    "company": "Netcapital Inc",
-    "price": 0.63,
-    "volume": 101838
+    "ticker": "FNGR",
+    "company": "FingerMotion Inc",
+    "price": 0.19,
+    "volume": 501883
    },
    {
-    "ticker": "SDST",
-    "company": "Stardust Power Inc",
-    "price": 0.18,
-    "volume": 93965
+    "ticker": "GELS",
+    "company": "Gelteq Ltd",
+    "price": 0.8,
+    "volume": 446228
    },
    {
-    "ticker": "MGN",
-    "company": "Megan Holdings Ltd",
-    "price": 0.11,
-    "volume": 84005
+    "ticker": "QTEX",
+    "company": "QTREX Quantum Ltd",
+    "price": 0.85,
+    "volume": 365027
+   },
+   {
+    "ticker": "INVZ",
+    "company": "Innoviz Technologies Ltd",
+    "price": 0.31,
+    "volume": 346049
    },
    {
     "ticker": "VVOS",
     "company": "Vivos Therapeutics Inc",
     "price": 0.17,
-    "volume": 81187
+    "volume": 337028
    },
    {
-    "ticker": "AIXI",
-    "company": "Xiao-I Corp ADR",
-    "price": 0.46,
-    "volume": 68133
+    "ticker": "MGN",
+    "company": "Megan Holdings Ltd",
+    "price": 0.11,
+    "volume": 331105
    },
    {
-    "ticker": "ORBS",
-    "company": "Eightco Holdings Inc",
-    "price": 0.98,
-    "volume": 65784
+    "ticker": "CDT",
+    "company": "CDT Equity Inc",
+    "price": 0.75,
+    "volume": 315887
    },
    {
-    "ticker": "GSUN",
-    "company": "Golden Sun Technology Group Ltd",
-    "price": 0.24,
-    "volume": 65447
+    "ticker": "HKPD",
+    "company": "Cellyan Biotechnology Co Ltd",
+    "price": 0.14,
+    "volume": 314100
+   },
+   {
+    "ticker": "SDST",
+    "company": "Stardust Power Inc",
+    "price": 0.18,
+    "volume": 308353
    },
    {
     "ticker": "VIVK",
     "company": "Vivakor Inc",
-    "price": 0.93,
-    "volume": 55833
+    "price": 0.89,
+    "volume": 295999
    },
    {
-    "ticker": "IPDN",
-    "company": "Professional Diversity Network Inc",
-    "price": 0.11,
-    "volume": 54880
+    "ticker": "GNS",
+    "company": "Genius Group Ltd",
+    "price": 0.19,
+    "volume": 278978
    },
    {
-    "ticker": "BEAT",
-    "company": "HeartBeam Inc",
-    "price": 0.42,
-    "volume": 42525
-   },
-   {
-    "ticker": "VNRX",
-    "company": "VolitionRX Ltd",
+    "ticker": "DDC",
+    "company": "DDC Enterprise Ltd",
     "price": 0.35,
-    "volume": 42215
-   },
-   {
-    "ticker": "MSN",
-    "company": "Emerson Radio Corp",
-    "price": 0.5,
-    "volume": 35832
-   },
-   {
-    "ticker": "RCT",
-    "company": "RedCloud Holdings PLC",
-    "price": 0.21,
-    "volume": 34098
-   },
-   {
-    "ticker": "GOSS",
-    "company": "Gossamer Bio Inc",
-    "price": 0.17,
-    "volume": 31951
+    "volume": 258768
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
