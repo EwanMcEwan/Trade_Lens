@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-04T19:25:10.381Z",
+ "generated": "2026-09-04T21:41:29.593Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-04T19:25:06.965Z",
+  "fetched": "2026-09-04T21:41:26.238Z",
   "rows": [
    {
     "ticker": "BAOS",
@@ -11,10 +11,10 @@
     "sector": "Communication Services",
     "industry": "Advertising Agencies",
     "country": "China",
-    "marketCap": "0.53M",
-    "price": 0.34,
-    "changePct": 22.55,
-    "volume": 119383702
+    "marketCap": "0.50M",
+    "price": 0.33,
+    "changePct": 16.17,
+    "volume": 122467862
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -29,247 +29,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-04T19:25:10.381Z",
+  "fetched": "2026-09-04T21:41:29.593Z",
   "rows": [
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.2,
-    "volume": 229259905
+    "volume": 247564958
    },
    {
     "ticker": "BAOS",
     "company": "Baosheng Media Group Holdings Ltd",
-    "price": 0.34,
-    "volume": 119383702
+    "price": 0.33,
+    "volume": 122467862
    },
    {
     "ticker": "OFAL",
     "company": "OFA Group",
-    "price": 0.76,
-    "volume": 96656156
-   },
-   {
-    "ticker": "ADBT",
-    "company": "Advasa Holdings Inc",
-    "price": 0.35,
-    "volume": 51644476
-   },
-   {
-    "ticker": "ATER",
-    "company": "Aterian Inc",
-    "price": 0.62,
-    "volume": 45007147
+    "price": 0.78,
+    "volume": 99086659
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
-    "price": 0.18,
-    "volume": 41305311
+    "price": 0.19,
+    "volume": 62211937
    },
    {
-    "ticker": "PLAG",
-    "company": "Planet Green Holdings Corp",
-    "price": 0.69,
-    "volume": 29176638
+    "ticker": "ADBT",
+    "company": "Advasa Holdings Inc",
+    "price": 0.33,
+    "volume": 54676495
    },
    {
-    "ticker": "ZTG",
-    "company": "Zenta Group Co Ltd",
-    "price": 0.75,
-    "volume": 27957906
+    "ticker": "ATER",
+    "company": "Aterian Inc",
+    "price": 0.63,
+    "volume": 47289018
    },
    {
     "ticker": "BTAI",
     "company": "BioXcel Therapeutics Inc",
     "price": 0.07,
-    "volume": 25507217
+    "volume": 41577455
+   },
+   {
+    "ticker": "PLAG",
+    "company": "Planet Green Holdings Corp",
+    "price": 0.7,
+    "volume": 30374349
+   },
+   {
+    "ticker": "ZTG",
+    "company": "Zenta Group Co Ltd",
+    "price": 0.76,
+    "volume": 28882156
    },
    {
     "ticker": "SOAR",
     "company": "Volato Group Inc",
-    "price": 0.23,
-    "volume": 24521935
+    "price": 0.24,
+    "volume": 26541205
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
     "price": 0.36,
-    "volume": 23066810
+    "volume": 25524241
    },
    {
     "ticker": "FAMI",
     "company": "Farmmi Inc",
     "price": 0.11,
-    "volume": 15200118
-   },
-   {
-    "ticker": "MDCX",
-    "company": "Medicus Pharma Ltd",
-    "price": 0.17,
-    "volume": 13958469
-   },
-   {
-    "ticker": "SPWR",
-    "company": "SunPower Inc",
-    "price": 0.34,
-    "volume": 13587570
-   },
-   {
-    "ticker": "NCT",
-    "company": "Intercont (Cayman) Ltd",
-    "price": 0.37,
-    "volume": 12265039
+    "volume": 16865910
    },
    {
     "ticker": "NCPL",
     "company": "Netcapital Inc",
     "price": 0.58,
-    "volume": 12008700
+    "volume": 15178732
+   },
+   {
+    "ticker": "MDCX",
+    "company": "Medicus Pharma Ltd",
+    "price": 0.17,
+    "volume": 15049535
+   },
+   {
+    "ticker": "SPWR",
+    "company": "SunPower Inc",
+    "price": 0.36,
+    "volume": 14935952
    },
    {
     "ticker": "RITR",
     "company": "Reitar Logtech Holdings Ltd",
     "price": 0.09,
-    "volume": 11178865
+    "volume": 14366473
+   },
+   {
+    "ticker": "GIPR",
+    "company": "Generation Income Properties Inc",
+    "price": 0.54,
+    "volume": 14318527
+   },
+   {
+    "ticker": "NCT",
+    "company": "Intercont (Cayman) Ltd",
+    "price": 0.4,
+    "volume": 12995029
    },
    {
     "ticker": "ORBS",
     "company": "Eightco Holdings Inc",
     "price": 0.9,
-    "volume": 10411880
+    "volume": 12342590
+   },
+   {
+    "ticker": "IQ",
+    "company": "iQIYI Inc ADR",
+    "price": 0.88,
+    "volume": 9769460
    },
    {
     "ticker": "DSS",
     "company": "DSS Inc",
-    "price": 0.79,
-    "volume": 9230980
+    "price": 0.83,
+    "volume": 9527563
    },
    {
     "ticker": "ALP",
     "company": "Alpha Compute Corp",
     "price": 0.1,
-    "volume": 8893382
+    "volume": 9395957
    },
    {
     "ticker": "AIM",
     "company": "AIM ImmunoTech Inc",
     "price": 0.23,
-    "volume": 8098413
+    "volume": 8516327
    },
    {
     "ticker": "AKBA",
     "company": "Akebia Therapeutics Inc",
-    "price": 0.99,
-    "volume": 6991942
+    "price": 0.97,
+    "volume": 8347647
    },
    {
     "ticker": "GOSS",
     "company": "Gossamer Bio Inc",
-    "price": 0.17,
-    "volume": 6708663
+    "price": 0.18,
+    "volume": 8055936
    },
    {
     "ticker": "OTLK",
     "company": "Outlook Therapeutics Inc",
     "price": 0.67,
-    "volume": 5861903
-   },
-   {
-    "ticker": "GIPR",
-    "company": "Generation Income Properties Inc",
-    "price": 0.53,
-    "volume": 5713823
-   },
-   {
-    "ticker": "MIMI",
-    "company": "Mint Inc Ltd",
-    "price": 0.94,
-    "volume": 5402639
-   },
-   {
-    "ticker": "AMZE",
-    "company": "Amaze Holdings Inc",
-    "price": 0.18,
-    "volume": 4753757
+    "volume": 6358511
    },
    {
     "ticker": "NNOX",
     "company": "Nano X Imaging Ltd",
-    "price": 0.77,
-    "volume": 4507105
+    "price": 0.83,
+    "volume": 6199471
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
-    "price": 0.51,
-    "volume": 4466207
+    "price": 0.5,
+    "volume": 5957976
+   },
+   {
+    "ticker": "MIMI",
+    "company": "Mint Inc Ltd",
+    "price": 0.95,
+    "volume": 5911417
    },
    {
     "ticker": "LX",
     "company": "LexinFintech Holdings Ltd ADR",
-    "price": 0.91,
-    "volume": 4132499
+    "price": 0.88,
+    "volume": 5825669
    },
    {
-    "ticker": "ZONE",
-    "company": "Zone Frontier Inc",
-    "price": 0.15,
-    "volume": 4055868
-   },
-   {
-    "ticker": "IBO",
-    "company": "Impact BioMedical Inc",
-    "price": 0.55,
-    "volume": 3910137
-   },
-   {
-    "ticker": "IQ",
-    "company": "iQIYI Inc ADR",
-    "price": 0.89,
-    "volume": 3863468
-   },
-   {
-    "ticker": "VVOS",
-    "company": "Vivos Therapeutics Inc",
-    "price": 0.18,
-    "volume": 3794476
-   },
-   {
-    "ticker": "EVTL",
-    "company": "Vertical Aerospace Ltd",
-    "price": 0.59,
-    "volume": 3595033
+    "ticker": "AMZE",
+    "company": "Amaze Holdings Inc",
+    "price": 0.17,
+    "volume": 5080687
    },
    {
     "ticker": "MVST",
     "company": "Microvast Holdings Inc",
     "price": 0.69,
-    "volume": 3563318
+    "volume": 4603399
    },
    {
-    "ticker": "NRSN",
-    "company": "NeuroSense Therapeutics Ltd",
-    "price": 0.47,
-    "volume": 3502417
+    "ticker": "VVOS",
+    "company": "Vivos Therapeutics Inc",
+    "price": 0.19,
+    "volume": 4459513
    },
    {
-    "ticker": "INVZ",
-    "company": "Innoviz Technologies Ltd",
-    "price": 0.34,
-    "volume": 3334475
-   },
-   {
-    "ticker": "OPTT",
-    "company": "Ocean Power Technologies",
-    "price": 0.18,
-    "volume": 3100496
+    "ticker": "EVTL",
+    "company": "Vertical Aerospace Ltd",
+    "price": 0.6,
+    "volume": 4313814
    },
    {
     "ticker": "FNGR",
     "company": "FingerMotion Inc",
+    "price": 0.2,
+    "volume": 4214979
+   },
+   {
+    "ticker": "ZONE",
+    "company": "Zone Frontier Inc",
+    "price": 0.15,
+    "volume": 4212244
+   },
+   {
+    "ticker": "NRSN",
+    "company": "NeuroSense Therapeutics Ltd",
+    "price": 0.51,
+    "volume": 4163081
+   },
+   {
+    "ticker": "IBO",
+    "company": "Impact BioMedical Inc",
+    "price": 0.54,
+    "volume": 4114195
+   },
+   {
+    "ticker": "INVZ",
+    "company": "Innoviz Technologies Ltd",
+    "price": 0.35,
+    "volume": 3633108
+   },
+   {
+    "ticker": "OPTT",
+    "company": "Ocean Power Technologies",
     "price": 0.19,
-    "volume": 2925439
+    "volume": 3380933
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
