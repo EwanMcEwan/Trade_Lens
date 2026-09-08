@@ -1,31 +1,20 @@
 {
- "generated": "2026-09-08T17:21:46.672Z",
+ "generated": "2026-09-08T20:07:58.932Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-08T17:21:43.212Z",
+  "fetched": "2026-09-08T20:07:55.657Z",
   "rows": [
-   {
-    "ticker": "ONCO",
-    "company": "Onconetix Inc",
-    "sector": "Healthcare",
-    "industry": "Biotechnology",
-    "country": "USA",
-    "marketCap": "3.43M",
-    "price": 0.87,
-    "changePct": -14.93,
-    "volume": 778820
-   },
    {
     "ticker": "TRUG",
     "company": "TruGolf Holdings Inc",
     "sector": "Communication Services",
     "industry": "Electronic Gaming & Multimedia",
     "country": "USA",
-    "marketCap": "1.93M",
-    "price": 0.42,
-    "changePct": 11.2,
-    "volume": 43001131
+    "marketCap": "2.03M",
+    "price": 0.44,
+    "changePct": 16.54,
+    "volume": 45070745
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -40,247 +29,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-08T17:21:46.672Z",
+  "fetched": "2026-09-08T20:07:58.932Z",
   "rows": [
    {
     "ticker": "PDSB",
     "company": "PDS Biotechnology Corp",
-    "price": 0.31,
-    "volume": 442893382
+    "price": 0.3,
+    "volume": 479556705
    },
    {
     "ticker": "GCDT",
     "company": "Green Circle Decarbonize Technology Ltd",
-    "price": 0.72,
-    "volume": 293516883
+    "price": 0.93,
+    "volume": 376377485
    },
    {
     "ticker": "ARBE",
     "company": "Arbe Robotics Ltd",
-    "price": 0.79,
-    "volume": 95155603
+    "price": 0.74,
+    "volume": 99531722
    },
    {
     "ticker": "TWG",
     "company": "Top Wealth Group Holding Ltd",
     "price": 0.52,
-    "volume": 63029406
+    "volume": 66152784
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
-    "price": 0.22,
-    "volume": 47743346
+    "price": 0.21,
+    "volume": 63362949
    },
    {
     "ticker": "TRUG",
     "company": "TruGolf Holdings Inc",
-    "price": 0.42,
-    "volume": 43001131
+    "price": 0.44,
+    "volume": 45070745
    },
    {
     "ticker": "ATER",
     "company": "Aterian Inc",
-    "price": 0.71,
-    "volume": 40266913
+    "price": 0.73,
+    "volume": 41905866
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
-    "price": 0.18,
-    "volume": 26928797
-   },
-   {
-    "ticker": "GMEX",
-    "company": "GMEX Robotics Corp",
-    "price": 0.64,
-    "volume": 25048791
+    "price": 0.19,
+    "volume": 36067825
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
     "price": 0.32,
-    "volume": 23891463
+    "volume": 27217377
    },
    {
-    "ticker": "MDCX",
-    "company": "Medicus Pharma Ltd",
-    "price": 0.18,
-    "volume": 16819650
-   },
-   {
-    "ticker": "OLB",
-    "company": "OLB Group Inc",
-    "price": 0.28,
-    "volume": 12685363
-   },
-   {
-    "ticker": "ADBT",
-    "company": "Advasa Holdings Inc",
-    "price": 0.34,
-    "volume": 11704823
+    "ticker": "GMEX",
+    "company": "GMEX Robotics Corp",
+    "price": 0.63,
+    "volume": 25981753
    },
    {
     "ticker": "FAMI",
     "company": "Farmmi Inc",
-    "price": 0.11,
-    "volume": 11146970
+    "price": 0.12,
+    "volume": 23483050
+   },
+   {
+    "ticker": "MDCX",
+    "company": "Medicus Pharma Ltd",
+    "price": 0.17,
+    "volume": 22341672
    },
    {
     "ticker": "IQ",
     "company": "iQIYI Inc ADR",
-    "price": 0.99,
-    "volume": 10948410
+    "price": 0.98,
+    "volume": 20005985
    },
    {
-    "ticker": "SNYR",
-    "company": "Synergy CHC Corp",
-    "price": 0.08,
-    "volume": 8989326
+    "ticker": "SES",
+    "company": "SES AI Corp",
+    "price": 0.57,
+    "volume": 18677422
+   },
+   {
+    "ticker": "LASE",
+    "company": "Laser Photonics Corp",
+    "price": 0.95,
+    "volume": 15872168
+   },
+   {
+    "ticker": "OLB",
+    "company": "OLB Group Inc",
+    "price": 0.27,
+    "volume": 13824462
+   },
+   {
+    "ticker": "ADBT",
+    "company": "Advasa Holdings Inc",
+    "price": 0.32,
+    "volume": 13092465
    },
    {
     "ticker": "OPTT",
     "company": "Ocean Power Technologies",
     "price": 0.16,
-    "volume": 8864292
+    "volume": 12587299
+   },
+   {
+    "ticker": "SNYR",
+    "company": "Synergy CHC Corp",
+    "price": 0.08,
+    "volume": 9800181
    },
    {
     "ticker": "SOAR",
     "company": "Volato Group Inc",
     "price": 0.21,
-    "volume": 7845048
+    "volume": 9546356
    },
    {
-    "ticker": "SES",
-    "company": "SES AI Corp",
-    "price": 0.55,
-    "volume": 6934699
+    "ticker": "LDI",
+    "company": "LoanDepot Inc",
+    "price": 0.83,
+    "volume": 8145612
    },
    {
-    "ticker": "ZONE",
-    "company": "Zone Frontier Inc",
-    "price": 0.15,
-    "volume": 5487632
-   },
-   {
-    "ticker": "RITR",
-    "company": "Reitar Logtech Holdings Ltd",
-    "price": 0.09,
-    "volume": 5185498
-   },
-   {
-    "ticker": "AIM",
-    "company": "AIM ImmunoTech Inc",
-    "price": 0.23,
-    "volume": 5060211
-   },
-   {
-    "ticker": "SPWR",
-    "company": "SunPower Inc",
-    "price": 0.34,
-    "volume": 4976734
+    "ticker": "MVST",
+    "company": "Microvast Holdings Inc",
+    "price": 0.68,
+    "volume": 7268631
    },
    {
     "ticker": "GOSS",
     "company": "Gossamer Bio Inc",
     "price": 0.18,
-    "volume": 4599088
+    "volume": 6844129
    },
    {
-    "ticker": "VVOS",
-    "company": "Vivos Therapeutics Inc",
-    "price": 0.18,
-    "volume": 4556324
+    "ticker": "SPWR",
+    "company": "SunPower Inc",
+    "price": 0.33,
+    "volume": 6840007
    },
    {
     "ticker": "PHGE",
     "company": "BiomX Inc",
     "price": 0.16,
-    "volume": 4444614
+    "volume": 6441148
    },
    {
-    "ticker": "MVST",
-    "company": "Microvast Holdings Inc",
-    "price": 0.71,
-    "volume": 4027626
+    "ticker": "RITR",
+    "company": "Reitar Logtech Holdings Ltd",
+    "price": 0.09,
+    "volume": 6277955
+   },
+   {
+    "ticker": "ZONE",
+    "company": "Zone Frontier Inc",
+    "price": 0.15,
+    "volume": 6049642
+   },
+   {
+    "ticker": "AIM",
+    "company": "AIM ImmunoTech Inc",
+    "price": 0.23,
+    "volume": 5715652
    },
    {
     "ticker": "SAFX",
     "company": "XCF Global Inc",
-    "price": 0.4,
-    "volume": 3584892
+    "price": 0.41,
+    "volume": 5042970
    },
    {
-    "ticker": "BAOS",
-    "company": "Baosheng Media Group Holdings Ltd",
-    "price": 0.33,
-    "volume": 3404455
+    "ticker": "VVOS",
+    "company": "Vivos Therapeutics Inc",
+    "price": 0.18,
+    "volume": 4988057
+   },
+   {
+    "ticker": "EVTL",
+    "company": "Vertical Aerospace Ltd",
+    "price": 0.59,
+    "volume": 4780211
    },
    {
     "ticker": "OTLK",
     "company": "Outlook Therapeutics Inc",
-    "price": 0.65,
-    "volume": 3131518
-   },
-   {
-    "ticker": "AMZE",
-    "company": "Amaze Holdings Inc",
-    "price": 0.19,
-    "volume": 3030445
+    "price": 0.64,
+    "volume": 4779091
    },
    {
     "ticker": "LX",
     "company": "LexinFintech Holdings Ltd ADR",
-    "price": 0.84,
-    "volume": 2705502
+    "price": 0.85,
+    "volume": 4437996
+   },
+   {
+    "ticker": "BAOS",
+    "company": "Baosheng Media Group Holdings Ltd",
+    "price": 0.32,
+    "volume": 3694431
+   },
+   {
+    "ticker": "AMZE",
+    "company": "Amaze Holdings Inc",
+    "price": 0.18,
+    "volume": 3658199
    },
    {
     "ticker": "FNGR",
     "company": "FingerMotion Inc",
     "price": 0.19,
-    "volume": 2688721
+    "volume": 3330606
    },
    {
-    "ticker": "EVTL",
-    "company": "Vertical Aerospace Ltd",
-    "price": 0.6,
-    "volume": 2545163
+    "ticker": "GETY",
+    "company": "Getty Images Holdings Inc",
+    "price": 0.26,
+    "volume": 3135520
+   },
+   {
+    "ticker": "ALP",
+    "company": "Alpha Compute Corp",
+    "price": 0.11,
+    "volume": 3114920
    },
    {
     "ticker": "DEFT",
     "company": "DeFi Technologies Inc",
     "price": 0.62,
-    "volume": 2025778
+    "volume": 2967087
    },
    {
-    "ticker": "WWR",
-    "company": "Westwater Resources Inc",
-    "price": 0.61,
-    "volume": 1999700
-   },
-   {
-    "ticker": "ALP",
-    "company": "Alpha Compute Corp",
-    "price": 0.1,
-    "volume": 1975869
-   },
-   {
-    "ticker": "LDI",
-    "company": "LoanDepot Inc",
-    "price": 0.87,
-    "volume": 1860687
-   },
-   {
-    "ticker": "QTEX",
-    "company": "QTREX Quantum Ltd",
-    "price": 0.88,
-    "volume": 1814530
-   },
-   {
-    "ticker": "AKBA",
-    "company": "Akebia Therapeutics Inc",
-    "price": 0.99,
-    "volume": 1688936
+    "ticker": "LAB",
+    "company": "Standard BioTools Inc",
+    "price": 0.69,
+    "volume": 2838967
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
