@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-09T01:06:11.674Z",
+ "generated": "2026-09-09T06:29:21.346Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-09T01:06:08.418Z",
+  "fetched": "2026-09-09T06:29:18.142Z",
   "rows": [
    {
     "ticker": "ONCO",
@@ -40,7 +40,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-09T01:06:11.674Z",
+  "fetched": "2026-09-09T06:29:21.346Z",
   "rows": [
    {
     "ticker": "PDSB",
