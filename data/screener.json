@@ -1,20 +1,31 @@
 {
- "generated": "2026-09-11T17:50:08.686Z",
+ "generated": "2026-09-11T20:41:59.119Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-11T17:50:05.212Z",
+  "fetched": "2026-09-11T20:41:55.852Z",
   "rows": [
+   {
+    "ticker": "OGEN",
+    "company": "Oragenics Inc",
+    "sector": "Healthcare",
+    "industry": "Biotechnology",
+    "country": "USA",
+    "marketCap": "2.16M",
+    "price": 0.48,
+    "changePct": -5.03,
+    "volume": 66940
+   },
    {
     "ticker": "PMAX",
     "company": "Powell Max Ltd",
     "sector": "Financial",
     "industry": "Capital Markets",
     "country": "Hong Kong",
-    "marketCap": "1.76M",
-    "price": 0.9,
-    "changePct": -2.11,
-    "volume": 1441867
+    "marketCap": "1.88M",
+    "price": 0.96,
+    "changePct": 4.59,
+    "volume": 1525042
    },
    {
     "ticker": "TRUG",
@@ -22,10 +33,10 @@
     "sector": "Communication Services",
     "industry": "Electronic Gaming & Multimedia",
     "country": "USA",
-    "marketCap": "2.88M",
-    "price": 0.63,
-    "changePct": 69.4,
-    "volume": 343022591
+    "marketCap": "2.99M",
+    "price": 0.65,
+    "changePct": 76.14,
+    "volume": 424045626
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -40,247 +51,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-11T17:50:08.686Z",
+  "fetched": "2026-09-11T20:41:59.119Z",
   "rows": [
    {
     "ticker": "TRUG",
     "company": "TruGolf Holdings Inc",
-    "price": 0.63,
-    "volume": 343022591
+    "price": 0.65,
+    "volume": 424045626
    },
    {
     "ticker": "SURG",
     "company": "Surgepays Inc",
-    "price": 0.19,
-    "volume": 186809708
+    "price": 0.17,
+    "volume": 205448761
    },
    {
     "ticker": "OPTT",
     "company": "Ocean Power Technologies",
     "price": 0.11,
-    "volume": 56401939
+    "volume": 62938112
    },
    {
     "ticker": "UZX",
     "company": "Linkage Global Inc",
-    "price": 0.1,
-    "volume": 32209603
+    "price": 0.09,
+    "volume": 44998518
    },
    {
     "ticker": "AEON",
     "company": "AEON Biopharma Inc",
     "price": 0.33,
-    "volume": 27378198
+    "volume": 30484930
+   },
+   {
+    "ticker": "SES",
+    "company": "SES AI Corp",
+    "price": 0.53,
+    "volume": 28418610
    },
    {
     "ticker": "SNYR",
     "company": "Synergy CHC Corp",
     "price": 0.1,
-    "volume": 23630600
+    "volume": 26881408
+   },
+   {
+    "ticker": "DVLT",
+    "company": "Datavault AI Inc",
+    "price": 0.19,
+    "volume": 24523755
    },
    {
     "ticker": "ADBT",
     "company": "Advasa Holdings Inc",
-    "price": 0.24,
-    "volume": 15899887
+    "price": 0.23,
+    "volume": 19564080
+   },
+   {
+    "ticker": "GPUS",
+    "company": "Hyperscale Data Inc",
+    "price": 0.19,
+    "volume": 19418658
    },
    {
     "ticker": "IPDN",
     "company": "Professional Diversity Network Inc",
     "price": 0.12,
-    "volume": 15780876
-   },
-   {
-    "ticker": "DVLT",
-    "company": "Datavault AI Inc",
-    "price": 0.2,
-    "volume": 15656289
-   },
-   {
-    "ticker": "SES",
-    "company": "SES AI Corp",
-    "price": 0.54,
-    "volume": 15420558
+    "volume": 18024212
    },
    {
     "ticker": "LASE",
     "company": "Laser Photonics Corp",
-    "price": 0.68,
-    "volume": 12651935
+    "price": 0.69,
+    "volume": 15981937
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
-    "price": 0.35,
-    "volume": 11940488
+    "price": 0.34,
+    "volume": 14478912
    },
    {
-    "ticker": "GPUS",
-    "company": "Hyperscale Data Inc",
-    "price": 0.18,
-    "volume": 9796935
-   },
-   {
-    "ticker": "CDT",
-    "company": "CDT Equity Inc",
-    "price": 0.24,
-    "volume": 7724289
+    "ticker": "ORBS",
+    "company": "Eightco Holdings Inc",
+    "price": 0.97,
+    "volume": 11783207
    },
    {
     "ticker": "SDST",
     "company": "Stardust Power Inc",
-    "price": 0.15,
-    "volume": 6648874
+    "price": 0.14,
+    "volume": 10158345
+   },
+   {
+    "ticker": "CDT",
+    "company": "CDT Equity Inc",
+    "price": 0.25,
+    "volume": 9506973
    },
    {
     "ticker": "LDI",
     "company": "LoanDepot Inc",
-    "price": 0.82,
-    "volume": 5222589
-   },
-   {
-    "ticker": "AKBA",
-    "company": "Akebia Therapeutics Inc",
-    "price": 0.97,
-    "volume": 4693464
+    "price": 0.84,
+    "volume": 7858428
    },
    {
     "ticker": "SOAR",
     "company": "Volato Group Inc",
-    "price": 0.18,
-    "volume": 4657207
+    "price": 0.19,
+    "volume": 6144553
    },
    {
-    "ticker": "MGN",
-    "company": "Megan Holdings Ltd",
-    "price": 0.16,
-    "volume": 4408639
-   },
-   {
-    "ticker": "PMEC",
-    "company": "Primech Holdings Ltd",
-    "price": 0.54,
-    "volume": 4196386
+    "ticker": "AKBA",
+    "company": "Akebia Therapeutics Inc",
+    "price": 0.95,
+    "volume": 6140368
    },
    {
     "ticker": "INV",
     "company": "Innventure Inc",
     "price": 0.94,
-    "volume": 4066577
-   },
-   {
-    "ticker": "MREO",
-    "company": "Mereo Biopharma Group Plc ADR",
-    "price": 0.29,
-    "volume": 3876565
+    "volume": 5983935
    },
    {
     "ticker": "PDSB",
     "company": "PDS Biotechnology Corp",
-    "price": 0.3,
-    "volume": 3842586
+    "price": 0.29,
+    "volume": 5669879
    },
    {
-    "ticker": "TOPP",
-    "company": "Toppoint Holdings Inc",
-    "price": 0.16,
-    "volume": 3108809
+    "ticker": "MGN",
+    "company": "Megan Holdings Ltd",
+    "price": 0.17,
+    "volume": 5291111
+   },
+   {
+    "ticker": "MREO",
+    "company": "Mereo Biopharma Group Plc ADR",
+    "price": 0.28,
+    "volume": 5063233
+   },
+   {
+    "ticker": "EVTL",
+    "company": "Vertical Aerospace Ltd",
+    "price": 0.54,
+    "volume": 4932607
    },
    {
     "ticker": "RITR",
     "company": "Reitar Logtech Holdings Ltd",
-    "price": 0.08,
-    "volume": 3055473
+    "price": 0.09,
+    "volume": 4713243
+   },
+   {
+    "ticker": "PMEC",
+    "company": "Primech Holdings Ltd",
+    "price": 0.49,
+    "volume": 4496791
    },
    {
     "ticker": "FAMI",
     "company": "Farmmi Inc",
     "price": 0.12,
-    "volume": 3029165
+    "volume": 4471165
+   },
+   {
+    "ticker": "IVVD",
+    "company": "Invivyd Inc",
+    "price": 0.79,
+    "volume": 4383651
+   },
+   {
+    "ticker": "SRFM",
+    "company": "Surf Air Mobility Inc",
+    "price": 0.51,
+    "volume": 4185568
    },
    {
     "ticker": "FNGR",
     "company": "FingerMotion Inc",
     "price": 0.17,
-    "volume": 2991355
+    "volume": 3883690
    },
    {
-    "ticker": "EVTL",
-    "company": "Vertical Aerospace Ltd",
-    "price": 0.52,
-    "volume": 2911288
-   },
-   {
-    "ticker": "IVVD",
-    "company": "Invivyd Inc",
-    "price": 0.81,
-    "volume": 2909885
-   },
-   {
-    "ticker": "VERI",
-    "company": "Veritone Inc",
-    "price": 0.99,
-    "volume": 2907200
-   },
-   {
-    "ticker": "AIM",
-    "company": "AIM ImmunoTech Inc",
-    "price": 0.22,
-    "volume": 2820304
-   },
-   {
-    "ticker": "MDCX",
-    "company": "Medicus Pharma Ltd",
+    "ticker": "TOPP",
+    "company": "Toppoint Holdings Inc",
     "price": 0.16,
-    "volume": 2651096
+    "volume": 3775520
+   },
+   {
+    "ticker": "MVST",
+    "company": "Microvast Holdings Inc",
+    "price": 0.6,
+    "volume": 3509837
    },
    {
     "ticker": "NXXT",
     "company": "NextNRG Inc",
     "price": 0.15,
-    "volume": 2434943
+    "volume": 3438301
    },
    {
-    "ticker": "EVGN",
-    "company": "Evogene Ltd",
-    "price": 0.47,
-    "volume": 2356165
-   },
-   {
-    "ticker": "OLB",
-    "company": "OLB Group Inc",
-    "price": 0.28,
-    "volume": 2354737
-   },
-   {
-    "ticker": "IMMP",
-    "company": "Immutep Limited ADR",
-    "price": 0.36,
-    "volume": 2300986
-   },
-   {
-    "ticker": "MIST",
-    "company": "Milestone Pharmaceuticals Inc",
-    "price": 1,
-    "volume": 2278779
-   },
-   {
-    "ticker": "SLXN",
-    "company": "Silexion Therapeutics Corp",
-    "price": 0.35,
-    "volume": 2193243
-   },
-   {
-    "ticker": "OTLK",
-    "company": "Outlook Therapeutics Inc",
-    "price": 0.66,
-    "volume": 2067014
+    "ticker": "MDCX",
+    "company": "Medicus Pharma Ltd",
+    "price": 0.16,
+    "volume": 3405393
    },
    {
     "ticker": "BZAI",
     "company": "Blaize Holdings Inc",
     "price": 0.56,
-    "volume": 2043120
+    "volume": 3334111
+   },
+   {
+    "ticker": "OTLK",
+    "company": "Outlook Therapeutics Inc",
+    "price": 0.66,
+    "volume": 3316250
+   },
+   {
+    "ticker": "MIST",
+    "company": "Milestone Pharmaceuticals Inc",
+    "price": 0.98,
+    "volume": 3313902
+   },
+   {
+    "ticker": "AIM",
+    "company": "AIM ImmunoTech Inc",
+    "price": 0.22,
+    "volume": 3205114
+   },
+   {
+    "ticker": "IMMP",
+    "company": "Immutep Limited ADR",
+    "price": 0.37,
+    "volume": 3078276
+   },
+   {
+    "ticker": "SPWR",
+    "company": "SunPower Inc",
+    "price": 0.34,
+    "volume": 2939798
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
