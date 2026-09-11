@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-11T00:27:03.010Z",
+ "generated": "2026-09-11T05:05:17.724Z",
  "finviz": {
   "ok": false,
   "error": "could not locate the screener table (markup may have changed)",
@@ -29,7 +29,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-11T00:27:03.009Z",
+  "fetched": "2026-09-11T05:05:17.724Z",
   "rows": [
    {
     "ticker": "IPDN",
