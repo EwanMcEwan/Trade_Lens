@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-12T06:16:49.820Z",
+ "generated": "2026-09-12T11:08:28.314Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-12T06:16:46.426Z",
+  "fetched": "2026-09-12T11:08:24.643Z",
   "rows": [
    {
     "ticker": "OGEN",
@@ -22,7 +22,7 @@
     "sector": "Financial",
     "industry": "Capital Markets",
     "country": "Hong Kong",
-    "marketCap": "1.88M",
+    "marketCap": "1.89M",
     "price": 0.96,
     "changePct": 4.59,
     "volume": 1532655
@@ -33,7 +33,7 @@
     "sector": "Communication Services",
     "industry": "Electronic Gaming & Multimedia",
     "country": "USA",
-    "marketCap": "2.99M",
+    "marketCap": "3.00M",
     "price": 0.65,
     "changePct": 76.14,
     "volume": 434803294
@@ -51,7 +51,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-12T06:16:49.820Z",
+  "fetched": "2026-09-12T11:08:28.314Z",
   "rows": [
    {
     "ticker": "TRUG",
