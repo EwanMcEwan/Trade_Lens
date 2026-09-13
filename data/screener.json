@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-12T22:01:26.271Z",
+ "generated": "2026-09-13T00:09:25.749Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-12T22:01:23.019Z",
+  "fetched": "2026-09-13T00:09:22.315Z",
   "rows": [
    {
     "ticker": "OGEN",
@@ -22,7 +22,7 @@
     "sector": "Financial",
     "industry": "Capital Markets",
     "country": "Hong Kong",
-    "marketCap": "1.89M",
+    "marketCap": "1.88M",
     "price": 0.96,
     "changePct": 4.59,
     "volume": 1532655
@@ -51,7 +51,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-12T22:01:26.271Z",
+  "fetched": "2026-09-13T00:09:25.749Z",
   "rows": [
    {
     "ticker": "TRUG",
