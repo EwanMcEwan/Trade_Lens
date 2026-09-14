@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-14T01:25:51.264Z",
+ "generated": "2026-09-14T06:51:44.195Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-14T01:25:47.811Z",
+  "fetched": "2026-09-14T06:51:40.789Z",
   "rows": [
    {
     "ticker": "OGEN",
@@ -51,7 +51,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-14T01:25:51.264Z",
+  "fetched": "2026-09-14T06:51:44.195Z",
   "rows": [
    {
     "ticker": "TRUG",
