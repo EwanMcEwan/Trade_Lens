@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-15T12:31:43.137Z",
+ "generated": "2026-09-15T17:33:15.732Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-15T12:31:39.968Z",
+  "fetched": "2026-09-15T17:33:12.284Z",
   "rows": [
    {
     "ticker": "AGMH",
@@ -11,10 +11,10 @@
     "sector": "Technology",
     "industry": "Computer Hardware",
     "country": "Hong Kong",
-    "marketCap": "3.78M",
-    "price": 0.79,
-    "changePct": -3.98,
-    "volume": 150248
+    "marketCap": "3.82M",
+    "price": 0.8,
+    "changePct": -3.02,
+    "volume": 427632
    },
    {
     "ticker": "CTNT",
@@ -22,21 +22,21 @@
     "sector": "Industrials",
     "industry": "Integrated Freight & Logistics",
     "country": "USA",
-    "marketCap": "0.40M",
-    "price": 0.12,
-    "changePct": -17.44,
-    "volume": 19588163
+    "marketCap": "0.20M",
+    "price": 0.06,
+    "changePct": -59.05,
+    "volume": 160876494
    },
    {
-    "ticker": "LHSW",
-    "company": "Lianhe Sowell International Group Ltd",
-    "sector": "Technology",
-    "industry": "Software - Infrastructure",
-    "country": "China",
-    "marketCap": "2.00M",
-    "price": 0.58,
-    "changePct": -6.87,
-    "volume": 837933
+    "ticker": "SUGP",
+    "company": "SU Group Holdings Ltd",
+    "sector": "Industrials",
+    "industry": "Security & Protection Services",
+    "country": "Hong Kong",
+    "marketCap": "1.85M",
+    "price": 0.79,
+    "changePct": 11.57,
+    "volume": 142857429
    },
    {
     "ticker": "TRUG",
@@ -44,10 +44,10 @@
     "sector": "Communication Services",
     "industry": "Electronic Gaming & Multimedia",
     "country": "USA",
-    "marketCap": "3.50M",
-    "price": 0.76,
-    "changePct": 18.99,
-    "volume": 39912509
+    "marketCap": "3.08M",
+    "price": 0.67,
+    "changePct": 4.87,
+    "volume": 134630066
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -62,247 +62,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-15T12:31:43.137Z",
+  "fetched": "2026-09-15T17:33:15.732Z",
   "rows": [
+   {
+    "ticker": "PDSB",
+    "company": "PDS Biotechnology Corp",
+    "price": 0.62,
+    "volume": 321672943
+   },
    {
     "ticker": "ADBT",
     "company": "Advasa Holdings Inc",
-    "price": 0.13,
-    "volume": 124994919
-   },
-   {
-    "ticker": "TRUG",
-    "company": "TruGolf Holdings Inc",
-    "price": 0.76,
-    "volume": 39953737
-   },
-   {
-    "ticker": "SLXN",
-    "company": "Silexion Therapeutics Corp",
-    "price": 0.33,
-    "volume": 30676771
+    "price": 0.11,
+    "volume": 232518837
    },
    {
     "ticker": "CTNT",
     "company": "Cheetah Net Supply Chain Service Inc",
-    "price": 0.12,
-    "volume": 20218825
+    "price": 0.06,
+    "volume": 160876494
    },
    {
-    "ticker": "PDSB",
-    "company": "PDS Biotechnology Corp",
-    "price": 0.44,
-    "volume": 12690813
+    "ticker": "SUGP",
+    "company": "SU Group Holdings Ltd",
+    "price": 0.79,
+    "volume": 142857429
    },
    {
-    "ticker": "SLGB",
-    "company": "Smart Logistics Global Ltd",
-    "price": 0.35,
-    "volume": 5107807
+    "ticker": "TRUG",
+    "company": "TruGolf Holdings Inc",
+    "price": 0.67,
+    "volume": 134630066
+   },
+   {
+    "ticker": "DVLT",
+    "company": "Datavault AI Inc",
+    "price": 0.16,
+    "volume": 97793406
+   },
+   {
+    "ticker": "SLXN",
+    "company": "Silexion Therapeutics Corp",
+    "price": 0.34,
+    "volume": 35325812
+   },
+   {
+    "ticker": "BAOS",
+    "company": "Baosheng Media Group Holdings Ltd",
+    "price": 0.27,
+    "volume": 26936658
+   },
+   {
+    "ticker": "SES",
+    "company": "SES AI Corp",
+    "price": 0.62,
+    "volume": 23609853
    },
    {
     "ticker": "SOAR",
     "company": "Volato Group Inc",
-    "price": 0.19,
-    "volume": 3761331
+    "price": 0.2,
+    "volume": 12674314
+   },
+   {
+    "ticker": "FBDT",
+    "company": "First Breach Inc",
+    "price": 0.99,
+    "volume": 11115783
    },
    {
     "ticker": "UZX",
     "company": "Linkage Global Inc",
     "price": 0.08,
-    "volume": 3681829
+    "volume": 9746521
    },
    {
-    "ticker": "CDT",
-    "company": "CDT Equity Inc",
-    "price": 0.22,
-    "volume": 2676367
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.32,
+    "volume": 9021317
    },
    {
     "ticker": "SDST",
     "company": "Stardust Power Inc",
-    "price": 0.13,
-    "volume": 2537228
+    "price": 0.14,
+    "volume": 8665979
    },
    {
-    "ticker": "NCT",
-    "company": "Intercont (Cayman) Ltd",
-    "price": 0.33,
-    "volume": 2373292
+    "ticker": "LDI",
+    "company": "LoanDepot Inc",
+    "price": 0.73,
+    "volume": 8157596
    },
    {
-    "ticker": "RYDE",
-    "company": "Ryde Group Ltd",
-    "price": 0.65,
-    "volume": 2224700
+    "ticker": "GPUS",
+    "company": "Hyperscale Data Inc",
+    "price": 0.19,
+    "volume": 7851733
+   },
+   {
+    "ticker": "SLGB",
+    "company": "Smart Logistics Global Ltd",
+    "price": 0.34,
+    "volume": 7696473
    },
    {
     "ticker": "SURG",
     "company": "Surgepays Inc",
     "price": 0.15,
-    "volume": 2087518
+    "volume": 7406119
    },
    {
-    "ticker": "JYD",
-    "company": "Jayud Global Logistics Ltd",
-    "price": 0.7,
-    "volume": 1495595
+    "ticker": "EU",
+    "company": "enCore Energy Corp",
+    "price": 0.9,
+    "volume": 6847700
    },
    {
-    "ticker": "GPUS",
-    "company": "Hyperscale Data Inc",
-    "price": 0.2,
-    "volume": 840880
+    "ticker": "OCGN",
+    "company": "Ocugen Inc",
+    "price": 0.98,
+    "volume": 6598277
    },
    {
-    "ticker": "LHSW",
-    "company": "Lianhe Sowell International Group Ltd",
-    "price": 0.58,
-    "volume": 838042
-   },
-   {
-    "ticker": "RITR",
-    "company": "Reitar Logtech Holdings Ltd",
-    "price": 0.08,
-    "volume": 686477
-   },
-   {
-    "ticker": "SNYR",
-    "company": "Synergy CHC Corp",
-    "price": 0.09,
-    "volume": 561635
-   },
-   {
-    "ticker": "QCLS",
-    "company": "Q/C Technologies Inc",
-    "price": 0.46,
-    "volume": 553712
-   },
-   {
-    "ticker": "DVLT",
-    "company": "Datavault AI Inc",
-    "price": 0.19,
-    "volume": 553080
-   },
-   {
-    "ticker": "FNGR",
-    "company": "FingerMotion Inc",
-    "price": 0.15,
-    "volume": 474794
+    "ticker": "NCT",
+    "company": "Intercont (Cayman) Ltd",
+    "price": 0.3,
+    "volume": 5648091
    },
    {
     "ticker": "FAMI",
     "company": "Farmmi Inc",
     "price": 0.13,
-    "volume": 469378
-   },
-   {
-    "ticker": "DDC",
-    "company": "DDC Enterprise Ltd",
-    "price": 0.24,
-    "volume": 377267
-   },
-   {
-    "ticker": "AEON",
-    "company": "AEON Biopharma Inc",
-    "price": 0.27,
-    "volume": 375071
-   },
-   {
-    "ticker": "SHFS",
-    "company": "SHF Holdings Inc",
-    "price": 0.15,
-    "volume": 370262
-   },
-   {
-    "ticker": "AIM",
-    "company": "AIM ImmunoTech Inc",
-    "price": 0.21,
-    "volume": 349994
-   },
-   {
-    "ticker": "HAIN",
-    "company": "Hain Celestial Group Inc",
-    "price": 0.58,
-    "volume": 347112
-   },
-   {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.34,
-    "volume": 331415
-   },
-   {
-    "ticker": "MDCX",
-    "company": "Medicus Pharma Ltd",
-    "price": 0.16,
-    "volume": 306847
-   },
-   {
-    "ticker": "MRNO",
-    "company": "Murano Global Investments PLC",
-    "price": 0.19,
-    "volume": 233725
-   },
-   {
-    "ticker": "SES",
-    "company": "SES AI Corp",
-    "price": 0.61,
-    "volume": 225023
-   },
-   {
-    "ticker": "MGN",
-    "company": "Megan Holdings Ltd",
-    "price": 0.16,
-    "volume": 201176
-   },
-   {
-    "ticker": "OLB",
-    "company": "OLB Group Inc",
-    "price": 0.25,
-    "volume": 194770
-   },
-   {
-    "ticker": "BAOS",
-    "company": "Baosheng Media Group Holdings Ltd",
-    "price": 0.25,
-    "volume": 153430
-   },
-   {
-    "ticker": "AGMH",
-    "company": "AGM Group Holdings Inc",
-    "price": 0.79,
-    "volume": 150248
-   },
-   {
-    "ticker": "HKPD",
-    "company": "Cellyan Biotechnology Co Ltd",
-    "price": 0.12,
-    "volume": 145996
-   },
-   {
-    "ticker": "TNYA",
-    "company": "Tenaya Therapeutics Inc",
-    "price": 0.7,
-    "volume": 119695
-   },
-   {
-    "ticker": "UCL",
-    "company": "Ucloudlink Group Inc ADR",
-    "price": 0.4,
-    "volume": 119496
-   },
-   {
-    "ticker": "VVOS",
-    "company": "Vivos Therapeutics Inc",
-    "price": 0.17,
-    "volume": 112694
+    "volume": 4945805
    },
    {
     "ticker": "ORBS",
     "company": "Eightco Holdings Inc",
-    "price": 0.95,
-    "volume": 111831
+    "price": 0.88,
+    "volume": 4921552
+   },
+   {
+    "ticker": "RIME",
+    "company": "Algorhythm Holdings Inc",
+    "price": 0.21,
+    "volume": 4578825
+   },
+   {
+    "ticker": "CDT",
+    "company": "CDT Equity Inc",
+    "price": 0.21,
+    "volume": 4521387
+   },
+   {
+    "ticker": "SAFX",
+    "company": "XCF Global Inc",
+    "price": 0.44,
+    "volume": 3957389
+   },
+   {
+    "ticker": "FNGR",
+    "company": "FingerMotion Inc",
+    "price": 0.15,
+    "volume": 3784747
+   },
+   {
+    "ticker": "MVST",
+    "company": "Microvast Holdings Inc",
+    "price": 0.57,
+    "volume": 3489774
+   },
+   {
+    "ticker": "INV",
+    "company": "Innventure Inc",
+    "price": 0.77,
+    "volume": 3175291
+   },
+   {
+    "ticker": "AKBA",
+    "company": "Akebia Therapeutics Inc",
+    "price": 0.93,
+    "volume": 3131128
+   },
+   {
+    "ticker": "RITR",
+    "company": "Reitar Logtech Holdings Ltd",
+    "price": 0.08,
+    "volume": 2850434
+   },
+   {
+    "ticker": "ZONE",
+    "company": "Zone Frontier Inc",
+    "price": 0.13,
+    "volume": 2606078
+   },
+   {
+    "ticker": "RYDE",
+    "company": "Ryde Group Ltd",
+    "price": 0.7,
+    "volume": 2565258
+   },
+   {
+    "ticker": "LASE",
+    "company": "Laser Photonics Corp",
+    "price": 0.81,
+    "volume": 2547947
+   },
+   {
+    "ticker": "MDCX",
+    "company": "Medicus Pharma Ltd",
+    "price": 0.15,
+    "volume": 2519428
+   },
+   {
+    "ticker": "IVVD",
+    "company": "Invivyd Inc",
+    "price": 0.84,
+    "volume": 2484115
+   },
+   {
+    "ticker": "OLB",
+    "company": "OLB Group Inc",
+    "price": 0.2,
+    "volume": 2470525
+   },
+   {
+    "ticker": "QCLS",
+    "company": "Q/C Technologies Inc",
+    "price": 0.49,
+    "volume": 2402145
+   },
+   {
+    "ticker": "HCAI",
+    "company": "Huachen AI Parking Management Technology Holding Co Ltd",
+    "price": 0.56,
+    "volume": 2336118
+   },
+   {
+    "ticker": "SNYR",
+    "company": "Synergy CHC Corp",
+    "price": 0.08,
+    "volume": 2284656
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
