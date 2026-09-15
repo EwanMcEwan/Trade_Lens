@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-15T01:16:06.660Z",
+ "generated": "2026-09-15T06:31:50.263Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-15T01:16:03.382Z",
+  "fetched": "2026-09-15T06:31:46.991Z",
   "rows": [
    {
     "ticker": "AGMH",
@@ -33,7 +33,7 @@
     "sector": "Technology",
     "industry": "Software - Infrastructure",
     "country": "China",
-    "marketCap": "2.16M",
+    "marketCap": "2.15M",
     "price": 0.62,
     "changePct": 29.18,
     "volume": 119622896
@@ -62,7 +62,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-15T01:16:06.660Z",
+  "fetched": "2026-09-15T06:31:50.263Z",
   "rows": [
    {
     "ticker": "NCT",
