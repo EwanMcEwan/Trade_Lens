@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-17T00:12:18.494Z",
+ "generated": "2026-09-17T05:08:52.733Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-17T00:12:15.312Z",
+  "fetched": "2026-09-17T05:08:49.469Z",
   "rows": [
    {
     "ticker": "BBLG",
@@ -73,7 +73,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-17T00:12:18.494Z",
+  "fetched": "2026-09-17T05:08:52.733Z",
   "rows": [
    {
     "ticker": "SNYR",
