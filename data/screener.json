@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-18T21:08:07.819Z",
+ "generated": "2026-09-18T23:30:21.364Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-18T21:08:04.597Z",
+  "fetched": "2026-09-18T23:30:18.083Z",
   "rows": [
    {
     "ticker": "AGMH",
@@ -14,7 +14,7 @@
     "marketCap": "3.97M",
     "price": 0.83,
     "changePct": -0.3,
-    "volume": 2513407
+    "volume": 2615245
    },
    {
     "ticker": "CTNT",
@@ -25,7 +25,7 @@
     "marketCap": "0.15M",
     "price": 0.05,
     "changePct": 4.89,
-    "volume": 623275488
+    "volume": 633729525
    },
    {
     "ticker": "FRGT",
@@ -36,7 +36,7 @@
     "marketCap": "0.39M",
     "price": 0.63,
     "changePct": -35.48,
-    "volume": 1261870
+    "volume": 3746986
    },
    {
     "ticker": "GIPR",
@@ -47,7 +47,7 @@
     "marketCap": "2.19M",
     "price": 0.72,
     "changePct": 63.44,
-    "volume": 297383032
+    "volume": 299219004
    },
    {
     "ticker": "MASK",
@@ -58,7 +58,7 @@
     "marketCap": "3.36M",
     "price": 0.93,
     "changePct": -2.24,
-    "volume": 1333223
+    "volume": 1337988
    },
    {
     "ticker": "TRUG",
@@ -69,7 +69,7 @@
     "marketCap": "2.28M",
     "price": 0.5,
     "changePct": 29.76,
-    "volume": 251596578
+    "volume": 252851570
    },
    {
     "ticker": "WHLR",
@@ -80,7 +80,7 @@
     "marketCap": "1.32M",
     "price": 0.27,
     "changePct": -29.06,
-    "volume": 7107909
+    "volume": 7899137
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -95,247 +95,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-18T21:08:07.819Z",
+  "fetched": "2026-09-18T23:30:21.364Z",
   "rows": [
    {
     "ticker": "CTNT",
     "company": "Cheetah Net Supply Chain Service Inc",
     "price": 0.05,
-    "volume": 623275488
+    "volume": 633729525
    },
    {
     "ticker": "MRNO",
     "company": "Murano Global Investments PLC",
     "price": 0.34,
-    "volume": 327622524
+    "volume": 330053306
    },
    {
     "ticker": "QNME",
     "company": "Quanome Technologies Inc",
     "price": 0.56,
-    "volume": 325402697
+    "volume": 328236946
    },
    {
     "ticker": "GIPR",
     "company": "Generation Income Properties Inc",
     "price": 0.72,
-    "volume": 297383032
+    "volume": 299219004
    },
    {
     "ticker": "TRUG",
     "company": "TruGolf Holdings Inc",
     "price": 0.5,
-    "volume": 251596578
+    "volume": 252851570
    },
    {
     "ticker": "RETO",
     "company": "ReTo Eco-Solutions Inc",
     "price": 0.19,
-    "volume": 144252568
+    "volume": 157539180
    },
    {
     "ticker": "NCPL",
     "company": "Netcapital Inc",
     "price": 0.74,
-    "volume": 126144229
+    "volume": 126894188
    },
    {
     "ticker": "AMZE",
     "company": "Amaze Holdings Inc",
     "price": 0.15,
-    "volume": 108982116
+    "volume": 109948492
    },
    {
     "ticker": "REFR",
     "company": "Research Frontiers Inc",
     "price": 0.65,
-    "volume": 90814827
+    "volume": 91913527
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.15,
-    "volume": 83669987
+    "volume": 84349835
    },
    {
     "ticker": "BENF",
     "company": "Beneficient",
     "price": 0.56,
-    "volume": 63102847
-   },
-   {
-    "ticker": "SDST",
-    "company": "Stardust Power Inc",
-    "price": 0.12,
-    "volume": 41993969
-   },
-   {
-    "ticker": "ZEO",
-    "company": "Zeo Energy Corp",
-    "price": 0.25,
-    "volume": 41988894
-   },
-   {
-    "ticker": "DCX",
-    "company": "Digital Currency X Technology Inc",
-    "price": 0.13,
-    "volume": 39759427
-   },
-   {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.37,
-    "volume": 39665177
-   },
-   {
-    "ticker": "ADBT",
-    "company": "Advasa Holdings Inc",
-    "price": 0.12,
-    "volume": 38818259
+    "volume": 63545782
    },
    {
     "ticker": "BTTC",
     "company": "Black Titan Corp",
     "price": 0.37,
-    "volume": 38710917
+    "volume": 47762926
+   },
+   {
+    "ticker": "SDST",
+    "company": "Stardust Power Inc",
+    "price": 0.12,
+    "volume": 46265955
+   },
+   {
+    "ticker": "ZEO",
+    "company": "Zeo Energy Corp",
+    "price": 0.25,
+    "volume": 43955939
+   },
+   {
+    "ticker": "DCX",
+    "company": "Digital Currency X Technology Inc",
+    "price": 0.13,
+    "volume": 42783529
+   },
+   {
+    "ticker": "ADBT",
+    "company": "Advasa Holdings Inc",
+    "price": 0.12,
+    "volume": 40045441
+   },
+   {
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.37,
+    "volume": 39857014
    },
    {
     "ticker": "EU",
     "company": "enCore Energy Corp",
     "price": 0.9,
-    "volume": 29894786
+    "volume": 29934926
    },
    {
     "ticker": "SLXN",
     "company": "Silexion Therapeutics Corp",
     "price": 0.44,
-    "volume": 26877221
+    "volume": 27722516
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
     "price": 0.18,
-    "volume": 22167845
+    "volume": 22768871
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
     "price": 0.54,
-    "volume": 20579151
+    "volume": 20599361
    },
    {
     "ticker": "PDSB",
     "company": "PDS Biotechnology Corp",
     "price": 0.81,
-    "volume": 18688675
+    "volume": 18946907
    },
    {
     "ticker": "CDT",
     "company": "CDT Equity Inc",
     "price": 0.17,
-    "volume": 17443799
-   },
-   {
-    "ticker": "EVTL",
-    "company": "Vertical Aerospace Ltd",
-    "price": 0.63,
-    "volume": 16793928
-   },
-   {
-    "ticker": "DLXY",
-    "company": "Delixy Holdings Ltd",
-    "price": 0.86,
-    "volume": 16290272
-   },
-   {
-    "ticker": "MVST",
-    "company": "Microvast Holdings Inc",
-    "price": 0.64,
-    "volume": 15072035
+    "volume": 18038627
    },
    {
     "ticker": "LOBO",
     "company": "Lobo Technologies Ltd",
     "price": 0.53,
-    "volume": 14890734
+    "volume": 17207072
+   },
+   {
+    "ticker": "EVTL",
+    "company": "Vertical Aerospace Ltd",
+    "price": 0.63,
+    "volume": 16968453
+   },
+   {
+    "ticker": "DLXY",
+    "company": "Delixy Holdings Ltd",
+    "price": 0.86,
+    "volume": 16480714
+   },
+   {
+    "ticker": "MVST",
+    "company": "Microvast Holdings Inc",
+    "price": 0.64,
+    "volume": 15079574
    },
    {
     "ticker": "ZONE",
     "company": "Zone Frontier Inc",
     "price": 0.14,
-    "volume": 14153269
+    "volume": 14169872
    },
    {
     "ticker": "ITOC",
     "company": "iTonic Holdings Ltd",
     "price": 0.32,
-    "volume": 12446158
+    "volume": 14064396
    },
    {
     "ticker": "LDI",
     "company": "LoanDepot Inc",
     "price": 0.7,
-    "volume": 10774601
-   },
-   {
-    "ticker": "RYDE",
-    "company": "Ryde Group Ltd",
-    "price": 0.72,
-    "volume": 7689452
-   },
-   {
-    "ticker": "LX",
-    "company": "LexinFintech Holdings Ltd ADR",
-    "price": 0.75,
-    "volume": 7535455
+    "volume": 10775658
    },
    {
     "ticker": "VRME",
     "company": "VerifyMe Inc",
     "price": 0.8,
-    "volume": 7477538
+    "volume": 8296922
    },
    {
-    "ticker": "DDC",
-    "company": "DDC Enterprise Ltd",
-    "price": 0.24,
-    "volume": 7429255
-   },
-   {
-    "ticker": "SURG",
-    "company": "Surgepays Inc",
-    "price": 0.15,
-    "volume": 7421052
-   },
-   {
-    "ticker": "AKBA",
-    "company": "Akebia Therapeutics Inc",
-    "price": 0.92,
-    "volume": 7321923
+    "ticker": "ELOG",
+    "company": "Eastern International Ltd",
+    "price": 0.51,
+    "volume": 7941444
    },
    {
     "ticker": "WHLR",
     "company": "Wheeler Real Estate Investment Trust Inc",
     "price": 0.27,
-    "volume": 7107909
+    "volume": 7899137
+   },
+   {
+    "ticker": "RYDE",
+    "company": "Ryde Group Ltd",
+    "price": 0.72,
+    "volume": 7789272
+   },
+   {
+    "ticker": "SURG",
+    "company": "Surgepays Inc",
+    "price": 0.15,
+    "volume": 7598044
+   },
+   {
+    "ticker": "LX",
+    "company": "LexinFintech Holdings Ltd ADR",
+    "price": 0.75,
+    "volume": 7544205
+   },
+   {
+    "ticker": "DDC",
+    "company": "DDC Enterprise Ltd",
+    "price": 0.24,
+    "volume": 7455306
    },
    {
     "ticker": "SRFM",
     "company": "Surf Air Mobility Inc",
     "price": 0.7,
-    "volume": 7028636
+    "volume": 7348114
+   },
+   {
+    "ticker": "AKBA",
+    "company": "Akebia Therapeutics Inc",
+    "price": 0.92,
+    "volume": 7322580
    },
    {
     "ticker": "HUMA",
     "company": "Humacyte Inc",
     "price": 0.59,
-    "volume": 6986642
-   },
-   {
-    "ticker": "DEFT",
-    "company": "DeFi Technologies Inc",
-    "price": 0.51,
-    "volume": 6912110
+    "volume": 6990760
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
