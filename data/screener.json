@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-20T12:06:49.511Z",
+ "generated": "2026-09-20T16:23:48.883Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-20T12:06:46.102Z",
+  "fetched": "2026-09-20T16:23:45.616Z",
   "rows": [
    {
     "ticker": "AGMH",
@@ -95,7 +95,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-20T12:06:49.511Z",
+  "fetched": "2026-09-20T16:23:48.883Z",
   "rows": [
    {
     "ticker": "CTNT",
