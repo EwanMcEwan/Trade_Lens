@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-23T01:41:39.476Z",
+ "generated": "2026-09-23T07:33:14.033Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-23T01:41:36.078Z",
+  "fetched": "2026-09-23T07:33:10.660Z",
   "rows": [
    {
     "ticker": "CTNT",
@@ -33,7 +33,7 @@
     "sector": "Technology",
     "industry": "Software - Infrastructure",
     "country": "China",
-    "marketCap": "3.08M",
+    "marketCap": "3.07M",
     "price": 0.89,
     "changePct": 105.33,
     "volume": 346029852
@@ -44,7 +44,7 @@
     "sector": "Technology",
     "industry": "Software - Application",
     "country": "China",
-    "marketCap": "3.28M",
+    "marketCap": "3.36M",
     "price": 0.91,
     "changePct": 2.79,
     "volume": 9233854
@@ -62,7 +62,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-23T01:41:39.476Z",
+  "fetched": "2026-09-23T07:33:14.033Z",
   "rows": [
    {
     "ticker": "ZEO",
