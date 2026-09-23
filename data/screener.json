@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-22T23:11:44.318Z",
+ "generated": "2026-09-23T01:41:39.476Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-22T23:11:41.090Z",
+  "fetched": "2026-09-23T01:41:36.078Z",
   "rows": [
    {
     "ticker": "CTNT",
@@ -14,7 +14,7 @@
     "marketCap": "0.14M",
     "price": 0.04,
     "changePct": -3.07,
-    "volume": 158151913
+    "volume": 162773144
    },
    {
     "ticker": "HLSQ",
@@ -25,7 +25,7 @@
     "marketCap": "1.82M",
     "price": 0.67,
     "changePct": -7.42,
-    "volume": 1050788
+    "volume": 1053370
    },
    {
     "ticker": "LHSW",
@@ -36,7 +36,7 @@
     "marketCap": "3.08M",
     "price": 0.89,
     "changePct": 105.33,
-    "volume": 345612590
+    "volume": 346029852
    },
    {
     "ticker": "MASK",
@@ -47,7 +47,7 @@
     "marketCap": "3.28M",
     "price": 0.91,
     "changePct": 2.79,
-    "volume": 9222438
+    "volume": 9233854
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -62,247 +62,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-22T23:11:44.318Z",
+  "fetched": "2026-09-23T01:41:39.476Z",
   "rows": [
    {
     "ticker": "ZEO",
     "company": "Zeo Energy Corp",
     "price": 0.49,
-    "volume": 411542353
+    "volume": 412014114
    },
    {
     "ticker": "LHSW",
     "company": "Lianhe Sowell International Group Ltd",
     "price": 0.89,
-    "volume": 345612590
+    "volume": 346029852
    },
    {
     "ticker": "FAMI",
     "company": "Farmmi Inc",
     "price": 0.14,
-    "volume": 208481070
+    "volume": 208847782
    },
    {
     "ticker": "CTNT",
     "company": "Cheetah Net Supply Chain Service Inc",
     "price": 0.04,
-    "volume": 158151913
+    "volume": 162773144
    },
    {
     "ticker": "QNME",
     "company": "Quanome Technologies Inc",
     "price": 0.85,
-    "volume": 132997858
+    "volume": 133259448
    },
    {
     "ticker": "TOPS",
     "company": "Top Ships Inc",
     "price": 0.87,
-    "volume": 104140902
+    "volume": 104316375
    },
    {
     "ticker": "CWD",
     "company": "CaliberCos Inc",
     "price": 0.73,
-    "volume": 102758721
+    "volume": 102845421
    },
    {
     "ticker": "FBGL",
     "company": "FBS Global Ltd",
     "price": 0.46,
-    "volume": 69940121
+    "volume": 70062572
    },
    {
     "ticker": "BFRG",
     "company": "Bullfrog AI Holdings Inc",
     "price": 0.6,
-    "volume": 67714957
-   },
-   {
-    "ticker": "DVLT",
-    "company": "Datavault AI Inc",
-    "price": 0.17,
-    "volume": 53324051
+    "volume": 68647320
    },
    {
     "ticker": "CAPS",
     "company": "Capstone Holding Corp",
     "price": 0.18,
-    "volume": 51912298
+    "volume": 55566177
    },
    {
     "ticker": "EDVA",
     "company": "Endovia Health Sciences Inc",
     "price": 0.23,
-    "volume": 44517912
+    "volume": 54370960
+   },
+   {
+    "ticker": "DVLT",
+    "company": "Datavault AI Inc",
+    "price": 0.17,
+    "volume": 53679911
    },
    {
     "ticker": "GELS",
     "company": "Gelteq Ltd",
     "price": 0.61,
-    "volume": 33638780
-   },
-   {
-    "ticker": "SLXN",
-    "company": "Silexion Therapeutics Corp",
-    "price": 0.39,
-    "volume": 32405226
+    "volume": 33661046
    },
    {
     "ticker": "RETO",
     "company": "ReTo Eco-Solutions Inc",
     "price": 0.18,
-    "volume": 32391758
+    "volume": 33268366
+   },
+   {
+    "ticker": "SLXN",
+    "company": "Silexion Therapeutics Corp",
+    "price": 0.39,
+    "volume": 32528504
    },
    {
     "ticker": "SDST",
     "company": "Stardust Power Inc",
     "price": 0.12,
-    "volume": 28942246
+    "volume": 29218934
    },
    {
     "ticker": "PDSB",
     "company": "PDS Biotechnology Corp",
     "price": 0.91,
-    "volume": 24621151
+    "volume": 24749958
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
     "price": 0.18,
-    "volume": 23989229
+    "volume": 24168581
    },
    {
     "ticker": "DCX",
     "company": "Digital Currency X Technology Inc",
     "price": 0.1,
-    "volume": 20942503
+    "volume": 21494309
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
     "price": 0.56,
-    "volume": 19477208
+    "volume": 19483576
    },
    {
     "ticker": "ADBT",
     "company": "Advasa Holdings Inc",
     "price": 0.12,
-    "volume": 16480654
+    "volume": 16808503
    },
    {
     "ticker": "SCNX",
     "company": "Scienture Holdings Inc",
     "price": 0.29,
-    "volume": 16233428
+    "volume": 16303206
    },
    {
     "ticker": "SDA",
     "company": "SunCar Technology Group Inc",
     "price": 0.49,
-    "volume": 13200648
+    "volume": 13285801
    },
    {
     "ticker": "CDT",
     "company": "CDT Equity Inc",
     "price": 0.14,
-    "volume": 12310718
+    "volume": 12515539
    },
    {
     "ticker": "ZONE",
     "company": "Zone Frontier Inc",
     "price": 0.14,
-    "volume": 11396188
+    "volume": 11414222
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
     "price": 0.41,
-    "volume": 11133650
+    "volume": 11135776
    },
    {
     "ticker": "EVTL",
     "company": "Vertical Aerospace Ltd",
     "price": 0.74,
-    "volume": 9527861
+    "volume": 9647475
    },
    {
     "ticker": "INV",
     "company": "Innventure Inc",
     "price": 0.88,
-    "volume": 9442863
+    "volume": 9448273
    },
    {
     "ticker": "MVST",
     "company": "Microvast Holdings Inc",
     "price": 0.72,
-    "volume": 9350238
+    "volume": 9362977
    },
    {
     "ticker": "MASK",
     "company": "3 E Network Technology Group Ltd",
     "price": 0.91,
-    "volume": 9222438
+    "volume": 9233854
    },
    {
     "ticker": "DDC",
     "company": "DDC Enterprise Ltd",
     "price": 0.23,
-    "volume": 8998350
+    "volume": 9010432
    },
    {
     "ticker": "HCAI",
     "company": "Huachen AI Parking Management Technology Holding Co Ltd",
     "price": 0.54,
-    "volume": 8912341
+    "volume": 8921115
    },
    {
     "ticker": "IVVD",
     "company": "Invivyd Inc",
     "price": 0.96,
-    "volume": 8434859
+    "volume": 8439252
    },
    {
     "ticker": "BTTC",
     "company": "Black Titan Corp",
     "price": 0.57,
-    "volume": 7902451
+    "volume": 7940089
    },
    {
     "ticker": "QCLS",
     "company": "Q/C Technologies Inc",
     "price": 0.89,
-    "volume": 7615166
+    "volume": 7617035
    },
    {
     "ticker": "SAFX",
     "company": "XCF Global Inc",
     "price": 0.46,
-    "volume": 7584831
+    "volume": 7594351
    },
    {
     "ticker": "ZBAO",
     "company": "Zhibao Technology Inc",
     "price": 0.11,
-    "volume": 7243733
+    "volume": 7350227
    },
    {
     "ticker": "SRFM",
     "company": "Surf Air Mobility Inc",
     "price": 0.77,
-    "volume": 6792424
+    "volume": 6808974
    },
    {
     "ticker": "VTGN",
     "company": "Vistagen Therapeutics Inc",
     "price": 0.25,
-    "volume": 5984004
+    "volume": 5999835
    },
    {
     "ticker": "MBRX",
     "company": "Moleculin Biotech Inc",
     "price": 0.56,
-    "volume": 5877847
+    "volume": 5879017
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
