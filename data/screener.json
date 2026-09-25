@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-24T22:07:56.988Z",
+ "generated": "2026-09-25T00:42:32.161Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-24T22:07:53.744Z",
+  "fetched": "2026-09-25T00:42:28.948Z",
   "rows": [
    {
     "ticker": "CTNT",
@@ -14,7 +14,7 @@
     "marketCap": "0.10M",
     "price": 0.03,
     "changePct": -16.41,
-    "volume": 99571868
+    "volume": 105304063
    },
    {
     "ticker": "FRGT",
@@ -25,7 +25,7 @@
     "marketCap": "0.24M",
     "price": 0.4,
     "changePct": -18.37,
-    "volume": 3104215
+    "volume": 3192403
    },
    {
     "ticker": "HLSQ",
@@ -36,7 +36,7 @@
     "marketCap": "1.51M",
     "price": 0.53,
     "changePct": -4,
-    "volume": 2077361
+    "volume": 2083007
    },
    {
     "ticker": "NWTG",
@@ -47,7 +47,7 @@
     "marketCap": "5.42M",
     "price": 0.96,
     "changePct": -15.9,
-    "volume": 872100
+    "volume": 878603
    },
    {
     "ticker": "ONCO",
@@ -58,7 +58,7 @@
     "marketCap": "3.99M",
     "price": 0.91,
     "changePct": 0.1,
-    "volume": 5402299
+    "volume": 5794636
    },
    {
     "ticker": "PARA",
@@ -69,7 +69,18 @@
     "marketCap": "2.91M",
     "price": 0.82,
     "changePct": -7.48,
-    "volume": 10734296
+    "volume": 10797611
+   },
+   {
+    "ticker": "REVB",
+    "company": "Revelation Biosciences Inc",
+    "sector": "Healthcare",
+    "industry": "Biotechnology",
+    "country": "USA",
+    "marketCap": "3.46M",
+    "price": 0.87,
+    "changePct": -6.87,
+    "volume": 75586
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -84,247 +95,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-24T22:07:56.988Z",
+  "fetched": "2026-09-25T00:42:32.161Z",
   "rows": [
    {
     "ticker": "DCX",
     "company": "Digital Currency X Technology Inc",
     "price": 0.06,
-    "volume": 515127323
+    "volume": 517012398
    },
    {
     "ticker": "RETO",
     "company": "ReTo Eco-Solutions Inc",
     "price": 0.17,
-    "volume": 162490742
+    "volume": 164287560
    },
    {
     "ticker": "ATCH",
     "company": "AtlasClear Holdings Inc",
     "price": 0.19,
-    "volume": 159829621
+    "volume": 160294128
    },
    {
     "ticker": "ATYR",
     "company": "Atyr Pharma Inc",
     "price": 0.34,
-    "volume": 129691287
+    "volume": 130119574
    },
    {
     "ticker": "CTNT",
     "company": "Cheetah Net Supply Chain Service Inc",
     "price": 0.03,
-    "volume": 99571868
+    "volume": 105304063
    },
    {
     "ticker": "TWG",
     "company": "Top Wealth Group Holding Ltd",
     "price": 0.2,
-    "volume": 93269161
+    "volume": 94856126
    },
    {
     "ticker": "GCDT",
     "company": "Green Circle Decarbonize Technology Ltd",
     "price": 0.67,
-    "volume": 85120260
+    "volume": 86115971
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.15,
-    "volume": 43468652
+    "volume": 43911583
    },
    {
     "ticker": "SLGB",
     "company": "Smart Logistics Global Ltd",
     "price": 0.33,
-    "volume": 35365420
+    "volume": 35456047
    },
    {
     "ticker": "FNGR",
     "company": "FingerMotion Inc",
     "price": 0.15,
-    "volume": 32382164
+    "volume": 33028980
    },
    {
     "ticker": "ZBAO",
     "company": "Zhibao Technology Inc",
     "price": 0.09,
-    "volume": 31554478
+    "volume": 31820578
    },
    {
     "ticker": "TRAW",
     "company": "Traws Pharma Inc",
     "price": 0.56,
-    "volume": 27972319
+    "volume": 28307537
    },
    {
     "ticker": "OFAL",
     "company": "OFA Group",
     "price": 0.51,
-    "volume": 23365850
+    "volume": 24299925
    },
    {
     "ticker": "SDST",
     "company": "Stardust Power Inc",
     "price": 0.12,
-    "volume": 21649719
+    "volume": 22885416
    },
    {
     "ticker": "ADBT",
     "company": "Advasa Holdings Inc",
     "price": 0.12,
-    "volume": 21486118
+    "volume": 21699138
    },
    {
     "ticker": "VTGN",
     "company": "Vistagen Therapeutics Inc",
     "price": 0.29,
-    "volume": 20255663
+    "volume": 20471724
    },
    {
     "ticker": "SOS",
     "company": "SOS Limited",
     "price": 0.39,
-    "volume": 18408749
+    "volume": 18972057
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
     "price": 0.18,
-    "volume": 15810465
+    "volume": 16358333
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
     "price": 0.53,
-    "volume": 14364990
+    "volume": 14373217
    },
    {
     "ticker": "GETY",
     "company": "Getty Images Holdings Inc",
     "price": 0.16,
-    "volume": 13775707
+    "volume": 14017253
    },
    {
     "ticker": "PARA",
     "company": "Banzai International Inc",
     "price": 0.82,
-    "volume": 10734296
+    "volume": 10797611
    },
    {
     "ticker": "FTHM",
     "company": "Fathom Holdings Inc",
     "price": 0.52,
-    "volume": 8854266
+    "volume": 10660354
    },
    {
     "ticker": "SRFM",
     "company": "Surf Air Mobility Inc",
     "price": 0.92,
-    "volume": 8046724
+    "volume": 8226544
    },
    {
     "ticker": "RIME",
     "company": "Algorhythm Holdings Inc",
     "price": 0.17,
-    "volume": 7875970
+    "volume": 7974869
    },
    {
     "ticker": "MRNO",
     "company": "Murano Global Investments PLC",
     "price": 0.31,
-    "volume": 7530063
-   },
-   {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.39,
-    "volume": 7156829
+    "volume": 7556988
    },
    {
     "ticker": "CDT",
     "company": "CDT Equity Inc",
     "price": 0.12,
-    "volume": 6643955
+    "volume": 7394261
+   },
+   {
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.39,
+    "volume": 7221125
    },
    {
     "ticker": "LDI",
     "company": "LoanDepot Inc",
     "price": 0.66,
-    "volume": 6327744
+    "volume": 6336379
    },
    {
     "ticker": "PDSB",
     "company": "PDS Biotechnology Corp",
     "price": 0.8,
-    "volume": 6077216
-   },
-   {
-    "ticker": "IVVD",
-    "company": "Invivyd Inc",
-    "price": 0.91,
-    "volume": 5978315
+    "volume": 6097351
    },
    {
     "ticker": "ZEO",
     "company": "Zeo Energy Corp",
     "price": 0.38,
-    "volume": 5941035
+    "volume": 6028233
    },
    {
     "ticker": "ZONE",
     "company": "Zone Frontier Inc",
     "price": 0.13,
-    "volume": 5919562
+    "volume": 6002645
    },
    {
-    "ticker": "JZ",
-    "company": "Jianzhi Education Technology Group Co Ltd ADR",
-    "price": 0.47,
-    "volume": 5797267
+    "ticker": "IVVD",
+    "company": "Invivyd Inc",
+    "price": 0.91,
+    "volume": 5999986
    },
    {
     "ticker": "ADGM",
     "company": "Adagio Medical Holdings Inc",
     "price": 0.21,
-    "volume": 5730995
+    "volume": 5854442
    },
    {
-    "ticker": "MVST",
-    "company": "Microvast Holdings Inc",
-    "price": 0.69,
-    "volume": 5606405
+    "ticker": "JZ",
+    "company": "Jianzhi Education Technology Group Co Ltd ADR",
+    "price": 0.47,
+    "volume": 5826806
    },
    {
     "ticker": "ONCO",
     "company": "Onconetix Inc",
     "price": 0.91,
-    "volume": 5402299
+    "volume": 5794636
    },
    {
-    "ticker": "COSM",
-    "company": "Cosmos Health Inc",
-    "price": 0.38,
-    "volume": 5173902
-   },
-   {
-    "ticker": "BFRG",
-    "company": "Bullfrog AI Holdings Inc",
-    "price": 0.76,
-    "volume": 5147736
-   },
-   {
-    "ticker": "DDC",
-    "company": "DDC Enterprise Ltd",
-    "price": 0.21,
-    "volume": 4687626
+    "ticker": "MVST",
+    "company": "Microvast Holdings Inc",
+    "price": 0.69,
+    "volume": 5607238
    },
    {
     "ticker": "TAOP",
     "company": "Taoping Inc",
     "price": 0.59,
-    "volume": 4587803
+    "volume": 5393400
+   },
+   {
+    "ticker": "BFRG",
+    "company": "Bullfrog AI Holdings Inc",
+    "price": 0.76,
+    "volume": 5223970
+   },
+   {
+    "ticker": "COSM",
+    "company": "Cosmos Health Inc",
+    "price": 0.38,
+    "volume": 5197307
+   },
+   {
+    "ticker": "SUGP",
+    "company": "SU Group Holdings Ltd",
+    "price": 0.47,
+    "volume": 4965159
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
