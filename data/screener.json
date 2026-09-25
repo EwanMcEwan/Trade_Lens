@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-25T11:41:48.709Z",
+ "generated": "2026-09-25T16:52:20.343Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-25T11:41:45.287Z",
+  "fetched": "2026-09-25T16:52:17.116Z",
   "rows": [
    {
     "ticker": "CTNT",
@@ -11,10 +11,21 @@
     "sector": "Industrials",
     "industry": "Integrated Freight & Logistics",
     "country": "USA",
-    "marketCap": "0.10M",
+    "marketCap": "6.18M",
     "price": 0.03,
-    "changePct": 4.05,
-    "volume": 352643397
+    "changePct": -3.74,
+    "volume": 466389548
+   },
+   {
+    "ticker": "GIPR",
+    "company": "Generation Income Properties Inc",
+    "sector": "Real Estate",
+    "industry": "REIT - Diversified",
+    "country": "USA",
+    "marketCap": "1.26M",
+    "price": 0.41,
+    "changePct": -22.99,
+    "volume": 24032774
    },
    {
     "ticker": "PARA",
@@ -22,10 +33,32 @@
     "sector": "Technology",
     "industry": "Software - Application",
     "country": "USA",
-    "marketCap": "2.67M",
-    "price": 0.75,
-    "changePct": -8.19,
-    "volume": 67765
+    "marketCap": "2.48M",
+    "price": 0.7,
+    "changePct": -14.66,
+    "volume": 433558
+   },
+   {
+    "ticker": "RDGT",
+    "company": "Ridgetech Inc",
+    "sector": "Healthcare",
+    "industry": "Pharmaceutical Retailers",
+    "country": "China",
+    "marketCap": "3.19M",
+    "price": 0.88,
+    "changePct": -3.18,
+    "volume": 7937238
+   },
+   {
+    "ticker": "RKDA",
+    "company": "Arcadia Biosciences Inc",
+    "sector": "Consumer Defensive",
+    "industry": "Packaged Foods",
+    "country": "USA",
+    "marketCap": "0.70M",
+    "price": 0.29,
+    "changePct": -8.16,
+    "volume": 596253
    },
    {
     "ticker": "SUGP",
@@ -33,10 +66,10 @@
     "sector": "Industrials",
     "industry": "Security & Protection Services",
     "country": "Hong Kong",
-    "marketCap": "1.35M",
-    "price": 0.58,
-    "changePct": 24.15,
-    "volume": 27461702
+    "marketCap": "1.31M",
+    "price": 0.56,
+    "changePct": 20.06,
+    "volume": 54577354
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -51,247 +84,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-25T11:41:48.709Z",
+  "fetched": "2026-09-25T16:52:20.343Z",
   "rows": [
    {
     "ticker": "CTNT",
     "company": "Cheetah Net Supply Chain Service Inc",
     "price": 0.03,
-    "volume": 352643397
+    "volume": 466389548
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
-    "price": 0.22,
-    "volume": 68462300
+    "price": 0.16,
+    "volume": 198677408
    },
    {
     "ticker": "DCX",
     "company": "Digital Currency X Technology Inc",
     "price": 0.05,
-    "volume": 52697578
+    "volume": 74933557
+   },
+   {
+    "ticker": "AXG",
+    "company": "Solowin Holdings",
+    "price": 0.17,
+    "volume": 55373760
    },
    {
     "ticker": "SUGP",
     "company": "SU Group Holdings Ltd",
-    "price": 0.58,
-    "volume": 27461702
+    "price": 0.56,
+    "volume": 54577354
    },
    {
     "ticker": "FTHM",
     "company": "Fathom Holdings Inc",
-    "price": 0.58,
-    "volume": 15700384
+    "price": 0.6,
+    "volume": 36197373
    },
    {
     "ticker": "RETO",
     "company": "ReTo Eco-Solutions Inc",
-    "price": 0.16,
-    "volume": 9080620
+    "price": 0.15,
+    "volume": 26921128
+   },
+   {
+    "ticker": "GIPR",
+    "company": "Generation Income Properties Inc",
+    "price": 0.41,
+    "volume": 24032774
+   },
+   {
+    "ticker": "CDT",
+    "company": "CDT Equity Inc",
+    "price": 0.08,
+    "volume": 20298767
    },
    {
     "ticker": "SDST",
     "company": "Stardust Power Inc",
-    "price": 0.12,
-    "volume": 6324589
-   },
-   {
-    "ticker": "FNGR",
-    "company": "FingerMotion Inc",
-    "price": 0.15,
-    "volume": 2689841
-   },
-   {
-    "ticker": "TWG",
-    "company": "Top Wealth Group Holding Ltd",
-    "price": 0.18,
-    "volume": 2541207
-   },
-   {
-    "ticker": "GETY",
-    "company": "Getty Images Holdings Inc",
-    "price": 0.16,
-    "volume": 2516614
-   },
-   {
-    "ticker": "ATYR",
-    "company": "Atyr Pharma Inc",
-    "price": 0.32,
-    "volume": 1420796
-   },
-   {
-    "ticker": "ADBT",
-    "company": "Advasa Holdings Inc",
-    "price": 0.12,
-    "volume": 1141727
-   },
-   {
-    "ticker": "TRUG",
-    "company": "TruGolf Holdings Inc",
-    "price": 0.34,
-    "volume": 1115505
-   },
-   {
-    "ticker": "ATCH",
-    "company": "AtlasClear Holdings Inc",
-    "price": 0.19,
-    "volume": 962992
-   },
-   {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.4,
-    "volume": 792301
-   },
-   {
-    "ticker": "ZBAO",
-    "company": "Zhibao Technology Inc",
-    "price": 0.09,
-    "volume": 737411
+    "price": 0.11,
+    "volume": 14099919
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.15,
-    "volume": 660412
+    "volume": 13620048
    },
    {
-    "ticker": "CDT",
-    "company": "CDT Equity Inc",
-    "price": 0.12,
-    "volume": 659919
+    "ticker": "TWG",
+    "company": "Top Wealth Group Holding Ltd",
+    "price": 0.15,
+    "volume": 8563005
+   },
+   {
+    "ticker": "RDGT",
+    "company": "Ridgetech Inc",
+    "price": 0.88,
+    "volume": 7937238
    },
    {
     "ticker": "SAFX",
     "company": "XCF Global Inc",
-    "price": 0.42,
-    "volume": 651074
+    "price": 0.34,
+    "volume": 7134328
+   },
+   {
+    "ticker": "EVTL",
+    "company": "Vertical Aerospace Ltd",
+    "price": 0.78,
+    "volume": 6920152
+   },
+   {
+    "ticker": "ATYR",
+    "company": "Atyr Pharma Inc",
+    "price": 0.31,
+    "volume": 6779955
+   },
+   {
+    "ticker": "LGO",
+    "company": "Largo Inc",
+    "price": 0.56,
+    "volume": 6606455
+   },
+   {
+    "ticker": "FNGR",
+    "company": "FingerMotion Inc",
+    "price": 0.14,
+    "volume": 6532987
+   },
+   {
+    "ticker": "TRUG",
+    "company": "TruGolf Holdings Inc",
+    "price": 0.27,
+    "volume": 5922533
+   },
+   {
+    "ticker": "GETY",
+    "company": "Getty Images Holdings Inc",
+    "price": 0.16,
+    "volume": 5906087
+   },
+   {
+    "ticker": "SES",
+    "company": "SES AI Corp",
+    "price": 0.55,
+    "volume": 5904128
+   },
+   {
+    "ticker": "ADBT",
+    "company": "Advasa Holdings Inc",
+    "price": 0.11,
+    "volume": 5308486
+   },
+   {
+    "ticker": "GWH",
+    "company": "ESS Tech Inc",
+    "price": 0.23,
+    "volume": 5145334
+   },
+   {
+    "ticker": "ATCH",
+    "company": "AtlasClear Holdings Inc",
+    "price": 0.19,
+    "volume": 4941893
+   },
+   {
+    "ticker": "SURG",
+    "company": "Surgepays Inc",
+    "price": 0.15,
+    "volume": 4646734
+   },
+   {
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.38,
+    "volume": 4526760
+   },
+   {
+    "ticker": "LESL",
+    "company": "Leslies Inc",
+    "price": 0.34,
+    "volume": 4044383
+   },
+   {
+    "ticker": "AMZE",
+    "company": "Amaze Holdings Inc",
+    "price": 0.14,
+    "volume": 3835465
+   },
+   {
+    "ticker": "VTGN",
+    "company": "Vistagen Therapeutics Inc",
+    "price": 0.29,
+    "volume": 3705817
+   },
+   {
+    "ticker": "VRME",
+    "company": "VerifyMe Inc",
+    "price": 0.92,
+    "volume": 3650658
+   },
+   {
+    "ticker": "LDI",
+    "company": "LoanDepot Inc",
+    "price": 0.68,
+    "volume": 3615326
+   },
+   {
+    "ticker": "ZEO",
+    "company": "Zeo Energy Corp",
+    "price": 0.4,
+    "volume": 3335360
+   },
+   {
+    "ticker": "ZONE",
+    "company": "Zone Frontier Inc",
+    "price": 0.13,
+    "volume": 2897562
+   },
+   {
+    "ticker": "PDSB",
+    "company": "PDS Biotechnology Corp",
+    "price": 0.8,
+    "volume": 2501719
+   },
+   {
+    "ticker": "TNYA",
+    "company": "Tenaya Therapeutics Inc",
+    "price": 0.61,
+    "volume": 2458301
    },
    {
     "ticker": "DDC",
     "company": "DDC Enterprise Ltd",
     "price": 0.2,
-    "volume": 643526
+    "volume": 2450279
+   },
+   {
+    "ticker": "ARBE",
+    "company": "Arbe Robotics Ltd",
+    "price": 0.61,
+    "volume": 2217135
+   },
+   {
+    "ticker": "ZBAO",
+    "company": "Zhibao Technology Inc",
+    "price": 0.09,
+    "volume": 2021455
    },
    {
     "ticker": "OFAL",
     "company": "OFA Group",
-    "price": 0.5,
-    "volume": 616720
+    "price": 0.49,
+    "volume": 1962414
    },
    {
-    "ticker": "VTGN",
-    "company": "Vistagen Therapeutics Inc",
-    "price": 0.28,
-    "volume": 528760
-   },
-   {
-    "ticker": "CAPS",
-    "company": "Capstone Holding Corp",
-    "price": 0.16,
-    "volume": 363934
-   },
-   {
-    "ticker": "LESL",
-    "company": "Leslies Inc",
-    "price": 0.28,
-    "volume": 351646
-   },
-   {
-    "ticker": "SOS",
-    "company": "SOS Limited",
-    "price": 0.39,
-    "volume": 281731
-   },
-   {
-    "ticker": "EDVA",
-    "company": "Endovia Health Sciences Inc",
-    "price": 0.19,
-    "volume": 264470
-   },
-   {
-    "ticker": "TRAW",
-    "company": "Traws Pharma Inc",
-    "price": 0.52,
-    "volume": 252144
-   },
-   {
-    "ticker": "GNS",
-    "company": "Genius Group Ltd",
-    "price": 0.16,
-    "volume": 228071
-   },
-   {
-    "ticker": "INVZ",
-    "company": "Innoviz Technologies Ltd",
-    "price": 0.4,
-    "volume": 180711
-   },
-   {
-    "ticker": "GCDT",
-    "company": "Green Circle Decarbonize Technology Ltd",
-    "price": 0.64,
-    "volume": 168561
-   },
-   {
-    "ticker": "AMZE",
-    "company": "Amaze Holdings Inc",
-    "price": 0.13,
-    "volume": 163159
-   },
-   {
-    "ticker": "FBGL",
-    "company": "FBS Global Ltd",
-    "price": 0.34,
-    "volume": 145953
-   },
-   {
-    "ticker": "ZEO",
-    "company": "Zeo Energy Corp",
-    "price": 0.39,
-    "volume": 144331
-   },
-   {
-    "ticker": "EVTL",
-    "company": "Vertical Aerospace Ltd",
-    "price": 0.7,
-    "volume": 139047
-   },
-   {
-    "ticker": "SLXN",
-    "company": "Silexion Therapeutics Corp",
-    "price": 0.25,
-    "volume": 137168
-   },
-   {
-    "ticker": "ZONE",
-    "company": "Zone Frontier Inc",
-    "price": 0.14,
-    "volume": 126166
-   },
-   {
-    "ticker": "ADGM",
-    "company": "Adagio Medical Holdings Inc",
-    "price": 0.21,
-    "volume": 120714
-   },
-   {
-    "ticker": "COSM",
-    "company": "Cosmos Health Inc",
-    "price": 0.38,
-    "volume": 115371
-   },
-   {
-    "ticker": "SLGB",
-    "company": "Smart Logistics Global Ltd",
-    "price": 0.31,
-    "volume": 104190
-   },
-   {
-    "ticker": "AIM",
-    "company": "AIM ImmunoTech Inc",
-    "price": 0.2,
-    "volume": 93939
+    "ticker": "DEFT",
+    "company": "DeFi Technologies Inc",
+    "price": 0.51,
+    "volume": 1892137
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
