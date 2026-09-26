@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-26T01:52:13.706Z",
+ "generated": "2026-09-26T07:16:56.136Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-26T01:52:10.315Z",
+  "fetched": "2026-09-26T07:16:52.611Z",
   "rows": [
    {
     "ticker": "CTNT",
@@ -44,7 +44,7 @@
     "sector": "Healthcare",
     "industry": "Pharmaceutical Retailers",
     "country": "China",
-    "marketCap": "3.02M",
+    "marketCap": "3.01M",
     "price": 0.83,
     "changePct": -8.35,
     "volume": 9017692
@@ -73,7 +73,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-26T01:52:13.706Z",
+  "fetched": "2026-09-26T07:16:56.135Z",
   "rows": [
    {
     "ticker": "CTNT",
