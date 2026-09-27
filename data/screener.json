@@ -1,21 +1,10 @@
 {
- "generated": "2026-09-26T22:31:43.889Z",
+ "generated": "2026-09-27T01:11:33.491Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-26T22:31:40.430Z",
+  "fetched": "2026-09-27T01:11:30.308Z",
   "rows": [
-   {
-    "ticker": "CTNT",
-    "company": "Cheetah Net Supply Chain Service Inc",
-    "sector": "Industrials",
-    "industry": "Integrated Freight & Logistics",
-    "country": "USA",
-    "marketCap": "6.30M",
-    "price": 0.03,
-    "changePct": -1.87,
-    "volume": 518029038
-   },
    {
     "ticker": "GIPR",
     "company": "Generation Income Properties Inc",
@@ -73,7 +62,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-26T22:31:43.889Z",
+  "fetched": "2026-09-27T01:11:33.491Z",
   "rows": [
    {
     "ticker": "CTNT",
