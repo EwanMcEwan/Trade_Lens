@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-28T23:53:16.710Z",
+ "generated": "2026-09-29T04:59:26.727Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-28T23:53:13.482Z",
+  "fetched": "2026-09-29T04:59:23.345Z",
   "rows": [
    {
     "ticker": "FCHL",
@@ -14,7 +14,7 @@
     "marketCap": "1.29M",
     "price": 0.98,
     "changePct": -2,
-    "volume": 531463
+    "volume": 531461
    },
    {
     "ticker": "FRGT",
@@ -25,7 +25,7 @@
     "marketCap": "0.21M",
     "price": 0.33,
     "changePct": -5.71,
-    "volume": 4361383
+    "volume": 4371862
    },
    {
     "ticker": "NIVF",
@@ -36,7 +36,7 @@
     "marketCap": "0.77M",
     "price": 0.34,
     "changePct": -38.44,
-    "volume": 13908165
+    "volume": 13989456
    },
    {
     "ticker": "RKDA",
@@ -47,7 +47,7 @@
     "marketCap": "0.74M",
     "price": 0.31,
     "changePct": 0.13,
-    "volume": 2847934
+    "volume": 2850801
    },
    {
     "ticker": "XXII",
@@ -58,7 +58,7 @@
     "marketCap": "0.68M",
     "price": 0.95,
     "changePct": -28.22,
-    "volume": 486881
+    "volume": 487419
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -73,79 +73,79 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-28T23:53:16.710Z",
+  "fetched": "2026-09-29T04:59:26.727Z",
   "rows": [
    {
     "ticker": "SOAR",
     "company": "Volato Group Inc",
     "price": 0.32,
-    "volume": 998967581
+    "volume": 999682641
    },
    {
     "ticker": "ARAY",
     "company": "Accuray Inc",
     "price": 0.3,
-    "volume": 377413785
+    "volume": 377450906
    },
    {
     "ticker": "GYGY",
     "company": "Game Your Game Inc",
     "price": 0.87,
-    "volume": 113596437
+    "volume": 113658119
    },
    {
     "ticker": "KNDI",
     "company": "Kandi Technologies Group Inc",
     "price": 0.82,
-    "volume": 88417177
+    "volume": 88485769
    },
    {
     "ticker": "SLXN",
     "company": "Silexion Therapeutics Corp",
     "price": 0.25,
-    "volume": 76815627
+    "volume": 77399283
    },
    {
     "ticker": "FUSE",
     "company": "Fusemachines Inc",
     "price": 0.65,
-    "volume": 53458767
+    "volume": 53476804
    },
    {
     "ticker": "MTEK",
     "company": "Maris Tech Ltd",
     "price": 0.97,
-    "volume": 47060134
+    "volume": 47073500
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.16,
-    "volume": 43967139
+    "volume": 43972968
    },
    {
     "ticker": "AXG",
     "company": "Solowin Holdings",
     "price": 0.15,
-    "volume": 40033328
+    "volume": 40068655
    },
    {
     "ticker": "WBUY",
     "company": "Webuy Global Ltd",
     "price": 0.9,
-    "volume": 37856375
+    "volume": 37865691
    },
    {
     "ticker": "CDT",
     "company": "CDT Equity Inc",
     "price": 0.08,
-    "volume": 30487987
+    "volume": 30487969
    },
    {
     "ticker": "RETO",
     "company": "ReTo Eco-Solutions Inc",
     "price": 0.14,
-    "volume": 28139345
+    "volume": 28223928
    },
    {
     "ticker": "GETY",
@@ -157,61 +157,61 @@
     "ticker": "MIMI",
     "company": "Mint Inc Ltd",
     "price": 0.9,
-    "volume": 26992504
+    "volume": 27001844
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
     "price": 0.53,
-    "volume": 22988261
+    "volume": 22988824
    },
    {
     "ticker": "XHLD",
     "company": "TEN Holdings Inc",
     "price": 0.98,
-    "volume": 22883009
+    "volume": 22924180
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
     "price": 0.17,
-    "volume": 21892722
+    "volume": 21901358
    },
    {
     "ticker": "ZBAO",
     "company": "Zhibao Technology Inc",
     "price": 0.09,
-    "volume": 16094145
+    "volume": 16094241
    },
    {
     "ticker": "NIVF",
     "company": "NewGenIvf Group Ltd",
     "price": 0.34,
-    "volume": 13908165
+    "volume": 13989456
    },
    {
     "ticker": "IVVD",
     "company": "Invivyd Inc",
     "price": 0.95,
-    "volume": 10921235
+    "volume": 11005181
    },
    {
     "ticker": "SDST",
     "company": "Stardust Power Inc",
     "price": 0.11,
-    "volume": 10871106
+    "volume": 10912595
    },
    {
     "ticker": "TWG",
     "company": "Top Wealth Group Holding Ltd",
     "price": 0.13,
-    "volume": 8521800
+    "volume": 8528621
    },
    {
     "ticker": "GNS",
     "company": "Genius Group Ltd",
     "price": 0.15,
-    "volume": 7239183
+    "volume": 7239284
    },
    {
     "ticker": "EVTL",
@@ -223,37 +223,37 @@
     "ticker": "ADBT",
     "company": "Advasa Holdings Inc",
     "price": 0.11,
-    "volume": 6574955
+    "volume": 6575242
    },
    {
     "ticker": "OTLK",
     "company": "Outlook Therapeutics Inc",
     "price": 0.62,
-    "volume": 6098332
+    "volume": 6098392
    },
    {
     "ticker": "TNYA",
     "company": "Tenaya Therapeutics Inc",
     "price": 0.59,
-    "volume": 6083823
+    "volume": 6083975
    },
    {
     "ticker": "VTGN",
     "company": "Vistagen Therapeutics Inc",
     "price": 0.3,
-    "volume": 6029956
+    "volume": 6030120
    },
    {
     "ticker": "FAMI",
     "company": "Farmmi Inc",
     "price": 0.13,
-    "volume": 5693896
+    "volume": 5708939
    },
    {
     "ticker": "FNGR",
     "company": "FingerMotion Inc",
     "price": 0.14,
-    "volume": 5632981
+    "volume": 5646971
    },
    {
     "ticker": "LGPS",
@@ -265,55 +265,55 @@
     "ticker": "HUMA",
     "company": "Humacyte Inc",
     "price": 0.55,
-    "volume": 4959213
+    "volume": 4959191
    },
    {
     "ticker": "OFAL",
     "company": "OFA Group",
     "price": 0.54,
-    "volume": 4956968
+    "volume": 4959059
    },
    {
     "ticker": "ATCH",
     "company": "AtlasClear Holdings Inc",
     "price": 0.18,
-    "volume": 4904466
+    "volume": 4905849
    },
    {
     "ticker": "FTHM",
     "company": "Fathom Holdings Inc",
     "price": 0.54,
-    "volume": 4886477
+    "volume": 4888931
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
     "price": 0.37,
-    "volume": 4767518
+    "volume": 4767528
    },
    {
     "ticker": "FRGT",
     "company": "Freight Technologies Inc",
     "price": 0.33,
-    "volume": 4361383
+    "volume": 4371862
    },
    {
     "ticker": "SURG",
     "company": "Surgepays Inc",
     "price": 0.14,
-    "volume": 4347486
+    "volume": 4347788
    },
    {
     "ticker": "ATYR",
     "company": "Atyr Pharma Inc",
     "price": 0.3,
-    "volume": 4132322
+    "volume": 4132561
    },
    {
     "ticker": "PDSB",
     "company": "PDS Biotechnology Corp",
     "price": 0.77,
-    "volume": 4042198
+    "volume": 4042377
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
