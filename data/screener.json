@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-30T00:41:35.824Z",
+ "generated": "2026-09-30T06:25:16.246Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-30T00:41:32.630Z",
+  "fetched": "2026-09-30T06:25:12.870Z",
   "rows": [
    {
     "ticker": "HUBC",
@@ -73,7 +73,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-09-30T00:41:35.824Z",
+  "fetched": "2026-09-30T06:25:16.246Z",
   "rows": [
    {
     "ticker": "SLXN",
