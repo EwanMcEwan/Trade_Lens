@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-01T01:29:34.816Z",
+ "generated": "2026-10-01T07:42:41.505Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-01T01:29:31.553Z",
+  "fetched": "2026-10-01T07:42:38.239Z",
   "rows": [
    {
     "ticker": "FRGT",
@@ -11,7 +11,7 @@
     "sector": "Technology",
     "industry": "Software - Application",
     "country": "USA",
-    "marketCap": "0.18M",
+    "marketCap": "0.17M",
     "price": 0.28,
     "changePct": -7.44,
     "volume": 61728947
@@ -44,7 +44,7 @@
     "sector": "Healthcare",
     "industry": "Medical Care Facilities",
     "country": "Thailand",
-    "marketCap": "0.37M",
+    "marketCap": "0.38M",
     "price": 0.17,
     "changePct": 133.33,
     "volume": 859166902
@@ -55,7 +55,7 @@
     "sector": "Technology",
     "industry": "Software - Application",
     "country": "USA",
-    "marketCap": "2.31M",
+    "marketCap": "2.30M",
     "price": 0.65,
     "changePct": -5.42,
     "volume": 3010934
@@ -66,7 +66,7 @@
     "sector": "Consumer Defensive",
     "industry": "Packaged Foods",
     "country": "USA",
-    "marketCap": "0.68M",
+    "marketCap": "0.67M",
     "price": 0.28,
     "changePct": -0.25,
     "volume": 21107494
@@ -84,7 +84,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-01T01:29:34.816Z",
+  "fetched": "2026-10-01T07:42:41.505Z",
   "rows": [
    {
     "ticker": "NIVF",
