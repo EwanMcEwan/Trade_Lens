@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-02T18:37:04.255Z",
+ "generated": "2026-10-02T22:50:55.582Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-02T18:37:00.837Z",
+  "fetched": "2026-10-02T22:50:52.143Z",
   "rows": [
    {
     "ticker": "DRCT",
@@ -11,10 +11,10 @@
     "sector": "Communication Services",
     "industry": "Advertising Agencies",
     "country": "USA",
-    "marketCap": "0.63M",
-    "price": 0.79,
-    "changePct": -47.62,
-    "volume": 401189
+    "marketCap": "0.73M",
+    "price": 0.91,
+    "changePct": -39.74,
+    "volume": 1336961
    },
    {
     "ticker": "MEGL",
@@ -22,10 +22,21 @@
     "sector": "Financial",
     "industry": "Capital Markets",
     "country": "Hong Kong",
-    "marketCap": "64.31M",
-    "price": 0.95,
-    "changePct": -5.15,
-    "volume": 31244
+    "marketCap": "62.05M",
+    "price": 0.92,
+    "changePct": -8.49,
+    "volume": 35354
+   },
+   {
+    "ticker": "MI",
+    "company": "NFT Ltd",
+    "sector": "Consumer Cyclical",
+    "industry": "Internet Retail",
+    "country": "Hong Kong",
+    "marketCap": "0.55M",
+    "price": 0.89,
+    "changePct": 1.02,
+    "volume": 184193
    },
    {
     "ticker": "NIVF",
@@ -35,8 +46,8 @@
     "country": "Thailand",
     "marketCap": "0.29M",
     "price": 0.13,
-    "changePct": 25.15,
-    "volume": 288161896
+    "changePct": 27.72,
+    "volume": 301888373
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -51,247 +62,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-02T18:37:04.255Z",
+  "fetched": "2026-10-02T22:50:55.582Z",
   "rows": [
    {
     "ticker": "NIVF",
     "company": "NewGenIvf Group Ltd",
     "price": 0.13,
-    "volume": 288161896
+    "volume": 301888373
    },
    {
     "ticker": "FNGR",
     "company": "FingerMotion Inc",
-    "price": 0.22,
-    "volume": 225673994
-   },
-   {
-    "ticker": "SCNX",
-    "company": "Scienture Holdings Inc",
-    "price": 0.15,
-    "volume": 157520562
+    "price": 0.25,
+    "volume": 252211942
    },
    {
     "ticker": "FLUX",
     "company": "Flux Power Holdings inc",
-    "price": 0.62,
-    "volume": 139681517
+    "price": 0.64,
+    "volume": 166794016
+   },
+   {
+    "ticker": "SCNX",
+    "company": "Scienture Holdings Inc",
+    "price": 0.16,
+    "volume": 162980976
    },
    {
     "ticker": "SCKT",
     "company": "Socket Mobile Inc",
-    "price": 0.7,
-    "volume": 87048776
+    "price": 0.71,
+    "volume": 106285102
    },
    {
     "ticker": "DDC",
     "company": "DDC Enterprise Ltd",
-    "price": 0.21,
-    "volume": 43827758
+    "price": 0.22,
+    "volume": 51052883
    },
    {
     "ticker": "HODO",
     "company": "House of Doge Inc",
     "price": 0.14,
-    "volume": 40036777
-   },
-   {
-    "ticker": "GNS",
-    "company": "Genius Group Ltd",
-    "price": 0.15,
-    "volume": 29352977
-   },
-   {
-    "ticker": "SES",
-    "company": "SES AI Corp",
-    "price": 0.84,
-    "volume": 24254035
-   },
-   {
-    "ticker": "GPUS",
-    "company": "Hyperscale Data Inc",
-    "price": 0.17,
-    "volume": 23335782
-   },
-   {
-    "ticker": "HXHX",
-    "company": "Haoxin Holdings Ltd",
-    "price": 0.36,
-    "volume": 16090017
-   },
-   {
-    "ticker": "SOAR",
-    "company": "Volato Group Inc",
-    "price": 0.28,
-    "volume": 15894484
+    "volume": 43596561
    },
    {
     "ticker": "SDST",
     "company": "Stardust Power Inc",
     "price": 0.08,
-    "volume": 15511603
+    "volume": 33450289
+   },
+   {
+    "ticker": "GNS",
+    "company": "Genius Group Ltd",
+    "price": 0.15,
+    "volume": 33273752
+   },
+   {
+    "ticker": "SES",
+    "company": "SES AI Corp",
+    "price": 0.88,
+    "volume": 32212525
+   },
+   {
+    "ticker": "GPUS",
+    "company": "Hyperscale Data Inc",
+    "price": 0.17,
+    "volume": 30495489
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
-    "price": 0.16,
-    "volume": 15311394
+    "price": 0.15,
+    "volume": 21184784
    },
    {
     "ticker": "CMPX",
     "company": "Compass Therapeutics Inc",
-    "price": 0.9,
-    "volume": 12571289
+    "price": 0.86,
+    "volume": 20743976
+   },
+   {
+    "ticker": "SOAR",
+    "company": "Volato Group Inc",
+    "price": 0.28,
+    "volume": 18435498
+   },
+   {
+    "ticker": "HXHX",
+    "company": "Haoxin Holdings Ltd",
+    "price": 0.39,
+    "volume": 16678535
    },
    {
     "ticker": "VERI",
     "company": "Veritone Inc",
-    "price": 0.73,
-    "volume": 11543535
-   },
-   {
-    "ticker": "SRFM",
-    "company": "Surf Air Mobility Inc",
-    "price": 0.97,
-    "volume": 9264256
+    "price": 0.75,
+    "volume": 12788386
    },
    {
     "ticker": "ADBT",
     "company": "Advasa Holdings Inc",
     "price": 0.14,
-    "volume": 8907167
+    "volume": 10860753
+   },
+   {
+    "ticker": "SRFM",
+    "company": "Surf Air Mobility Inc",
+    "price": 0.97,
+    "volume": 10656966
    },
    {
     "ticker": "LESL",
     "company": "Leslies Inc",
     "price": 0.15,
-    "volume": 7895201
+    "volume": 9961203
    },
    {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.36,
-    "volume": 7356027
-   },
-   {
-    "ticker": "AKBA",
-    "company": "Akebia Therapeutics Inc",
-    "price": 0.85,
-    "volume": 5774214
-   },
-   {
-    "ticker": "IVVD",
-    "company": "Invivyd Inc",
-    "price": 0.81,
-    "volume": 5615082
+    "ticker": "AUID",
+    "company": "authID Inc",
+    "price": 0.44,
+    "volume": 9038664
    },
    {
     "ticker": "IQ",
     "company": "iQIYI Inc ADR",
-    "price": 0.98,
-    "volume": 5592242
+    "price": 0.99,
+    "volume": 8757584
+   },
+   {
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.35,
+    "volume": 8658972
+   },
+   {
+    "ticker": "IVVD",
+    "company": "Invivyd Inc",
+    "price": 0.82,
+    "volume": 7120589
+   },
+   {
+    "ticker": "AKBA",
+    "company": "Akebia Therapeutics Inc",
+    "price": 0.87,
+    "volume": 7104969
    },
    {
     "ticker": "DEFT",
     "company": "DeFi Technologies Inc",
     "price": 0.53,
-    "volume": 5365282
+    "volume": 5886518
+   },
+   {
+    "ticker": "OTLK",
+    "company": "Outlook Therapeutics Inc",
+    "price": 0.59,
+    "volume": 5590846
    },
    {
     "ticker": "HUMA",
     "company": "Humacyte Inc",
     "price": 0.52,
-    "volume": 4065398
-   },
-   {
-    "ticker": "LDI",
-    "company": "LoanDepot Inc",
-    "price": 0.63,
-    "volume": 3805915
-   },
-   {
-    "ticker": "OTLK",
-    "company": "Outlook Therapeutics Inc",
-    "price": 0.58,
-    "volume": 3682586
-   },
-   {
-    "ticker": "ARAY",
-    "company": "Accuray Inc",
-    "price": 0.3,
-    "volume": 3671946
-   },
-   {
-    "ticker": "BTTC",
-    "company": "Black Titan Corp",
-    "price": 0.61,
-    "volume": 3466026
-   },
-   {
-    "ticker": "SURG",
-    "company": "Surgepays Inc",
-    "price": 0.15,
-    "volume": 3358715
-   },
-   {
-    "ticker": "CNTB",
-    "company": "Connect Biopharma Holdings Ltd",
-    "price": 0.91,
-    "volume": 3285401
-   },
-   {
-    "ticker": "HRTX",
-    "company": "Heron Therapeutics Inc",
-    "price": 0.37,
-    "volume": 3268982
-   },
-   {
-    "ticker": "PDSB",
-    "company": "PDS Biotechnology Corp",
-    "price": 0.73,
-    "volume": 3157747
-   },
-   {
-    "ticker": "INV",
-    "company": "Innventure Inc",
-    "price": 0.51,
-    "volume": 3081573
-   },
-   {
-    "ticker": "TNYA",
-    "company": "Tenaya Therapeutics Inc",
-    "price": 0.56,
-    "volume": 3077009
+    "volume": 5391403
    },
    {
     "ticker": "AXG",
     "company": "Solowin Holdings",
     "price": 0.12,
-    "volume": 3053053
+    "volume": 4950514
    },
    {
-    "ticker": "AEON",
-    "company": "AEON Biopharma Inc",
-    "price": 0.27,
-    "volume": 2893752
+    "ticker": "LDI",
+    "company": "LoanDepot Inc",
+    "price": 0.64,
+    "volume": 4854747
+   },
+   {
+    "ticker": "ARAY",
+    "company": "Accuray Inc",
+    "price": 0.28,
+    "volume": 4626309
+   },
+   {
+    "ticker": "CNTB",
+    "company": "Connect Biopharma Holdings Ltd",
+    "price": 0.93,
+    "volume": 4185202
+   },
+   {
+    "ticker": "BTTC",
+    "company": "Black Titan Corp",
+    "price": 0.65,
+    "volume": 4116979
+   },
+   {
+    "ticker": "HRTX",
+    "company": "Heron Therapeutics Inc",
+    "price": 0.35,
+    "volume": 4074594
+   },
+   {
+    "ticker": "GIFT",
+    "company": "Giftify Inc",
+    "price": 0.55,
+    "volume": 4049187
+   },
+   {
+    "ticker": "TNYA",
+    "company": "Tenaya Therapeutics Inc",
+    "price": 0.56,
+    "volume": 3711276
+   },
+   {
+    "ticker": "INV",
+    "company": "Innventure Inc",
+    "price": 0.5,
+    "volume": 3673596
+   },
+   {
+    "ticker": "PDSB",
+    "company": "PDS Biotechnology Corp",
+    "price": 0.75,
+    "volume": 3647315
    },
    {
     "ticker": "ZONE",
     "company": "Zone Frontier Inc",
-    "price": 0.14,
-    "volume": 2560518
+    "price": 0.13,
+    "volume": 3635574
    },
    {
-    "ticker": "GIPR",
-    "company": "Generation Income Properties Inc",
-    "price": 0.41,
-    "volume": 2473257
+    "ticker": "SURG",
+    "company": "Surgepays Inc",
+    "price": 0.15,
+    "volume": 3557449
    },
    {
-    "ticker": "GUTS",
-    "company": "Fractyl Health Inc",
-    "price": 0.41,
-    "volume": 2393897
+    "ticker": "AEON",
+    "company": "AEON Biopharma Inc",
+    "price": 0.28,
+    "volume": 3212237
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
