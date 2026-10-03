@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-03T20:47:00.154Z",
+ "generated": "2026-10-03T23:36:30.172Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-03T20:46:56.927Z",
+  "fetched": "2026-10-03T23:36:26.762Z",
   "rows": [
    {
     "ticker": "DRCT",
@@ -15,17 +15,6 @@
     "price": 0.91,
     "changePct": -39.74,
     "volume": 1414337
-   },
-   {
-    "ticker": "MEGL",
-    "company": "Magic Empire Global Ltd",
-    "sector": "Financial",
-    "industry": "Capital Markets",
-    "country": "Hong Kong",
-    "marketCap": "62.05M",
-    "price": 0.92,
-    "changePct": -8.49,
-    "volume": 35350
    },
    {
     "ticker": "MI",
@@ -62,7 +51,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-03T20:47:00.154Z",
+  "fetched": "2026-10-03T23:36:30.172Z",
   "rows": [
    {
     "ticker": "NIVF",
