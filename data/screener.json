@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-03T13:09:53.394Z",
+ "generated": "2026-10-03T17:31:27.187Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-03T13:09:49.958Z",
+  "fetched": "2026-10-03T17:31:23.856Z",
   "rows": [
    {
     "ticker": "DRCT",
@@ -62,7 +62,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-03T13:09:53.394Z",
+  "fetched": "2026-10-03T17:31:27.187Z",
   "rows": [
    {
     "ticker": "NIVF",
