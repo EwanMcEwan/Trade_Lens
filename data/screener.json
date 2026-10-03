@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-03T01:47:35.919Z",
+ "generated": "2026-10-03T07:47:45.913Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-03T01:47:32.732Z",
+  "fetched": "2026-10-03T07:47:42.637Z",
   "rows": [
    {
     "ticker": "DRCT",
@@ -26,6 +26,17 @@
     "price": 0.92,
     "changePct": -8.49,
     "volume": 35350
+   },
+   {
+    "ticker": "MI",
+    "company": "NFT Ltd",
+    "sector": "Consumer Cyclical",
+    "industry": "Internet Retail",
+    "country": "Hong Kong",
+    "marketCap": "0.55M",
+    "price": 0.89,
+    "changePct": 1.02,
+    "volume": 222025
    },
    {
     "ticker": "NIVF",
@@ -51,7 +62,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-03T01:47:35.919Z",
+  "fetched": "2026-10-03T07:47:45.913Z",
   "rows": [
    {
     "ticker": "NIVF",
