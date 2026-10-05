@@ -1,10 +1,21 @@
 {
- "generated": "2026-10-04T22:26:48.048Z",
+ "generated": "2026-10-05T01:09:52.464Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-04T22:26:44.684Z",
+  "fetched": "2026-10-05T01:09:49.263Z",
   "rows": [
+   {
+    "ticker": "CDT",
+    "company": "CDT Equity Inc",
+    "sector": "Healthcare",
+    "industry": "Biotechnology",
+    "country": "USA",
+    "marketCap": "1.11M",
+    "price": 0.99,
+    "changePct": -20.8,
+    "volume": 1025375
+   },
    {
     "ticker": "DRCT",
     "company": "Direct Digital Holdings Inc",
@@ -51,7 +62,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-04T22:26:48.048Z",
+  "fetched": "2026-10-05T01:09:52.464Z",
   "rows": [
    {
     "ticker": "NIVF",
