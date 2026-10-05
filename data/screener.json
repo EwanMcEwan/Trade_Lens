@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-05T16:56:40.349Z",
+ "generated": "2026-10-05T23:06:13.935Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-05T16:56:36.972Z",
+  "fetched": "2026-10-05T23:06:10.710Z",
   "rows": [
    {
     "ticker": "AGMH",
@@ -11,10 +11,10 @@
     "sector": "Technology",
     "industry": "Computer Hardware",
     "country": "Hong Kong",
-    "marketCap": "4.01M",
-    "price": 0.78,
-    "changePct": 10.77,
-    "volume": 64684842
+    "marketCap": "3.77M",
+    "price": 0.73,
+    "changePct": 4.27,
+    "volume": 69056280
    },
    {
     "ticker": "CDT",
@@ -22,10 +22,10 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "1.05M",
-    "price": 0.94,
-    "changePct": -5.47,
-    "volume": 213331
+    "marketCap": "1.03M",
+    "price": 0.92,
+    "changePct": -7.3,
+    "volume": 349720
    },
    {
     "ticker": "CRIS",
@@ -33,10 +33,32 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "1.58M",
-    "price": 0.76,
-    "changePct": -5.81,
-    "volume": 513731
+    "marketCap": "1.65M",
+    "price": 0.79,
+    "changePct": -1.79,
+    "volume": 557505
+   },
+   {
+    "ticker": "EHGO",
+    "company": "Eshallgo Inc",
+    "sector": "Industrials",
+    "industry": "Business Equipment & Supplies",
+    "country": "China",
+    "marketCap": "3.36M",
+    "price": 0.68,
+    "changePct": 6.02,
+    "volume": 9498483
+   },
+   {
+    "ticker": "GLXG",
+    "company": "Galaxy Payroll Group Ltd",
+    "sector": "Industrials",
+    "industry": "Staffing & Employment Services",
+    "country": "Hong Kong",
+    "marketCap": "2.49M",
+    "price": 0.99,
+    "changePct": -0.51,
+    "volume": 815454
    },
    {
     "ticker": "HLSQ",
@@ -44,21 +66,32 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "country": "USA",
-    "marketCap": "1.16M",
+    "marketCap": "1.17M",
     "price": 0.41,
-    "changePct": 12.61,
-    "volume": 3707791
+    "changePct": 13.89,
+    "volume": 5660482
    },
    {
-    "ticker": "NIVF",
-    "company": "NewGenIvf Group Ltd",
-    "sector": "Healthcare",
-    "industry": "Medical Care Facilities",
-    "country": "Thailand",
-    "marketCap": "0.24M",
-    "price": 0.11,
-    "changePct": -16.36,
-    "volume": 25095997
+    "ticker": "OLOX",
+    "company": "Olenox Industries Inc",
+    "sector": "Industrials",
+    "industry": "Metal Fabrication",
+    "country": "USA",
+    "marketCap": "1.46M",
+    "price": 0.88,
+    "changePct": 4.58,
+    "volume": 50671642
+   },
+   {
+    "ticker": "PMAX",
+    "company": "Powell Max Ltd",
+    "sector": "Financial",
+    "industry": "Capital Markets",
+    "country": "Hong Kong",
+    "marketCap": "1.61M",
+    "price": 0.82,
+    "changePct": -3.68,
+    "volume": 5066182
    },
    {
     "ticker": "REVB",
@@ -66,10 +99,10 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "3.11M",
+    "marketCap": "3.09M",
     "price": 0.78,
-    "changePct": 2.21,
-    "volume": 64255
+    "changePct": 1.77,
+    "volume": 90626
    },
    {
     "ticker": "SBFM",
@@ -77,10 +110,21 @@
     "sector": "Healthcare",
     "industry": "Drug Manufacturers - Specialty & Generic",
     "country": "USA",
-    "marketCap": "1.92M",
-    "price": 0.45,
-    "changePct": -33.11,
-    "volume": 1066855
+    "marketCap": "1.81M",
+    "price": 0.42,
+    "changePct": -36.97,
+    "volume": 2120347
+   },
+   {
+    "ticker": "SHFS",
+    "company": "SHF Holdings Inc",
+    "sector": "Financial",
+    "industry": "Banks - Regional",
+    "country": "USA",
+    "marketCap": "0.90M",
+    "price": 0.88,
+    "changePct": -25.25,
+    "volume": 497388
    },
    {
     "ticker": "VCIG",
@@ -88,10 +132,10 @@
     "sector": "Industrials",
     "industry": "Consulting Services",
     "country": "Malaysia",
-    "marketCap": "1.24M",
-    "price": 0.98,
-    "changePct": -28.55,
-    "volume": 1098320
+    "marketCap": "1.16M",
+    "price": 0.91,
+    "changePct": -33.5,
+    "volume": 1564997
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -106,247 +150,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-05T16:56:40.349Z",
+  "fetched": "2026-10-05T23:06:13.935Z",
   "rows": [
    {
     "ticker": "BEAT",
     "company": "HeartBeam Inc",
-    "price": 0.76,
-    "volume": 335198956
+    "price": 0.65,
+    "volume": 403519751
+   },
+   {
+    "ticker": "SCKT",
+    "company": "Socket Mobile Inc",
+    "price": 0.93,
+    "volume": 78519991
    },
    {
     "ticker": "AGMH",
     "company": "AGM Group Holdings Inc",
-    "price": 0.78,
-    "volume": 64684842
+    "price": 0.73,
+    "volume": 69056280
    },
    {
     "ticker": "FNGR",
     "company": "FingerMotion Inc",
-    "price": 0.28,
-    "volume": 56298558
+    "price": 0.27,
+    "volume": 64455542
    },
    {
     "ticker": "SDST",
     "company": "Stardust Power Inc",
-    "price": 0.1,
-    "volume": 38674037
+    "price": 0.09,
+    "volume": 51465208
+   },
+   {
+    "ticker": "OLOX",
+    "company": "Olenox Industries Inc",
+    "price": 0.88,
+    "volume": 50671642
    },
    {
     "ticker": "BTTC",
     "company": "Black Titan Corp",
-    "price": 0.68,
-    "volume": 30965171
+    "price": 0.62,
+    "volume": 32604256
    },
    {
     "ticker": "NIVF",
     "company": "NewGenIvf Group Ltd",
     "price": 0.11,
-    "volume": 25095997
+    "volume": 29883945
    },
    {
     "ticker": "QNME",
     "company": "Quanome Technologies Inc",
-    "price": 0.6,
-    "volume": 22658404
+    "price": 0.58,
+    "volume": 23756989
    },
    {
     "ticker": "VERI",
     "company": "Veritone Inc",
-    "price": 0.8,
-    "volume": 13280869
-   },
-   {
-    "ticker": "GNS",
-    "company": "Genius Group Ltd",
-    "price": 0.16,
-    "volume": 13143353
-   },
-   {
-    "ticker": "DDC",
-    "company": "DDC Enterprise Ltd",
-    "price": 0.22,
-    "volume": 12827125
-   },
-   {
-    "ticker": "ADBT",
-    "company": "Advasa Holdings Inc",
-    "price": 0.14,
-    "volume": 12619982
-   },
-   {
-    "ticker": "TWG",
-    "company": "Top Wealth Group Holding Ltd",
-    "price": 0.1,
-    "volume": 12442918
+    "price": 0.73,
+    "volume": 20058599
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
     "price": 0.84,
-    "volume": 11081976
+    "volume": 20053360
    },
    {
-    "ticker": "CYAB",
-    "company": "Cyabra Inc",
-    "price": 0.21,
-    "volume": 9696217
+    "ticker": "LESL",
+    "company": "Leslies Inc",
+    "price": 0.1,
+    "volume": 20006230
+   },
+   {
+    "ticker": "GNS",
+    "company": "Genius Group Ltd",
+    "price": 0.16,
+    "volume": 19439302
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
-    "price": 0.15,
-    "volume": 9676705
+    "price": 0.16,
+    "volume": 18837610
+   },
+   {
+    "ticker": "CMPX",
+    "company": "Compass Therapeutics Inc",
+    "price": 0.96,
+    "volume": 15824569
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
-    "price": 0.17,
-    "volume": 9642402
+    "price": 0.16,
+    "volume": 15504864
+   },
+   {
+    "ticker": "DDC",
+    "company": "DDC Enterprise Ltd",
+    "price": 0.22,
+    "volume": 14889086
+   },
+   {
+    "ticker": "ADBT",
+    "company": "Advasa Holdings Inc",
+    "price": 0.13,
+    "volume": 14257212
+   },
+   {
+    "ticker": "TWG",
+    "company": "Top Wealth Group Holding Ltd",
+    "price": 0.1,
+    "volume": 14125506
+   },
+   {
+    "ticker": "GOVX",
+    "company": "Geovax Labs Inc",
+    "price": 0.32,
+    "volume": 11473474
    },
    {
     "ticker": "SOAR",
     "company": "Volato Group Inc",
     "price": 0.26,
-    "volume": 8505432
+    "volume": 10988303
    },
    {
-    "ticker": "LESL",
-    "company": "Leslies Inc",
-    "price": 0.11,
-    "volume": 8145090
+    "ticker": "CYAB",
+    "company": "Cyabra Inc",
+    "price": 0.21,
+    "volume": 10979329
+   },
+   {
+    "ticker": "AXG",
+    "company": "Solowin Holdings",
+    "price": 0.1,
+    "volume": 9816370
+   },
+   {
+    "ticker": "EHGO",
+    "company": "Eshallgo Inc",
+    "price": 0.68,
+    "volume": 9498483
    },
    {
     "ticker": "EDVA",
     "company": "Endovia Health Sciences Inc",
     "price": 0.17,
-    "volume": 8121488
+    "volume": 9027714
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
     "price": 0.33,
-    "volume": 6077379
+    "volume": 8110513
    },
    {
-    "ticker": "CMPX",
-    "company": "Compass Therapeutics Inc",
-    "price": 0.94,
-    "volume": 5773326
+    "ticker": "SGLY",
+    "company": "Singularity Future Technology Ltd",
+    "price": 0.98,
+    "volume": 7506817
    },
    {
-    "ticker": "ALDX",
-    "company": "Aldeyra Therapeutics Inc",
-    "price": 0.93,
-    "volume": 5084965
+    "ticker": "AKBA",
+    "company": "Akebia Therapeutics Inc",
+    "price": 0.91,
+    "volume": 7505078
    },
    {
     "ticker": "SRFM",
     "company": "Surf Air Mobility Inc",
     "price": 0.89,
-    "volume": 4729235
+    "volume": 7492773
    },
    {
-    "ticker": "AXG",
-    "company": "Solowin Holdings",
-    "price": 0.12,
-    "volume": 4610575
+    "ticker": "ALDX",
+    "company": "Aldeyra Therapeutics Inc",
+    "price": 0.92,
+    "volume": 7026441
+   },
+   {
+    "ticker": "SLGB",
+    "company": "Smart Logistics Global Ltd",
+    "price": 0.3,
+    "volume": 6557530
    },
    {
     "ticker": "HUMA",
     "company": "Humacyte Inc",
     "price": 0.5,
-    "volume": 4339349
-   },
-   {
-    "ticker": "MOBX",
-    "company": "Mobix Labs Inc",
-    "price": 0.66,
-    "volume": 3925197
-   },
-   {
-    "ticker": "AKBA",
-    "company": "Akebia Therapeutics Inc",
-    "price": 0.89,
-    "volume": 3723343
+    "volume": 6440567
    },
    {
     "ticker": "HLSQ",
     "company": "Tessera Defense and Homeland Security Inc",
     "price": 0.41,
-    "volume": 3707791
+    "volume": 5660482
    },
    {
-    "ticker": "FLUX",
-    "company": "Flux Power Holdings inc",
-    "price": 0.53,
-    "volume": 3539213
+    "ticker": "MOBX",
+    "company": "Mobix Labs Inc",
+    "price": 0.65,
+    "volume": 5527917
+   },
+   {
+    "ticker": "IVVD",
+    "company": "Invivyd Inc",
+    "price": 0.84,
+    "volume": 5423624
    },
    {
     "ticker": "EVTL",
     "company": "Vertical Aerospace Ltd",
     "price": 0.54,
-    "volume": 3427426
+    "volume": 5191409
    },
    {
-    "ticker": "IVVD",
-    "company": "Invivyd Inc",
-    "price": 0.81,
-    "volume": 3402624
+    "ticker": "PMAX",
+    "company": "Powell Max Ltd",
+    "price": 0.82,
+    "volume": 5066182
    },
    {
-    "ticker": "COSM",
-    "company": "Cosmos Health Inc",
-    "price": 0.34,
-    "volume": 3026739
-   },
-   {
-    "ticker": "FTHM",
-    "company": "Fathom Holdings Inc",
-    "price": 0.24,
-    "volume": 2917934
-   },
-   {
-    "ticker": "SAFX",
-    "company": "XCF Global Inc",
-    "price": 0.31,
-    "volume": 2373166
-   },
-   {
-    "ticker": "DTSS",
-    "company": "Datasea Intelligent Technology Ltd",
-    "price": 0.73,
-    "volume": 2268897
+    "ticker": "CCTG",
+    "company": "CCSC Technology International Holdings Ltd",
+    "price": 0.46,
+    "volume": 4864381
    },
    {
     "ticker": "OTLK",
     "company": "Outlook Therapeutics Inc",
-    "price": 0.59,
-    "volume": 2216401
+    "price": 0.6,
+    "volume": 4670267
    },
    {
-    "ticker": "DEFT",
-    "company": "DeFi Technologies Inc",
-    "price": 0.5,
-    "volume": 2035518
-   },
-   {
-    "ticker": "ZONE",
-    "company": "Zone Frontier Inc",
-    "price": 0.13,
-    "volume": 1909179
-   },
-   {
-    "ticker": "BZAI",
-    "company": "Blaize Holdings Inc",
-    "price": 0.43,
-    "volume": 1882090
-   },
-   {
-    "ticker": "TNYA",
-    "company": "Tenaya Therapeutics Inc",
-    "price": 0.56,
-    "volume": 1662004
+    "ticker": "FLUX",
+    "company": "Flux Power Holdings inc",
+    "price": 0.51,
+    "volume": 4210157
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
