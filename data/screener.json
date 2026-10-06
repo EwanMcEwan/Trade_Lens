@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-05T23:06:13.935Z",
+ "generated": "2026-10-06T03:13:53.834Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-05T23:06:10.710Z",
+  "fetched": "2026-10-06T03:13:50.415Z",
   "rows": [
    {
     "ticker": "AGMH",
@@ -14,7 +14,7 @@
     "marketCap": "3.77M",
     "price": 0.73,
     "changePct": 4.27,
-    "volume": 69056280
+    "volume": 69171815
    },
    {
     "ticker": "CDT",
@@ -25,7 +25,7 @@
     "marketCap": "1.03M",
     "price": 0.92,
     "changePct": -7.3,
-    "volume": 349720
+    "volume": 352777
    },
    {
     "ticker": "CRIS",
@@ -36,7 +36,7 @@
     "marketCap": "1.65M",
     "price": 0.79,
     "changePct": -1.79,
-    "volume": 557505
+    "volume": 557504
    },
    {
     "ticker": "EHGO",
@@ -47,7 +47,7 @@
     "marketCap": "3.36M",
     "price": 0.68,
     "changePct": 6.02,
-    "volume": 9498483
+    "volume": 9511317
    },
    {
     "ticker": "GLXG",
@@ -58,7 +58,7 @@
     "marketCap": "2.49M",
     "price": 0.99,
     "changePct": -0.51,
-    "volume": 815454
+    "volume": 820222
    },
    {
     "ticker": "HLSQ",
@@ -69,7 +69,7 @@
     "marketCap": "1.17M",
     "price": 0.41,
     "changePct": 13.89,
-    "volume": 5660482
+    "volume": 5705788
    },
    {
     "ticker": "OLOX",
@@ -80,7 +80,7 @@
     "marketCap": "1.46M",
     "price": 0.88,
     "changePct": 4.58,
-    "volume": 50671642
+    "volume": 53730925
    },
    {
     "ticker": "PMAX",
@@ -91,7 +91,7 @@
     "marketCap": "1.61M",
     "price": 0.82,
     "changePct": -3.68,
-    "volume": 5066182
+    "volume": 5116403
    },
    {
     "ticker": "REVB",
@@ -113,7 +113,7 @@
     "marketCap": "1.81M",
     "price": 0.42,
     "changePct": -36.97,
-    "volume": 2120347
+    "volume": 2130332
    },
    {
     "ticker": "SHFS",
@@ -124,7 +124,7 @@
     "marketCap": "0.90M",
     "price": 0.88,
     "changePct": -25.25,
-    "volume": 497388
+    "volume": 509275
    },
    {
     "ticker": "VCIG",
@@ -135,7 +135,7 @@
     "marketCap": "1.16M",
     "price": 0.91,
     "changePct": -33.5,
-    "volume": 1564997
+    "volume": 1574583
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -150,247 +150,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-05T23:06:13.935Z",
+  "fetched": "2026-10-06T03:13:53.834Z",
   "rows": [
    {
     "ticker": "BEAT",
     "company": "HeartBeam Inc",
     "price": 0.65,
-    "volume": 403519751
+    "volume": 404235129
    },
    {
     "ticker": "SCKT",
     "company": "Socket Mobile Inc",
     "price": 0.93,
-    "volume": 78519991
+    "volume": 78611627
    },
    {
     "ticker": "AGMH",
     "company": "AGM Group Holdings Inc",
     "price": 0.73,
-    "volume": 69056280
+    "volume": 69171815
    },
    {
     "ticker": "FNGR",
     "company": "FingerMotion Inc",
     "price": 0.27,
-    "volume": 64455542
-   },
-   {
-    "ticker": "SDST",
-    "company": "Stardust Power Inc",
-    "price": 0.09,
-    "volume": 51465208
+    "volume": 64591612
    },
    {
     "ticker": "OLOX",
     "company": "Olenox Industries Inc",
     "price": 0.88,
-    "volume": 50671642
+    "volume": 53730925
+   },
+   {
+    "ticker": "SDST",
+    "company": "Stardust Power Inc",
+    "price": 0.09,
+    "volume": 51785358
    },
    {
     "ticker": "BTTC",
     "company": "Black Titan Corp",
     "price": 0.62,
-    "volume": 32604256
+    "volume": 32654470
    },
    {
     "ticker": "NIVF",
     "company": "NewGenIvf Group Ltd",
     "price": 0.11,
-    "volume": 29883945
+    "volume": 30150702
    },
    {
     "ticker": "QNME",
     "company": "Quanome Technologies Inc",
     "price": 0.58,
-    "volume": 23756989
-   },
-   {
-    "ticker": "VERI",
-    "company": "Veritone Inc",
-    "price": 0.73,
-    "volume": 20058599
-   },
-   {
-    "ticker": "SES",
-    "company": "SES AI Corp",
-    "price": 0.84,
-    "volume": 20053360
+    "volume": 23828499
    },
    {
     "ticker": "LESL",
     "company": "Leslies Inc",
     "price": 0.1,
-    "volume": 20006230
+    "volume": 20706613
+   },
+   {
+    "ticker": "SES",
+    "company": "SES AI Corp",
+    "price": 0.84,
+    "volume": 20091567
+   },
+   {
+    "ticker": "VERI",
+    "company": "Veritone Inc",
+    "price": 0.73,
+    "volume": 20066996
    },
    {
     "ticker": "GNS",
     "company": "Genius Group Ltd",
     "price": 0.16,
-    "volume": 19439302
+    "volume": 19741603
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.16,
-    "volume": 18837610
-   },
-   {
-    "ticker": "CMPX",
-    "company": "Compass Therapeutics Inc",
-    "price": 0.96,
-    "volume": 15824569
+    "volume": 18944711
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
     "price": 0.16,
-    "volume": 15504864
+    "volume": 16150884
+   },
+   {
+    "ticker": "CMPX",
+    "company": "Compass Therapeutics Inc",
+    "price": 0.96,
+    "volume": 15831951
    },
    {
     "ticker": "DDC",
     "company": "DDC Enterprise Ltd",
     "price": 0.22,
-    "volume": 14889086
+    "volume": 14950004
    },
    {
     "ticker": "ADBT",
     "company": "Advasa Holdings Inc",
     "price": 0.13,
-    "volume": 14257212
+    "volume": 14387903
    },
    {
     "ticker": "TWG",
     "company": "Top Wealth Group Holding Ltd",
     "price": 0.1,
-    "volume": 14125506
+    "volume": 14156508
    },
    {
     "ticker": "GOVX",
     "company": "Geovax Labs Inc",
     "price": 0.32,
-    "volume": 11473474
+    "volume": 11583753
    },
    {
     "ticker": "SOAR",
     "company": "Volato Group Inc",
     "price": 0.26,
-    "volume": 10988303
+    "volume": 11076947
    },
    {
     "ticker": "CYAB",
     "company": "Cyabra Inc",
     "price": 0.21,
-    "volume": 10979329
+    "volume": 11002830
    },
    {
     "ticker": "AXG",
     "company": "Solowin Holdings",
     "price": 0.1,
-    "volume": 9816370
+    "volume": 10009511
    },
    {
     "ticker": "EHGO",
     "company": "Eshallgo Inc",
     "price": 0.68,
-    "volume": 9498483
+    "volume": 9511317
    },
    {
     "ticker": "EDVA",
     "company": "Endovia Health Sciences Inc",
     "price": 0.17,
-    "volume": 9027714
+    "volume": 9037784
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
     "price": 0.33,
-    "volume": 8110513
+    "volume": 8119887
    },
    {
     "ticker": "SGLY",
     "company": "Singularity Future Technology Ltd",
     "price": 0.98,
-    "volume": 7506817
-   },
-   {
-    "ticker": "AKBA",
-    "company": "Akebia Therapeutics Inc",
-    "price": 0.91,
-    "volume": 7505078
+    "volume": 7546928
    },
    {
     "ticker": "SRFM",
     "company": "Surf Air Mobility Inc",
     "price": 0.89,
-    "volume": 7492773
+    "volume": 7508408
+   },
+   {
+    "ticker": "AKBA",
+    "company": "Akebia Therapeutics Inc",
+    "price": 0.91,
+    "volume": 7505272
    },
    {
     "ticker": "ALDX",
     "company": "Aldeyra Therapeutics Inc",
     "price": 0.92,
-    "volume": 7026441
+    "volume": 7027895
    },
    {
     "ticker": "SLGB",
     "company": "Smart Logistics Global Ltd",
     "price": 0.3,
-    "volume": 6557530
+    "volume": 6615785
    },
    {
     "ticker": "HUMA",
     "company": "Humacyte Inc",
     "price": 0.5,
-    "volume": 6440567
+    "volume": 6449385
    },
    {
     "ticker": "HLSQ",
     "company": "Tessera Defense and Homeland Security Inc",
     "price": 0.41,
-    "volume": 5660482
+    "volume": 5705788
    },
    {
     "ticker": "MOBX",
     "company": "Mobix Labs Inc",
     "price": 0.65,
-    "volume": 5527917
+    "volume": 5555226
    },
    {
     "ticker": "IVVD",
     "company": "Invivyd Inc",
     "price": 0.84,
-    "volume": 5423624
+    "volume": 5425520
    },
    {
     "ticker": "EVTL",
     "company": "Vertical Aerospace Ltd",
     "price": 0.54,
-    "volume": 5191409
+    "volume": 5203559
    },
    {
     "ticker": "PMAX",
     "company": "Powell Max Ltd",
     "price": 0.82,
-    "volume": 5066182
+    "volume": 5116403
    },
    {
     "ticker": "CCTG",
     "company": "CCSC Technology International Holdings Ltd",
     "price": 0.46,
-    "volume": 4864381
+    "volume": 4889398
    },
    {
     "ticker": "OTLK",
     "company": "Outlook Therapeutics Inc",
     "price": 0.6,
-    "volume": 4670267
+    "volume": 4687733
    },
    {
     "ticker": "FLUX",
     "company": "Flux Power Holdings inc",
     "price": 0.51,
-    "volume": 4210157
+    "volume": 4215223
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
