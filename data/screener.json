@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-07T01:16:00.137Z",
+ "generated": "2026-10-07T07:35:57.208Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-07T01:15:56.721Z",
+  "fetched": "2026-10-07T07:35:53.758Z",
   "rows": [
    {
     "ticker": "CDT",
@@ -11,7 +11,7 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "1.04M",
+    "marketCap": "1.05M",
     "price": 0.93,
     "changePct": 1.35,
     "volume": 918295
@@ -66,7 +66,7 @@
     "sector": "Healthcare",
     "industry": "Drug Manufacturers - Specialty & Generic",
     "country": "USA",
-    "marketCap": "1.71M",
+    "marketCap": "1.72M",
     "price": 0.4,
     "changePct": -5.28,
     "volume": 4524645
@@ -77,7 +77,7 @@
     "sector": "Technology",
     "industry": "Information Technology Services",
     "country": "Singapore",
-    "marketCap": "0.62M",
+    "marketCap": "1.45M",
     "price": 0.76,
     "changePct": -32.15,
     "volume": 3930104
@@ -106,7 +106,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-07T01:16:00.137Z",
+  "fetched": "2026-10-07T07:35:57.208Z",
   "rows": [
    {
     "ticker": "OLB",
