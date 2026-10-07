@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-06T21:49:01.378Z",
+ "generated": "2026-10-07T01:16:00.137Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-06T21:48:57.892Z",
+  "fetched": "2026-10-07T01:15:56.721Z",
   "rows": [
    {
     "ticker": "CDT",
@@ -14,7 +14,7 @@
     "marketCap": "1.04M",
     "price": 0.93,
     "changePct": 1.35,
-    "volume": 442481
+    "volume": 918295
    },
    {
     "ticker": "FRGT",
@@ -25,7 +25,7 @@
     "marketCap": "0.20M",
     "price": 0.32,
     "changePct": 31.43,
-    "volume": 330058933
+    "volume": 332060072
    },
    {
     "ticker": "HLSQ",
@@ -36,7 +36,7 @@
     "marketCap": "0.89M",
     "price": 0.31,
     "changePct": -24.24,
-    "volume": 2124803
+    "volume": 2152714
    },
    {
     "ticker": "NXAT",
@@ -47,7 +47,7 @@
     "marketCap": "2.02M",
     "price": 0.75,
     "changePct": -13.37,
-    "volume": 12839271
+    "volume": 12869223
    },
    {
     "ticker": "RUBI",
@@ -58,7 +58,7 @@
     "marketCap": "1.75M",
     "price": 0.65,
     "changePct": -6.56,
-    "volume": 29958299
+    "volume": 30107407
    },
    {
     "ticker": "SBFM",
@@ -69,7 +69,7 @@
     "marketCap": "1.71M",
     "price": 0.4,
     "changePct": -5.28,
-    "volume": 4484239
+    "volume": 4524645
    },
    {
     "ticker": "SGRX",
@@ -80,7 +80,7 @@
     "marketCap": "0.62M",
     "price": 0.76,
     "changePct": -32.15,
-    "volume": 3915241
+    "volume": 3930104
    },
    {
     "ticker": "SHFS",
@@ -91,7 +91,7 @@
     "marketCap": "0.72M",
     "price": 0.7,
     "changePct": -20.62,
-    "volume": 961047
+    "volume": 980230
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -106,247 +106,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-06T21:49:01.378Z",
+  "fetched": "2026-10-07T01:16:00.137Z",
   "rows": [
    {
     "ticker": "OLB",
     "company": "OLB Group Inc",
     "price": 0.41,
-    "volume": 759002273
+    "volume": 765745157
    },
    {
     "ticker": "FRGT",
     "company": "Freight Technologies Inc",
     "price": 0.32,
-    "volume": 330058933
+    "volume": 332060072
    },
    {
     "ticker": "ARAI",
     "company": "Arrive AI Inc",
     "price": 0.2,
-    "volume": 180923194
+    "volume": 181774772
    },
    {
     "ticker": "AXG",
     "company": "Solowin Holdings",
     "price": 0.11,
-    "volume": 167834240
+    "volume": 168808932
    },
    {
     "ticker": "XHLD",
     "company": "TEN Holdings Inc",
     "price": 0.62,
-    "volume": 148811235
+    "volume": 149635456
    },
    {
     "ticker": "SDST",
     "company": "Stardust Power Inc",
     "price": 0.08,
-    "volume": 51662185
+    "volume": 52392988
    },
    {
     "ticker": "BFRG",
     "company": "Bullfrog AI Holdings Inc",
     "price": 0.69,
-    "volume": 37387161
+    "volume": 37766942
    },
    {
     "ticker": "RUBI",
     "company": "Rubico Inc",
     "price": 0.65,
-    "volume": 29958299
+    "volume": 30107407
    },
    {
     "ticker": "DVLT",
     "company": "Datavault AI Inc",
     "price": 0.15,
-    "volume": 27713289
+    "volume": 28325125
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
     "price": 0.79,
-    "volume": 26429647
-   },
-   {
-    "ticker": "SOAR",
-    "company": "Volato Group Inc",
-    "price": 0.28,
-    "volume": 21323932
-   },
-   {
-    "ticker": "RMSG",
-    "company": "Real Messenger Corp",
-    "price": 0.32,
-    "volume": 19488033
+    "volume": 26558253
    },
    {
     "ticker": "GIPR",
     "company": "Generation Income Properties Inc",
     "price": 0.38,
-    "volume": 19204543
+    "volume": 22640588
    },
    {
-    "ticker": "BEAT",
-    "company": "HeartBeam Inc",
-    "price": 0.58,
-    "volume": 18036823
+    "ticker": "SOAR",
+    "company": "Volato Group Inc",
+    "price": 0.28,
+    "volume": 21915223
+   },
+   {
+    "ticker": "RMSG",
+    "company": "Real Messenger Corp",
+    "price": 0.32,
+    "volume": 19609319
    },
    {
     "ticker": "GPUS",
     "company": "Hyperscale Data Inc",
     "price": 0.16,
-    "volume": 17749373
+    "volume": 18594571
+   },
+   {
+    "ticker": "BEAT",
+    "company": "HeartBeam Inc",
+    "price": 0.58,
+    "volume": 18324876
    },
    {
     "ticker": "FNGR",
     "company": "FingerMotion Inc",
     "price": 0.22,
-    "volume": 17362849
-   },
-   {
-    "ticker": "WHLR",
-    "company": "Wheeler Real Estate Investment Trust Inc",
-    "price": 0.91,
-    "volume": 14882587
-   },
-   {
-    "ticker": "BZAI",
-    "company": "Blaize Holdings Inc",
-    "price": 0.29,
-    "volume": 14335526
-   },
-   {
-    "ticker": "PBK",
-    "company": "PowerBank Corp",
-    "price": 0.25,
-    "volume": 14251169
-   },
-   {
-    "ticker": "NXAT",
-    "company": "Nexus Advanced Technologies Inc",
-    "price": 0.75,
-    "volume": 12839271
-   },
-   {
-    "ticker": "CIRC",
-    "company": "Circle8 Group Inc",
-    "price": 0.5,
-    "volume": 12014979
-   },
-   {
-    "ticker": "NIVF",
-    "company": "NewGenIvf Group Ltd",
-    "price": 0.1,
-    "volume": 12000496
-   },
-   {
-    "ticker": "GNS",
-    "company": "Genius Group Ltd",
-    "price": 0.15,
-    "volume": 10911214
-   },
-   {
-    "ticker": "BRN",
-    "company": "Barnwell Industries Inc",
-    "price": 0.96,
-    "volume": 9820590
-   },
-   {
-    "ticker": "DDC",
-    "company": "DDC Enterprise Ltd",
-    "price": 0.2,
-    "volume": 8765565
-   },
-   {
-    "ticker": "ALDX",
-    "company": "Aldeyra Therapeutics Inc",
-    "price": 0.92,
-    "volume": 8230137
-   },
-   {
-    "ticker": "GCDT",
-    "company": "Green Circle Decarbonize Technology Ltd",
-    "price": 0.23,
-    "volume": 8008574
+    "volume": 17810337
    },
    {
     "ticker": "MTEN",
     "company": "Mingteng International Corp Inc",
     "price": 0.96,
-    "volume": 7993714
+    "volume": 17640250
+   },
+   {
+    "ticker": "WHLR",
+    "company": "Wheeler Real Estate Investment Trust Inc",
+    "price": 0.91,
+    "volume": 15091171
+   },
+   {
+    "ticker": "BZAI",
+    "company": "Blaize Holdings Inc",
+    "price": 0.29,
+    "volume": 14500593
+   },
+   {
+    "ticker": "PBK",
+    "company": "PowerBank Corp",
+    "price": 0.25,
+    "volume": 14416228
+   },
+   {
+    "ticker": "NXAT",
+    "company": "Nexus Advanced Technologies Inc",
+    "price": 0.75,
+    "volume": 12869223
+   },
+   {
+    "ticker": "NIVF",
+    "company": "NewGenIvf Group Ltd",
+    "price": 0.1,
+    "volume": 12520279
+   },
+   {
+    "ticker": "CIRC",
+    "company": "Circle8 Group Inc",
+    "price": 0.5,
+    "volume": 12111392
+   },
+   {
+    "ticker": "GNS",
+    "company": "Genius Group Ltd",
+    "price": 0.15,
+    "volume": 11142035
+   },
+   {
+    "ticker": "BRN",
+    "company": "Barnwell Industries Inc",
+    "price": 0.96,
+    "volume": 9852806
+   },
+   {
+    "ticker": "DDC",
+    "company": "DDC Enterprise Ltd",
+    "price": 0.2,
+    "volume": 8929315
+   },
+   {
+    "ticker": "ALDX",
+    "company": "Aldeyra Therapeutics Inc",
+    "price": 0.92,
+    "volume": 8234452
+   },
+   {
+    "ticker": "GCDT",
+    "company": "Green Circle Decarbonize Technology Ltd",
+    "price": 0.23,
+    "volume": 8208299
    },
    {
     "ticker": "EVTL",
     "company": "Vertical Aerospace Ltd",
     "price": 0.56,
-    "volume": 7955295
-   },
-   {
-    "ticker": "CMPX",
-    "company": "Compass Therapeutics Inc",
-    "price": 1,
-    "volume": 7281594
+    "volume": 7957120
    },
    {
     "ticker": "TWG",
     "company": "Top Wealth Group Holding Ltd",
     "price": 0.1,
-    "volume": 7150260
+    "volume": 7568352
+   },
+   {
+    "ticker": "CMPX",
+    "company": "Compass Therapeutics Inc",
+    "price": 1,
+    "volume": 7286326
    },
    {
     "ticker": "BJDX",
     "company": "Bluejay Diagnostics Inc",
     "price": 0.81,
-    "volume": 6900924
-   },
-   {
-    "ticker": "AKBA",
-    "company": "Akebia Therapeutics Inc",
-    "price": 0.88,
-    "volume": 6178138
+    "volume": 6934006
    },
    {
     "ticker": "ADBT",
     "company": "Advasa Holdings Inc",
     "price": 0.12,
-    "volume": 5971559
+    "volume": 6318704
+   },
+   {
+    "ticker": "AKBA",
+    "company": "Akebia Therapeutics Inc",
+    "price": 0.88,
+    "volume": 6178611
+   },
+   {
+    "ticker": "TOPP",
+    "company": "Toppoint Holdings Inc",
+    "price": 0.11,
+    "volume": 5768064
    },
    {
     "ticker": "CAN",
     "company": "Canaan Inc ADR",
     "price": 0.32,
-    "volume": 5289830
+    "volume": 5369093
    },
    {
     "ticker": "SAFX",
     "company": "XCF Global Inc",
     "price": 0.3,
-    "volume": 5249481
+    "volume": 5283082
    },
    {
     "ticker": "IVVD",
     "company": "Invivyd Inc",
     "price": 0.81,
-    "volume": 5032271
+    "volume": 5048786
    },
    {
     "ticker": "SBFM",
     "company": "Sunshine Biopharma Inc",
     "price": 0.4,
-    "volume": 4484239
-   },
-   {
-    "ticker": "COSM",
-    "company": "Cosmos Health Inc",
-    "price": 0.32,
-    "volume": 4469288
+    "volume": 4524645
    },
    {
     "ticker": "RCT",
     "company": "RedCloud Holdings PLC",
     "price": 0.13,
-    "volume": 4426341
+    "volume": 4503098
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
