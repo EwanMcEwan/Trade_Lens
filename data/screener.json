@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-08T00:49:45.418Z",
+ "generated": "2026-10-08T07:07:39.461Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-08T00:49:42.014Z",
+  "fetched": "2026-10-08T07:07:36.255Z",
   "rows": [
    {
     "ticker": "CDT",
@@ -33,7 +33,7 @@
     "sector": "Real Estate",
     "industry": "REIT - Diversified",
     "country": "USA",
-    "marketCap": "1.51M",
+    "marketCap": "1.50M",
     "price": 0.49,
     "changePct": 29.8,
     "volume": 143692849
@@ -44,7 +44,7 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "country": "USA",
-    "marketCap": "0.89M",
+    "marketCap": "0.88M",
     "price": 0.31,
     "changePct": -0.45,
     "volume": 1828535
@@ -55,7 +55,7 @@
     "sector": "Healthcare",
     "industry": "Biotechnology",
     "country": "USA",
-    "marketCap": "2.94M",
+    "marketCap": "2.95M",
     "price": 0.87,
     "changePct": -24.35,
     "volume": 1098886
@@ -77,7 +77,7 @@
     "sector": "Healthcare",
     "industry": "Medical Care Facilities",
     "country": "Thailand",
-    "marketCap": "0.24M",
+    "marketCap": "3.75M",
     "price": 0.11,
     "changePct": 7.4,
     "volume": 162669018
@@ -99,7 +99,7 @@
     "sector": "Healthcare",
     "industry": "Drug Manufacturers - Specialty & Generic",
     "country": "USA",
-    "marketCap": "3.03M",
+    "marketCap": "3.02M",
     "price": 0.7,
     "changePct": 75.92,
     "volume": 177959497
@@ -139,7 +139,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-08T00:49:45.418Z",
+  "fetched": "2026-10-08T07:07:39.461Z",
   "rows": [
    {
     "ticker": "TOPP",
