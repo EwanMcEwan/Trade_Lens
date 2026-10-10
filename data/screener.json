@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-10T06:14:38.181Z",
+ "generated": "2026-10-10T12:54:57.170Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-10T06:14:34.623Z",
+  "fetched": "2026-10-10T12:54:54.005Z",
   "rows": [
    {
     "ticker": "CDT",
@@ -55,7 +55,7 @@
     "sector": "Consumer Cyclical",
     "industry": "Internet Retail",
     "country": "Hong Kong",
-    "marketCap": "0.56M",
+    "marketCap": "0.55M",
     "price": 0.9,
     "changePct": 1.22,
     "volume": 43143244
@@ -77,7 +77,7 @@
     "sector": "Healthcare",
     "industry": "Drug Manufacturers - Specialty & Generic",
     "country": "China",
-    "marketCap": "0.19M",
+    "marketCap": "0.20M",
     "price": 0.15,
     "changePct": -56.71,
     "volume": 116276137
@@ -106,7 +106,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-10T06:14:38.181Z",
+  "fetched": "2026-10-10T12:54:57.170Z",
   "rows": [
    {
     "ticker": "OFAL",
