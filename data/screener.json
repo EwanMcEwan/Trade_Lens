@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-10T17:41:57.250Z",
+ "generated": "2026-10-10T21:20:53.501Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-10T17:41:54.044Z",
+  "fetched": "2026-10-10T21:20:50.064Z",
   "rows": [
    {
     "ticker": "CDT",
@@ -106,7 +106,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-10T17:41:57.250Z",
+  "fetched": "2026-10-10T21:20:53.501Z",
   "rows": [
    {
     "ticker": "OFAL",
