@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-17T00:18:02.095Z",
+ "generated": "2026-10-17T04:51:44.279Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-17T00:17:58.688Z",
+  "fetched": "2026-10-17T04:51:41.064Z",
   "rows": [
    {
     "ticker": "CDT",
@@ -172,7 +172,7 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-17T00:18:02.095Z",
+  "fetched": "2026-10-17T04:51:44.279Z",
   "rows": [
    {
     "ticker": "HODO",
