@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-16T21:58:01.855Z",
+ "generated": "2026-10-17T00:18:02.095Z",
  "finviz": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-16T21:57:58.426Z",
+  "fetched": "2026-10-17T00:17:58.688Z",
   "rows": [
    {
     "ticker": "CDT",
@@ -14,7 +14,7 @@
     "marketCap": "0.27M",
     "price": 0.24,
     "changePct": 12.49,
-    "volume": 11718280
+    "volume": 11867976
    },
    {
     "ticker": "CRIS",
@@ -25,7 +25,7 @@
     "marketCap": "0.85M",
     "price": 0.41,
     "changePct": -19.86,
-    "volume": 1328541
+    "volume": 1338640
    },
    {
     "ticker": "DKI",
@@ -36,7 +36,7 @@
     "marketCap": "0.11M",
     "price": 0.05,
     "changePct": -14.72,
-    "volume": 95274042
+    "volume": 97393490
    },
    {
     "ticker": "HUBC",
@@ -47,7 +47,7 @@
     "marketCap": "0.71M",
     "price": 0.4,
     "changePct": 3.26,
-    "volume": 3424310
+    "volume": 3562389
    },
    {
     "ticker": "LHSW",
@@ -58,7 +58,7 @@
     "marketCap": "2.42M",
     "price": 0.7,
     "changePct": 46.66,
-    "volume": 27122357
+    "volume": 27473384
    },
    {
     "ticker": "LRHC",
@@ -69,7 +69,7 @@
     "marketCap": "0.43M",
     "price": 0.76,
     "changePct": -15.43,
-    "volume": 8637035
+    "volume": 8661240
    },
    {
     "ticker": "RBNE",
@@ -80,7 +80,7 @@
     "marketCap": "1.04M",
     "price": 0.78,
     "changePct": -59.79,
-    "volume": 816105
+    "volume": 831435
    },
    {
     "ticker": "REVB",
@@ -91,7 +91,7 @@
     "marketCap": "1.93M",
     "price": 0.48,
     "changePct": -36.41,
-    "volume": 635201
+    "volume": 637093
    },
    {
     "ticker": "RUBI",
@@ -102,7 +102,7 @@
     "marketCap": "1.05M",
     "price": 0.39,
     "changePct": 21.81,
-    "volume": 65231407
+    "volume": 67848344
    },
    {
     "ticker": "SGRX",
@@ -113,7 +113,7 @@
     "marketCap": "1.65M",
     "price": 0.87,
     "changePct": 26.78,
-    "volume": 159864997
+    "volume": 160656406
    },
    {
     "ticker": "SHFS",
@@ -124,7 +124,7 @@
     "marketCap": "0.15M",
     "price": 0.14,
     "changePct": -2.7,
-    "volume": 13924003
+    "volume": 15049755
    },
    {
     "ticker": "TGL",
@@ -135,7 +135,18 @@
     "marketCap": "1.60M",
     "price": 0.31,
     "changePct": 3,
-    "volume": 57137896
+    "volume": 57548509
+   },
+   {
+    "ticker": "VCIG",
+    "company": "VCI Global Ltd",
+    "sector": "Industrials",
+    "industry": "Consulting Services",
+    "country": "Malaysia",
+    "marketCap": "0.31M",
+    "price": 0.25,
+    "changePct": -8,
+    "volume": 6620553
    },
    {
     "ticker": "XXII",
@@ -146,7 +157,7 @@
     "marketCap": "0.24M",
     "price": 0.34,
     "changePct": -46.59,
-    "volume": 26509126
+    "volume": 27272465
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,sh_float_u20,sh_outstanding_u5,sh_price_u1,sh_relvol_o2&o=ticker",
@@ -161,247 +172,247 @@
  "universe": {
   "ok": true,
   "error": null,
-  "fetched": "2026-10-16T21:58:01.855Z",
+  "fetched": "2026-10-17T00:18:02.095Z",
   "rows": [
    {
     "ticker": "HODO",
     "company": "House of Doge Inc",
     "price": 0.09,
-    "volume": 564473551
+    "volume": 568795679
    },
    {
     "ticker": "NWGL",
     "company": "CL Workshop Group Ltd ADR",
     "price": 0.23,
-    "volume": 347965757
+    "volume": 365303256
    },
    {
     "ticker": "SXTC",
     "company": "China SXT Pharmaceuticals Inc",
     "price": 0.06,
-    "volume": 261942031
+    "volume": 263852971
    },
    {
     "ticker": "ZTG",
     "company": "Zenta Group Co Ltd",
     "price": 0.7,
-    "volume": 172187013
+    "volume": 172656913
    },
    {
     "ticker": "SGRX",
     "company": "Sangrix Inc",
     "price": 0.87,
-    "volume": 159864997
+    "volume": 160656406
    },
    {
     "ticker": "SDST",
     "company": "Stardust Power Inc",
     "price": 0.03,
-    "volume": 131756164
+    "volume": 137768192
    },
    {
     "ticker": "WFF",
     "company": "WF Holding Ltd",
     "price": 0.11,
-    "volume": 114965165
+    "volume": 121049575
    },
    {
     "ticker": "DKI",
     "company": "Darkiris Inc",
     "price": 0.05,
-    "volume": 95274042
+    "volume": 97393490
    },
    {
     "ticker": "RUBI",
     "company": "Rubico Inc",
     "price": 0.39,
-    "volume": 65231407
+    "volume": 67848344
    },
    {
     "ticker": "TGL",
     "company": "Treasure Global Inc",
     "price": 0.31,
-    "volume": 57137896
+    "volume": 57548509
    },
    {
     "ticker": "MMA",
     "company": "Mixed Martial Arts Group Ltd",
     "price": 0.34,
-    "volume": 47358594
+    "volume": 47659551
    },
    {
     "ticker": "BTBT",
     "company": "Bit Digital Inc",
     "price": 0.96,
-    "volume": 46694314
+    "volume": 46806635
    },
    {
     "ticker": "LHSW",
     "company": "Lianhe Sowell International Group Ltd",
     "price": 0.7,
-    "volume": 27122357
+    "volume": 27473384
    },
    {
     "ticker": "XXII",
     "company": "22nd Century Group Inc",
     "price": 0.34,
-    "volume": 26509126
+    "volume": 27272465
    },
    {
     "ticker": "SES",
     "company": "SES AI Corp",
     "price": 0.71,
-    "volume": 25867811
-   },
-   {
-    "ticker": "ORBS",
-    "company": "Eightco Holdings Inc",
-    "price": 0.74,
-    "volume": 22818793
-   },
-   {
-    "ticker": "NIVF",
-    "company": "NewGenIvf Group Ltd",
-    "price": 0.28,
-    "volume": 20390626
-   },
-   {
-    "ticker": "GPUS",
-    "company": "Hyperscale Data Inc",
-    "price": 0.14,
-    "volume": 18828308
-   },
-   {
-    "ticker": "DVLT",
-    "company": "Datavault AI Inc",
-    "price": 0.13,
-    "volume": 18251567
-   },
-   {
-    "ticker": "MDXH",
-    "company": "MDxHealth SA",
-    "price": 0.21,
-    "volume": 17145112
-   },
-   {
-    "ticker": "ZONE",
-    "company": "Zone Frontier Inc",
-    "price": 0.09,
-    "volume": 17095871
-   },
-   {
-    "ticker": "INV",
-    "company": "Innventure Inc",
-    "price": 0.33,
-    "volume": 16231117
-   },
-   {
-    "ticker": "XELB",
-    "company": "Xcel Brands Inc",
-    "price": 0.43,
-    "volume": 15652380
-   },
-   {
-    "ticker": "SHFS",
-    "company": "SHF Holdings Inc",
-    "price": 0.14,
-    "volume": 13961981
-   },
-   {
-    "ticker": "TWG",
-    "company": "Top Wealth Group Holding Ltd",
-    "price": 0.06,
-    "volume": 13788938
-   },
-   {
-    "ticker": "SLNH",
-    "company": "Soluna Holdings Inc",
-    "price": 0.67,
-    "volume": 12009930
-   },
-   {
-    "ticker": "EVTL",
-    "company": "Vertical Aerospace Ltd",
-    "price": 0.4,
-    "volume": 11880531
-   },
-   {
-    "ticker": "CDT",
-    "company": "CDT Equity Inc",
-    "price": 0.24,
-    "volume": 11718280
-   },
-   {
-    "ticker": "SCKT",
-    "company": "Socket Mobile Inc",
-    "price": 0.48,
-    "volume": 9692312
-   },
-   {
-    "ticker": "CAN",
-    "company": "Canaan Inc ADR",
-    "price": 0.23,
-    "volume": 8819866
-   },
-   {
-    "ticker": "LRHC",
-    "company": "La Rosa Holdings Corp",
-    "price": 0.76,
-    "volume": 8637035
+    "volume": 25972330
    },
    {
     "ticker": "SAFX",
     "company": "XCF Global Inc",
     "price": 0.14,
-    "volume": 8443603
+    "volume": 23964809
+   },
+   {
+    "ticker": "ORBS",
+    "company": "Eightco Holdings Inc",
+    "price": 0.74,
+    "volume": 22845074
+   },
+   {
+    "ticker": "NIVF",
+    "company": "NewGenIvf Group Ltd",
+    "price": 0.28,
+    "volume": 20633369
+   },
+   {
+    "ticker": "GPUS",
+    "company": "Hyperscale Data Inc",
+    "price": 0.14,
+    "volume": 19288411
+   },
+   {
+    "ticker": "DVLT",
+    "company": "Datavault AI Inc",
+    "price": 0.13,
+    "volume": 18350307
+   },
+   {
+    "ticker": "TWG",
+    "company": "Top Wealth Group Holding Ltd",
+    "price": 0.06,
+    "volume": 17861093
+   },
+   {
+    "ticker": "XELB",
+    "company": "Xcel Brands Inc",
+    "price": 0.43,
+    "volume": 17364533
+   },
+   {
+    "ticker": "MDXH",
+    "company": "MDxHealth SA",
+    "price": 0.21,
+    "volume": 17311280
+   },
+   {
+    "ticker": "ZONE",
+    "company": "Zone Frontier Inc",
+    "price": 0.09,
+    "volume": 17220827
+   },
+   {
+    "ticker": "INV",
+    "company": "Innventure Inc",
+    "price": 0.33,
+    "volume": 16282900
+   },
+   {
+    "ticker": "SHFS",
+    "company": "SHF Holdings Inc",
+    "price": 0.14,
+    "volume": 15049755
+   },
+   {
+    "ticker": "SLNH",
+    "company": "Soluna Holdings Inc",
+    "price": 0.67,
+    "volume": 12187097
+   },
+   {
+    "ticker": "EVTL",
+    "company": "Vertical Aerospace Ltd",
+    "price": 0.4,
+    "volume": 11946329
+   },
+   {
+    "ticker": "CDT",
+    "company": "CDT Equity Inc",
+    "price": 0.24,
+    "volume": 11867976
+   },
+   {
+    "ticker": "SCKT",
+    "company": "Socket Mobile Inc",
+    "price": 0.48,
+    "volume": 9722095
+   },
+   {
+    "ticker": "CAN",
+    "company": "Canaan Inc ADR",
+    "price": 0.23,
+    "volume": 8899304
+   },
+   {
+    "ticker": "LRHC",
+    "company": "La Rosa Holdings Corp",
+    "price": 0.76,
+    "volume": 8661240
    },
    {
     "ticker": "CCTG",
     "company": "CCSC Technology International Holdings Ltd",
     "price": 0.4,
-    "volume": 8331141
+    "volume": 8352751
    },
    {
     "ticker": "URG",
     "company": "Ur-Energy Inc",
     "price": 0.85,
-    "volume": 7683663
+    "volume": 7760434
    },
    {
     "ticker": "AKBA",
     "company": "Akebia Therapeutics Inc",
     "price": 0.67,
-    "volume": 7092411
+    "volume": 7127831
    },
    {
     "ticker": "SDEV",
     "company": "Stablecoin Development Corp",
     "price": 0.88,
-    "volume": 6908379
+    "volume": 7114452
    },
    {
     "ticker": "TNYA",
     "company": "Tenaya Therapeutics Inc",
     "price": 0.38,
-    "volume": 6808969
+    "volume": 6836062
    },
    {
     "ticker": "CIGL",
     "company": "Concorde International Group Ltd",
     "price": 0.25,
-    "volume": 6666270
+    "volume": 6765398
+   },
+   {
+    "ticker": "VCIG",
+    "company": "VCI Global Ltd",
+    "price": 0.25,
+    "volume": 6620553
    },
    {
     "ticker": "HAIN",
     "company": "Hain Celestial Group Inc",
     "price": 0.24,
-    "volume": 6361478
-   },
-   {
-    "ticker": "IQ",
-    "company": "iQIYI Inc ADR",
-    "price": 0.95,
-    "volume": 6116868
+    "volume": 6365369
    }
   ],
   "url": "https://finviz.com/screener.ashx?v=111&f=sh_price_u1&o=-volume",
