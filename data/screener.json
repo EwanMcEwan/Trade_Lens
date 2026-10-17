@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-17T04:51:44.279Z",
+ "generated": "2026-10-17T09:04:36.813Z",
  "finviz": {
-  "ok": true,
-  "error": null,
+  "ok": false,
+  "error": "could not locate the screener table (markup may have changed)",
   "fetched": "2026-10-17T04:51:41.064Z",
   "rows": [
    {
@@ -170,8 +170,8 @@
   ]
  },
  "universe": {
-  "ok": true,
-  "error": null,
+  "ok": false,
+  "error": "no sub-$1 tickers parsed",
   "fetched": "2026-10-17T04:51:44.279Z",
   "rows": [
    {
