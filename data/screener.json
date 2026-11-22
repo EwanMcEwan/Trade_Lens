@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-22T01:02:03.087Z",
+ "generated": "2026-11-22T08:37:35.109Z",
  "finviz": {
   "ok": false,
-  "error": "could not locate the screener table (markup may have changed)",
+  "error": "HTTP 403 Forbidden",
   "fetched": "2026-10-17T04:51:41.064Z",
   "rows": [
    {
@@ -171,7 +171,7 @@
  },
  "universe": {
   "ok": false,
-  "error": "no sub-$1 tickers parsed",
+  "error": "HTTP 403 Forbidden",
   "fetched": "2026-10-17T04:51:44.279Z",
   "rows": [
    {
